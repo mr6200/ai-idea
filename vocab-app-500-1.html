@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#1a1035">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="단어공부">
+<title>✦ WORD A DAY</title>
+<link rel="manifest" id="manifest-placeholder">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Sans+KR:wght@400;700&display=swap');
+  :root {
+    --bg1:#0f0c29;--bg2:#302b63;--bg3:#24243e;
+    --accent:#a78bfa;--accent2:#60a5fa;
+    --green:#4ade80;--red:#f87171;--yellow:#facc15;
+    --text:#e2e0ff;--muted:#9ca3af;--faint:#6b7280;
+    --card:rgba(255,255,255,0.06);--border:rgba(255,255,255,0.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html,body{height:100%;overscroll-behavior:none;}
+  body{
+    background:linear-gradient(135deg,var(--bg1) 0%,var(--bg2) 50%,var(--bg3) 100%);
+    background-attachment:fixed;font-family:'Noto Sans KR',sans-serif;
+    color:var(--text);min-height:100vh;
+    display:flex;flex-direction:column;align-items:center;padding:28px 16px 40px;
+  }
+  .header{text-align:center;margin-bottom:20px;}
+  .title{
+    font-family:'Playfair Display',serif;font-size:26px;letter-spacing:3px;
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:4px;
+  }
+  .subtitle{font-size:11px;color:var(--muted);letter-spacing:4px;text-transform:uppercase;}
+  .tabs{
+    display:flex;gap:6px;margin-bottom:20px;
+    background:rgba(255,255,255,0.05);border-radius:12px;padding:4px;
+    width:100%;max-width:400px;
+  }
+  .tab{
+    flex:1;padding:9px 4px;border-radius:10px;border:none;
+    cursor:pointer;font-size:13px;font-family:inherit;
+    background:transparent;color:var(--muted);transition:all .2s;
+  }
+  .tab.active{background:rgba(167,139,250,0.25);color:var(--accent);}
+  .view{display:none;flex-direction:column;align-items:center;width:100%;max-width:400px;}
+  .view.active{display:flex;}
+  .prog-wrap{width:100%;margin-bottom:16px;}
+  .prog-labels{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:6px;}
+  .prog-track{height:6px;background:rgba(255,255,255,0.1);border-radius:99px;overflow:hidden;}
+  .prog-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:99px;transition:width .4s;}
+  .dots{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap;justify-content:center;}
+  .dot{width:10px;height:10px;border-radius:50%;cursor:pointer;background:rgba(255,255,255,0.15);transition:background .2s;}
+  .dot.active{background:var(--accent);}
+  .dot.learned{background:var(--green);}
+  .dot.correct{background:var(--green);}
+  .dot.wrong{background:var(--red);}
+  .card{
+    width:100%;background:var(--card);backdrop-filter:blur(12px);
+    border:1px solid var(--border);border-radius:20px;
+    padding:32px 24px;text-align:center;cursor:pointer;
+    transition:transform .15s,box-shadow .15s;
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+    margin-bottom:20px;min-height:200px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    user-select:none;
+  }
+  .card:active{transform:scale(0.98);}
+  .badge{display:inline-block;padding:3px 12px;border-radius:99px;font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:14px;}
+  .badge.beginner{background:rgba(74,222,128,.15);color:var(--green);border:1px solid rgba(74,222,128,.3);}
+  .badge.intermediate{background:rgba(250,204,21,.15);color:var(--yellow);border:1px solid rgba(250,204,21,.3);}
+  .badge.advanced{background:rgba(248,113,113,.15);color:var(--red);border:1px solid rgba(248,113,113,.3);}
+  .word{font-family:'Playfair Display',serif;font-size:34px;color:#fff;letter-spacing:1px;margin-bottom:8px;}
+  .hint{font-size:13px;color:var(--faint);font-style:italic;}
+  .meaning{font-size:19px;color:#c4b5fd;margin-bottom:8px;font-weight:700;}
+  .example{font-size:13px;color:var(--muted);font-style:italic;margin-top:8px;line-height:1.5;}
+  .btn-row{display:flex;gap:10px;width:100%;margin-bottom:12px;}
+  .btn{
+    flex:1;padding:14px;border-radius:12px;border:none;cursor:pointer;
+    font-family:inherit;font-size:15px;font-weight:700;
+    transition:opacity .15s,transform .1s;letter-spacing:.5px;
+  }
+  .btn:active{transform:scale(0.97);opacity:0.85;}
+  .btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;}
+  .btn-success{background:linear-gradient(135deg,var(--green),#22d3ee);color:#fff;}
+  .btn-ghost{background:rgba(255,255,255,0.08);color:var(--muted);}
+  .btn-danger{background:rgba(248,113,113,0.15);color:var(--red);border:1px solid rgba(248,113,113,0.3);}
+  .quiz-opt{
+    width:100%;padding:14px 18px;border-radius:12px;
+    border:1.5px solid var(--border);background:rgba(255,255,255,0.04);
+    color:var(--text);cursor:pointer;font-family:inherit;font-size:14px;
+    text-align:left;margin-bottom:10px;transition:all .2s;line-height:1.4;
+  }
+  .quiz-opt:active{transform:scale(0.98);}
+  .quiz-opt.correct{border-color:var(--green);background:rgba(74,222,128,.1);color:var(--green);}
+  .quiz-opt.wrong{border-color:var(--red);background:rgba(248,113,113,.1);color:var(--red);}
+  .quiz-opt.disabled{cursor:default;}
+  .quiz-result{text-align:center;margin:4px 0 12px;font-size:15px;font-weight:700;}
+  .quiz-result.ok{color:var(--green);}
+  .quiz-result.ng{color:var(--red);}
+  .banner{
+    background:linear-gradient(135deg,rgba(74,222,128,.12),rgba(34,211,238,.12));
+    border:1px solid rgba(74,222,128,.3);border-radius:16px;
+    padding:18px;text-align:center;margin-bottom:16px;width:100%;
+  }
+  .banner-icon{font-size:28px;margin-bottom:6px;}
+  .banner-title{font-weight:700;color:var(--green);font-size:16px;}
+  .banner-sub{font-size:12px;color:var(--muted);margin-top:4px;}
+  .stat-grid{display:flex;gap:10px;width:100%;margin-bottom:12px;}
+  .stat-box{flex:1;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;text-align:center;}
+  .stat-num{font-family:'Playfair Display',serif;font-size:28px;color:var(--accent);}
+  .stat-label{font-size:11px;color:var(--muted);margin-top:3px;}
+  .history-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;width:100%;margin-bottom:12px;}
+  .history-title{font-size:12px;color:var(--muted);letter-spacing:1px;margin-bottom:12px;text-transform:uppercase;}
+  .history-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:13px;}
+  .history-row:last-child{border-bottom:none;}
+  .history-date.today{color:var(--accent);}
+  .history-date{color:var(--muted);}
+  .history-info{color:var(--faint);font-size:12px;}
+  .empty{color:var(--faint);font-size:13px;text-align:center;padding:12px 0;}
+  .date-label{font-size:11px;color:var(--faint);margin-top:4px;}
+  .word-counter{font-size:12px;color:var(--faint);margin-bottom:8px;}
+  .speak-row{display:flex;gap:8px;margin-top:12px;justify-content:center;}
+  .speak-btn{
+    display:flex;align-items:center;gap:5px;
+    padding:7px 14px;border-radius:99px;border:1.5px solid rgba(167,139,250,0.35);
+    background:rgba(167,139,250,0.1);color:var(--accent);
+    cursor:pointer;font-size:12px;font-family:inherit;font-weight:700;
+    transition:all .2s;letter-spacing:.3px;
+  }
+  .speak-btn:active{transform:scale(0.95);background:rgba(167,139,250,0.25);}
+  .speak-btn.speaking{background:rgba(167,139,250,0.3);border-color:var(--accent);animation:pulse 0.8s infinite;}
+  .speak-btn.ex{border-color:rgba(96,165,250,0.35);background:rgba(96,165,250,0.1);color:var(--accent2);}
+  .speak-btn.ex.speaking{background:rgba(96,165,250,0.3);border-color:var(--accent2);}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.6;}}
+  .tts-hint{font-size:11px;color:var(--faint);margin-top:6px;text-align:center;}
+  /* quiz speak btn */
+  .q-speak{
+    display:inline-flex;align-items:center;gap:4px;
+    padding:5px 12px;border-radius:99px;
+    border:1.5px solid rgba(167,139,250,0.35);
+    background:rgba(167,139,250,0.1);color:var(--accent);
+    cursor:pointer;font-size:12px;font-family:inherit;
+    transition:all .2s;margin-top:8px;
+  }
+  .q-speak:active{transform:scale(0.95);}
+  .install-banner{
+    position:fixed;bottom:0;left:0;right:0;
+    background:rgba(30,27,60,0.97);border-top:1px solid var(--border);
+    padding:16px 20px;display:flex;align-items:center;gap:12px;
+    z-index:100;backdrop-filter:blur(12px);
+  }
+  .install-text{flex:1;font-size:13px;line-height:1.5;}
+  .install-text strong{color:var(--accent);}
+  .install-close{background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;padding:4px;}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="title">✦ WORD A DAY ✦</div>
+  <div class="subtitle">매일 영단어 학습</div>
+</div>
+<div class="tabs">
+  <button class="tab active" onclick="switchView('study')">📖 학습</button>
+  <button class="tab" onclick="switchView('quiz')">📝 퀴즈</button>
+  <button class="tab" onclick="switchView('stats')">📊 통계</button>
+</div>
+
+<!-- STUDY -->
+<div class="view active" id="view-study">
+  <div class="prog-wrap">
+    <div class="prog-labels"><span>오늘의 학습</span><span id="prog-text">0/10 완료</span></div>
+    <div class="prog-track"><div class="prog-fill" id="prog-fill" style="width:0%"></div></div>
+  </div>
+  <div class="dots" id="study-dots"></div>
+  <div class="banner" id="done-banner" style="display:none">
+    <div class="banner-icon">🎉</div>
+    <div class="banner-title">오늘 학습 완료!</div>
+    <div class="banner-sub">퀴즈로 복습해보세요</div>
+  </div>
+  <div class="card" id="study-card" onclick="flipCard()">
+    <div class="badge" id="s-badge"></div>
+    <div class="word" id="s-word"></div>
+    <div id="s-back">
+      <div class="meaning" id="s-meaning"></div>
+      <div class="example" id="s-example"></div>
+    </div>
+    <div class="hint" id="s-hint">탭하여 뜻 보기 👆</div>
+    <div class="speak-row" onclick="event.stopPropagation()">
+      <button class="speak-btn" id="btn-speak-word" onclick="speakWord()">🔊 단어</button>
+      <button class="speak-btn ex" id="btn-speak-ex" onclick="speakExample()">🔊 예문</button>
+    </div>
+  </div>
+  <div class="btn-row">
+    <button class="btn btn-ghost" onclick="prevCard('study')">← 이전</button>
+    <button class="btn btn-success" id="btn-learned" onclick="markLearned()">✓ 외웠어요!</button>
+  </div>
+  <div class="date-label" id="today-label"></div>
+</div>
+
+<!-- QUIZ -->
+<div class="view" id="view-quiz">
+  <div class="dots" id="quiz-dots"></div>
+  <div class="card" style="cursor:default;margin-bottom:16px;">
+    <div class="badge" id="q-badge"></div>
+    <div class="word" id="q-word"></div>
+    <div class="hint">이 단어의 뜻은?</div>
+    <button class="q-speak" onclick="speakQuizWord()">🔊 발음 듣기</button>
+  </div>
+  <div id="quiz-options"></div>
+  <div class="quiz-result" id="quiz-result"></div>
+  <div class="btn-row">
+    <button class="btn btn-ghost" onclick="prevCard('quiz')">← 이전</button>
+    <button class="btn btn-primary" onclick="nextCard('quiz')">다음 →</button>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="view" id="view-stats">
+  <div class="stat-grid">
+    <div class="stat-box"><div class="stat-num" id="st-total">0</div><div class="stat-label">총 학습 단어</div></div>
+    <div class="stat-box"><div class="stat-num" id="st-acc">—</div><div class="stat-label">퀴즈 정답률</div></div>
+    <div class="stat-box"><div class="stat-num" id="st-days">0</div><div class="stat-label">학습 일수</div></div>
+  </div>
+  <div class="history-card">
+    <div class="history-title">최근 학습 기록</div>
+    <div id="history-list"></div>
+  </div>
+  <button class="btn btn-danger" style="width:100%;margin-top:4px;" onclick="resetData()">🗑 기록 초기화</button>
+</div>
+
+<div class="install-banner" id="install-banner" style="display:none">
+  <div>📲</div>
+  <div class="install-text"><strong>홈화면에 추가</strong>하면 앱처럼 사용 가능!<br>크롬 메뉴 → "홈 화면에 추가"</div>
+  <button class="install-close" onclick="document.getElementById('install-banner').style.display='none'">✕</button>
+</div>
+
+<script>
+const WORDS = [
+  // ── BEGINNER (150) ──
+  {word:"Accept",meaning:"받아들이다",example:"I accept your apology.",level:"beginner"},
+  {word:"Achieve",meaning:"달성하다",example:"She achieved her goal.",level:"beginner"},
+  {word:"Adapt",meaning:"적응하다",example:"We must adapt to change.",level:"beginner"},
+  {word:"Admire",meaning:"감탄하다, 존경하다",example:"I admire her courage.",level:"beginner"},
+  {word:"Advise",meaning:"조언하다",example:"He advised me to rest.",level:"beginner"},
+  {word:"Allow",meaning:"허락하다",example:"Please allow me to explain.",level:"beginner"},
+  {word:"Announce",meaning:"발표하다",example:"They announced the winner.",level:"beginner"},
+  {word:"Appreciate",meaning:"감사하다, 감상하다",example:"I appreciate your help.",level:"beginner"},
+  {word:"Argue",meaning:"주장하다, 논쟁하다",example:"They argued all night.",level:"beginner"},
+  {word:"Attempt",meaning:"시도하다",example:"She attempted to climb the wall.",level:"beginner"},
+  {word:"Avoid",meaning:"피하다",example:"Try to avoid junk food.",level:"beginner"},
+  {word:"Believe",meaning:"믿다",example:"I believe in you.",level:"beginner"},
+  {word:"Benefit",meaning:"이익, 혜택",example:"Exercise has many benefits.",level:"beginner"},
+  {word:"Brave",meaning:"용감한",example:"He was brave in the storm.",level:"beginner"},
+  {word:"Careful",meaning:"조심스러운",example:"Be careful on the stairs.",level:"beginner"},
+  {word:"Choose",meaning:"선택하다",example:"Choose the right path.",level:"beginner"},
+  {word:"Clever",meaning:"영리한",example:"She is a clever student.",level:"beginner"},
+  {word:"Collect",meaning:"수집하다",example:"He collects old coins.",level:"beginner"},
+  {word:"Combine",meaning:"결합하다",example:"Combine flour and sugar.",level:"beginner"},
+  {word:"Compare",meaning:"비교하다",example:"Compare the two prices.",level:"beginner"},
+  {word:"Complete",meaning:"완료하다, 완전한",example:"Complete the task on time.",level:"beginner"},
+  {word:"Confident",meaning:"자신 있는",example:"She felt confident before the test.",level:"beginner"},
+  {word:"Connect",meaning:"연결하다",example:"Connect the cable to the device.",level:"beginner"},
+  {word:"Consider",meaning:"고려하다",example:"Consider all the options.",level:"beginner"},
+  {word:"Continue",meaning:"계속하다",example:"Continue reading the book.",level:"beginner"},
+  {word:"Control",meaning:"통제하다",example:"Control your emotions.",level:"beginner"},
+  {word:"Create",meaning:"창조하다",example:"Create a new document.",level:"beginner"},
+  {word:"Curious",meaning:"호기심 있는",example:"Children are naturally curious.",level:"beginner"},
+  {word:"Decide",meaning:"결정하다",example:"Decide what to eat.",level:"beginner"},
+  {word:"Describe",meaning:"묘사하다",example:"Describe what you see.",level:"beginner"},
+  {word:"Develop",meaning:"발전시키다",example:"Develop your skills.",level:"beginner"},
+  {word:"Discover",meaning:"발견하다",example:"She discovered a new path.",level:"beginner"},
+  {word:"Discuss",meaning:"토론하다",example:"Let's discuss the plan.",level:"beginner"},
+  {word:"Eager",meaning:"열망하는",example:"He was eager to learn.",level:"beginner"},
+  {word:"Earn",meaning:"벌다",example:"She earns a good salary.",level:"beginner"},
+  {word:"Enjoy",meaning:"즐기다",example:"I enjoy reading books.",level:"beginner"},
+  {word:"Estimate",meaning:"추정하다",example:"Estimate the cost first.",level:"beginner"},
+  {word:"Explain",meaning:"설명하다",example:"Please explain the rule.",level:"beginner"},
+  {word:"Explore",meaning:"탐험하다",example:"Explore the new city.",level:"beginner"},
+  {word:"Express",meaning:"표현하다",example:"Express your feelings.",level:"beginner"},
+  {word:"Fail",meaning:"실패하다",example:"Don't be afraid to fail.",level:"beginner"},
+  {word:"Fair",meaning:"공정한",example:"The judge was fair.",level:"beginner"},
+  {word:"Familiar",meaning:"친숙한",example:"This place looks familiar.",level:"beginner"},
+  {word:"Famous",meaning:"유명한",example:"He is a famous artist.",level:"beginner"},
+  {word:"Focus",meaning:"집중하다",example:"Focus on the task at hand.",level:"beginner"},
+  {word:"Follow",meaning:"따르다",example:"Follow the instructions.",level:"beginner"},
+  {word:"Forgive",meaning:"용서하다",example:"Learn to forgive others.",level:"beginner"},
+  {word:"Friendly",meaning:"친절한",example:"She has a friendly smile.",level:"beginner"},
+  {word:"Gather",meaning:"모으다",example:"Gather all the information.",level:"beginner"},
+  {word:"Give",meaning:"주다",example:"Give it your best shot.",level:"beginner"},
+  {word:"Glad",meaning:"기쁜",example:"I am glad to see you.",level:"beginner"},
+  {word:"Goal",meaning:"목표",example:"Set a clear goal.",level:"beginner"},
+  {word:"Grateful",meaning:"감사하는",example:"I am grateful for your help.",level:"beginner"},
+  {word:"Grow",meaning:"성장하다",example:"Plants grow in sunlight.",level:"beginner"},
+  {word:"Guess",meaning:"추측하다",example:"Guess the answer.",level:"beginner"},
+  {word:"Handle",meaning:"다루다",example:"He handled the problem well.",level:"beginner"},
+  {word:"Happen",meaning:"발생하다",example:"What happened here?",level:"beginner"},
+  {word:"Happy",meaning:"행복한",example:"She looks happy today.",level:"beginner"},
+  {word:"Honest",meaning:"정직한",example:"Be honest with yourself.",level:"beginner"},
+  {word:"Hope",meaning:"희망하다",example:"I hope for the best.",level:"beginner"},
+  {word:"Hurry",meaning:"서두르다",example:"Hurry or we'll be late.",level:"beginner"},
+  {word:"Imagine",meaning:"상상하다",example:"Imagine a better world.",level:"beginner"},
+  {word:"Improve",meaning:"향상시키다",example:"Improve your English daily.",level:"beginner"},
+  {word:"Include",meaning:"포함하다",example:"Include your name on the form.",level:"beginner"},
+  {word:"Increase",meaning:"증가하다",example:"Sales increased last month.",level:"beginner"},
+  {word:"Inform",meaning:"알리다",example:"Inform me of any changes.",level:"beginner"},
+  {word:"Interest",meaning:"관심, 흥미",example:"She has an interest in art.",level:"beginner"},
+  {word:"Invite",meaning:"초대하다",example:"Invite your friends over.",level:"beginner"},
+  {word:"Join",meaning:"참여하다",example:"Join our club.",level:"beginner"},
+  {word:"Keep",meaning:"유지하다",example:"Keep up the good work.",level:"beginner"},
+  {word:"Kind",meaning:"친절한",example:"She is always kind.",level:"beginner"},
+  {word:"Know",meaning:"알다",example:"Do you know the answer?",level:"beginner"},
+  {word:"Learn",meaning:"배우다",example:"Learn from your mistakes.",level:"beginner"},
+  {word:"Listen",meaning:"듣다",example:"Listen carefully to the teacher.",level:"beginner"},
+  {word:"Manage",meaning:"관리하다",example:"Manage your time wisely.",level:"beginner"},
+  {word:"Meet",meaning:"만나다",example:"Nice to meet you.",level:"beginner"},
+  {word:"Mention",meaning:"언급하다",example:"He mentioned your name.",level:"beginner"},
+  {word:"Move",meaning:"이동하다, 감동시키다",example:"Move to the next step.",level:"beginner"},
+  {word:"Need",meaning:"필요하다",example:"I need your help.",level:"beginner"},
+  {word:"Notice",meaning:"알아채다",example:"Did you notice the change?",level:"beginner"},
+  {word:"Offer",meaning:"제공하다",example:"Offer your seat to the elderly.",level:"beginner"},
+  {word:"Open",meaning:"열다, 개방적인",example:"Open your mind to new ideas.",level:"beginner"},
+  {word:"Organize",meaning:"조직하다",example:"Organize your desk.",level:"beginner"},
+  {word:"Patient",meaning:"인내심 있는",example:"Be patient and wait.",level:"beginner"},
+  {word:"Pay",meaning:"지불하다",example:"Pay attention in class.",level:"beginner"},
+  {word:"Plan",meaning:"계획하다",example:"Plan your week ahead.",level:"beginner"},
+  {word:"Polite",meaning:"예의 바른",example:"Always be polite.",level:"beginner"},
+  {word:"Practice",meaning:"연습하다",example:"Practice makes perfect.",level:"beginner"},
+  {word:"Prepare",meaning:"준비하다",example:"Prepare for the exam.",level:"beginner"},
+  {word:"Protect",meaning:"보호하다",example:"Protect the environment.",level:"beginner"},
+  {word:"Provide",meaning:"제공하다",example:"Provide clear directions.",level:"beginner"},
+  {word:"Reach",meaning:"도달하다",example:"Reach for your dreams.",level:"beginner"},
+  {word:"Read",meaning:"읽다",example:"Read at least one book a month.",level:"beginner"},
+  {word:"Receive",meaning:"받다",example:"Receive feedback gracefully.",level:"beginner"},
+  {word:"Relax",meaning:"휴식을 취하다",example:"Relax and take a deep breath.",level:"beginner"},
+  {word:"Remember",meaning:"기억하다",example:"Remember to call me.",level:"beginner"},
+  {word:"Repeat",meaning:"반복하다",example:"Repeat after me.",level:"beginner"},
+  {word:"Respect",meaning:"존중하다",example:"Respect other people's opinions.",level:"beginner"},
+  {word:"Result",meaning:"결과",example:"The result was surprising.",level:"beginner"},
+  {word:"Return",meaning:"돌아오다",example:"Return the book to the library.",level:"beginner"},
+  {word:"Reward",meaning:"보상",example:"Hard work brings its own reward.",level:"beginner"},
+  {word:"Risk",meaning:"위험, 감수하다",example:"Don't take unnecessary risks.",level:"beginner"},
+  {word:"Save",meaning:"저장하다, 구하다",example:"Save your work often.",level:"beginner"},
+  {word:"Share",meaning:"공유하다",example:"Share what you have.",level:"beginner"},
+  {word:"Show",meaning:"보여주다",example:"Show me the way.",level:"beginner"},
+  {word:"Simple",meaning:"간단한",example:"Keep it simple.",level:"beginner"},
+  {word:"Solve",meaning:"해결하다",example:"Solve the problem together.",level:"beginner"},
+  {word:"Start",meaning:"시작하다",example:"Start small and grow big.",level:"beginner"},
+  {word:"Stay",meaning:"머무르다",example:"Stay calm under pressure.",level:"beginner"},
+  {word:"Stop",meaning:"멈추다",example:"Stop and think before you act.",level:"beginner"},
+  {word:"Study",meaning:"공부하다",example:"Study every day.",level:"beginner"},
+  {word:"Success",meaning:"성공",example:"Success takes effort.",level:"beginner"},
+  {word:"Support",meaning:"지원하다",example:"Support your teammates.",level:"beginner"},
+  {word:"Think",meaning:"생각하다",example:"Think before you speak.",level:"beginner"},
+  {word:"Trust",meaning:"신뢰하다",example:"Trust the process.",level:"beginner"},
+  {word:"Try",meaning:"시도하다",example:"Try your best.",level:"beginner"},
+  {word:"Understand",meaning:"이해하다",example:"I understand your point.",level:"beginner"},
+  {word:"Use",meaning:"사용하다",example:"Use your time wisely.",level:"beginner"},
+  {word:"Value",meaning:"가치, 소중히 여기다",example:"Value every moment.",level:"beginner"},
+  {word:"Wait",meaning:"기다리다",example:"Wait for your turn.",level:"beginner"},
+  {word:"Want",meaning:"원하다",example:"I want to improve.",level:"beginner"},
+  {word:"Watch",meaning:"지켜보다",example:"Watch your step.",level:"beginner"},
+  {word:"Win",meaning:"이기다",example:"Win with grace.",level:"beginner"},
+  {word:"Wish",meaning:"바라다",example:"I wish you luck.",level:"beginner"},
+  {word:"Wonder",meaning:"궁금해하다",example:"I wonder why she left.",level:"beginner"},
+  {word:"Work",meaning:"일하다",example:"Work hard and be kind.",level:"beginner"},
+  {word:"Worry",meaning:"걱정하다",example:"Don't worry too much.",level:"beginner"},
+  {word:"Write",meaning:"쓰다",example:"Write down your ideas.",level:"beginner"},
+  {word:"Agree",meaning:"동의하다",example:"I agree with your idea.",level:"beginner"},
+  {word:"Aware",meaning:"인식하는",example:"Be aware of your surroundings.",level:"beginner"},
+  {word:"Care",meaning:"돌보다, 신경 쓰다",example:"Care for those around you.",level:"beginner"},
+  {word:"Change",meaning:"변화, 바꾸다",example:"Change starts with you.",level:"beginner"},
+  {word:"Check",meaning:"확인하다",example:"Check your answers.",level:"beginner"},
+  {word:"Clear",meaning:"명확한",example:"Give a clear explanation.",level:"beginner"},
+  {word:"Close",meaning:"가까운, 닫다",example:"Close the door quietly.",level:"beginner"},
+  {word:"Come",meaning:"오다",example:"Come and join us.",level:"beginner"},
+  {word:"Eat",meaning:"먹다",example:"Eat a healthy breakfast.",level:"beginner"},
+  {word:"Find",meaning:"찾다",example:"Find a solution quickly.",level:"beginner"},
+  {word:"Finish",meaning:"끝내다",example:"Finish what you start.",level:"beginner"},
+  // ── INTERMEDIATE (250) ──
+  {word:"Abundant",meaning:"풍부한",example:"The region has abundant resources.",level:"intermediate"},
+  {word:"Accomplish",meaning:"성취하다",example:"She accomplished her mission.",level:"intermediate"},
+  {word:"Accurate",meaning:"정확한",example:"Give an accurate report.",level:"intermediate"},
+  {word:"Acknowledge",meaning:"인정하다",example:"Acknowledge your mistakes.",level:"intermediate"},
+  {word:"Acquire",meaning:"습득하다",example:"Acquire new skills every year.",level:"intermediate"},
+  {word:"Adequate",meaning:"적절한",example:"Ensure adequate preparation.",level:"intermediate"},
+  {word:"Advocate",meaning:"지지하다, 옹호자",example:"She advocates for equal rights.",level:"intermediate"},
+  {word:"Affect",meaning:"영향을 미치다",example:"Weather affects our mood.",level:"intermediate"},
+  {word:"Ambitious",meaning:"야망 있는",example:"He is ambitious and hard-working.",level:"intermediate"},
+  {word:"Analyze",meaning:"분석하다",example:"Analyze the data carefully.",level:"intermediate"},
+  {word:"Anticipate",meaning:"예상하다",example:"Anticipate problems before they arise.",level:"intermediate"},
+  {word:"Appeal",meaning:"호소하다, 매력",example:"The idea appeals to me.",level:"intermediate"},
+  {word:"Apply",meaning:"적용하다, 지원하다",example:"Apply for the position.",level:"intermediate"},
+  {word:"Approach",meaning:"접근하다, 방법",example:"Try a different approach.",level:"intermediate"},
+  {word:"Assert",meaning:"주장하다",example:"Assert your rights confidently.",level:"intermediate"},
+  {word:"Assess",meaning:"평가하다",example:"Assess the situation first.",level:"intermediate"},
+  {word:"Associate",meaning:"연관짓다",example:"Associate ideas to remember them.",level:"intermediate"},
+  {word:"Assume",meaning:"가정하다",example:"Don't assume the worst.",level:"intermediate"},
+  {word:"Attain",meaning:"달성하다",example:"Attain your full potential.",level:"intermediate"},
+  {word:"Attitude",meaning:"태도",example:"A positive attitude helps.",level:"intermediate"},
+  {word:"Balance",meaning:"균형",example:"Maintain a balance in life.",level:"intermediate"},
+  {word:"Barrier",meaning:"장벽",example:"Break down the barriers.",level:"intermediate"},
+  {word:"Broad",meaning:"넓은",example:"She has a broad knowledge.",level:"intermediate"},
+  {word:"Capable",meaning:"유능한",example:"He is capable of great things.",level:"intermediate"},
+  {word:"Challenge",meaning:"도전",example:"Every challenge is an opportunity.",level:"intermediate"},
+  {word:"Circumstance",meaning:"상황, 환경",example:"Consider all circumstances.",level:"intermediate"},
+  {word:"Commit",meaning:"전념하다, 저지르다",example:"Commit to your goals.",level:"intermediate"},
+  {word:"Communicate",meaning:"소통하다",example:"Communicate clearly.",level:"intermediate"},
+  {word:"Competent",meaning:"유능한",example:"A competent manager delegates well.",level:"intermediate"},
+  {word:"Concentrate",meaning:"집중하다",example:"Concentrate on one thing at a time.",level:"intermediate"},
+  {word:"Confident",meaning:"자신감 있는",example:"Stay confident in your abilities.",level:"intermediate"},
+  {word:"Conflict",meaning:"갈등",example:"Resolve the conflict peacefully.",level:"intermediate"},
+  {word:"Consequence",meaning:"결과, 영향",example:"Think about the consequences.",level:"intermediate"},
+  {word:"Consistent",meaning:"일관된",example:"Be consistent in your effort.",level:"intermediate"},
+  {word:"Contribute",meaning:"기여하다",example:"Contribute to the team's success.",level:"intermediate"},
+  {word:"Convince",meaning:"설득하다",example:"She convinced him to stay.",level:"intermediate"},
+  {word:"Cooperate",meaning:"협력하다",example:"Cooperate with your colleagues.",level:"intermediate"},
+  {word:"Cope",meaning:"대처하다",example:"Cope with stress effectively.",level:"intermediate"},
+  {word:"Critical",meaning:"비판적인, 중요한",example:"Critical thinking is essential.",level:"intermediate"},
+  {word:"Crucial",meaning:"중요한",example:"This step is crucial.",level:"intermediate"},
+  {word:"Dedicate",meaning:"헌신하다",example:"Dedicate time to learning.",level:"intermediate"},
+  {word:"Delay",meaning:"지연시키다",example:"Don't delay important decisions.",level:"intermediate"},
+  {word:"Demonstrate",meaning:"시연하다, 증명하다",example:"Demonstrate your skills.",level:"intermediate"},
+  {word:"Depend",meaning:"의존하다",example:"Don't depend on others too much.",level:"intermediate"},
+  {word:"Deserve",meaning:"~을 받을 자격이 있다",example:"You deserve the best.",level:"intermediate"},
+  {word:"Determine",meaning:"결정하다",example:"Determine the root cause.",level:"intermediate"},
+  {word:"Distinct",meaning:"뚜렷한",example:"She has a distinct style.",level:"intermediate"},
+  {word:"Diverse",meaning:"다양한",example:"A diverse team performs better.",level:"intermediate"},
+  {word:"Dominant",meaning:"지배적인",example:"English is the dominant language.",level:"intermediate"},
+  {word:"Drive",meaning:"추진력, 운전하다",example:"His drive led to success.",level:"intermediate"},
+  {word:"Effective",meaning:"효과적인",example:"Find an effective method.",level:"intermediate"},
+  {word:"Efficient",meaning:"효율적인",example:"Work in an efficient manner.",level:"intermediate"},
+  {word:"Effort",meaning:"노력",example:"Put in your best effort.",level:"intermediate"},
+  {word:"Emerge",meaning:"나타나다",example:"A new trend is emerging.",level:"intermediate"},
+  {word:"Enable",meaning:"가능하게 하다",example:"Technology enables faster work.",level:"intermediate"},
+  {word:"Encourage",meaning:"격려하다",example:"Encourage others to do their best.",level:"intermediate"},
+  {word:"Enhance",meaning:"향상시키다",example:"Enhance your vocabulary daily.",level:"intermediate"},
+  {word:"Ensure",meaning:"보장하다",example:"Ensure quality in every task.",level:"intermediate"},
+  {word:"Environment",meaning:"환경",example:"Protect our environment.",level:"intermediate"},
+  {word:"Essential",meaning:"필수적인",example:"Sleep is essential for health.",level:"intermediate"},
+  {word:"Establish",meaning:"확립하다",example:"Establish clear boundaries.",level:"intermediate"},
+  {word:"Evaluate",meaning:"평가하다",example:"Evaluate your own progress.",level:"intermediate"},
+  {word:"Evidence",meaning:"증거",example:"Show evidence to support your claim.",level:"intermediate"},
+  {word:"Evolve",meaning:"진화하다",example:"Languages evolve over time.",level:"intermediate"},
+  {word:"Examine",meaning:"검토하다",example:"Examine the evidence closely.",level:"intermediate"},
+  {word:"Exceed",meaning:"초과하다",example:"Exceed your own expectations.",level:"intermediate"},
+  {word:"Execute",meaning:"실행하다",example:"Execute the plan perfectly.",level:"intermediate"},
+  {word:"Expand",meaning:"확장하다",example:"Expand your knowledge base.",level:"intermediate"},
+  {word:"Experience",meaning:"경험",example:"Experience is the best teacher.",level:"intermediate"},
+  {word:"Facilitate",meaning:"촉진하다",example:"Good tools facilitate work.",level:"intermediate"},
+  {word:"Factor",meaning:"요인",example:"Hard work is a key factor.",level:"intermediate"},
+  {word:"Feature",meaning:"특징",example:"Highlight the key features.",level:"intermediate"},
+  {word:"Flexible",meaning:"유연한",example:"Stay flexible in your plans.",level:"intermediate"},
+  {word:"Foundation",meaning:"기반, 토대",example:"Build a strong foundation.",level:"intermediate"},
+  {word:"Framework",meaning:"체계, 틀",example:"Use a clear framework.",level:"intermediate"},
+  {word:"Generate",meaning:"생성하다",example:"Generate new ideas freely.",level:"intermediate"},
+  {word:"Global",meaning:"세계적인",example:"We live in a global economy.",level:"intermediate"},
+  {word:"Gradual",meaning:"점진적인",example:"Gradual change is more lasting.",level:"intermediate"},
+  {word:"Guarantee",meaning:"보장하다",example:"I guarantee results.",level:"intermediate"},
+  {word:"Guidance",meaning:"지도, 안내",example:"Seek guidance from a mentor.",level:"intermediate"},
+  {word:"Highlight",meaning:"강조하다",example:"Highlight the key points.",level:"intermediate"},
+  {word:"Identify",meaning:"확인하다, 파악하다",example:"Identify the problem first.",level:"intermediate"},
+  {word:"Impact",meaning:"영향, 충격",example:"His speech had a huge impact.",level:"intermediate"},
+  {word:"Implement",meaning:"실행하다",example:"Implement the new strategy.",level:"intermediate"},
+  {word:"Imply",meaning:"암시하다",example:"What does this data imply?",level:"intermediate"},
+  {word:"Indicate",meaning:"나타내다",example:"The data indicates growth.",level:"intermediate"},
+  {word:"Individual",meaning:"개인",example:"Respect each individual.",level:"intermediate"},
+  {word:"Influence",meaning:"영향을 주다",example:"She influences those around her.",level:"intermediate"},
+  {word:"Initiative",meaning:"솔선수범, 주도권",example:"Take initiative in your work.",level:"intermediate"},
+  {word:"Innovate",meaning:"혁신하다",example:"Companies must innovate to survive.",level:"intermediate"},
+  {word:"Integrate",meaning:"통합하다",example:"Integrate new ideas into your work.",level:"intermediate"},
+  {word:"Interpret",meaning:"해석하다",example:"Interpret the data correctly.",level:"intermediate"},
+  {word:"Investigate",meaning:"조사하다",example:"Investigate before concluding.",level:"intermediate"},
+  {word:"Involve",meaning:"포함하다, 관련시키다",example:"Involve everyone in the decision.",level:"intermediate"},
+  {word:"Issue",meaning:"문제, 사안",example:"Address the issue immediately.",level:"intermediate"},
+  {word:"Journey",meaning:"여정",example:"Life is a journey.",level:"intermediate"},
+  {word:"Judgment",meaning:"판단",example:"Use good judgment.",level:"intermediate"},
+  {word:"Justify",meaning:"정당화하다",example:"Justify your decision with facts.",level:"intermediate"},
+  {word:"Knowledge",meaning:"지식",example:"Knowledge is power.",level:"intermediate"},
+  {word:"Leadership",meaning:"리더십",example:"Strong leadership drives success.",level:"intermediate"},
+  {word:"Limit",meaning:"한계, 제한하다",example:"Know your limits.",level:"intermediate"},
+  {word:"Logic",meaning:"논리",example:"Use logic to solve problems.",level:"intermediate"},
+  {word:"Maintain",meaning:"유지하다",example:"Maintain a healthy lifestyle.",level:"intermediate"},
+  {word:"Maximize",meaning:"최대화하다",example:"Maximize your productivity.",level:"intermediate"},
+  {word:"Measure",meaning:"측정하다",example:"Measure progress regularly.",level:"intermediate"},
+  {word:"Method",meaning:"방법",example:"Choose the best method.",level:"intermediate"},
+  {word:"Mindset",meaning:"사고방식",example:"A growth mindset is key.",level:"intermediate"},
+  {word:"Motivate",meaning:"동기부여하다",example:"Motivate yourself daily.",level:"intermediate"},
+  {word:"Numerous",meaning:"수많은",example:"There are numerous options.",level:"intermediate"},
+  {word:"Objective",meaning:"목표, 객관적인",example:"Set clear objectives.",level:"intermediate"},
+  {word:"Obstacle",meaning:"장애물",example:"Overcome every obstacle.",level:"intermediate"},
+  {word:"Obtain",meaning:"얻다",example:"Obtain permission first.",level:"intermediate"},
+  {word:"Obvious",meaning:"명백한",example:"The answer is obvious.",level:"intermediate"},
+  {word:"Opportunity",meaning:"기회",example:"Seize every opportunity.",level:"intermediate"},
+  {word:"Outcome",meaning:"결과",example:"Focus on the outcome.",level:"intermediate"},
+  {word:"Overcome",meaning:"극복하다",example:"Overcome your fears.",level:"intermediate"},
+  {word:"Participate",meaning:"참여하다",example:"Participate actively in class.",level:"intermediate"},
+  {word:"Perceive",meaning:"인식하다",example:"How do you perceive this issue?",level:"intermediate"},
+  {word:"Perform",meaning:"수행하다",example:"Perform at your best.",level:"intermediate"},
+  {word:"Persist",meaning:"지속하다",example:"Persist despite the difficulties.",level:"intermediate"},
+  {word:"Potential",meaning:"잠재력",example:"Realize your full potential.",level:"intermediate"},
+  {word:"Precise",meaning:"정밀한",example:"Be precise in your wording.",level:"intermediate"},
+  {word:"Priority",meaning:"우선순위",example:"Set your priorities straight.",level:"intermediate"},
+  {word:"Process",meaning:"과정, 처리하다",example:"Follow the correct process.",level:"intermediate"},
+  {word:"Productive",meaning:"생산적인",example:"Have a productive day.",level:"intermediate"},
+  {word:"Progress",meaning:"진전",example:"Track your progress weekly.",level:"intermediate"},
+  {word:"Promote",meaning:"촉진하다, 홍보하다",example:"Promote a healthy culture.",level:"intermediate"},
+  {word:"Propose",meaning:"제안하다",example:"Propose a new idea.",level:"intermediate"},
+  {word:"Pursue",meaning:"추구하다",example:"Pursue your passion.",level:"intermediate"},
+  {word:"Recognize",meaning:"인식하다, 인정하다",example:"Recognize your own strengths.",level:"intermediate"},
+  {word:"Recommend",meaning:"추천하다",example:"I recommend this book.",level:"intermediate"},
+  {word:"Reflect",meaning:"반영하다, 성찰하다",example:"Reflect on your day each evening.",level:"intermediate"},
+  {word:"Relevant",meaning:"관련 있는",example:"Only include relevant information.",level:"intermediate"},
+  {word:"Reliable",meaning:"믿을 수 있는",example:"Be a reliable team member.",level:"intermediate"},
+  {word:"Require",meaning:"요구하다",example:"This job requires patience.",level:"intermediate"},
+  {word:"Resolve",meaning:"해결하다",example:"Resolve conflicts peacefully.",level:"intermediate"},
+  {word:"Resource",meaning:"자원",example:"Use resources efficiently.",level:"intermediate"},
+  {word:"Respond",meaning:"반응하다",example:"Respond to emails promptly.",level:"intermediate"},
+  {word:"Reveal",meaning:"드러내다",example:"The data reveals a trend.",level:"intermediate"},
+  {word:"Review",meaning:"검토하다",example:"Review your notes before the test.",level:"intermediate"},
+  {word:"Significant",meaning:"중요한, 상당한",example:"A significant improvement was made.",level:"intermediate"},
+  {word:"Simplify",meaning:"단순화하다",example:"Simplify your message.",level:"intermediate"},
+  {word:"Situation",meaning:"상황",example:"Assess the situation calmly.",level:"intermediate"},
+  {word:"Skill",meaning:"기술",example:"Build your skills every day.",level:"intermediate"},
+  {word:"Solution",meaning:"해결책",example:"Find a lasting solution.",level:"intermediate"},
+  {word:"Strategy",meaning:"전략",example:"Develop a clear strategy.",level:"intermediate"},
+  {word:"Strengthen",meaning:"강화하다",example:"Strengthen your weak points.",level:"intermediate"},
+  {word:"Structure",meaning:"구조",example:"Give your essay a clear structure.",level:"intermediate"},
+  {word:"Substantial",meaning:"상당한",example:"There was a substantial improvement.",level:"intermediate"},
+  {word:"Succeed",meaning:"성공하다",example:"Succeed through persistence.",level:"intermediate"},
+  {word:"Suggest",meaning:"제안하다",example:"Suggest a better way.",level:"intermediate"},
+  {word:"Summarize",meaning:"요약하다",example:"Summarize the main points.",level:"intermediate"},
+  {word:"Sustain",meaning:"유지하다",example:"Sustain your efforts over time.",level:"intermediate"},
+  {word:"Target",meaning:"목표로 하다",example:"Target the right audience.",level:"intermediate"},
+  {word:"Thorough",meaning:"철저한",example:"Do a thorough review.",level:"intermediate"},
+  {word:"Transfer",meaning:"이전하다",example:"Transfer your knowledge to others.",level:"intermediate"},
+  {word:"Transform",meaning:"변환하다",example:"Transform your habits.",level:"intermediate"},
+  {word:"Unique",meaning:"독특한",example:"Everyone has a unique talent.",level:"intermediate"},
+  {word:"Update",meaning:"업데이트하다",example:"Update your skills regularly.",level:"intermediate"},
+  {word:"Utilize",meaning:"활용하다",example:"Utilize available resources.",level:"intermediate"},
+  {word:"Vision",meaning:"비전",example:"Have a clear vision.",level:"intermediate"},
+  {word:"Vital",meaning:"필수적인, 중요한",example:"Sleep is vital for health.",level:"intermediate"},
+  {word:"Volunteer",meaning:"자원하다",example:"Volunteer in your community.",level:"intermediate"},
+  {word:"Vulnerable",meaning:"취약한",example:"We all feel vulnerable at times.",level:"intermediate"},
+  {word:"Widespread",meaning:"광범위한",example:"The trend is widespread.",level:"intermediate"},
+  {word:"Willing",meaning:"기꺼이 하는",example:"Be willing to learn.",level:"intermediate"},
+  {word:"Accomplish",meaning:"성취하다",example:"Accomplish what you set out to do.",level:"intermediate"},
+  {word:"Abstract",meaning:"추상적인",example:"Abstract thinking is a skill.",level:"intermediate"},
+  {word:"Accumulate",meaning:"축적하다",example:"Accumulate experience over time.",level:"intermediate"},
+  {word:"Aspire",meaning:"열망하다",example:"Aspire to greatness.",level:"intermediate"},
+  {word:"Attribute",meaning:"특성, ~의 탓으로 돌리다",example:"Attribute success to hard work.",level:"intermediate"},
+  {word:"Bolster",meaning:"강화하다",example:"Bolster your confidence.",level:"intermediate"},
+  {word:"Capable",meaning:"유능한",example:"You are capable of more.",level:"intermediate"},
+  {word:"Clarify",meaning:"명확히 하다",example:"Clarify your goals.",level:"intermediate"},
+  {word:"Coherent",meaning:"일관성 있는",example:"Write a coherent argument.",level:"intermediate"},
+  {word:"Competence",meaning:"능력",example:"Demonstrate your competence.",level:"intermediate"},
+  {word:"Complex",meaning:"복잡한",example:"The issue is complex.",level:"intermediate"},
+  {word:"Comprehensive",meaning:"포괄적인",example:"Write a comprehensive report.",level:"intermediate"},
+  {word:"Constraint",meaning:"제약",example:"Work within the constraints.",level:"intermediate"},
+  {word:"Context",meaning:"문맥, 맥락",example:"Understand the context first.",level:"intermediate"},
+  {word:"Contrast",meaning:"대조하다",example:"Contrast the two approaches.",level:"intermediate"},
+  {word:"Convey",meaning:"전달하다",example:"Convey your message clearly.",level:"intermediate"},
+  {word:"Credible",meaning:"신뢰할 수 있는",example:"Be a credible source.",level:"intermediate"},
+  {word:"Cultivate",meaning:"계발하다",example:"Cultivate meaningful relationships.",level:"intermediate"},
+  {word:"Cumulative",meaning:"누적적인",example:"Progress is cumulative.",level:"intermediate"},
+  {word:"Deliberate",meaning:"의도적인",example:"Make deliberate choices.",level:"intermediate"},
+  {word:"Diligence",meaning:"근면",example:"Diligence leads to mastery.",level:"intermediate"},
+  {word:"Dynamic",meaning:"역동적인",example:"The market is dynamic.",level:"intermediate"},
+  {word:"Elaborate",meaning:"자세히 설명하다",example:"Please elaborate on that point.",level:"intermediate"},
+  {word:"Emphasize",meaning:"강조하다",example:"Emphasize the key message.",level:"intermediate"},
+  {word:"Empower",meaning:"권한을 부여하다",example:"Empower your team.",level:"intermediate"},
+  {word:"Endurance",meaning:"인내",example:"Endurance is a virtue.",level:"intermediate"},
+  {word:"Enforce",meaning:"강요하다, 시행하다",example:"Enforce the rules fairly.",level:"intermediate"},
+  {word:"Engage",meaning:"참여하다",example:"Engage with your audience.",level:"intermediate"},
+  {word:"Exemplify",meaning:"예시가 되다",example:"Exemplify the values you promote.",level:"intermediate"},
+  {word:"Explicit",meaning:"명시적인",example:"Be explicit about your expectations.",level:"intermediate"},
+  {word:"Expose",meaning:"노출하다",example:"Expose yourself to different cultures.",level:"intermediate"},
+  {word:"Extract",meaning:"추출하다",example:"Extract the key information.",level:"intermediate"},
+  {word:"Flexible",meaning:"유연한",example:"A flexible schedule helps.",level:"intermediate"},
+  {word:"Formulate",meaning:"공식화하다",example:"Formulate a clear hypothesis.",level:"intermediate"},
+  {word:"Function",meaning:"기능하다",example:"The team functions well.",level:"intermediate"},
+  {word:"Fundamental",meaning:"근본적인",example:"Trust is fundamental in relationships.",level:"intermediate"},
+  {word:"Generosity",meaning:"관대함",example:"Show generosity to others.",level:"intermediate"},
+  {word:"Genuine",meaning:"진정한",example:"Be genuine in your intentions.",level:"intermediate"},
+  {word:"Implement",meaning:"실행하다",example:"Implement the feedback you receive.",level:"intermediate"},
+  {word:"Insight",meaning:"통찰력",example:"Share your insights with the group.",level:"intermediate"},
+  {word:"Inspire",meaning:"영감을 주다",example:"Inspire others by your actions.",level:"intermediate"},
+  {word:"Integrity",meaning:"성실, 청렴",example:"Act with integrity.",level:"intermediate"},
+  {word:"Intellectual",meaning:"지적인",example:"He has intellectual curiosity.",level:"intermediate"},
+  {word:"Intentional",meaning:"의도적인",example:"Be intentional with your time.",level:"intermediate"},
+  {word:"Interconnect",meaning:"상호 연결하다",example:"Ideas interconnect in complex ways.",level:"intermediate"},
+  {word:"Leverage",meaning:"활용하다",example:"Leverage your strengths.",level:"intermediate"},
+  {word:"Logical",meaning:"논리적인",example:"Present a logical argument.",level:"intermediate"},
+  {word:"Mindful",meaning:"주의 깊은",example:"Be mindful of your words.",level:"intermediate"},
+  {word:"Modify",meaning:"수정하다",example:"Modify the plan as needed.",level:"intermediate"},
+  {word:"Motivate",meaning:"동기를 부여하다",example:"Motivate your team daily.",level:"intermediate"},
+  {word:"Navigate",meaning:"탐색하다",example:"Navigate through difficulties.",level:"intermediate"},
+  {word:"Negotiate",meaning:"협상하다",example:"Negotiate for the best outcome.",level:"intermediate"},
+  {word:"Network",meaning:"인맥, 네트워크",example:"Build a strong network.",level:"intermediate"},
+  {word:"Nurture",meaning:"양육하다, 기르다",example:"Nurture your talents.",level:"intermediate"},
+  {word:"Optimistic",meaning:"낙관적인",example:"Stay optimistic during hard times.",level:"intermediate"},
+  {word:"Originate",meaning:"비롯되다",example:"The idea originated in Japan.",level:"intermediate"},
+  {word:"Overcome",meaning:"극복하다",example:"Overcome fear through action.",level:"intermediate"},
+  {word:"Passion",meaning:"열정",example:"Pursue your passion daily.",level:"intermediate"},
+  {word:"Persevere",meaning:"인내하다",example:"Persevere through obstacles.",level:"intermediate"},
+  {word:"Prioritize",meaning:"우선순위를 정하다",example:"Prioritize your health.",level:"intermediate"},
+  {word:"Proactive",meaning:"능동적인",example:"Be proactive, not reactive.",level:"intermediate"},
+  {word:"Rational",meaning:"합리적인",example:"Make rational decisions.",level:"intermediate"},
+  {word:"Realistic",meaning:"현실적인",example:"Set realistic goals.",level:"intermediate"},
+  {word:"Refine",meaning:"다듬다",example:"Refine your ideas before sharing.",level:"intermediate"},
+  {word:"Reinforce",meaning:"강화하다",example:"Reinforce positive habits.",level:"intermediate"},
+  {word:"Resilience",meaning:"회복력",example:"Build emotional resilience.",level:"intermediate"},
+  {word:"Resourceful",meaning:"재치 있는",example:"Be resourceful in tight situations.",level:"intermediate"},
+  {word:"Responsible",meaning:"책임감 있는",example:"Be responsible for your actions.",level:"intermediate"},
+  {word:"Stimulate",meaning:"자극하다",example:"Stimulate creative thinking.",level:"intermediate"},
+  {word:"Systematic",meaning:"체계적인",example:"Use a systematic approach.",level:"intermediate"},
+  {word:"Transparent",meaning:"투명한",example:"Be transparent in communication.",level:"intermediate"},
+  {word:"Versatile",meaning:"다재다능한",example:"A versatile skill set is valuable.",level:"intermediate"},
+  {word:"Vision",meaning:"비전",example:"Lead with a clear vision.",level:"intermediate"},
+  // ── ADVANCED (100) ──
+  {word:"Acumen",meaning:"예리함, 통찰력",example:"She has great business acumen.",level:"advanced"},
+  {word:"Adept",meaning:"능숙한",example:"He is adept at solving problems.",level:"advanced"},
+  {word:"Adversity",meaning:"역경",example:"She thrived in the face of adversity.",level:"advanced"},
+  {word:"Aesthetic",meaning:"미적인",example:"The design has great aesthetic value.",level:"advanced"},
+  {word:"Affinity",meaning:"친밀감, 친화력",example:"She has an affinity for languages.",level:"advanced"},
+  {word:"Alleviate",meaning:"완화하다",example:"Exercise can alleviate stress.",level:"advanced"},
+  {word:"Allude",meaning:"암시하다",example:"He alluded to the problem.",level:"advanced"},
+  {word:"Ambivalent",meaning:"양면적인",example:"She felt ambivalent about the move.",level:"advanced"},
+  {word:"Ameliorate",meaning:"개선하다",example:"Steps were taken to ameliorate conditions.",level:"advanced"},
+  {word:"Anomaly",meaning:"이상 현상",example:"The result was an anomaly.",level:"advanced"},
+  {word:"Antithesis",meaning:"정반대",example:"Her style is the antithesis of simplicity.",level:"advanced"},
+  {word:"Apprehensive",meaning:"불안한",example:"He was apprehensive about the results.",level:"advanced"},
+  {word:"Archaic",meaning:"고풍스러운",example:"The law is archaic and outdated.",level:"advanced"},
+  {word:"Arduous",meaning:"힘든",example:"The climb was arduous.",level:"advanced"},
+  {word:"Articulate",meaning:"명확히 표현하다",example:"She articulated her ideas well.",level:"advanced"},
+  {word:"Astute",meaning:"기민한",example:"An astute investor sees opportunity.",level:"advanced"},
+  {word:"Audacious",meaning:"대담한",example:"It was an audacious plan.",level:"advanced"},
+  {word:"Augment",meaning:"보강하다",example:"Augment your income with freelancing.",level:"advanced"},
+  {word:"Aversion",meaning:"혐오, 반감",example:"She has an aversion to conflict.",level:"advanced"},
+  {word:"Benign",meaning:"양성의, 온화한",example:"The tumor was benign.",level:"advanced"},
+  {word:"Candor",meaning:"솔직함",example:"He spoke with great candor.",level:"advanced"},
+  {word:"Catalyst",meaning:"촉매, 계기",example:"Her speech was a catalyst for change.",level:"advanced"},
+  {word:"Circumspect",meaning:"신중한",example:"Be circumspect in your decisions.",level:"advanced"},
+  {word:"Cogent",meaning:"설득력 있는",example:"She made a cogent argument.",level:"advanced"},
+  {word:"Colossal",meaning:"거대한",example:"They made a colossal mistake.",level:"advanced"},
+  {word:"Complacent",meaning:"자기만족적인",example:"Don't become complacent.",level:"advanced"},
+  {word:"Convoluted",meaning:"복잡한",example:"The explanation was convoluted.",level:"advanced"},
+  {word:"Conviction",meaning:"확신",example:"She spoke with deep conviction.",level:"advanced"},
+  {word:"Daunting",meaning:"위협적인",example:"The task seemed daunting at first.",level:"advanced"},
+  {word:"Debilitate",meaning:"약화시키다",example:"Illness debilitated his performance.",level:"advanced"},
+  {word:"Defer",meaning:"미루다, 따르다",example:"Defer to the expert's judgment.",level:"advanced"},
+  {word:"Deliberation",meaning:"숙고",example:"After deliberation, she decided.",level:"advanced"},
+  {word:"Deplete",meaning:"고갈시키다",example:"Stress depletes your energy.",level:"advanced"},
+  {word:"Discern",meaning:"분별하다",example:"Discern truth from fiction.",level:"advanced"},
+  {word:"Disparity",meaning:"격차",example:"Address the income disparity.",level:"advanced"},
+  {word:"Eloquence",meaning:"웅변",example:"His eloquence moved the crowd.",level:"advanced"},
+  {word:"Elusive",meaning:"파악하기 어려운",example:"Success can be elusive.",level:"advanced"},
+  {word:"Embody",meaning:"구현하다",example:"She embodies grace and strength.",level:"advanced"},
+  {word:"Empirical",meaning:"경험적인",example:"Rely on empirical evidence.",level:"advanced"},
+  {word:"Endeavor",meaning:"노력하다",example:"We will endeavor to improve.",level:"advanced"},
+  {word:"Enigmatic",meaning:"불가사의한",example:"She has an enigmatic personality.",level:"advanced"},
+  {word:"Eradicate",meaning:"근절하다",example:"Eradicate bad habits.",level:"advanced"},
+  {word:"Exemplary",meaning:"모범적인",example:"His work is exemplary.",level:"advanced"},
+  {word:"Exhilarating",meaning:"신나는",example:"The experience was exhilarating.",level:"advanced"},
+  {word:"Exploit",meaning:"활용하다, 착취하다",example:"Exploit every opportunity wisely.",level:"advanced"},
+  {word:"Fortitude",meaning:"불굴의 의지",example:"Face hardship with fortitude.",level:"advanced"},
+  {word:"Formidable",meaning:"강력한",example:"She is a formidable opponent.",level:"advanced"},
+  {word:"Frugal",meaning:"검소한",example:"A frugal lifestyle builds wealth.",level:"advanced"},
+  {word:"Gratuitous",meaning:"불필요한",example:"Avoid gratuitous criticism.",level:"advanced"},
+  {word:"Hubris",meaning:"오만",example:"His hubris led to his downfall.",level:"advanced"},
+  {word:"Hypothetical",meaning:"가상의",example:"Consider this hypothetical scenario.",level:"advanced"},
+  {word:"Immutable",meaning:"불변의",example:"Some laws are immutable.",level:"advanced"},
+  {word:"Imperative",meaning:"필수적인",example:"It is imperative to act now.",level:"advanced"},
+  {word:"Implicit",meaning:"암묵적인",example:"There was implicit agreement.",level:"advanced"},
+  {word:"Incisive",meaning:"예리한",example:"She gave an incisive analysis.",level:"advanced"},
+  {word:"Indispensable",meaning:"없어서는 안 될",example:"Trust is indispensable.",level:"advanced"},
+  {word:"Inherent",meaning:"내재된",example:"There is an inherent risk.",level:"advanced"},
+  {word:"Innovative",meaning:"혁신적인",example:"Seek innovative solutions.",level:"advanced"},
+  {word:"Insightful",meaning:"통찰력 있는",example:"Her feedback was very insightful.",level:"advanced"},
+  {word:"Intrinsic",meaning:"본질적인",example:"Find intrinsic motivation.",level:"advanced"},
+  {word:"Judicious",meaning:"현명한",example:"Make judicious choices.",level:"advanced"},
+  {word:"Juxtapose",meaning:"나란히 놓다",example:"Juxtapose the two arguments.",level:"advanced"},
+  {word:"Latent",meaning:"잠재적인",example:"Unlock your latent potential.",level:"advanced"},
+  {word:"Laudable",meaning:"칭찬할 만한",example:"Her dedication is laudable.",level:"advanced"},
+  {word:"Lucid",meaning:"명쾌한",example:"Give a lucid explanation.",level:"advanced"},
+  {word:"Meticulous",meaning:"꼼꼼한",example:"He was meticulous in his work.",level:"advanced"},
+  {word:"Mitigate",meaning:"완화하다",example:"Mitigate the risks early.",level:"advanced"},
+  {word:"Nuance",meaning:"뉘앙스",example:"Appreciate the nuance in language.",level:"advanced"},
+  {word:"Oblivious",meaning:"의식하지 못하는",example:"She was oblivious to the noise.",level:"advanced"},
+  {word:"Obsolete",meaning:"구식의",example:"The technology is now obsolete.",level:"advanced"},
+  {word:"Omnipotent",meaning:"전능한",example:"No one is omnipotent.",level:"advanced"},
+  {word:"Ostensible",meaning:"표면상의",example:"The ostensible reason was cost.",level:"advanced"},
+  {word:"Paradigm",meaning:"패러다임",example:"A paradigm shift is happening.",level:"advanced"},
+  {word:"Paradox",meaning:"역설",example:"It is a paradox of modern life.",level:"advanced"},
+  {word:"Paramount",meaning:"최고의",example:"Safety is paramount.",level:"advanced"},
+  {word:"Pervasive",meaning:"만연한",example:"Stress is pervasive in modern society.",level:"advanced"},
+  {word:"Phenomenon",meaning:"현상",example:"Social media is a global phenomenon.",level:"advanced"},
+  {word:"Ponder",meaning:"숙고하다",example:"Ponder the deeper meaning.",level:"advanced"},
+  {word:"Precarious",meaning:"불안정한",example:"The situation is precarious.",level:"advanced"},
+  {word:"Precedent",meaning:"선례",example:"Set a positive precedent.",level:"advanced"},
+  {word:"Profound",meaning:"심오한",example:"A profound insight changed her view.",level:"advanced"},
+  {word:"Prolific",meaning:"다작의",example:"She is a prolific writer.",level:"advanced"},
+  {word:"Propensity",meaning:"성향",example:"He has a propensity for risk.",level:"advanced"},
+  {word:"Prudent",meaning:"신중한",example:"A prudent decision saves trouble.",level:"advanced"},
+  {word:"Reconcile",meaning:"화해하다",example:"Reconcile your differences.",level:"advanced"},
+  {word:"Rhetoric",meaning:"수사학, 말솜씨",example:"Don't rely on empty rhetoric.",level:"advanced"},
+  {word:"Rigorous",meaning:"엄격한",example:"Apply rigorous standards.",level:"advanced"},
+  {word:"Scrutinize",meaning:"면밀히 조사하다",example:"Scrutinize the contract carefully.",level:"advanced"},
+  {word:"Skeptical",meaning:"회의적인",example:"Be skeptical of unverified claims.",level:"advanced"},
+  {word:"Steadfast",meaning:"확고한",example:"Remain steadfast in your goals.",level:"advanced"},
+  {word:"Subvert",meaning:"전복하다",example:"Don't subvert the team's efforts.",level:"advanced"},
+  {word:"Succinct",meaning:"간결한",example:"Give a succinct answer.",level:"advanced"},
+  {word:"Tenacity",meaning:"끈기",example:"Tenacity separates the best.",level:"advanced"},
+  {word:"Transcend",meaning:"초월하다",example:"Transcend your limitations.",level:"advanced"},
+  {word:"Ubiquitous",meaning:"어디에나 있는",example:"Smartphones are ubiquitous.",level:"advanced"},
+  {word:"Unprecedented",meaning:"전례 없는",example:"This is an unprecedented event.",level:"advanced"},
+  {word:"Validate",meaning:"검증하다",example:"Validate your assumptions.",level:"advanced"},
+  {word:"Vigilant",meaning:"경계하는",example:"Stay vigilant at all times.",level:"advanced"},
+  {word:"Visceral",meaning:"본능적인",example:"She had a visceral reaction.",level:"advanced"},
+  {word:"Volatile",meaning:"변동이 심한",example:"The market is volatile.",level:"advanced"},
+  {word:"Zeal",meaning:"열의",example:"She pursued it with great zeal.",level:"advanced"},
+];
+
+const LEVEL_KR={beginner:"초급",intermediate:"중급",advanced:"고급"};
+const DAILY=10;
+
+function getTodayKey(){return new Date().toISOString().split('T')[0];}
+function getDailyWords(date){
+  let h=0;
+  for(let i=0;i<date.length;i++) h=(h*31+date.charCodeAt(i))&0xffffffff;
+  const s=Math.abs(h)%WORDS.length;
+  return Array.from({length:DAILY},(_,i)=>WORDS[(s+i)%WORDS.length]);
+}
+
+let storage={};
+try{storage=JSON.parse(localStorage.getItem('vocabApp500')||'{}');}catch{}
+function save(){try{localStorage.setItem('vocabApp500',JSON.stringify(storage));}catch{}}
+
+const todayKey=getTodayKey();
+if(!storage[todayKey]) storage[todayKey]={learned:[],quiz:{}};
+const daily=getDailyWords(todayKey);
+
+let studyIdx=0,quizIdx=0,flipped=false,quizAnswered=false;
+
+// ── TTS ──
+let ttsSupported = 'speechSynthesis' in window;
+let currentUtterance = null;
+
+function speak(text, btnId, rate=0.85) {
+  if (!ttsSupported) { alert('이 브라우저는 음성 재생을 지원하지 않습니다.'); return; }
+  window.speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = 'en-US'; utter.rate = rate; utter.pitch = 1;
+  // prefer a natural English voice
+  const voices = window.speechSynthesis.getVoices();
+  const preferred = voices.find(v => v.lang.startsWith('en') && v.localService) ||
+                    voices.find(v => v.lang.startsWith('en')) || null;
+  if (preferred) utter.voice = preferred;
+  if (btnId) {
+    const btn = document.getElementById(btnId);
+    if (btn) btn.classList.add('speaking');
+    utter.onend = () => { if (btn) btn.classList.remove('speaking'); };
+    utter.onerror = () => { if (btn) btn.classList.remove('speaking'); };
+  }
+  currentUtterance = utter;
+  window.speechSynthesis.speak(utter);
+}
+
+function speakWord() { speak(daily[studyIdx].word, 'btn-speak-word', 0.8); }
+function speakExample() { speak(daily[studyIdx].example, 'btn-speak-ex', 0.85); }
+function speakQuizWord() { speak(daily[quizIdx].word, null, 0.8); }
+
+// voices load async on some browsers
+window.speechSynthesis.onvoiceschanged = () => {};
+
+function renderStudy(){
+  const w=daily[studyIdx];
+  const learnedSet=new Set(storage[todayKey].learned||[]);
+  const pct=Math.round(learnedSet.size/DAILY*100);
+  document.getElementById('prog-fill').style.width=pct+'%';
+  document.getElementById('prog-text').textContent=learnedSet.size+'/'+DAILY+' 완료';
+  document.getElementById('today-label').textContent=todayKey+' 오늘의 단어 '+DAILY+'개 (총 '+WORDS.length+'개)';
+  const allDone=daily.every(ww=>learnedSet.has(ww.word));
+  document.getElementById('done-banner').style.display=allDone?'block':'none';
+  const dotsEl=document.getElementById('study-dots');
+  dotsEl.innerHTML=daily.map((ww,i)=>
+    `<div class="dot ${learnedSet.has(ww.word)?'learned':''} ${i===studyIdx&&!learnedSet.has(ww.word)?'active':''}" onclick="jumpStudy(${i})"></div>`
+  ).join('');
+  const badge=document.getElementById('s-badge');
+  badge.textContent=LEVEL_KR[w.level];badge.className='badge '+w.level;
+  document.getElementById('s-word').textContent=w.word;
+  document.getElementById('s-meaning').textContent=w.meaning;
+  document.getElementById('s-example').textContent='"'+w.example+'"';
+  const back=document.getElementById('s-back'),hint=document.getElementById('s-hint');
+  if(flipped){back.style.display='block';hint.style.display='none';}
+  else{back.style.display='none';hint.style.display='block';}
+  const btn=document.getElementById('btn-learned');
+  if(learnedSet.has(w.word)){
+    btn.textContent='다음 →';btn.className='btn btn-primary';
+    btn.onclick=()=>{if(studyIdx<DAILY-1){studyIdx++;flipped=false;renderStudy();}};
+  }else{
+    btn.textContent='✓ 외웠어요!';btn.className='btn btn-success';btn.onclick=markLearned;
+  }
+}
+
+function renderQuiz(){
+  const w=daily[quizIdx];
+  const qData=storage[todayKey].quiz||{};
+  const dotsEl=document.getElementById('quiz-dots');
+  dotsEl.innerHTML=daily.map((ww,i)=>{
+    const r=qData[ww.word];let cls=i===quizIdx?'active':'';
+    if(r===true)cls='correct';if(r===false)cls='wrong';
+    return `<div class="dot ${cls}" onclick="jumpQuiz(${i})"></div>`;
+  }).join('');
+  const badge=document.getElementById('q-badge');
+  badge.textContent=LEVEL_KR[w.level];badge.className='badge '+w.level;
+  document.getElementById('q-word').textContent=w.word;
+  const wrong=WORDS.filter(x=>x.word!==w.word).sort(()=>Math.random()-.5).slice(0,3).map(x=>x.meaning);
+  const opts=[...wrong,w.meaning].sort(()=>Math.random()-.5);
+  quizAnswered=false;
+  document.getElementById('quiz-result').textContent='';
+  document.getElementById('quiz-options').innerHTML=opts.map((o,i)=>
+    `<button class="quiz-opt" onclick="answerQuiz(this,'${o.replace(/'/g,"\\'")}','${w.meaning.replace(/'/g,"\\'")}')">${String.fromCharCode(65+i)}. ${o}</button>`
+  ).join('');
+}
+
+function renderStats(){
+  const allDays=Object.keys(storage).sort().reverse().slice(0,7);
+  let totL=0,totC=0,totQ=0;
+  Object.values(storage).forEach(d=>{
+    totL+=(d.learned||[]).length;
+    const qs=Object.values(d.quiz||{});
+    totC+=qs.filter(Boolean).length;totQ+=qs.length;
+  });
+  document.getElementById('st-total').textContent=totL;
+  document.getElementById('st-acc').textContent=totQ>0?Math.round(totC/totQ*100)+'%':'—';
+  document.getElementById('st-days').textContent=Object.keys(storage).length;
+  const list=document.getElementById('history-list');
+  if(!allDays.length){list.innerHTML='<div class="empty">아직 학습 기록이 없어요</div>';return;}
+  list.innerHTML=allDays.map(day=>{
+    const d=storage[day];
+    const qc=Object.values(d.quiz||{}).length;
+    const cc=Object.values(d.quiz||{}).filter(Boolean).length;
+    const isToday=day===todayKey;
+    return `<div class="history-row">
+      <span class="history-date ${isToday?'today':''}">${day}${isToday?' (오늘)':''}</span>
+      <span class="history-info">단어 ${(d.learned||[]).length}개 · 퀴즈 ${qc>0?cc+'/'+qc:'—'}</span>
+    </div>`;
+  }).join('');
+}
+
+function flipCard(){flipped=!flipped;renderStudy();}
+function markLearned(){
+  const w=daily[studyIdx];
+  const learned=storage[todayKey].learned||[];
+  if(!learned.includes(w.word)){storage[todayKey].learned=[...learned,w.word];save();}
+  flipped=false;if(studyIdx<DAILY-1)studyIdx++;renderStudy();
+}
+function jumpStudy(i){studyIdx=i;flipped=false;renderStudy();}
+function jumpQuiz(i){quizIdx=i;renderQuiz();}
+function prevCard(v){
+  if(v==='study'){if(studyIdx>0){studyIdx--;flipped=false;renderStudy();}}
+  else{if(quizIdx>0){quizIdx--;renderQuiz();}}
+}
+function nextCard(v){if(v==='quiz'){if(quizIdx<DAILY-1){quizIdx++;renderQuiz();}}}
+function answerQuiz(el,opt,correct){
+  if(quizAnswered)return;quizAnswered=true;
+  const w=daily[quizIdx];
+  const isCorrect=opt===correct;
+  storage[todayKey].quiz={...(storage[todayKey].quiz||{}),[w.word]:isCorrect};save();
+  document.querySelectorAll('.quiz-opt').forEach(b=>{
+    b.classList.add('disabled');
+    const txt=b.textContent.slice(3);
+    if(txt===correct)b.classList.add('correct');
+    else if(txt===opt&&!isCorrect)b.classList.add('wrong');
+  });
+  const res=document.getElementById('quiz-result');
+  res.textContent=isCorrect?'✓ 정답!':'✗ 오답 — 정답: '+correct;
+  res.className='quiz-result '+(isCorrect?'ok':'ng');
+  const qData=storage[todayKey].quiz||{};
+  document.getElementById('quiz-dots').innerHTML=daily.map((ww,i)=>{
+    const r=qData[ww.word];let cls=i===quizIdx?'active':'';
+    if(r===true)cls='correct';if(r===false)cls='wrong';
+    return `<div class="dot ${cls}" onclick="jumpQuiz(${i})"></div>`;
+  }).join('');
+}
+function resetData(){
+  if(confirm('모든 학습 기록을 삭제할까요?')){
+    storage={};save();storage[todayKey]={learned:[],quiz:{}};renderStats();
+  }
+}
+function switchView(v){
+  document.querySelectorAll('.view').forEach(el=>el.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(el=>el.classList.remove('active'));
+  document.getElementById('view-'+v).classList.add('active');
+  document.querySelectorAll('.tab')[['study','quiz','stats'].indexOf(v)].classList.add('active');
+  if(v==='study')renderStudy();
+  else if(v==='quiz')renderQuiz();
+  else renderStats();
+}
+
+// PWA manifest
+const manifest={
+  name:"단어 공부 500 - Word A Day",short_name:"단어500",
+  start_url:"./vocab-app-500.html",display:"standalone",
+  background_color:"#0f0c29",theme_color:"#1a1035",orientation:"portrait",
+  icons:[{src:"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='40' fill='%23302b63'/%3E%3Ctext x='96' y='130' font-size='100' text-anchor='middle'%3E📖%3C/text%3E%3C/svg%3E",sizes:"192x192",type:"image/svg+xml"}]
+};
+const blob=new Blob([JSON.stringify(manifest)],{type:'application/json'});
+document.getElementById('manifest-placeholder').setAttribute('href',URL.createObjectURL(blob));
+
+setTimeout(()=>{
+  if(window.matchMedia('(display-mode: standalone)').matches)return;
+  if(!localStorage.getItem('installHint500')){
+    document.getElementById('install-banner').style.display='flex';
+    localStorage.setItem('installHint500','1');
+  }
+},3000);
+
+renderStudy();
+</script>
+</body>
+</html>
