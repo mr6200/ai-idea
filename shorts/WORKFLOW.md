@@ -1,7 +1,12 @@
 # 지식 쇼츠 제작 순서 (복리의 마법 기준)
 
 이 문서는 다른 세션에서 같은 방식으로 이어서 작업하기 위한 정리입니다.
-저장소: `mr6200/ai-idea` · 브랜치: `claude/effectcraft-connection-check-4lj9ht` · 작업 폴더: `shorts/`
+저장소: `mr6200/ai-idea` · 브랜치: `claude/shorts-workflow-hyy56a` · 작업 폴더: `shorts/`
+
+| 편 | 폴더 | 상태 |
+|---|---|---|
+| 1. 복리의 마법 | `shorts/` (루트에 바로 있음) | 완성 |
+| 2. 72의 법칙 | `shorts/rule-of-72/` | 완성 |
 
 ## 0. 환경 준비
 
@@ -82,10 +87,19 @@
 | 와이프가 늦게 시작 | 전체 화면 기준이라 생기는 문제 → 부품 bbox로 진행률 보정 |
 | 자막이 장면 하단 요소와 겹침 | 자막 y=1480으로 내리고 겹치는 요소를 위로 |
 | TTS가 "3,600만"을 "삼 육백만"으로 읽음 | 숫자를 한글로 바꿔서 TTS에 전달 |
+| "1, 2, 3"처럼 나열한 숫자를 붙여 읽음 (2편) | 숫자 정규식에서 쉼표를 천 단위(`1,000`)일 때만 숫자로 취급 |
+| Python에 playwright 없음 (2편) | 콘티 PNG는 Node의 playwright로 스크린샷 (`gen_storyboard.py`) |
 | 큰 파일 Drive 업로드 불가 | GitHub 링크 메모. 근본 해결은 Drive API 인증 정보 등록 |
 
 ## 다음 쇼츠를 만들 때
 
-1. 새 주제로 대본·콘티 작성 (1단계)
-2. `gen_scenes.py`의 장면 정의와 `timeline.py`의 S01–S03·자막 큐를 새 내용으로 교체
-3. `build_all.sh --render` → 프레임 시트로 확인 → 썸네일·메타데이터 → Drive 업로드
+2편부터는 **편마다 폴더를 따로** 둡니다 (1편 빌드를 덮어쓰지 않도록).
+`shorts/rule-of-72/`가 가장 깔끔한 틀입니다. 18장면 모두 `gen_scenes.py` 코드로 그리고, 콘티도 장면 그림에서 자동으로 만듭니다.
+
+1. `shorts/rule-of-72/`를 새 폴더로 복사 (`build/svg`, `build/parts`, `scenes`, `video`, `tts`는 빼고)
+2. 새 주제로 `script.md` 작성 — 숫자는 파이썬으로 직접 계산해 검증표를 붙임
+3. `gen_scenes.py`의 `LABEL`과 S01–S18 정의, `timeline.py`의 `CUES`를 새 내용으로 교체
+4. `gen_narration.py`의 `SPOKEN` (화면 글자 → 읽는 말), `gen_audio.py`의 `COIN_PARTS`와 수동 효과음 시각,
+   `gen_effectcraft.py`의 장면별 카운터와 상단 고지 문구를 새 내용에 맞춤
+5. `build_all.sh`의 프로젝트·영상 파일 이름 변경 후 `build_all.sh --render`
+6. 장면 PNG 시트 → Main 프레임 시트로 겹침 확인 → 썸네일·메타데이터 → Drive 업로드(편마다 새 폴더)
