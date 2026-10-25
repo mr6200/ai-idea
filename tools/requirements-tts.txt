@@ -1,3 +1,5 @@
+# Google 엔진의 ADC 인증용.
+google-auth[requests]>=2
 # 로컬(오프라인) 엔진용. sherpa-onnx 2.x는 한국어 espeak 발음 변환이 빠져 있어 1.x로 고정.
 sherpa-onnx>=1.12,<2
 soundfile

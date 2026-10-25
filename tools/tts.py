@@ -6,9 +6,18 @@
 맞출 수 있도록 각 줄의 시작/끝 시간을 timings.json에 남긴다.
 
 엔진
-  google : Google Cloud Text-to-Speech. 환경변수 GOOGLE_TTS_API_KEY 필요.
+  google : Google Cloud Text-to-Speech. 아래 인증 중 하나가 필요.
   local  : sherpa-onnx 오프라인 한국어 모델(품질 낮음, 파이프라인 확인용).
-  auto   : 키가 있으면 google, 없으면 local (기본값).
+  auto   : Google 인증이 있으면 google, 없으면 local (기본값).
+
+Google 인증 (위에서부터 먼저 찾은 것을 쓴다)
+  GOOGLE_TTS_API_KEY             API 키
+  GOOGLE_ADC_JSON                ADC JSON 내용 자체 (authorized_user 또는 service_account).
+                                 `gcloud auth application-default login`이 만든
+                                 application_default_credentials.json을 그대로 넣으면 된다.
+  GOOGLE_APPLICATION_CREDENTIALS ADC JSON 파일 경로, 또는 gcloud 기본 ADC 파일
+  GOOGLE_CLOUD_PROJECT           과금·할당량 프로젝트 ID. ADC JSON에 quota_project_id가
+                                 없을 때 필요.
 
 예시
   python3 tools/tts.py script.txt -o out/voice
@@ -31,9 +40,59 @@ LOCAL_MODEL_URL = (
     f"{LOCAL_MODEL}.tar.bz2"
 )
 SAMPLE_RATE = 24000
+SCOPES = ["https://www.googleapis.com/auth/cloud-platform"]
 
 
-def google_tts(text, out_wav, voice, rate, pitch, key):
+class GoogleAuth:
+    """API 키 또는 ADC로 요청 URL과 헤더를 만든다."""
+
+    def __init__(self, key=None, creds=None, project=None):
+        self.key, self.creds, self.project = key, creds, project
+
+    @classmethod
+    def from_env(cls):
+        if key := os.environ.get("GOOGLE_TTS_API_KEY"):
+            return cls(key=key)
+        try:
+            import google.auth
+            from google.auth.exceptions import DefaultCredentialsError
+        except ImportError:
+            return None
+        project = os.environ.get("GOOGLE_CLOUD_PROJECT")
+        if raw := os.environ.get("GOOGLE_ADC_JSON"):
+            creds, _ = google.auth.load_credentials_from_dict(json.loads(raw), scopes=SCOPES)
+        else:
+            try:
+                creds, default_project = google.auth.default(scopes=SCOPES)
+            except DefaultCredentialsError:
+                return None
+            project = project or default_project
+        project = project or getattr(creds, "quota_project_id", None)
+        if not project:
+            sys.exit("ADC를 찾았지만 프로젝트를 알 수 없습니다. GOOGLE_CLOUD_PROJECT를 설정하세요.")
+        return cls(creds=creds, project=project)
+
+    def describe(self):
+        return "API 키" if self.key else f"ADC, 프로젝트 {self.project}"
+
+    def request(self, url):
+        headers = {"Content-Type": "application/json"}
+        if self.key:
+            return f"{url}?key={self.key}", headers
+        from google.auth.exceptions import RefreshError
+        from google.auth.transport.requests import Request
+
+        if not self.creds.valid:
+            try:
+                self.creds.refresh(Request())
+            except RefreshError as e:
+                sys.exit(f"ADC 토큰 갱신 실패 (다시 로그인해 ADC JSON을 새로 받아야 할 수 있음): {e}")
+        headers["Authorization"] = f"Bearer {self.creds.token}"
+        headers["x-goog-user-project"] = self.project
+        return url, headers
+
+
+def google_tts(text, out_wav, voice, rate, pitch, auth):
     body = {
         "input": {"text": text},
         "voice": {"languageCode": voice[:5], "name": voice},
@@ -46,11 +105,8 @@ def google_tts(text, out_wav, voice, rate, pitch, key):
     # Chirp3-HD 음성은 pitch를 받지 않는다.
     if "Chirp" not in voice:
         body["audioConfig"]["pitch"] = pitch
-    req = urllib.request.Request(
-        f"{GOOGLE_URL}?key={key}",
-        data=json.dumps(body).encode(),
-        headers={"Content-Type": "application/json"},
-    )
+    url, headers = auth.request(GOOGLE_URL)
+    req = urllib.request.Request(url, data=json.dumps(body).encode(), headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
             audio = base64.b64decode(json.load(r)["audioContent"])
@@ -128,13 +184,14 @@ def main():
     if not lines:
         sys.exit("대본에 읽을 줄이 없습니다.")
 
-    key = os.environ.get("GOOGLE_TTS_API_KEY")
+    auth = GoogleAuth.from_env() if args.engine != "local" else None
     engine = args.engine
     if engine == "auto":
-        engine = "google" if key else "local"
-    if engine == "google" and not key:
-        sys.exit("GOOGLE_TTS_API_KEY 환경변수가 없습니다.")
-    print(f"엔진: {engine}" + (f" ({args.voice})" if engine == "google" else ""))
+        engine = "google" if auth else "local"
+    if engine == "google" and not auth:
+        sys.exit("Google 인증이 없습니다. GOOGLE_TTS_API_KEY 또는 GOOGLE_ADC_JSON을 설정하세요.")
+    print(f"엔진: {engine}" +
+          (f" ({args.voice}, {auth.describe()})" if engine == "google" else ""))
 
     line_dir = args.out / "lines"
     line_dir.mkdir(parents=True, exist_ok=True)
@@ -154,7 +211,7 @@ def main():
         raw = line_dir / f"{i:03d}.raw.wav"
         wav = line_dir / f"{i:03d}.wav"
         if engine == "google":
-            google_tts(text, raw, args.voice, args.rate, args.pitch, key)
+            google_tts(text, raw, args.voice, args.rate, args.pitch, auth)
         else:
             local(text, raw)
         normalize(raw, wav)
