@@ -1,0 +1,1486 @@
+{
+ "duration": 150,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 4,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "label",
+     "anim": {
+      "type": "fade",
+      "at": 0.0
+     }
+    },
+    {
+     "name": "sparkles",
+     "anim": {
+      "type": "fade",
+      "at": 0.5
+     }
+    },
+    {
+     "name": "paper",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       745
+      ]
+     },
+     "idle": "bob"
+    },
+    {
+     "name": "callout",
+     "anim": {
+      "type": "pop",
+      "at": 0.9,
+      "anchor": [
+       862,
+       430
+      ]
+     }
+    },
+    {
+     "name": "cap1",
+     "anim": {
+      "type": "pop",
+      "at": 1.3,
+      "anchor": [
+       537,
+       1168
+      ]
+     }
+    },
+    {
+     "name": "cap2",
+     "anim": {
+      "type": "fade",
+      "at": 1.9
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 4,
+   "end": 9,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "label",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title1",
+     "anim": {
+      "type": "fade",
+      "at": 0.0
+     }
+    },
+    {
+     "name": "title2",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       541,
+       545
+      ]
+     }
+    },
+    {
+     "name": "stack",
+     "anim": {
+      "type": "growY",
+      "at": 0.4,
+      "anchor": [
+       310,
+       1180
+      ],
+      "dur": 4.0,
+      "ease": "accel"
+     }
+    },
+    {
+     "name": "arrow",
+     "anim": {
+      "type": "growY",
+      "at": 0.4,
+      "anchor": [
+       505,
+       1180
+      ],
+      "dur": 4.0,
+      "ease": "accel"
+     }
+    },
+    {
+     "name": "timeline",
+     "anim": {
+      "type": "wipeD",
+      "at": 0.6,
+      "dur": 3.4
+     }
+    },
+    {
+     "name": "row1",
+     "anim": {
+      "type": "slideR",
+      "at": 1.0
+     }
+    },
+    {
+     "name": "chak1",
+     "anim": {
+      "type": "pop",
+      "at": 1.0,
+      "anchor": [
+       218,
+       1336
+      ]
+     }
+    },
+    {
+     "name": "row2",
+     "anim": {
+      "type": "slideR",
+      "at": 2.0
+     }
+    },
+    {
+     "name": "chak2",
+     "anim": {
+      "type": "pop",
+      "at": 2.0,
+      "anchor": [
+       501,
+       1291
+      ]
+     }
+    },
+    {
+     "name": "row3",
+     "anim": {
+      "type": "slideR",
+      "at": 2.9
+     }
+    },
+    {
+     "name": "chak3",
+     "anim": {
+      "type": "pop",
+      "at": 2.9,
+      "anchor": [
+       822,
+       1330
+      ]
+     }
+    },
+    {
+     "name": "row4",
+     "anim": {
+      "type": "stamp",
+      "at": 3.8,
+      "anchor": [
+       700,
+       1142
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 9,
+   "end": 12,
+   "zoomOut": true,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "earth",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "column",
+     "anim": {
+      "type": "growY",
+      "at": 0.2,
+      "anchor": [
+       540,
+       1520
+      ],
+      "dur": 1.0,
+      "ease": "decel"
+     }
+    },
+    {
+     "name": "moon",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "dist",
+     "anim": {
+      "type": "pop",
+      "at": 1.25,
+      "anchor": [
+       775,
+       845
+      ]
+     }
+    },
+    {
+     "name": "caption",
+     "anim": {
+      "type": "stamp",
+      "at": 1.5,
+      "anchor": [
+       540,
+       1210
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 12,
+   "end": 20,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "divider",
+     "anim": {
+      "type": "wipeD",
+      "at": 0.0
+     }
+    },
+    {
+     "name": "title_l",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       270,
+       540
+      ]
+     }
+    },
+    {
+     "name": "title_r",
+     "anim": {
+      "type": "pop",
+      "at": 2.6,
+      "anchor": [
+       810,
+       540
+      ]
+     }
+    },
+    {
+     "name": "stack_l",
+     "anim": {
+      "type": "slideU",
+      "at": 0.8
+     }
+    },
+    {
+     "name": "stack_r",
+     "anim": {
+      "type": "slideU",
+      "at": 3.0
+     }
+    },
+    {
+     "name": "int_l",
+     "anim": {
+      "type": "pop",
+      "at": 1.6,
+      "anchor": [
+       270,
+       900
+      ]
+     }
+    },
+    {
+     "name": "int_r",
+     "anim": {
+      "type": "pop",
+      "at": 3.8,
+      "anchor": [
+       810,
+       900
+      ]
+     }
+    },
+    {
+     "name": "int_r2",
+     "anim": {
+      "type": "pop",
+      "at": 4.8,
+      "anchor": [
+       810,
+       760
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 20,
+   "end": 28,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "header",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       470
+      ]
+     }
+    },
+    {
+     "name": "labels",
+     "anim": {
+      "type": "fade",
+      "at": 0.8
+     }
+    },
+    {
+     "name": "plus_l",
+     "anim": {
+      "type": "pop",
+      "at": 1.6,
+      "anchor": [
+       270,
+       810
+      ]
+     }
+    },
+    {
+     "name": "plus_r",
+     "anim": {
+      "type": "pop",
+      "at": 2.0,
+      "anchor": [
+       810,
+       810
+      ]
+     }
+    },
+    {
+     "name": "coins",
+     "anim": {
+      "type": "drop",
+      "at": 2.6
+     }
+    },
+    {
+     "name": "shrug",
+     "anim": {
+      "type": "pop",
+      "at": 4.6,
+      "anchor": [
+       540,
+       1245
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 28,
+   "end": 35,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "header",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       430
+      ]
+     }
+    },
+    {
+     "name": "ref",
+     "anim": {
+      "type": "fade",
+      "at": 0.4
+     }
+    },
+    {
+     "name": "bar_l",
+     "anim": {
+      "type": "growY",
+      "at": 0.8,
+      "anchor": [
+       300,
+       1180
+      ],
+      "dur": 2.2,
+      "ease": "linear"
+     }
+    },
+    {
+     "name": "bar_r",
+     "anim": {
+      "type": "growY",
+      "at": 0.8,
+      "anchor": [
+       780,
+       1180
+      ],
+      "dur": 2.6,
+      "ease": "accel"
+     }
+    },
+    {
+     "name": "val_l",
+     "anim": {
+      "type": "pop",
+      "at": 3.1,
+      "anchor": [
+       300,
+       717.0
+      ]
+     }
+    },
+    {
+     "name": "val_r",
+     "anim": {
+      "type": "pop",
+      "at": 3.5,
+      "anchor": [
+       780,
+       647.2
+      ]
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "stamp",
+      "at": 4.3,
+      "anchor": [
+       540,
+       1330
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 35,
+   "end": 43,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       440
+      ]
+     }
+    },
+    {
+     "name": "num",
+     "anim": {
+      "type": "drop",
+      "at": 1.0
+     }
+    },
+    {
+     "name": "line",
+     "anim": {
+      "type": "wipeL",
+      "at": 2.2
+     }
+    },
+    {
+     "name": "denom",
+     "anim": {
+      "type": "pop",
+      "at": 2.8,
+      "anchor": [
+       540,
+       1020
+      ]
+     }
+    },
+    {
+     "name": "result",
+     "anim": {
+      "type": "pop",
+      "at": 4.4,
+      "anchor": [
+       540,
+       1250
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 43,
+   "end": 55,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "header",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       415
+      ]
+     }
+    },
+    {
+     "name": "sub",
+     "anim": {
+      "type": "fade",
+      "at": 0.6
+     }
+    },
+    {
+     "name": "b1",
+     "anim": {
+      "type": "pop",
+      "at": 2.0,
+      "anchor": [
+       200,
+       1148
+      ]
+     }
+    },
+    {
+     "name": "b2",
+     "anim": {
+      "type": "pop",
+      "at": 4.2,
+      "anchor": [
+       420,
+       1148
+      ]
+     }
+    },
+    {
+     "name": "b3",
+     "anim": {
+      "type": "pop",
+      "at": 6.4,
+      "anchor": [
+       640,
+       1148
+      ]
+     }
+    },
+    {
+     "name": "b4",
+     "anim": {
+      "type": "pop",
+      "at": 8.600000000000001,
+      "anchor": [
+       860,
+       1148
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 55,
+   "end": 63,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "charA",
+     "anim": {
+      "type": "slideL",
+      "at": 0.8
+     },
+     "idle": "bob"
+    },
+    {
+     "name": "charB",
+     "anim": {
+      "type": "slideR",
+      "at": 1.6
+     },
+     "idle": "bob"
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 4.0,
+      "anchor": [
+       540,
+       1305
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 63,
+   "end": 75,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       360
+      ]
+     }
+    },
+    {
+     "name": "charA",
+     "anim": {
+      "type": "pop",
+      "at": 0.6,
+      "anchor": [
+       300,
+       830
+      ]
+     }
+    },
+    {
+     "name": "barA",
+     "anim": {
+      "type": "wipeU",
+      "at": 1.0,
+      "dur": 2.5
+     }
+    },
+    {
+     "name": "stamp",
+     "anim": {
+      "type": "stamp",
+      "at": 3.8,
+      "anchor": [
+       300,
+       883
+      ]
+     }
+    },
+    {
+     "name": "totalA",
+     "anim": {
+      "type": "pop",
+      "at": 4.4,
+      "anchor": [
+       300,
+       1280
+      ]
+     }
+    },
+    {
+     "name": "barB",
+     "anim": {
+      "type": "wipeU",
+      "at": 5.8,
+      "dur": 4.0
+     }
+    },
+    {
+     "name": "totalB",
+     "anim": {
+      "type": "pop",
+      "at": 10.0,
+      "anchor": [
+       780,
+       1280
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "start": 75,
+   "end": 88,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       380
+      ]
+     }
+    },
+    {
+     "name": "curveA",
+     "anim": {
+      "type": "wipeL",
+      "at": 1.0,
+      "dur": 8.0,
+      "ease": "linear"
+     }
+    },
+    {
+     "name": "curveB",
+     "anim": {
+      "type": "wipeL",
+      "at": 1.0,
+      "dur": 8.0,
+      "ease": "linear"
+     }
+    },
+    {
+     "name": "endA",
+     "anim": {
+      "type": "pop",
+      "at": 9.0,
+      "anchor": [
+       950.0,
+       522.4559230848868
+      ]
+     }
+    },
+    {
+     "name": "endB",
+     "anim": {
+      "type": "pop",
+      "at": 9.2,
+      "anchor": [
+       950.0,
+       591.473671261779
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "start": 88,
+   "end": 95,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       415
+      ]
+     }
+    },
+    {
+     "name": "cardB",
+     "anim": {
+      "type": "slideR",
+      "at": 0.6
+     }
+    },
+    {
+     "name": "cardA",
+     "anim": {
+      "type": "pop",
+      "at": 2.4,
+      "anchor": [
+       540,
+       970
+      ]
+     }
+    },
+    {
+     "name": "confetti",
+     "anim": {
+      "type": "drop",
+      "at": 2.6
+     }
+    },
+    {
+     "name": "message",
+     "anim": {
+      "type": "pop",
+      "at": 4.2,
+      "anchor": [
+       540,
+       1270
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "start": 95,
+   "end": 105,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       395
+      ]
+     }
+    },
+    {
+     "name": "highlight",
+     "anim": {
+      "type": "fade",
+      "at": 4.0
+     }
+    },
+    {
+     "name": "curve",
+     "anim": {
+      "type": "wipeL",
+      "at": 0.8,
+      "dur": 4.5,
+      "ease": "linear"
+     }
+    },
+    {
+     "name": "caption",
+     "anim": {
+      "type": "pop",
+      "at": 5.4,
+      "anchor": [
+       540,
+       1320
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "start": 105,
+   "end": 115,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       450
+      ]
+     }
+    },
+    {
+     "name": "face",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       780
+      ]
+     }
+    },
+    {
+     "name": "hand_m",
+     "anim": {
+      "type": "spin",
+      "at": 0.4,
+      "anchor": [
+       540,
+       780
+      ],
+      "speed": 720
+     }
+    },
+    {
+     "name": "hand_h",
+     "anim": {
+      "type": "spin",
+      "at": 0.4,
+      "anchor": [
+       540,
+       780
+      ],
+      "speed": 60
+     }
+    },
+    {
+     "name": "curve",
+     "anim": {
+      "type": "wipeL",
+      "at": 3.0,
+      "dur": 5.0,
+      "ease": "linear"
+     }
+    },
+    {
+     "name": "labels",
+     "anim": {
+      "type": "fade",
+      "at": 6.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "start": 115,
+   "end": 125,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       395
+      ]
+     }
+    },
+    {
+     "name": "formula",
+     "anim": {
+      "type": "pop",
+      "at": 1.0,
+      "anchor": [
+       540,
+       525
+      ]
+     }
+    },
+    {
+     "name": "stairs",
+     "anim": {
+      "type": "wipeL",
+      "at": 1.6,
+      "dur": 3.0,
+      "ease": "linear"
+     }
+    },
+    {
+     "name": "runner",
+     "anim": {
+      "type": "pop",
+      "at": 4.6,
+      "anchor": [
+       900,
+       684
+      ]
+     },
+     "idle": "bob"
+    },
+    {
+     "name": "result",
+     "anim": {
+      "type": "stamp",
+      "at": 5.4,
+      "anchor": [
+       540,
+       1310
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "start": 125,
+   "end": 135,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       395
+      ]
+     }
+    },
+    {
+     "name": "formula",
+     "anim": {
+      "type": "pop",
+      "at": 0.8,
+      "anchor": [
+       540,
+       530
+      ]
+     }
+    },
+    {
+     "name": "stairs",
+     "anim": {
+      "type": "wipeL",
+      "at": 1.4,
+      "dur": 2.6,
+      "ease": "linear"
+     }
+    },
+    {
+     "name": "icon1",
+     "anim": {
+      "type": "pop",
+      "at": 5.0,
+      "anchor": [
+       270,
+       1170
+      ]
+     }
+    },
+    {
+     "name": "icon2",
+     "anim": {
+      "type": "pop",
+      "at": 5.6,
+      "anchor": [
+       540,
+       1170
+      ]
+     }
+    },
+    {
+     "name": "icon3",
+     "anim": {
+      "type": "pop",
+      "at": 6.2,
+      "anchor": [
+       810,
+       1170
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "start": 135,
+   "end": 145,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "paper",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       745
+      ]
+     },
+     "idle": "bob"
+    },
+    {
+     "name": "word",
+     "anim": {
+      "type": "wipeL",
+      "at": 1.0,
+      "dur": 1.6,
+      "ease": "linear"
+     }
+    },
+    {
+     "name": "line1",
+     "anim": {
+      "type": "fade",
+      "at": 3.4
+     }
+    },
+    {
+     "name": "line2",
+     "anim": {
+      "type": "pop",
+      "at": 5.6,
+      "anchor": [
+       540,
+       1245
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "start": 145,
+   "end": 150,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       535
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 0.5,
+      "anchor": [
+       540,
+       845
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 1.4,
+      "anchor": [
+       785,
+       980
+      ]
+     }
+    },
+    {
+     "name": "next",
+     "anim": {
+      "type": "fade",
+      "at": 2.0
+     }
+    },
+    {
+     "name": "disclaimer",
+     "anim": {
+      "type": "fade",
+      "at": 2.2
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 3.3,
+   "text": "두께 0.1mm 종이를\n42번 접으면"
+  },
+  {
+   "start": 3.3,
+   "end": 5.0,
+   "text": "어디까지 닿을까요?"
+  },
+  {
+   "start": 9.6,
+   "end": 10.7,
+   "text": "정답은… 달입니다"
+  },
+  {
+   "start": 10.7,
+   "end": 12.0,
+   "text": "이게 바로\n‘복리’의 힘이에요"
+  },
+  {
+   "start": 12.2,
+   "end": 15.6,
+   "text": "단리는 원금에만\n이자가 붙습니다"
+  },
+  {
+   "start": 15.6,
+   "end": 19.8,
+   "text": "복리는 이자에도\n이자가 붙죠"
+  },
+  {
+   "start": 20.1,
+   "end": 24.2,
+   "text": "100만 원을 연 7%로 굴리면\n첫해엔 7만 원 차이"
+  },
+  {
+   "start": 24.2,
+   "end": 27.8,
+   "text": "별거 아닌 것 같죠?"
+  },
+  {
+   "start": 28.2,
+   "end": 31.2,
+   "text": "그런데 10년이 지나면"
+  },
+  {
+   "start": 31.2,
+   "end": 34.8,
+   "text": "복리 쪽은 거의 두 배,\n약 197만 원이 됩니다"
+  },
+  {
+   "start": 35.2,
+   "end": 39.0,
+   "text": "돈이 두 배가 되는 시간을\n바로 계산하는 방법"
+  },
+  {
+   "start": 39.0,
+   "end": 42.8,
+   "text": "72를 수익률로\n나누면 돼요"
+  },
+  {
+   "start": 43.2,
+   "end": 47.5,
+   "text": "연 7%면 약 10년,\n연 10%면 약 7년"
+  },
+  {
+   "start": 47.5,
+   "end": 54.8,
+   "text": "시간이 길어질수록\n두 배, 네 배, 여덟 배로"
+  },
+  {
+   "start": 55.2,
+   "end": 58.5,
+   "text": "두 사람이 있습니다"
+  },
+  {
+   "start": 58.5,
+   "end": 62.8,
+   "text": "누가 더 많이\n모았을까요?"
+  },
+  {
+   "start": 63.2,
+   "end": 67.4,
+   "text": "A는 25살부터 매년 360만 원\n딱 10년만 넣고 멈췄어요"
+  },
+  {
+   "start": 67.4,
+   "end": 69.7,
+   "text": "총 3,600만 원"
+  },
+  {
+   "start": 69.7,
+   "end": 73.9,
+   "text": "B는 35살부터 매년 360만 원\n30년 동안 꾸준히"
+  },
+  {
+   "start": 73.9,
+   "end": 76.1,
+   "text": "총 1억 800만 원"
+  },
+  {
+   "start": 76.2,
+   "end": 80.0,
+   "text": "둘 다 연 7%로\n65살까지 굴렸다면?"
+  },
+  {
+   "start": 80.0,
+   "end": 87.8,
+   "text": "10년 먼저 시작한 A가\n끝까지 앞서갑니다"
+  },
+  {
+   "start": 88.2,
+   "end": 90.4,
+   "text": "B는 약 3억 4천만 원"
+  },
+  {
+   "start": 90.4,
+   "end": 92.6,
+   "text": "그런데 A는…\n약 3억 7,900만 원"
+  },
+  {
+   "start": 92.6,
+   "end": 94.8,
+   "text": "차이는 단 하나,\n10년 먼저 시작한 것"
+  },
+  {
+   "start": 95.2,
+   "end": 100.0,
+   "text": "워런 버핏의\n재산 대부분은"
+  },
+  {
+   "start": 100.0,
+   "end": 104.8,
+   "text": "65세 이후에\n쌓였습니다"
+  },
+  {
+   "start": 105.2,
+   "end": 109.5,
+   "text": "진짜 비밀은 70년 넘게\n멈추지 않은 시간"
+  },
+  {
+   "start": 109.5,
+   "end": 114.8,
+   "text": "처음엔 평평하다가\n어느 순간 하늘로 꺾입니다"
+  },
+  {
+   "start": 115.2,
+   "end": 119.0,
+   "text": "복리는 돈에만\n통하는 게 아닙니다"
+  },
+  {
+   "start": 119.0,
+   "end": 124.8,
+   "text": "매일 1%씩 나아지면\n1년 뒤 약 37.8배"
+  },
+  {
+   "start": 125.2,
+   "end": 130.0,
+   "text": "매일 1%씩 나빠지면\n0.03배로 줄어들어요"
+  },
+  {
+   "start": 130.0,
+   "end": 134.8,
+   "text": "공부, 운동, 습관도\n똑같이 쌓입니다"
+  },
+  {
+   "start": 135.2,
+   "end": 139.5,
+   "text": "필요한 건 큰돈이 아니라\n일찍 시작하는 용기"
+  },
+  {
+   "start": 139.5,
+   "end": 144.8,
+   "text": "가장 좋은 때는 10년 전,\n두 번째는 바로 지금"
+  },
+  {
+   "start": 145.2,
+   "end": 149.8,
+   "text": "더 많은 지식이 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
