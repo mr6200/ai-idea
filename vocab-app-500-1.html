@@ -773,7 +773,7 @@ function speakExample() { speak(daily[studyIdx].example, 'btn-speak-ex', 0.85); 
 function speakQuizWord() { speak(daily[quizIdx].word, null, 0.8); }
 
 // voices load async on some browsers
-window.speechSynthesis.onvoiceschanged = () => {};
+if (ttsSupported) window.speechSynthesis.onvoiceschanged = () => {};
 
 function renderStudy(){
   const w=daily[studyIdx];
