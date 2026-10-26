@@ -1,0 +1,802 @@
+{
+ "duration": 90,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 5,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       470
+      ]
+     }
+    },
+    {
+     "name": "shaft",
+     "anim": {
+      "type": "fade",
+      "at": 0.2
+     }
+    },
+    {
+     "name": "snap",
+     "anim": {
+      "type": "stamp",
+      "at": 0.8,
+      "anchor": [
+       540,
+       780
+      ]
+     }
+    },
+    {
+     "name": "seal",
+     "anim": {
+      "type": "stamp",
+      "at": 1.6,
+      "anchor": [
+       850,
+       760
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "pop",
+      "at": 2.8,
+      "anchor": [
+       540,
+       1290
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 5,
+   "end": 12,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       450
+      ]
+     }
+    },
+    {
+     "name": "platform",
+     "anim": {
+      "type": "fade",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "otis",
+     "anim": {
+      "type": "slideU",
+      "at": 0.8
+     }
+    },
+    {
+     "name": "name",
+     "anim": {
+      "type": "pop",
+      "at": 1.6,
+      "anchor": [
+       820,
+       760
+      ]
+     }
+    },
+    {
+     "name": "cut",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       400,
+       800
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 12,
+   "end": 19,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       470
+      ]
+     }
+    },
+    {
+     "name": "platform",
+     "anim": {
+      "type": "drop",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "stop",
+     "anim": {
+      "type": "stamp",
+      "at": 1.6,
+      "anchor": [
+       860,
+       1040
+      ]
+     }
+    },
+    {
+     "name": "safe",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       540,
+       1310
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 19,
+   "end": 26,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "tense",
+     "anim": {
+      "type": "slideL",
+      "at": 0.4
+     }
+    },
+    {
+     "name": "slack",
+     "anim": {
+      "type": "slideR",
+      "at": 3.4
+     }
+    },
+    {
+     "name": "click",
+     "anim": {
+      "type": "stamp",
+      "at": 4.4,
+      "anchor": [
+       780,
+       640
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 26,
+   "end": 33,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       400
+      ]
+     }
+    },
+    {
+     "name": "city",
+     "anim": {
+      "type": "wipeU",
+      "at": 0.4,
+      "dur": 1.6
+     }
+    },
+    {
+     "name": "up",
+     "anim": {
+      "type": "pop",
+      "at": 3.4,
+      "anchor": [
+       960,
+       900
+      ]
+     }
+    },
+    {
+     "name": "note",
+     "anim": {
+      "type": "pop",
+      "at": 4.0,
+      "anchor": [
+       540,
+       1320
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 33,
+   "end": 41,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       460
+      ]
+     }
+    },
+    {
+     "name": "rig",
+     "anim": {
+      "type": "fade",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "count",
+     "anim": {
+      "type": "pop",
+      "at": 3.8,
+      "anchor": [
+       860,
+       900
+      ]
+     }
+    },
+    {
+     "name": "broken",
+     "anim": {
+      "type": "stamp",
+      "at": 5.0,
+      "anchor": [
+       475,
+       905
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 41,
+   "end": 48,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "gov",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       900
+      ]
+     }
+    },
+    {
+     "name": "spin",
+     "anim": {
+      "type": "stamp",
+      "at": 2.0,
+      "anchor": [
+       870,
+       680
+      ]
+     }
+    },
+    {
+     "name": "pull",
+     "anim": {
+      "type": "slideU",
+      "at": 3.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 48,
+   "end": 55,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "open",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "shut",
+     "anim": {
+      "type": "slideR",
+      "at": 1.6
+     }
+    },
+    {
+     "name": "squeeze",
+     "anim": {
+      "type": "pop",
+      "at": 2.4,
+      "anchor": [
+       780,
+       900
+      ]
+     }
+    },
+    {
+     "name": "modern",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       540,
+       1320
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 55,
+   "end": 62,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "pit",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       400,
+       1100
+      ]
+     }
+    },
+    {
+     "name": "layers",
+     "anim": {
+      "type": "slideR",
+      "at": 3.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 62,
+   "end": 70,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "bld",
+     "anim": {
+      "type": "wipeU",
+      "at": 0.3,
+      "dur": 1.2
+     }
+    },
+    {
+     "name": "plane",
+     "anim": {
+      "type": "slideL",
+      "at": 1.0
+     }
+    },
+    {
+     "name": "fall",
+     "anim": {
+      "type": "wipeD",
+      "at": 3.8,
+      "dur": 1.0
+     }
+    },
+    {
+     "name": "alive",
+     "anim": {
+      "type": "stamp",
+      "at": 6.0,
+      "anchor": [
+       780,
+       1250
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "start": 70,
+   "end": 80,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       360
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       550
+      ]
+     }
+    },
+    {
+     "name": "cab",
+     "anim": {
+      "type": "pop",
+      "at": 0.8,
+      "anchor": [
+       540,
+       960
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       820,
+       1180
+      ]
+     }
+    },
+    {
+     "name": "why",
+     "anim": {
+      "type": "fade",
+      "at": 6.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "start": 80,
+   "end": 90,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "look",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       490
+      ]
+     }
+    },
+    {
+     "name": "car",
+     "anim": {
+      "type": "pop",
+      "at": 0.6,
+      "anchor": [
+       540,
+       820
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 4.8,
+      "anchor": [
+       540,
+       1080
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 5.6,
+      "anchor": [
+       785,
+       1220
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 2.6,
+   "text": "엘리베이터 줄이 끊어지면,\n추락할까요?"
+  },
+  {
+   "start": 2.6,
+   "end": 4.8,
+   "text": "정답은,\n거의 안 떨어져요"
+  },
+  {
+   "start": 5.0,
+   "end": 8.4,
+   "text": "1854년 뉴욕 박람회에서\n오티스가 엘리베이터에 탔어요"
+  },
+  {
+   "start": 8.4,
+   "end": 11.8,
+   "text": "그리고 외쳤죠.\n줄을 끊으시오!"
+  },
+  {
+   "start": 12.0,
+   "end": 15.4,
+   "text": "줄이 끊어졌지만, 엘리베이터는\n몇 센티 만에 멈췄어요"
+  },
+  {
+   "start": 15.4,
+   "end": 18.8,
+   "text": "모두 안전합니다!\n오티스의 안전장치였죠"
+  },
+  {
+   "start": 19.0,
+   "end": 22.4,
+   "text": "비밀은 톱니 레일.\n줄이 팽팽하면 걸쇠가 접혀 있고"
+  },
+  {
+   "start": 22.4,
+   "end": 25.8,
+   "text": "줄이 느슨해지면 걸쇠가\n튀어나와 톱니에 걸려요"
+  },
+  {
+   "start": 26.0,
+   "end": 29.4,
+   "text": "이 발명 덕분에 사람들이\n안심하고 엘리베이터를 탔고"
+  },
+  {
+   "start": 29.4,
+   "end": 32.8,
+   "text": "높은 빌딩이\n하늘로 올라갈 수 있었죠"
+  },
+  {
+   "start": 33.0,
+   "end": 36.8,
+   "text": "요즘 엘리베이터 줄은\n한 가닥이 아니에요"
+  },
+  {
+   "start": 36.8,
+   "end": 40.8,
+   "text": "보통 4~8가닥,\n하나가 끊겨도 나머지가 버텨요"
+  },
+  {
+   "start": 41.0,
+   "end": 44.4,
+   "text": "너무 빨리 내려가면\n꼭대기의 조속기가 알아채요"
+  },
+  {
+   "start": 44.4,
+   "end": 47.8,
+   "text": "속도를 넘는 순간\n비상 브레이크를 당기죠"
+  },
+  {
+   "start": 48.0,
+   "end": 51.4,
+   "text": "그러면 쐐기가 레일을 꽉 물어\n엘리베이터를 세워요"
+  },
+  {
+   "start": 51.4,
+   "end": 54.8,
+   "text": "오티스 걸쇠의\n현대판이에요"
+  },
+  {
+   "start": 55.0,
+   "end": 58.4,
+   "text": "맨 아래엔 완충기가\n마지막 충격까지 받아 줘요"
+  },
+  {
+   "start": 58.4,
+   "end": 61.8,
+   "text": "이렇게 네 겹의 안전장치가\n엘리베이터를 지켜요"
+  },
+  {
+   "start": 62.0,
+   "end": 65.8,
+   "text": "1945년, 폭격기가 부딪힌\n엠파이어 스테이트 빌딩"
+  },
+  {
+   "start": 65.8,
+   "end": 69.8,
+   "text": "줄 끊긴 엘리베이터가\n75층을 떨어졌지만 살아남았죠"
+  },
+  {
+   "start": 70.0,
+   "end": 73.6,
+   "text": "퀴즈! 떨어지는 엘리베이터에서\n바닥 직전에 점프하면 살까?"
+  },
+  {
+   "start": 73.6,
+   "end": 76.6,
+   "text": "정답은 X!\n효과가 거의 없어요"
+  },
+  {
+   "start": 76.6,
+   "end": 79.8,
+   "text": "떨어지는 속도에 비해\n점프는 너무 약하거든요"
+  },
+  {
+   "start": 80.2,
+   "end": 84.6,
+   "text": "그러니 엘리베이터 줄 걱정은\n이제 그만!"
+  },
+  {
+   "start": 84.8,
+   "end": 89.8,
+   "text": "더 많은 지식이 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
