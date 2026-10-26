@@ -8,5 +8,6 @@
 | `DoHyeon-Regular.ttf` | `Do Hyeon` (도현) | 설계도 스타일 |
 | `Jua-Regular.ttf` | `Jua` (주아) | 팝아트 만화 스타일 |
 | `NanumPenScript-Regular.ttf` | `Nanum Pen` (나눔손글씨 펜) | 손글씨 메모 |
+| `NanumMyeongjo-Bold.ttf`, `NanumMyeongjo-ExtraBold.ttf` | `NanumMyeongjo` (나눔명조, `font-weight` 700/800) | 빈티지 포스터 스타일 (11편) |
 
 설치: `mkdir -p ~/.fonts && cp shorts/fonts/*.ttf ~/.fonts/ && fc-cache -f`
