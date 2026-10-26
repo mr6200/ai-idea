@@ -1,0 +1,757 @@
+{
+ "duration": 90,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 5,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       480
+      ]
+     }
+    },
+    {
+     "name": "window",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       980
+      ]
+     }
+    },
+    {
+     "name": "q",
+     "anim": {
+      "type": "stamp",
+      "at": 1.2,
+      "anchor": [
+       830,
+       760
+      ]
+     }
+    },
+    {
+     "name": "no",
+     "anim": {
+      "type": "pop",
+      "at": 2.6,
+      "anchor": [
+       300,
+       1200
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 5,
+   "end": 12,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       480
+      ]
+     }
+    },
+    {
+     "name": "body",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       900
+      ]
+     }
+    },
+    {
+     "name": "push",
+     "anim": {
+      "type": "pop",
+      "at": 3.6,
+      "anchor": [
+       540,
+       900
+      ]
+     }
+    },
+    {
+     "name": "balloon",
+     "anim": {
+      "type": "stamp",
+      "at": 4.2,
+      "anchor": [
+       540,
+       1290
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 12,
+   "end": 19,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "up",
+     "anim": {
+      "type": "slideR",
+      "at": 0.2
+     }
+    },
+    {
+     "name": "down",
+     "anim": {
+      "type": "slideL",
+      "at": 1.6
+     }
+    },
+    {
+     "name": "repeat",
+     "anim": {
+      "type": "stamp",
+      "at": 3.8,
+      "anchor": [
+       540,
+       1300
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 19,
+   "end": 26,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "sq",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       880
+      ]
+     }
+    },
+    {
+     "name": "stress",
+     "anim": {
+      "type": "pop",
+      "at": 3.6,
+      "anchor": [
+       540,
+       880
+      ]
+     }
+    },
+    {
+     "name": "bang",
+     "anim": {
+      "type": "stamp",
+      "at": 4.2,
+      "anchor": [
+       760,
+       1170
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 26,
+   "end": 33,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "paper",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       300,
+       870
+      ]
+     }
+    },
+    {
+     "name": "metal",
+     "anim": {
+      "type": "pop",
+      "at": 3.4,
+      "anchor": [
+       780,
+       870
+      ]
+     }
+    },
+    {
+     "name": "name",
+     "anim": {
+      "type": "stamp",
+      "at": 5.4,
+      "anchor": [
+       540,
+       1290
+      ]
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "fade",
+      "at": 0.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 33,
+   "end": 41,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "year",
+     "anim": {
+      "type": "stamp",
+      "at": 0.0,
+      "anchor": [
+       540,
+       400
+      ]
+     }
+    },
+    {
+     "name": "plane",
+     "anim": {
+      "type": "slideR",
+      "at": 0.6
+     }
+    },
+    {
+     "name": "break",
+     "anim": {
+      "type": "stamp",
+      "at": 2.4,
+      "anchor": [
+       820,
+       760
+      ]
+     }
+    },
+    {
+     "name": "two",
+     "anim": {
+      "type": "pop",
+      "at": 3.8,
+      "anchor": [
+       540,
+       1245
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 41,
+   "end": 48,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "tank",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       840
+      ]
+     }
+    },
+    {
+     "name": "cycles",
+     "anim": {
+      "type": "stamp",
+      "at": 3.8,
+      "anchor": [
+       540,
+       1290
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 48,
+   "end": 55,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "hole",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       860
+      ]
+     }
+    },
+    {
+     "name": "after",
+     "anim": {
+      "type": "slideU",
+      "at": 3.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 55,
+   "end": 62,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "sq",
+     "anim": {
+      "type": "slideL",
+      "at": 0.0
+     }
+    },
+    {
+     "name": "rd",
+     "anim": {
+      "type": "slideR",
+      "at": 0.4
+     }
+    },
+    {
+     "name": "vs",
+     "anim": {
+      "type": "stamp",
+      "at": 1.0,
+      "anchor": [
+       540,
+       920
+      ]
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "ok",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       540,
+       1300
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 62,
+   "end": 70,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       400
+      ]
+     }
+    },
+    {
+     "name": "a",
+     "anim": {
+      "type": "slideL",
+      "at": 0.4
+     }
+    },
+    {
+     "name": "b",
+     "anim": {
+      "type": "slideR",
+      "at": 3.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "start": 70,
+   "end": 80,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       380
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       590
+      ]
+     }
+    },
+    {
+     "name": "win",
+     "anim": {
+      "type": "pop",
+      "at": 0.8,
+      "anchor": [
+       540,
+       950
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       830,
+       1110
+      ]
+     }
+    },
+    {
+     "name": "why",
+     "anim": {
+      "type": "fade",
+      "at": 6.8
+     }
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "start": 80,
+   "end": 90,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "look",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       500
+      ]
+     }
+    },
+    {
+     "name": "win",
+     "anim": {
+      "type": "pop",
+      "at": 0.6,
+      "anchor": [
+       540,
+       790
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 4.8,
+      "anchor": [
+       540,
+       1085
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 5.6,
+      "anchor": [
+       785,
+       1220
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 2.6,
+   "text": "비행기 창문은\n왜 다 둥글까요?"
+  },
+  {
+   "start": 2.6,
+   "end": 4.8,
+   "text": "네모면 안 되는\n이유가 있어요"
+  },
+  {
+   "start": 5.0,
+   "end": 8.4,
+   "text": "높은 하늘은\n공기가 아주 희박해요"
+  },
+  {
+   "start": 8.4,
+   "end": 11.8,
+   "text": "그래서 기내에 공기를 채우면\n풍선처럼 안에서 밀어요"
+  },
+  {
+   "start": 12.0,
+   "end": 15.4,
+   "text": "이륙하면 동체가 살짝 부풀고,\n착륙하면 줄어들어요"
+  },
+  {
+   "start": 15.4,
+   "end": 18.8,
+   "text": "이게 비행할 때마다\n반복되죠"
+  },
+  {
+   "start": 19.0,
+   "end": 22.4,
+   "text": "그런데 구멍이 네모나면,\n힘이 어디로 갈까요?"
+  },
+  {
+   "start": 22.4,
+   "end": 25.8,
+   "text": "각진 모서리로\n힘이 몰려요"
+  },
+  {
+   "start": 26.0,
+   "end": 29.4,
+   "text": "종이를 접었다 폈다 하면\n결국 찢어지죠"
+  },
+  {
+   "start": 29.4,
+   "end": 32.8,
+   "text": "금속도 힘을 계속 받으면\n금이 가요. 금속 피로예요"
+  },
+  {
+   "start": 33.0,
+   "end": 36.8,
+   "text": "1954년, 세계 첫 제트 여객기\n코멧이 하늘에서 부서졌어요"
+  },
+  {
+   "start": 36.8,
+   "end": 40.8,
+   "text": "석 달 사이에\n두 대나요"
+  },
+  {
+   "start": 41.0,
+   "end": 44.4,
+   "text": "조사팀은 동체를\n통째로 물탱크에 넣고"
+  },
+  {
+   "start": 44.4,
+   "end": 47.8,
+   "text": "압력을 넣었다 뺐다\n수천 번 반복했어요"
+  },
+  {
+   "start": 48.0,
+   "end": 51.4,
+   "text": "결국 각진 구멍 모서리에서\n금이 시작됐어요"
+  },
+  {
+   "start": 51.4,
+   "end": 54.8,
+   "text": "그 뒤로 비행기 구멍의\n모서리는 둥글어졌죠"
+  },
+  {
+   "start": 55.0,
+   "end": 58.4,
+   "text": "둥근 모서리는 힘을\n고르게 나눠 받아요"
+  },
+  {
+   "start": 58.4,
+   "end": 61.8,
+   "text": "그래서 창문도\n둥글게 만드는 거예요"
+  },
+  {
+   "start": 62.0,
+   "end": 65.8,
+   "text": "네모난 창문은\n모서리에 힘이 몰리고"
+  },
+  {
+   "start": 65.8,
+   "end": 69.8,
+   "text": "둥근 창문은\n힘을 고르게 나눠요"
+  },
+  {
+   "start": 70.0,
+   "end": 73.6,
+   "text": "퀴즈! 창문 아래\n작은 구멍의 정체는?"
+  },
+  {
+   "start": 73.6,
+   "end": 76.6,
+   "text": "정답은 숨구멍!"
+  },
+  {
+   "start": 76.6,
+   "end": 79.8,
+   "text": "유리 사이 압력을 맞춰\n바깥 유리가 힘을 받게 해요"
+  },
+  {
+   "start": 80.2,
+   "end": 84.6,
+   "text": "다음에 비행기 타면\n창문 모서리를 봐 주세요"
+  },
+  {
+   "start": 84.8,
+   "end": 89.8,
+   "text": "더 많은 지식이 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
