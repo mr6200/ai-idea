@@ -13,7 +13,7 @@
 | 5. 은행은 언제 어떻게 처음 생겼을까? | `shorts/bank-origins/` | 완성 (2분 규격 첫 편) |
 | 6. 은행은 어떻게 돈을 벌까? | `shorts/how-banks-earn/` | 완성 (1분 30초 시험) |
 | 7. 이자에 붙는 세금 | `shorts/interest-tax/` | 완성 (1분 30초) |
-| 8. 무이자 할부, 카드사는 손해일까? | `shorts/card-installments/` | 제작 중 (1분 30초) |
+| 8. 무이자 할부, 카드사는 손해일까? | `shorts/card-installments/` | 완성 (1분 30초) |
 
 ## 0. 환경 준비
 
