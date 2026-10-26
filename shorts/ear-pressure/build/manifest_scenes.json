@@ -1,0 +1,691 @@
+[
+ {
+  "id": "S01",
+  "start": 0,
+  "end": 5,
+  "parts": [
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      480
+     ]
+    }
+   },
+   {
+    "name": "ear",
+    "anim": {
+     "type": "pop",
+     "at": 0.3,
+     "anchor": [
+      540,
+      930
+     ]
+    }
+   },
+   {
+    "name": "muffle",
+    "anim": {
+     "type": "stamp",
+     "at": 1.0,
+     "anchor": [
+      540,
+      940
+     ]
+    }
+   },
+   {
+    "name": "who",
+    "anim": {
+     "type": "pop",
+     "at": 2.6,
+     "anchor": [
+      540,
+      1240
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "start": 5,
+  "end": 12,
+  "parts": [
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "ear",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      800
+     ]
+    }
+   },
+   {
+    "name": "equal",
+    "anim": {
+     "type": "slideU",
+     "at": 3.4
+    }
+   },
+   {
+    "name": "same",
+    "anim": {
+     "type": "stamp",
+     "at": 4.0,
+     "anchor": [
+      540,
+      1290
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "start": 12,
+  "end": 19,
+  "parts": [
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      490
+     ]
+    }
+   },
+   {
+    "name": "mountain",
+    "anim": {
+     "type": "wipeU",
+     "at": 3.4,
+     "dur": 0.8
+    }
+   },
+   {
+    "name": "plane",
+    "anim": {
+     "type": "slideR",
+     "at": 3.8
+    }
+   },
+   {
+    "name": "same",
+    "anim": {
+     "type": "stamp",
+     "at": 4.8,
+     "anchor": [
+      540,
+      1290
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "start": 19,
+  "end": 26,
+  "parts": [
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "ear",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      800
+     ]
+    }
+   },
+   {
+    "name": "push",
+    "anim": {
+     "type": "slideR",
+     "at": 2.4
+    }
+   },
+   {
+    "name": "tight",
+    "anim": {
+     "type": "stamp",
+     "at": 3.6,
+     "anchor": [
+      330,
+      1080
+     ]
+    }
+   },
+   {
+    "name": "muffle",
+    "anim": {
+     "type": "stamp",
+     "at": 4.6,
+     "anchor": [
+      540,
+      1290
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "start": 26,
+  "end": 33,
+  "parts": [
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "ear",
+    "anim": {
+     "type": "pop",
+     "at": 0.3,
+     "anchor": [
+      540,
+      780
+     ]
+    }
+   },
+   {
+    "name": "hi",
+    "anim": {
+     "type": "pop",
+     "at": 1.6,
+     "anchor": [
+      790,
+      1045
+     ]
+    }
+   },
+   {
+    "name": "closed",
+    "anim": {
+     "type": "stamp",
+     "at": 3.6,
+     "anchor": [
+      540,
+      1290
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "start": 33,
+  "end": 41,
+  "parts": [
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "words",
+    "anim": {
+     "type": "stamp",
+     "at": 0.0,
+     "anchor": [
+      540,
+      450
+     ]
+    }
+   },
+   {
+    "name": "ear",
+    "anim": {
+     "type": "pop",
+     "at": 0.6,
+     "anchor": [
+      540,
+      780
+     ]
+    }
+   },
+   {
+    "name": "flow",
+    "anim": {
+     "type": "pop",
+     "at": 2.4,
+     "anchor": [
+      720,
+      950
+     ]
+    }
+   },
+   {
+    "name": "pop",
+    "anim": {
+     "type": "stamp",
+     "at": 4.4,
+     "anchor": [
+      300,
+      1100
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "start": 41,
+  "end": 48,
+  "parts": [
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "plane",
+    "anim": {
+     "type": "slideU",
+     "at": 0.3
+    }
+   },
+   {
+    "name": "ear",
+    "anim": {
+     "type": "pop",
+     "at": 0.5,
+     "anchor": [
+      540,
+      800
+     ]
+    }
+   },
+   {
+    "name": "out",
+    "anim": {
+     "type": "pop",
+     "at": 1.4,
+     "anchor": [
+      740,
+      1050
+     ]
+    }
+   },
+   {
+    "name": "easy",
+    "anim": {
+     "type": "stamp",
+     "at": 3.6,
+     "anchor": [
+      540,
+      1290
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S08",
+  "start": 48,
+  "end": 55,
+  "parts": [
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "plane",
+    "anim": {
+     "type": "slideU",
+     "at": 0.3
+    }
+   },
+   {
+    "name": "ear",
+    "anim": {
+     "type": "pop",
+     "at": 0.5,
+     "anchor": [
+      540,
+      800
+     ]
+    }
+   },
+   {
+    "name": "need",
+    "anim": {
+     "type": "fade",
+     "at": 1.2
+    }
+   },
+   {
+    "name": "block",
+    "anim": {
+     "type": "stamp",
+     "at": 3.4,
+     "anchor": [
+      810,
+      1070
+     ]
+    }
+   },
+   {
+    "name": "ouch",
+    "anim": {
+     "type": "stamp",
+     "at": 4.2,
+     "anchor": [
+      220,
+      1220
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S09",
+  "start": 55,
+  "end": 62,
+  "parts": [
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "tips",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      920
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S10",
+  "start": 62,
+  "end": 70,
+  "parts": [
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "baby",
+    "anim": {
+     "type": "pop",
+     "at": 0.3,
+     "anchor": [
+      330,
+      830
+     ]
+    }
+   },
+   {
+    "name": "tubes",
+    "anim": {
+     "type": "slideR",
+     "at": 1.0
+    }
+   },
+   {
+    "name": "bottle",
+    "anim": {
+     "type": "drop",
+     "at": 3.8
+    }
+   },
+   {
+    "name": "tip",
+    "anim": {
+     "type": "stamp",
+     "at": 4.4,
+     "anchor": [
+      540,
+      1290
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S11",
+  "start": 70,
+  "end": 80,
+  "parts": [
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "badge",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      380
+     ]
+    }
+   },
+   {
+    "name": "question",
+    "anim": {
+     "type": "pop",
+     "at": 0.3,
+     "anchor": [
+      540,
+      590
+     ]
+    }
+   },
+   {
+    "name": "ox",
+    "anim": {
+     "type": "pop",
+     "at": 0.8,
+     "anchor": [
+      540,
+      920
+     ]
+    }
+   },
+   {
+    "name": "answer",
+    "anim": {
+     "type": "stamp",
+     "at": 3.6,
+     "anchor": [
+      320,
+      920
+     ]
+    }
+   },
+   {
+    "name": "why",
+    "anim": {
+     "type": "fade",
+     "at": 6.8
+    }
+   }
+  ]
+ },
+ {
+  "id": "S12",
+  "start": 80,
+  "end": 90,
+  "parts": [
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "look",
+    "anim": {
+     "type": "pop",
+     "at": 0.2,
+     "anchor": [
+      540,
+      500
+     ]
+    }
+   },
+   {
+    "name": "ear",
+    "anim": {
+     "type": "pop",
+     "at": 0.6,
+     "anchor": [
+      540,
+      790
+     ]
+    }
+   },
+   {
+    "name": "button",
+    "anim": {
+     "type": "pop",
+     "at": 4.8,
+     "anchor": [
+      540,
+      1085
+     ]
+    }
+   },
+   {
+    "name": "finger",
+    "anim": {
+     "type": "tap",
+     "at": 5.6,
+     "anchor": [
+      785,
+      1220
+     ]
+    }
+   }
+  ]
+ }
+]

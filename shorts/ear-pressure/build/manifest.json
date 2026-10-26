@@ -1,0 +1,824 @@
+{
+ "duration": 90,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 5,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       480
+      ]
+     }
+    },
+    {
+     "name": "ear",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       930
+      ]
+     }
+    },
+    {
+     "name": "muffle",
+     "anim": {
+      "type": "stamp",
+      "at": 1.0,
+      "anchor": [
+       540,
+       940
+      ]
+     }
+    },
+    {
+     "name": "who",
+     "anim": {
+      "type": "pop",
+      "at": 2.6,
+      "anchor": [
+       540,
+       1240
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 5,
+   "end": 12,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "ear",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       800
+      ]
+     }
+    },
+    {
+     "name": "equal",
+     "anim": {
+      "type": "slideU",
+      "at": 3.4
+     }
+    },
+    {
+     "name": "same",
+     "anim": {
+      "type": "stamp",
+      "at": 4.0,
+      "anchor": [
+       540,
+       1290
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 12,
+   "end": 19,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       490
+      ]
+     }
+    },
+    {
+     "name": "mountain",
+     "anim": {
+      "type": "wipeU",
+      "at": 3.4,
+      "dur": 0.8
+     }
+    },
+    {
+     "name": "plane",
+     "anim": {
+      "type": "slideR",
+      "at": 3.8
+     }
+    },
+    {
+     "name": "same",
+     "anim": {
+      "type": "stamp",
+      "at": 4.8,
+      "anchor": [
+       540,
+       1290
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 19,
+   "end": 26,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "ear",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       800
+      ]
+     }
+    },
+    {
+     "name": "push",
+     "anim": {
+      "type": "slideR",
+      "at": 2.4
+     }
+    },
+    {
+     "name": "tight",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       330,
+       1080
+      ]
+     }
+    },
+    {
+     "name": "muffle",
+     "anim": {
+      "type": "stamp",
+      "at": 4.6,
+      "anchor": [
+       540,
+       1290
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 26,
+   "end": 33,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "ear",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       780
+      ]
+     }
+    },
+    {
+     "name": "hi",
+     "anim": {
+      "type": "pop",
+      "at": 1.6,
+      "anchor": [
+       790,
+       1045
+      ]
+     }
+    },
+    {
+     "name": "closed",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       540,
+       1290
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 33,
+   "end": 41,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "words",
+     "anim": {
+      "type": "stamp",
+      "at": 0.0,
+      "anchor": [
+       540,
+       450
+      ]
+     }
+    },
+    {
+     "name": "ear",
+     "anim": {
+      "type": "pop",
+      "at": 0.6,
+      "anchor": [
+       540,
+       780
+      ]
+     }
+    },
+    {
+     "name": "flow",
+     "anim": {
+      "type": "pop",
+      "at": 2.4,
+      "anchor": [
+       720,
+       950
+      ]
+     }
+    },
+    {
+     "name": "pop",
+     "anim": {
+      "type": "stamp",
+      "at": 4.4,
+      "anchor": [
+       300,
+       1100
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 41,
+   "end": 48,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "plane",
+     "anim": {
+      "type": "slideU",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "ear",
+     "anim": {
+      "type": "pop",
+      "at": 0.5,
+      "anchor": [
+       540,
+       800
+      ]
+     }
+    },
+    {
+     "name": "out",
+     "anim": {
+      "type": "pop",
+      "at": 1.4,
+      "anchor": [
+       740,
+       1050
+      ]
+     }
+    },
+    {
+     "name": "easy",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       540,
+       1290
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 48,
+   "end": 55,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "plane",
+     "anim": {
+      "type": "slideU",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "ear",
+     "anim": {
+      "type": "pop",
+      "at": 0.5,
+      "anchor": [
+       540,
+       800
+      ]
+     }
+    },
+    {
+     "name": "need",
+     "anim": {
+      "type": "fade",
+      "at": 1.2
+     }
+    },
+    {
+     "name": "block",
+     "anim": {
+      "type": "stamp",
+      "at": 3.4,
+      "anchor": [
+       810,
+       1070
+      ]
+     }
+    },
+    {
+     "name": "ouch",
+     "anim": {
+      "type": "stamp",
+      "at": 4.2,
+      "anchor": [
+       220,
+       1220
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 55,
+   "end": 62,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "tips",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       920
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 62,
+   "end": 70,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "baby",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       330,
+       830
+      ]
+     }
+    },
+    {
+     "name": "tubes",
+     "anim": {
+      "type": "slideR",
+      "at": 1.0
+     }
+    },
+    {
+     "name": "bottle",
+     "anim": {
+      "type": "drop",
+      "at": 3.8
+     }
+    },
+    {
+     "name": "tip",
+     "anim": {
+      "type": "stamp",
+      "at": 4.4,
+      "anchor": [
+       540,
+       1290
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "start": 70,
+   "end": 80,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       380
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       590
+      ]
+     }
+    },
+    {
+     "name": "ox",
+     "anim": {
+      "type": "pop",
+      "at": 0.8,
+      "anchor": [
+       540,
+       920
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       320,
+       920
+      ]
+     }
+    },
+    {
+     "name": "why",
+     "anim": {
+      "type": "fade",
+      "at": 6.8
+     }
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "start": 80,
+   "end": 90,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "look",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       500
+      ]
+     }
+    },
+    {
+     "name": "ear",
+     "anim": {
+      "type": "pop",
+      "at": 0.6,
+      "anchor": [
+       540,
+       790
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 4.8,
+      "anchor": [
+       540,
+       1085
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 5.6,
+      "anchor": [
+       785,
+       1220
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 2.6,
+   "text": "비행기만 타면\n귀가 먹먹하죠?"
+  },
+  {
+   "start": 2.6,
+   "end": 4.8,
+   "text": "범인은\n귀 속 공기예요"
+  },
+  {
+   "start": 5.0,
+   "end": 8.4,
+   "text": "고막 안쪽에는 중이라는\n작은 공기 방이 있어요"
+  },
+  {
+   "start": 8.4,
+   "end": 11.8,
+   "text": "평소엔 고막 안팎의\n기압이 같아요"
+  },
+  {
+   "start": 12.0,
+   "end": 15.4,
+   "text": "그런데 비행기 안은\n땅보다 기압이 낮아요"
+  },
+  {
+   "start": 15.4,
+   "end": 18.8,
+   "text": "높이 2,400m 산 위와\n비슷한 수준이에요"
+  },
+  {
+   "start": 19.0,
+   "end": 22.4,
+   "text": "기압이 바뀌면\n고막 안팎의 압력이 달라져요"
+  },
+  {
+   "start": 22.4,
+   "end": 25.8,
+   "text": "고막이 밀려 팽팽해지면\n소리가 먹먹해져요"
+  },
+  {
+   "start": 26.0,
+   "end": 29.4,
+   "text": "해결사는 귀와 코 뒤를 잇는\n가는 통로, 이관이에요"
+  },
+  {
+   "start": 29.4,
+   "end": 32.8,
+   "text": "이관은 평소엔\n닫혀 있어요"
+  },
+  {
+   "start": 33.0,
+   "end": 36.8,
+   "text": "침을 꿀꺽 삼키거나 하품하면\n이관이 잠깐 열려요"
+  },
+  {
+   "start": 36.8,
+   "end": 40.8,
+   "text": "공기가 드나들며\n뻥 하고 풀리죠"
+  },
+  {
+   "start": 41.0,
+   "end": 44.4,
+   "text": "올라갈 땐 귀 속 공기가\n저절로 빠져나가요"
+  },
+  {
+   "start": 44.4,
+   "end": 47.8,
+   "text": "그래서 이륙 때는\n비교적 괜찮아요"
+  },
+  {
+   "start": 48.0,
+   "end": 51.4,
+   "text": "내려갈 땐 공기가\n귀 속으로 들어가야 하는데"
+  },
+  {
+   "start": 51.4,
+   "end": 54.8,
+   "text": "이관이 잘 안 열려서\n착륙 때 더 아파요"
+  },
+  {
+   "start": 55.0,
+   "end": 58.4,
+   "text": "그러니 착륙 전엔 침 삼키기,\n하품, 껌, 물 마시기"
+  },
+  {
+   "start": 58.4,
+   "end": 61.8,
+   "text": "코를 막고 살살\n콧바람을 불어도 돼요"
+  },
+  {
+   "start": 62.0,
+   "end": 65.8,
+   "text": "아기는 이관이 좁아서\n더 힘들어해요"
+  },
+  {
+   "start": 65.8,
+   "end": 69.8,
+   "text": "이착륙 때 젖병이나\n쪽쪽이로 삼키게 해 주세요"
+  },
+  {
+   "start": 70.0,
+   "end": 73.6,
+   "text": "퀴즈! 착륙 때 잠들어 있으면\n귀가 더 아플까?"
+  },
+  {
+   "start": 73.6,
+   "end": 76.6,
+   "text": "정답은 O!\n더 아플 수 있어요"
+  },
+  {
+   "start": 76.6,
+   "end": 79.8,
+   "text": "자는 동안엔 침을\n덜 삼키기 때문이에요"
+  },
+  {
+   "start": 80.2,
+   "end": 84.6,
+   "text": "다음 비행 때 귀가 먹먹하면\n꿀꺽 삼켜 보세요"
+  },
+  {
+   "start": 84.8,
+   "end": 89.8,
+   "text": "더 많은 지식이 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
