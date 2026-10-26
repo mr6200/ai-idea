@@ -11,7 +11,7 @@
 | `audio/narration-preview.mp3` | 내레이션 미리 듣기 (Google Cloud TTS `ko-KR-Chirp3-HD-Charon`, 1.2배속, 36문장) |
 | `thumbnail/` | 썸네일 (1080×1920) |
 | `youtube-metadata.md` | 제목·설명·태그 |
-| `video/bank-origins-shorts.mp4` | 완성 영상 (2:00, H.264 Main, −14.4 LUFS) |
+| `video/bank-origins-shorts.mp4` | 완성 영상 (2:00, H.264 Main, −14.1 LUFS, 쉼표 쉼 반영) |
 | `video/bank-origins.ecproj` | EffectCraft 프로젝트 (장면별 프리컴프 + Main) |
 
 ## 다시 만들기
