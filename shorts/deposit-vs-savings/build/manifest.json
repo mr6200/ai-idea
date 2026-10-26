@@ -1,0 +1,1062 @@
+{
+ "duration": 150,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 5,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "dep",
+     "anim": {
+      "type": "slideL",
+      "at": 0.6
+     }
+    },
+    {
+     "name": "sav",
+     "anim": {
+      "type": "slideR",
+      "at": 1.6
+     }
+    },
+    {
+     "name": "q",
+     "anim": {
+      "type": "stamp",
+      "at": 3.4,
+      "anchor": [
+       540,
+       1100
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 5,
+   "end": 10,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "up",
+     "anim": {
+      "type": "fade",
+      "at": 0.2
+     }
+    },
+    {
+     "name": "but",
+     "anim": {
+      "type": "fade",
+      "at": 2.2
+     }
+    },
+    {
+     "name": "win",
+     "anim": {
+      "type": "stamp",
+      "at": 3.0,
+      "anchor": [
+       540,
+       1150
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 10,
+   "end": 14,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "why",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       830
+      ]
+     }
+    },
+    {
+     "name": "lose",
+     "anim": {
+      "type": "stamp",
+      "at": 1.6,
+      "anchor": [
+       540,
+       1200
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 14,
+   "end": 22,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       480
+      ]
+     }
+    },
+    {
+     "name": "money",
+     "anim": {
+      "type": "slideL",
+      "at": 0.6
+     }
+    },
+    {
+     "name": "bar",
+     "anim": {
+      "type": "wipeL",
+      "at": 4.2,
+      "dur": 1.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 22,
+   "end": 30,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       480
+      ]
+     }
+    },
+    {
+     "name": "row1",
+     "anim": {
+      "type": "wipeL",
+      "at": 3.6,
+      "dur": 0.8
+     }
+    },
+    {
+     "name": "row2",
+     "anim": {
+      "type": "wipeL",
+      "at": 4.4,
+      "dur": 0.8
+     }
+    },
+    {
+     "name": "row3",
+     "anim": {
+      "type": "wipeL",
+      "at": 5.2,
+      "dur": 0.8
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 30,
+   "end": 42,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "bars",
+     "anim": {
+      "type": "wipeL",
+      "at": 0.8,
+      "dur": 2.0,
+      "ease": "linear"
+     }
+    },
+    {
+     "name": "first",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       176,
+       572
+      ]
+     }
+    },
+    {
+     "name": "last",
+     "anim": {
+      "type": "stamp",
+      "at": 8.0,
+      "anchor": [
+       902,
+       1078
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 42,
+   "end": 50,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "avg",
+     "anim": {
+      "type": "wipeL",
+      "at": 0.6,
+      "dur": 1.0
+     }
+    },
+    {
+     "name": "half",
+     "anim": {
+      "type": "stamp",
+      "at": 4.4,
+      "anchor": [
+       540,
+       1300
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 50,
+   "end": 58,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       450
+      ]
+     }
+    },
+    {
+     "name": "formula",
+     "anim": {
+      "type": "pop",
+      "at": 3.2,
+      "anchor": [
+       540,
+       720
+      ]
+     }
+    },
+    {
+     "name": "result",
+     "anim": {
+      "type": "stamp",
+      "at": 5.0,
+      "anchor": [
+       540,
+       1020
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 58,
+   "end": 69,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "sav",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       520
+      ]
+     }
+    },
+    {
+     "name": "dep",
+     "anim": {
+      "type": "slideR",
+      "at": 3.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 69,
+   "end": 80,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "dep",
+     "anim": {
+      "type": "growY",
+      "at": 0.3,
+      "anchor": [
+       360,
+       992
+      ],
+      "dur": 0.6,
+      "ease": "decel"
+     }
+    },
+    {
+     "name": "sav",
+     "anim": {
+      "type": "growY",
+      "at": 0.9,
+      "anchor": [
+       720,
+       992
+      ],
+      "dur": 0.6,
+      "ease": "decel"
+     }
+    },
+    {
+     "name": "diff",
+     "anim": {
+      "type": "stamp",
+      "at": 2.0,
+      "anchor": [
+       360,
+       440
+      ]
+     }
+    },
+    {
+     "name": "need",
+     "anim": {
+      "type": "pop",
+      "at": 3.8,
+      "anchor": [
+       540,
+       1210
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "start": 80,
+   "end": 90,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "tax",
+     "anim": {
+      "type": "stamp",
+      "at": 2.0,
+      "anchor": [
+       540,
+       780
+      ]
+     }
+    },
+    {
+     "name": "parts",
+     "anim": {
+      "type": "fade",
+      "at": 4.8
+     }
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "start": 90,
+   "end": 100,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "dep",
+     "anim": {
+      "type": "slideR",
+      "at": 0.4
+     }
+    },
+    {
+     "name": "sav",
+     "anim": {
+      "type": "slideR",
+      "at": 4.8
+     }
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "start": 100,
+   "end": 110,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "no",
+     "anim": {
+      "type": "stamp",
+      "at": 3.0,
+      "anchor": [
+       540,
+       580
+      ]
+     }
+    },
+    {
+     "name": "checks",
+     "anim": {
+      "type": "wipeL",
+      "at": 4.0,
+      "dur": 1.6,
+      "ease": "linear"
+     }
+    },
+    {
+     "name": "habit",
+     "anim": {
+      "type": "stamp",
+      "at": 6.8,
+      "anchor": [
+       540,
+       1110
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "start": 110,
+   "end": 117,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "dep",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    },
+    {
+     "name": "sav",
+     "anim": {
+      "type": "slideR",
+      "at": 3.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "start": 117,
+   "end": 128,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "cancel",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       700
+      ]
+     }
+    },
+    {
+     "name": "protect",
+     "anim": {
+      "type": "pop",
+      "at": 4.8,
+      "anchor": [
+       540,
+       1080
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "start": 128,
+   "end": 136,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       430
+      ]
+     }
+    },
+    {
+     "name": "main",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       710
+      ]
+     }
+    },
+    {
+     "name": "use",
+     "anim": {
+      "type": "pop",
+      "at": 4.0,
+      "anchor": [
+       540,
+       1070
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "start": 136,
+   "end": 146,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       620
+      ]
+     }
+    },
+    {
+     "name": "formula",
+     "anim": {
+      "type": "pop",
+      "at": 1.6,
+      "anchor": [
+       540,
+       825
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 3.2,
+      "anchor": [
+       540,
+       1060
+      ]
+     }
+    },
+    {
+     "name": "confetti",
+     "anim": {
+      "type": "drop",
+      "at": 3.4
+     }
+    },
+    {
+     "name": "tip",
+     "anim": {
+      "type": "fade",
+      "at": 6.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "start": 146,
+   "end": 150,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       535
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       845
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 1.2,
+      "anchor": [
+       785,
+       980
+      ]
+     }
+    },
+    {
+     "name": "prev",
+     "anim": {
+      "type": "fade",
+      "at": 1.6
+     }
+    },
+    {
+     "name": "disclaimer",
+     "anim": {
+      "type": "fade",
+      "at": 1.8
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 3.4,
+   "text": "목돈 1,200만 원, 연 3% 예금과\n연 3.5% 적금"
+  },
+  {
+   "start": 3.4,
+   "end": 4.9,
+   "text": "어디에 넣을까요?"
+  },
+  {
+   "start": 5.1,
+   "end": 7.2,
+   "text": "금리가 높은 적금?"
+  },
+  {
+   "start": 7.2,
+   "end": 9.9,
+   "text": "1년 뒤 이자는\n예금이 더 많아요"
+  },
+  {
+   "start": 10.1,
+   "end": 13.9,
+   "text": "금리 높은 적금이\n왜 질까요?"
+  },
+  {
+   "start": 14.2,
+   "end": 17.6,
+   "text": "예금은 목돈을\n한 번에 맡기는 것"
+  },
+  {
+   "start": 17.6,
+   "end": 21.8,
+   "text": "1,200만 원을 넣으면\n1년 내내 이자가 붙어요"
+  },
+  {
+   "start": 22.2,
+   "end": 25.6,
+   "text": "적금은 매달\n나눠 넣는 것"
+  },
+  {
+   "start": 25.6,
+   "end": 29.8,
+   "text": "매달 100만 원씩\n12달 모으죠"
+  },
+  {
+   "start": 30.2,
+   "end": 33.4,
+   "text": "비밀은 이자가 붙는 기간"
+  },
+  {
+   "start": 33.4,
+   "end": 37.8,
+   "text": "첫 달 넣은 100만 원은\n12달 동안 이자를 받지만"
+  },
+  {
+   "start": 37.8,
+   "end": 41.8,
+   "text": "마지막 달 넣은 돈은\n딱 한 달만 받아요"
+  },
+  {
+   "start": 42.2,
+   "end": 45.8,
+   "text": "평균하면 6.5달치\n이자만 붙는 셈"
+  },
+  {
+   "start": 45.8,
+   "end": 49.8,
+   "text": "금리가 절반쯤으로\n줄어든 효과예요"
+  },
+  {
+   "start": 50.2,
+   "end": 53.2,
+   "text": "연 3.5% 적금,\n1년 이자는"
+  },
+  {
+   "start": 53.2,
+   "end": 57.8,
+   "text": "100만 × 3.5% × 6.5\n= 22만 7,500원"
+  },
+  {
+   "start": 58.2,
+   "end": 61.6,
+   "text": "1,200만 원 기준으로\n약 1.9%예요"
+  },
+  {
+   "start": 61.6,
+   "end": 65.4,
+   "text": "같은 1,200만 원을\n연 3% 예금에 넣으면"
+  },
+  {
+   "start": 65.4,
+   "end": 68.8,
+   "text": "이자는 36만 원"
+  },
+  {
+   "start": 69.2,
+   "end": 72.8,
+   "text": "금리는 낮아도\n예금이 13만 원 넘게 많죠"
+  },
+  {
+   "start": 72.8,
+   "end": 76.8,
+   "text": "적금이 이기려면\n금리가 약 5.5%는 돼야 해요"
+  },
+  {
+   "start": 76.8,
+   "end": 79.8,
+   "text": "3% × 12 ÷ 6.5"
+  },
+  {
+   "start": 80.2,
+   "end": 84.6,
+   "text": "그리고 이자에는\n15.4% 세금이 붙어요"
+  },
+  {
+   "start": 84.8,
+   "end": 89.8,
+   "text": "소득세 14%에\n지방소득세 1.4%"
+  },
+  {
+   "start": 90.2,
+   "end": 94.8,
+   "text": "예금 36만 원은\n세금 떼고 30만 4,560원"
+  },
+  {
+   "start": 94.8,
+   "end": 99.8,
+   "text": "적금 22만 7,500원은\n19만 2,465원"
+  },
+  {
+   "start": 100.2,
+   "end": 103.0,
+   "text": "그럼 적금은 손해일까요?"
+  },
+  {
+   "start": 103.0,
+   "end": 106.8,
+   "text": "아니에요, 목돈이 없을 땐\n적금이 답이에요"
+  },
+  {
+   "start": 106.8,
+   "end": 109.8,
+   "text": "매달 모으는 습관을\n만들어 주거든요"
+  },
+  {
+   "start": 110.2,
+   "end": 113.2,
+   "text": "목돈이 있으면 예금,"
+  },
+  {
+   "start": 113.2,
+   "end": 116.8,
+   "text": "매달 모으는 돈은 적금"
+  },
+  {
+   "start": 117.2,
+   "end": 121.6,
+   "text": "중도에 해지하면\n약속한 금리를 못 받아요"
+  },
+  {
+   "start": 121.8,
+   "end": 124.6,
+   "text": "예금자보호는 한 곳에"
+  },
+  {
+   "start": 124.6,
+   "end": 127.8,
+   "text": "원금과 이자 합쳐\n1억 원까지"
+  },
+  {
+   "start": 128.2,
+   "end": 132.0,
+   "text": "정리하면, 적금 이자는\n금리의 약 절반"
+  },
+  {
+   "start": 132.0,
+   "end": 135.8,
+   "text": "목돈은 예금,\n매달 모으는 돈은 적금"
+  },
+  {
+   "start": 136.2,
+   "end": 139.4,
+   "text": "퀴즈! 월 10만 원,\n연 6% 적금 1년 이자는?"
+  },
+  {
+   "start": 139.4,
+   "end": 142.2,
+   "text": "정답은 3만 9천 원!"
+  },
+  {
+   "start": 142.4,
+   "end": 145.8,
+   "text": "세금 떼면\n약 3만 3천 원"
+  },
+  {
+   "start": 146.2,
+   "end": 149.8,
+   "text": "더 많은 지식이 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
