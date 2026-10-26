@@ -48,6 +48,15 @@
   (PyTorch CPU 전용 인덱스는 프록시 문제로 실패할 수 있음 → 일반 PyPI 판을 써도 CPU에서 동작)
 - GPU가 있는 사용자 PC에서 Claude Code를 돌리면 장당 몇 초. 그림만 PC에서 만들어 푸시하고 조립·렌더는 클라우드에서 해도 됨
 
+### 다음에 할 일: RunPod으로 배경 생성 (사용자 결정, 진행 전)
+
+- 사용자 PC(Beelink SER7, 메모리 16GB, 그래픽 할당 4GB)는 SDXL에 메모리가 부족해서 쓰지 않기로 함
+- Gemini(Nano Banana)·Google Flow는 시도하지 않기로 함
+- RunPod Serverless + FLUX.1 schnell(Apache-2.0)로 `gen_backgrounds.py`에 RunPod 모드를 추가할 예정
+  - 필요한 설정: 허용 도메인 `*.runpod.io`, `*.runpod.ai` / 비밀값 `RUNPOD_API_KEY` (Serverless 실행 권한)
+  - 공개 FLUX 엔드포인트가 있으면 그걸 쓰고, 없으면 ComfyUI 작업 서버로 엔드포인트를 만듦
+  - S01–S03을 먼저 만들어 지금 SDXL 배경과 비교한 뒤 18장 전체 교체, 실제 청구 시간으로 비용 보고
+
 ## 3. 타임라인·자막·소리
 
 7. **타임라인** — `build/timeline.py`: 장면 시간, 부품별 애니메이션(pop / fade / slide / growY / wipe / stamp / spin),
