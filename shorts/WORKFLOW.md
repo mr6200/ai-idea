@@ -11,7 +11,7 @@
 | 4. 적립식 vs 거치식 | `shorts/dca-vs-lump/` | 완성 |
 | 5. 예금 vs 적금 | `shorts/deposit-vs-savings/` | 완성 |
 | 5. 은행은 언제 어떻게 처음 생겼을까? | `shorts/bank-origins/` | 완성 (2분 규격 첫 편) |
-| 6. 은행은 어떻게 돈을 벌까? | `shorts/how-banks-earn/` | 제작 중 (1분 30초 시험) |
+| 6. 은행은 어떻게 돈을 벌까? | `shorts/how-banks-earn/` | 완성 (1분 30초 시험) |
 
 ## 0. 환경 준비
 
