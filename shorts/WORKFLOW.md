@@ -14,6 +14,7 @@
 | 6. 은행은 어떻게 돈을 벌까? | `shorts/how-banks-earn/` | 완성 (1분 30초 시험) |
 | 7. 이자에 붙는 세금 | `shorts/interest-tax/` | 완성 (1분 30초) |
 | 8. 무이자 할부, 카드사는 손해일까? | `shorts/card-installments/` | 완성 (1분 30초) |
+| 9. 비행기 창문은 왜 둥글까? | `shorts/airplane-windows/` | 완성 (1분 30초, 설계도+팝아트 스타일 첫 편) |
 
 ## 0. 환경 준비
 
@@ -28,7 +29,7 @@
 | AI 이미지 (오픈소스) | SDXL + SDXL-Lightning을 CPU에서 실행 (2편부터). 네트워크 허용: `huggingface.co`, `*.hf.co`, `download.pytorch.org`. GPU 없음 → 장당 약 5분, bfloat16으로 메모리 약 11GB (fp32는 메모리 부족으로 죽음) |
 | RunPod (GPU) | `RUNPOD_API_KEY` 설정됨. Pod 웹 주소는 막혀 있어 서버리스 엔드포인트로 배경 생성 (`four-percent-rule/README.md`의 순서). 쓰고 나면 엔드포인트·템플릿 삭제 |
 | Newtake | 사용하지 않음 (사용자 요청) |
-| 한글 글꼴 | 환경에 있는 것은 WenQuanYi Zen Hei뿐 |
+| 한글 글꼴 | 기본은 WenQuanYi Zen Hei뿐 → `shorts/fonts/`의 Black Han Sans·Do Hyeon·Jua·Nanum Pen(OFL)을 `~/.fonts`에 복사해 사용 (`build_all.sh`가 설치) |
 
 ## 1. 기획
 
@@ -157,16 +158,31 @@
 - 제목·썸네일은 질문형·반전형 ("무이자 할부, 카드사는 손해일까?"), 첫 장면은 인사 없이 질문이나 놀라운 숫자부터
 - 후보 목록: 비트코인 피자, 10원 동전 제조원가, 짜장면 값으로 보는 물가, 로또 당첨자 파산 오해, 짐바브웨 100조 달러, 커피값 30년
 
+## 설계도+팝아트 스타일 (9편부터 기본, 2026-10-26 사용자 요청)
+
+사용자가 기존 크림색+AI 배경 스타일이 단조롭다고 해서 예시 4종(설계도·팝아트·네온·신문) 중 **설계도와 팝아트를 섞은 스타일**로 정했습니다. 앞으로 모든 편을 이 스타일로 만듭니다. 기준 코드: `shorts/airplane-windows/build/gen_scenes.py`의 도우미 함수.
+
+| 요소 | 규칙 |
+|---|---|
+| 배경 | 남색 `#0f4c8a` + 설계도 모눈(40px 가는 선, 200px 굵은 선, `#e8f4ff`) + 모서리 망점(시안) + 오른쪽 아래 도면 표제란(`DWG. 0NN · 지식 쇼츠`). `bg()` |
+| 강조 장면 | 훅·사건·퀴즈엔 파란 햇살 무늬 `bg(burst=(x, y))` (`#2f86dc`, 불투명도 0.45) |
+| 그림 | 설계도 선화: 흰 선 `#e8f4ff` 8px, 하늘색 면 `#4cc9f0`, 치수선·주석은 시안 `#7fd3ff` (`dim()`) |
+| 팝 장식 | 굵은 검은 테두리 `#111`, 노랑 `#ffd400`, 빨강 `#e63946`, 폭발 별 `burst_star()`, 말풍선 `bubble()`, 검은 그림자 알약 `pill()`·상자 `panel()`, 의성어 `popword()` (기울임) |
+| 글꼴 | 제목 **Black Han Sans**(흰색/노랑, 검은 외곽선 `head()`), 감탄사·말풍선·알약 **Jua**, 주석 **Do Hyeon**, 자막 **Do Hyeon** (사용자 지정) |
+| 자막 카드 | 흰 상자 + 검은 8px 테두리 + 검은 그림자(10,12 어긋남), 도현 58px 검은 글자, 중심 y=1480 |
+| 상단 라벨 | 노란 알약 `지식 쇼츠 · 주제` (y=200) |
+| 진행 막대 | 노랑 `[1.0, 0.831, 0.0]`, Main 배경색 남색 |
+| AI 배경 | 쓰지 않음 (RunPod 불필요). `compose_bg.py`도 없음 |
+| 배치 | 자막 카드(2줄이면 y≈1380–1580)와 겹치지 않게 장면 요소는 **y≈1360 위**에 둠. 자막 카드를 얹은 장면 시트로 확인 |
+
 ## 다음 쇼츠를 만들 때
 
 2편부터는 **편마다 폴더를 따로** 둡니다 (앞 편 빌드를 덮어쓰지 않도록).
-가장 최근 편(`shorts/deposit-vs-savings/`)이 가장 깔끔한 틀입니다. 18장면 모두 `gen_scenes.py` 코드로 그리고, 콘티도 장면 그림에서 자동으로 만듭니다.
+9편부터는 `shorts/airplane-windows/`가 틀입니다 (설계도+팝아트 스타일, 1분 30초, 12장면).
 
-1. 최근 편의 `build/*.py`, `build/build_all.sh`, `.gitignore`를 새 폴더로 복사 (`svg`, `parts`, `ai_bg`, `scenes`, `video`, `tts`는 빼고)
-2. 새 주제로 `script.md` 작성 — 숫자는 `build/verify_numbers.py`로 직접 계산해 검증표를 붙이고, 사실 확인 표도 붙임
-3. `gen_scenes.py`의 `LABEL`과 S01–S18 정의, `timeline.py`의 `CUES`를 새 내용으로 교체 (위 2분 규격대로 120초)
-4. `gen_narration.py`의 `SPOKEN` (화면 글자 → 읽는 말), `gen_audio.py`의 `COIN_PARTS`와 수동 효과음 시각,
-   `gen_effectcraft.py`의 상단 고지 문구, `gen_backgrounds.py`의 장면별 배경 프롬프트를 새 내용에 맞춤
-5. AI 배경은 RunPod 서버리스로 생성 (`shorts/four-percent-rule/README.md`의 순서), 끝나면 엔드포인트·템플릿 삭제
-6. `build_all.sh`의 프로젝트·영상 파일 이름 변경 후 `build_all.sh --render`
-7. 장면 PNG 시트 → 완성 영상 프레임 시트로 겹침 확인 → 썸네일·메타데이터 → Drive 업로드(편마다 새 폴더)
+1. 최근 편의 `build/*.py`, `build/build_all.sh`, `.gitignore`를 새 폴더로 복사 (`svg`, `parts`, `scenes`, `video`, `tts`는 빼고)
+2. 새 주제로 `script.md` 작성 — 사실 확인 표를 붙임 (숫자가 있으면 `verify_numbers.py`로 검증표도)
+3. `gen_scenes.py`의 `LABEL`, 표제란 번호(`DWG. 0NN`), S01–S12 정의, `timeline.py`의 `CUES`를 새 내용으로 교체 (90초)
+4. `gen_narration.py`의 `SPOKEN`, `gen_audio.py`의 `COIN_PARTS`와 수동 효과음 시각, `gen_thumbnail.py`, `gen_storyboard.py`의 제목을 새 내용에 맞춤
+5. `build_all.sh`의 프로젝트·영상 파일 이름 변경 후 `build_all.sh --render`
+6. 자막 카드를 얹은 장면 시트 → 완성 영상 프레임 시트로 겹침 확인 → 썸네일·메타데이터 → Drive 업로드(편마다 새 폴더)
