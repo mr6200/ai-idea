@@ -10,7 +10,7 @@
 | 3. 4%의 법칙 | `shorts/four-percent-rule/` | 완성 |
 | 4. 적립식 vs 거치식 | `shorts/dca-vs-lump/` | 완성 |
 | 5. 예금 vs 적금 | `shorts/deposit-vs-savings/` | 완성 |
-| 6. 은행은 언제 어떻게 처음 생겼을까? | `shorts/bank-origins/` | 제작 중 (2분 규격 첫 편) |
+| 6. 은행은 언제 어떻게 처음 생겼을까? | `shorts/bank-origins/` | 완성 (2분 규격 첫 편) |
 
 ## 0. 환경 준비
 
