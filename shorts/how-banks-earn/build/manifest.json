@@ -1,0 +1,699 @@
+{
+ "duration": 90,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 5,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       510
+      ]
+     }
+    },
+    {
+     "name": "bank",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       900
+      ]
+     }
+    },
+    {
+     "name": "pay",
+     "anim": {
+      "type": "fade",
+      "at": 2.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 5,
+   "end": 11,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "dep",
+     "anim": {
+      "type": "slideL",
+      "at": 2.8
+     }
+    },
+    {
+     "name": "loan",
+     "anim": {
+      "type": "slideR",
+      "at": 4.0
+     }
+    },
+    {
+     "name": "gap",
+     "anim": {
+      "type": "stamp",
+      "at": 5.0,
+      "anchor": [
+       540,
+       1140
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 11,
+   "end": 19,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       440
+      ]
+     }
+    },
+    {
+     "name": "pay",
+     "anim": {
+      "type": "slideL",
+      "at": 0.4
+     }
+    },
+    {
+     "name": "earn",
+     "anim": {
+      "type": "slideR",
+      "at": 3.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 19,
+   "end": 25,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "calc",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       525
+      ]
+     }
+    },
+    {
+     "name": "margin",
+     "anim": {
+      "type": "stamp",
+      "at": 0.8,
+      "anchor": [
+       540,
+       830
+      ]
+     }
+    },
+    {
+     "name": "name",
+     "anim": {
+      "type": "pop",
+      "at": 2.8,
+      "anchor": [
+       540,
+       1170
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 25,
+   "end": 32,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "out",
+     "anim": {
+      "type": "slideR",
+      "at": 3.6
+     }
+    },
+    {
+     "name": "rest",
+     "anim": {
+      "type": "stamp",
+      "at": 4.4,
+      "anchor": [
+       540,
+       1230
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 32,
+   "end": 41,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       440
+      ]
+     }
+    },
+    {
+     "name": "ni",
+     "anim": {
+      "type": "growY",
+      "at": 0.6,
+      "anchor": [
+       360,
+       1172
+      ],
+      "dur": 0.8,
+      "ease": "decel"
+     }
+    },
+    {
+     "name": "nn",
+     "anim": {
+      "type": "growY",
+      "at": 3.8,
+      "anchor": [
+       720,
+       1172
+      ],
+      "dur": 0.6,
+      "ease": "decel"
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 41,
+   "end": 47,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "coins",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       860
+      ]
+     }
+    },
+    {
+     "name": "nine",
+     "anim": {
+      "type": "stamp",
+      "at": 1.4,
+      "anchor": [
+       540,
+       1130
+      ]
+     }
+    },
+    {
+     "name": "trade",
+     "anim": {
+      "type": "fade",
+      "at": 2.8
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 47,
+   "end": 55,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "gone",
+     "anim": {
+      "type": "slideR",
+      "at": 3.6
+     }
+    },
+    {
+     "name": "loss",
+     "anim": {
+      "type": "stamp",
+      "at": 5.2,
+      "anchor": [
+       540,
+       1200
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 55,
+   "end": 62,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "lens",
+     "anim": {
+      "type": "pop",
+      "at": 0.6,
+      "anchor": [
+       300,
+       760
+      ]
+     }
+    },
+    {
+     "name": "risk",
+     "anim": {
+      "type": "wipeL",
+      "at": 3.4,
+      "dur": 1.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 62,
+   "end": 70,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       430
+      ]
+     }
+    },
+    {
+     "name": "shop",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       900
+      ]
+     }
+    },
+    {
+     "name": "store",
+     "anim": {
+      "type": "fade",
+      "at": 3.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "start": 70,
+   "end": 80,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       620
+      ]
+     }
+    },
+    {
+     "name": "formula",
+     "anim": {
+      "type": "pop",
+      "at": 1.6,
+      "anchor": [
+       540,
+       825
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       540,
+       1060
+      ]
+     }
+    },
+    {
+     "name": "confetti",
+     "anim": {
+      "type": "drop",
+      "at": 3.8
+     }
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "start": 80,
+   "end": 90,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "link",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       525
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 4.8,
+      "anchor": [
+       540,
+       985
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 5.6,
+      "anchor": [
+       785,
+       1120
+      ]
+     }
+    },
+    {
+     "name": "prev",
+     "anim": {
+      "type": "fade",
+      "at": 6.0
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 2.6,
+   "text": "은행은 어떻게\n돈을 벌까요?"
+  },
+  {
+   "start": 2.6,
+   "end": 4.8,
+   "text": "내 예금에\n이자까지 주면서요"
+  },
+  {
+   "start": 5.0,
+   "end": 7.8,
+   "text": "비밀은 금리 차이"
+  },
+  {
+   "start": 7.8,
+   "end": 10.8,
+   "text": "예금은 3%에 받고,\n대출은 5%에 빌려줘요"
+  },
+  {
+   "start": 11.0,
+   "end": 14.6,
+   "text": "1억 원을 맡기면\n은행이 주는 이자는 300만 원"
+  },
+  {
+   "start": 14.6,
+   "end": 18.8,
+   "text": "그 돈을 빌려주고\n받는 이자는 500만 원"
+  },
+  {
+   "start": 19.0,
+   "end": 21.6,
+   "text": "차이 200만 원이\n은행 몫"
+  },
+  {
+   "start": 21.6,
+   "end": 24.8,
+   "text": "이걸 예대마진이라고 해요"
+  },
+  {
+   "start": 25.0,
+   "end": 28.4,
+   "text": "그래서 은행은 예금을\n금고에 쌓아 두지 않아요"
+  },
+  {
+   "start": 28.4,
+   "end": 31.8,
+   "text": "일부만 남기고,\n나머지는 빌려주죠"
+  },
+  {
+   "start": 32.0,
+   "end": 35.8,
+   "text": "2025년 국내 은행이\n이자로 번 돈은 약 60조 원"
+  },
+  {
+   "start": 35.8,
+   "end": 40.8,
+   "text": "수수료 같은 다른 수익은\n7조 6천억 원"
+  },
+  {
+   "start": 41.0,
+   "end": 43.8,
+   "text": "10원을 벌면\n약 9원이 이자에서"
+  },
+  {
+   "start": 43.8,
+   "end": 46.8,
+   "text": "은행은 결국\n이자 장사인 셈이에요"
+  },
+  {
+   "start": 47.0,
+   "end": 50.6,
+   "text": "그럼 은행은\n무조건 남을까요?"
+  },
+  {
+   "start": 50.6,
+   "end": 54.8,
+   "text": "빌려준 돈을 못 받으면\n그대로 손해예요"
+  },
+  {
+   "start": 55.0,
+   "end": 58.4,
+   "text": "그래서 대출 전에\n신용과 담보를 꼼꼼히 보고"
+  },
+  {
+   "start": 58.4,
+   "end": 61.8,
+   "text": "위험할수록\n금리를 높게 받아요"
+  },
+  {
+   "start": 62.0,
+   "end": 65.4,
+   "text": "정리하면, 은행은\n돈을 싸게 빌려서"
+  },
+  {
+   "start": 65.4,
+   "end": 69.8,
+   "text": "비싸게 빌려주는 가게예요"
+  },
+  {
+   "start": 70.0,
+   "end": 73.6,
+   "text": "퀴즈! 예금 3%, 대출 6%,\n1억 원이면 은행 몫은?"
+  },
+  {
+   "start": 73.6,
+   "end": 76.4,
+   "text": "정답은 300만 원!"
+  },
+  {
+   "start": 76.6,
+   "end": 79.8,
+   "text": "금리 차이 3%가\n은행의 수입이죠"
+  },
+  {
+   "start": 80.2,
+   "end": 84.6,
+   "text": "내 예금이 누군가의\n대출이 되는 거예요"
+  },
+  {
+   "start": 84.8,
+   "end": 89.8,
+   "text": "더 많은 지식이 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
