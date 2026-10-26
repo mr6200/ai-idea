@@ -18,6 +18,7 @@
 | Google Drive | 커넥터 연결됨. 텍스트 문서만 올리기 쉽고, 영상·이미지는 GitHub 링크 메모로 남김 |
 | Drive 직접 업로드(선택) | `GDRIVE_CLIENT_ID` / `GDRIVE_CLIENT_SECRET` / `GDRIVE_REFRESH_TOKEN`을 환경에 넣으면 큰 파일도 업로드 가능 (아직 미설정) |
 | OpenAI 이미지 | 사용 불가 (`api.openai.com` 차단, 키 없음) |
+| AI 이미지 (오픈소스) | SDXL + SDXL-Lightning을 CPU에서 실행 (2편부터). 네트워크 허용: `huggingface.co`, `*.hf.co`, `download.pytorch.org`. GPU 없음 → 장당 약 5분, bfloat16으로 메모리 약 11GB (fp32는 메모리 부족으로 죽음) |
 | Newtake | 사용하지 않음 (사용자 요청) |
 | 한글 글꼴 | 환경에 있는 것은 WenQuanYi Zen Hei뿐 |
 
@@ -38,6 +39,14 @@
    장면 원본(`scenes/Sxx.vectorcraft`)으로 변환
 5. **S01–S03 레이어 분리** — `build/export_s01_s03.py`가 오브젝트를 숨겨 가며 부품 PNG로 내보냄
 6. 레이아웃 확인 — 장면 PNG를 한 장의 시트로 모아 겹침·넘침을 눈으로 확인하고 수정
+
+### AI 배경 (2편부터)
+
+- `build/gen_backgrounds.py`가 장면마다 일러스트 배경을 그려 `build/ai_bg/`에 저장(커밋함). 글자는 넣지 않음
+- `build/compose_bg.py`가 배경을 살짝 흐리게 한 뒤 반투명 크림 덮개(`BG_WASH` 0.58) 아래에 깔아 숫자·그래프가 잘 읽히게 함
+- 파이썬 가상환경은 스크래치 폴더에 따로 만듦: `pip install torch diffusers transformers accelerate safetensors peft`
+  (PyTorch CPU 전용 인덱스는 프록시 문제로 실패할 수 있음 → 일반 PyPI 판을 써도 CPU에서 동작)
+- GPU가 있는 사용자 PC에서 Claude Code를 돌리면 장당 몇 초. 그림만 PC에서 만들어 푸시하고 조립·렌더는 클라우드에서 해도 됨
 
 ## 3. 타임라인·자막·소리
 
@@ -87,6 +96,7 @@
 | 와이프가 늦게 시작 | 전체 화면 기준이라 생기는 문제 → 부품 bbox로 진행률 보정 |
 | 자막이 장면 하단 요소와 겹침 | 자막 y=1480으로 내리고 겹치는 요소를 위로 |
 | TTS가 "3,600만"을 "삼 육백만"으로 읽음 | 숫자를 한글로 바꿔서 TTS에 전달 |
+| 음량이 −14가 아니라 −15.8 LUFS로 나옴 (2편) | 1회 loudnorm 뒤에 +1.8dB와 리미터 추가 (`build_all.sh`) |
 | "1, 2, 3"처럼 나열한 숫자를 붙여 읽음 (2편) | 숫자 정규식에서 쉼표를 천 단위(`1,000`)일 때만 숫자로 취급 |
 | Python에 playwright 없음 (2편) | 콘티 PNG는 Node의 playwright로 스크린샷 (`gen_storyboard.py`) |
 | 큰 파일 Drive 업로드 불가 | GitHub 링크 메모. 근본 해결은 Drive API 인증 정보 등록 |

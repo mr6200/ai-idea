@@ -2,14 +2,17 @@
 import os
 import subprocess
 
-from gen_scenes import CREAM, GLOW, INK, MUTED, ORANGE, WHITE, bill, pill, svg, text
+from PIL import Image
+
+from compose_bg import backdrop
+from gen_scenes import BG_WASH, CREAM, GLOW, GLOW_ALPHA, INK, MUTED, ORANGE, WHITE, bill, pill, svg, text
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, "..", "thumbnail")
 
 body = (
-    f'<rect x="0" y="0" width="1080" height="1920" fill="{CREAM}"/>'
-    f'<circle cx="540" cy="1100" r="560" fill="{GLOW}"/>'
+    f'<rect x="0" y="0" width="1080" height="1920" fill="{CREAM}" fill-opacity="{BG_WASH}"/>'
+    f'<circle cx="540" cy="1100" r="560" fill="{GLOW}" fill-opacity="{GLOW_ALPHA}"/>'
     + pill("72의 법칙", 540, 300, 64, ORANGE)
     # headline
     + text("돈이 두 배 되는 날", 540, 560, 104)
@@ -32,6 +35,9 @@ def main():
     for ext in ("vectorcraft", "png"):
         subprocess.run(["vectorcraft-cli", "convert", src, os.path.join(OUT, f"thumbnail.{ext}")],
                        check=True, capture_output=True)
+    # same AI backdrop as the opening scene, under the translucent cream wash
+    png = os.path.join(OUT, "thumbnail.png")
+    Image.alpha_composite(backdrop("S01"), Image.open(png).convert("RGBA")).convert("RGB").save(png)
     print("wrote", OUT)
 
 

@@ -33,10 +33,10 @@ effectcraft-cli script build.jsx --empty --save-as ../video/rule-of-72.ecproj
 if [ "${1:-}" = "--render" ]; then
   effectcraft-cli render --project ../video/rule-of-72.ecproj --comp Main \
     --out ../video/raw.mp4 --format h264 --audio on --quality best
-  # loudness-normalised audio, H.264 Main profile, moov atom up front for previews
+  # loudness-normalised audio (single-pass loudnorm lands near -16, so +1.8 dB under a limiter), H.264 Main profile, moov atom up front for previews
   ffmpeg -v error -y -i ../video/raw.mp4 \
     -map 0:v -map 0:a -c:v libx264 -profile:v main -level 4.1 -pix_fmt yuv420p -crf 19 \
-    -af loudnorm=I=-14:TP=-1.5:LRA=11 -c:a aac -b:a 192k -ar 48000 \
+    -af "loudnorm=I=-14:TP=-1.5:LRA=11,volume=1.8dB,alimiter=limit=0.84:level=false" -c:a aac -b:a 192k -ar 48000 \
     -movflags +faststart -shortest ../video/rule-of-72-shorts.mp4
   rm -f ../video/raw.mp4
 fi
