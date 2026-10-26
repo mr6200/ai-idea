@@ -49,7 +49,7 @@
 > 주식과 채권 반반에 넣고 첫해 4%를 꺼낸 뒤
 > 매년 물가만큼 늘려 꺼냈더니
 > 30년 동안 돈이 버틴 경우가 95%였습니다.
-> 꺼내 쓰는 동안에도 남은 돈이 계속 불어나거든요.
+> 꺼내 쓰는 동안에도 남은 돈은 계속 투자돼 수익을 내거든요.
 
 ## 5. 주의할 점 (1:30 – 2:08)
 
@@ -95,12 +95,20 @@
 | 퀴즈 월 250만 원 | 250만 × 12 × 25 | 7억 5천만 원 |
 | 순서 위험 예시 (S12) | 9억, 첫해 3,600만 원 인출 후 매년 2.5% 증액, 같은 30년 수익률(연평균 약 3.0%)을 정순·역순으로 | 좋은 순서: 30년 뒤 약 3.2억 남음 / 나쁜 순서: 20년째 0원 |
 
-## 사실 확인 (공개 전 출처 재확인)
+## 사실 확인 (2026-10-26 확인)
 
-| 내용 | 출처 |
-|---|---|
-| 1994년 윌리엄 벤겐(William Bengen) 제안 | Bengen, "Determining Withdrawal Rates Using Historical Data", *Journal of Financial Planning*, 1994. 10 |
-| 1998년 트리니티 연구 | Cooley·Hubbard·Walz (Trinity University), "Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable", *AAII Journal*, 1998. 2 |
-| 1926–1995년 미국 데이터, 주식 50 : 채권 50, 첫해 4% + 물가 연동, 30년 성공률 95% | 트리니티 연구 표 (물가 연동 인출 표). 주식 75% 조합은 98% |
+원문 PDF는 이 환경에서 열 수 없어(접속 차단) 원문을 인용한 자료 여러 곳을 서로 대조했습니다.
+
+| 영상 속 내용 | 확인 결과 | 근거 |
+|---|---|---|
+| 1994년 미국 재무설계사 윌리엄 벤겐이 처음 제안 | 맞음. Bengen(캘리포니아 엘카혼의 CFP), "Determining Withdrawal Rates Using Historical Data", *Journal of Financial Planning*, 1994년 10월. 주식 50 : 중기 국채 50, 1926년부터의 미국 데이터. 30년 기준 최악의 경우에도 버틴 첫해 인출률이 약 4.15% → 4%로 알려짐. "4%의 법칙"이라는 이름은 이후에 붙음 | FPA 2004 재수록본, FPA *Journal* 2023 「Revisiting William Bengen's SAFEMAX」, First Manhattan 요약 |
+| 1998년 트리니티 대학 연구 | 맞음. Cooley·Hubbard·Walz, "Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable", *AAII Journal* 20권 2호, 1998년 2월 | 여러 요약 자료 (제목이 "Retirement Spending: Choosing a Sustainable Withdrawal Rate"로 적힌 재수록본도 있음) |
+| 1926년부터 70년간, 주식·채권 반반, 첫해 4% + 매년 물가만큼 증액, 30년 버틴 비율 95% | 맞음. 1926–1995년, 대형주 50 : 장기 우량 회사채 50, 물가 연동 4% 인출, 30년 성공률 95% (주식 75%면 98%) | Bogleheads·RBC Wealth Management 자료 등 |
+| 50년을 버텨야 하면 3~3.5% | 근거 있음. 벤겐 1994: 3%는 모든 경우에 50년 이상 버팀. Early Retirement Now 4부: 조기 은퇴 기준 약 3.25%. ChooseFI 기사: 50년 3.35% | First Manhattan 요약, Early Retirement Now, ChooseFI |
+| 국민연금 월 100만 원을 빼고 계산 | 계산 방식이 맞음. 국민연금은 매년 전년도 소비자물가 상승률만큼 오름 (2026년 2.1%) → 물가만큼 늘려 꺼내는 4% 법칙과 같은 기준이라 뺄 수 있음 | 복지로 2026년 인상 안내 |
+| 은퇴 직후 폭락 (순서 위험) | 널리 알려진 개념. 화면 그래프는 설명용 예시 시뮬레이션이라 "(예시)"로 표시 | `build/verify_numbers.py` |
+
+- 고친 문장: "남은 돈이 계속 불어나거든요" → "남은 돈은 계속 투자돼 수익을 내거든요" (잔액이 줄어드는 시기도 있어서 "계속 불어난다"는 과장)
+- 참고: 벤겐은 이후 권장 인출률을 4.5%로 올렸음. 영상은 원래 연구(4%) 기준
 
 > 과거 미국 시장 데이터에 기반한 경험칙이며 미래 수익을 보장하지 않습니다. 화면 하단 고지 자막으로 넣습니다.
