@@ -1,7 +1,7 @@
 # 지식 쇼츠 제작 순서 (복리의 마법 기준)
 
 이 문서는 다른 세션에서 같은 방식으로 이어서 작업하기 위한 정리입니다.
-저장소: `mr6200/ai-idea` · 브랜치: `claude/shorts-workflow-hyy56a` (1·2편), `ccr-78413b83-erbceh` (3–5편) · 작업 폴더: `shorts/`
+저장소: `mr6200/ai-idea` · 브랜치: `claude/shorts-workflow-hyy56a` (1·2편), `ccr-78413b83-erbceh` (3편부터) · 작업 폴더: `shorts/`
 
 | 편 | 폴더 | 상태 |
 |---|---|---|
@@ -10,6 +10,7 @@
 | 3. 4%의 법칙 | `shorts/four-percent-rule/` | 완성 |
 | 4. 적립식 vs 거치식 | `shorts/dca-vs-lump/` | 완성 |
 | 5. 예금 vs 적금 | `shorts/deposit-vs-savings/` | 완성 |
+| 6. 은행은 언제 어떻게 처음 생겼을까? | `shorts/bank-origins/` | 제작 중 (2분 규격 첫 편) |
 
 ## 0. 환경 준비
 
