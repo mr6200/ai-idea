@@ -1,12 +1,13 @@
 # 지식 쇼츠 제작 순서 (복리의 마법 기준)
 
 이 문서는 다른 세션에서 같은 방식으로 이어서 작업하기 위한 정리입니다.
-저장소: `mr6200/ai-idea` · 브랜치: `claude/shorts-workflow-hyy56a` · 작업 폴더: `shorts/`
+저장소: `mr6200/ai-idea` · 브랜치: `claude/shorts-workflow-hyy56a` (1·2편), `ccr-78413b83-erbceh` (3편) · 작업 폴더: `shorts/`
 
 | 편 | 폴더 | 상태 |
 |---|---|---|
 | 1. 복리의 마법 | `shorts/` (루트에 바로 있음) | 완성 |
 | 2. 72의 법칙 | `shorts/rule-of-72/` | 완성 |
+| 3. 4%의 법칙 | `shorts/four-percent-rule/` | 대본·콘티·내레이션 완료. 남은 것: AI 배경(RunPod), 썸네일, 자막·BGM, 조립·렌더, 메타데이터, Drive |
 
 ## 0. 환경 준비
 
@@ -19,6 +20,7 @@
 | Drive 직접 업로드(선택) | `GDRIVE_CLIENT_ID` / `GDRIVE_CLIENT_SECRET` / `GDRIVE_REFRESH_TOKEN`을 환경에 넣으면 큰 파일도 업로드 가능 (아직 미설정) |
 | OpenAI 이미지 | 사용 불가 (`api.openai.com` 차단, 키 없음) |
 | AI 이미지 (오픈소스) | SDXL + SDXL-Lightning을 CPU에서 실행 (2편부터). 네트워크 허용: `huggingface.co`, `*.hf.co`, `download.pytorch.org`. GPU 없음 → 장당 약 5분, bfloat16으로 메모리 약 11GB (fp32는 메모리 부족으로 죽음) |
+| RunPod (GPU) | `RUNPOD_API_KEY` 설정됨, API 연결 확인. 2026-10-26 기준 잔액이 0원 아래라 Pod를 켜려면 충전 필요. 쓰고 나면 Pod는 바로 삭제 |
 | Newtake | 사용하지 않음 (사용자 요청) |
 | 한글 글꼴 | 환경에 있는 것은 WenQuanYi Zen Hei뿐 |
 

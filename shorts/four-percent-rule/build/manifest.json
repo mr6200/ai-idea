@@ -1,0 +1,1183 @@
+{
+ "duration": 150,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 5,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       510
+      ]
+     }
+    },
+    {
+     "name": "person",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     },
+     "idle": "bob"
+    },
+    {
+     "name": "q1",
+     "anim": {
+      "type": "pop",
+      "at": 3.0,
+      "anchor": [
+       760,
+       800
+      ]
+     }
+    },
+    {
+     "name": "q2",
+     "anim": {
+      "type": "pop",
+      "at": 3.8,
+      "anchor": [
+       800,
+       1020
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 5,
+   "end": 10,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "fog",
+     "anim": {
+      "type": "fade",
+      "at": 0.2
+     }
+    },
+    {
+     "name": "times",
+     "anim": {
+      "type": "pop",
+      "at": 2.2,
+      "anchor": [
+       540,
+       880
+      ]
+     }
+    },
+    {
+     "name": "once",
+     "anim": {
+      "type": "stamp",
+      "at": 3.0,
+      "anchor": [
+       540,
+       1200
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 10,
+   "end": 14,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "fade",
+      "at": 0.0
+     }
+    },
+    {
+     "name": "four",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       830
+      ]
+     }
+    },
+    {
+     "name": "name",
+     "anim": {
+      "type": "stamp",
+      "at": 1.2,
+      "anchor": [
+       540,
+       1230
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 14,
+   "end": 22,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "jar",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       370,
+       900
+      ]
+     }
+    },
+    {
+     "name": "out",
+     "anim": {
+      "type": "slideR",
+      "at": 1.6
+     }
+    },
+    {
+     "name": "ok",
+     "anim": {
+      "type": "stamp",
+      "at": 4.0,
+      "anchor": [
+       820,
+       1080
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 22,
+   "end": 30,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "frac",
+     "anim": {
+      "type": "pop",
+      "at": 2.2,
+      "anchor": [
+       540,
+       730
+      ]
+     }
+    },
+    {
+     "name": "result",
+     "anim": {
+      "type": "stamp",
+      "at": 4.8,
+      "anchor": [
+       540,
+       1110
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 30,
+   "end": 42,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "r1",
+     "anim": {
+      "type": "slideR",
+      "at": 0.2
+     }
+    },
+    {
+     "name": "r2",
+     "anim": {
+      "type": "slideR",
+      "at": 3.2
+     }
+    },
+    {
+     "name": "r3",
+     "anim": {
+      "type": "stamp",
+      "at": 5.8,
+      "anchor": [
+       540,
+       1010
+      ]
+     }
+    },
+    {
+     "name": "goal",
+     "anim": {
+      "type": "stamp",
+      "at": 9.2,
+      "anchor": [
+       540,
+       1250
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 42,
+   "end": 50,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       400
+      ]
+     }
+    },
+    {
+     "name": "b1",
+     "anim": {
+      "type": "growY",
+      "at": 0.4,
+      "anchor": [
+       250,
+       1192
+      ],
+      "dur": 0.7,
+      "ease": "decel"
+     }
+    },
+    {
+     "name": "b2",
+     "anim": {
+      "type": "growY",
+      "at": 1.8,
+      "anchor": [
+       540,
+       1192
+      ],
+      "dur": 0.7,
+      "ease": "decel"
+     }
+    },
+    {
+     "name": "b3",
+     "anim": {
+      "type": "growY",
+      "at": 3.6,
+      "anchor": [
+       830,
+       1192
+      ],
+      "dur": 0.7,
+      "ease": "decel"
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 50,
+   "end": 58,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "pension",
+     "anim": {
+      "type": "wipeL",
+      "at": 1.2,
+      "dur": 0.6
+     }
+    },
+    {
+     "name": "mine",
+     "anim": {
+      "type": "wipeL",
+      "at": 3.6,
+      "dur": 0.8
+     }
+    },
+    {
+     "name": "formula",
+     "anim": {
+      "type": "stamp",
+      "at": 6.0,
+      "anchor": [
+       540,
+       1080
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 58,
+   "end": 69,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "c1",
+     "anim": {
+      "type": "slideL",
+      "at": 3.0
+     }
+    },
+    {
+     "name": "c2",
+     "anim": {
+      "type": "slideR",
+      "at": 7.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 69,
+   "end": 80,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "header",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       440
+      ]
+     }
+    },
+    {
+     "name": "s1",
+     "anim": {
+      "type": "slideR",
+      "at": 4.0
+     }
+    },
+    {
+     "name": "s2",
+     "anim": {
+      "type": "slideR",
+      "at": 5.6
+     }
+    },
+    {
+     "name": "s3",
+     "anim": {
+      "type": "slideR",
+      "at": 7.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "start": 80,
+   "end": 90,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "arc",
+     "anim": {
+      "type": "pop",
+      "at": 0.8,
+      "anchor": [
+       540,
+       840
+      ]
+     }
+    },
+    {
+     "name": "pct",
+     "anim": {
+      "type": "stamp",
+      "at": 2.4,
+      "anchor": [
+       540,
+       840
+      ]
+     }
+    },
+    {
+     "name": "why",
+     "anim": {
+      "type": "fade",
+      "at": 4.8
+     }
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "start": 90,
+   "end": 100,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       400
+      ]
+     }
+    },
+    {
+     "name": "good",
+     "anim": {
+      "type": "wipeL",
+      "at": 2.2,
+      "dur": 1.4,
+      "ease": "linear"
+     }
+    },
+    {
+     "name": "bad",
+     "anim": {
+      "type": "wipeL",
+      "at": 4.0,
+      "dur": 1.4,
+      "ease": "linear"
+     }
+    },
+    {
+     "name": "note",
+     "anim": {
+      "type": "fade",
+      "at": 5.4
+     }
+    },
+    {
+     "name": "zero",
+     "anim": {
+      "type": "stamp",
+      "at": 7.0,
+      "anchor": [
+       720,
+       1070
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "start": 100,
+   "end": 110,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "r30",
+     "anim": {
+      "type": "wipeL",
+      "at": 0.4,
+      "dur": 0.8
+     }
+    },
+    {
+     "name": "r50",
+     "anim": {
+      "type": "wipeL",
+      "at": 2.8,
+      "dur": 1.2
+     }
+    },
+    {
+     "name": "lower",
+     "anim": {
+      "type": "stamp",
+      "at": 6.4,
+      "anchor": [
+       540,
+       1210
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "start": 110,
+   "end": 117,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       430
+      ]
+     }
+    },
+    {
+     "name": "b4",
+     "anim": {
+      "type": "growY",
+      "at": 3.0,
+      "anchor": [
+       360,
+       1192
+      ],
+      "dur": 0.6,
+      "ease": "decel"
+     }
+    },
+    {
+     "name": "b3",
+     "anim": {
+      "type": "growY",
+      "at": 3.6,
+      "anchor": [
+       720,
+       1192
+      ],
+      "dur": 0.6,
+      "ease": "decel"
+     }
+    },
+    {
+     "name": "more",
+     "anim": {
+      "type": "stamp",
+      "at": 4.6,
+      "anchor": [
+       520,
+       580
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "start": 117,
+   "end": 128,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "k1",
+     "anim": {
+      "type": "slideR",
+      "at": 0.4
+     }
+    },
+    {
+     "name": "k2",
+     "anim": {
+      "type": "slideR",
+      "at": 1.8
+     }
+    },
+    {
+     "name": "k3",
+     "anim": {
+      "type": "slideR",
+      "at": 3.0
+     }
+    },
+    {
+     "name": "start",
+     "anim": {
+      "type": "stamp",
+      "at": 6.2,
+      "anchor": [
+       540,
+       1220
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "start": 128,
+   "end": 136,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       430
+      ]
+     }
+    },
+    {
+     "name": "main",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       720
+      ]
+     }
+    },
+    {
+     "name": "long",
+     "anim": {
+      "type": "pop",
+      "at": 4.0,
+      "anchor": [
+       540,
+       1070
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "start": 136,
+   "end": 146,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       570
+      ]
+     }
+    },
+    {
+     "name": "formula",
+     "anim": {
+      "type": "pop",
+      "at": 1.4,
+      "anchor": [
+       540,
+       770
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 2.7,
+      "anchor": [
+       540,
+       1060
+      ]
+     }
+    },
+    {
+     "name": "confetti",
+     "anim": {
+      "type": "drop",
+      "at": 2.9
+     }
+    },
+    {
+     "name": "tip",
+     "anim": {
+      "type": "fade",
+      "at": 6.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "start": 146,
+   "end": 150,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       535
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       845
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 1.2,
+      "anchor": [
+       785,
+       980
+      ]
+     }
+    },
+    {
+     "name": "prev",
+     "anim": {
+      "type": "fade",
+      "at": 1.6
+     }
+    },
+    {
+     "name": "disclaimer",
+     "anim": {
+      "type": "fade",
+      "at": 1.8
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 3.0,
+   "text": "은퇴하려면\n돈이 얼마나 필요할까요?"
+  },
+  {
+   "start": 3.0,
+   "end": 4.9,
+   "text": "10억? 20억?"
+  },
+  {
+   "start": 5.1,
+   "end": 7.2,
+   "text": "막연하게 느껴지지만"
+  },
+  {
+   "start": 7.2,
+   "end": 9.9,
+   "text": "곱셈 한 번이면\n답이 나와요"
+  },
+  {
+   "start": 10.1,
+   "end": 13.9,
+   "text": "바로 ‘4%의 법칙’입니다"
+  },
+  {
+   "start": 14.2,
+   "end": 17.8,
+   "text": "은퇴 자금의 4%씩만\n매년 꺼내 쓰면"
+  },
+  {
+   "start": 17.8,
+   "end": 21.8,
+   "text": "30년이 지나도 돈이 바닥나지\n않을 가능성이 높다는 법칙"
+  },
+  {
+   "start": 22.2,
+   "end": 24.4,
+   "text": "거꾸로 뒤집으면"
+  },
+  {
+   "start": 24.4,
+   "end": 26.8,
+   "text": "4%는 25분의 1이니까"
+  },
+  {
+   "start": 26.8,
+   "end": 29.8,
+   "text": "필요한 돈은\n1년 생활비 × 25"
+  },
+  {
+   "start": 30.2,
+   "end": 33.2,
+   "text": "한 달 생활비가\n300만 원이면"
+  },
+  {
+   "start": 33.2,
+   "end": 35.6,
+   "text": "1년에 3,600만 원"
+  },
+  {
+   "start": 35.8,
+   "end": 39.2,
+   "text": "3,600만 × 25 = 9억 원"
+  },
+  {
+   "start": 39.2,
+   "end": 41.8,
+   "text": "이게 목표 금액입니다"
+  },
+  {
+   "start": 42.2,
+   "end": 45.6,
+   "text": "월 200만 원이면 6억"
+  },
+  {
+   "start": 45.6,
+   "end": 49.8,
+   "text": "월 400만 원이면 12억"
+  },
+  {
+   "start": 50.2,
+   "end": 53.6,
+   "text": "국민연금이\n월 100만 원 나온다면"
+  },
+  {
+   "start": 53.6,
+   "end": 57.8,
+   "text": "모자란 200만 원만 채우면 되니까\n6억이면 돼요"
+  },
+  {
+   "start": 58.2,
+   "end": 61.0,
+   "text": "이 숫자는\n어디서 나왔을까요?"
+  },
+  {
+   "start": 61.0,
+   "end": 65.4,
+   "text": "1994년 미국의 재무설계사\n윌리엄 벤겐이 처음 제안했고"
+  },
+  {
+   "start": 65.4,
+   "end": 68.8,
+   "text": "1998년 트리니티 대학\n연구로 유명해졌어요"
+  },
+  {
+   "start": 69.2,
+   "end": 73.0,
+   "text": "1926년부터 70년간의\n미국 주식·채권 데이터로"
+  },
+  {
+   "start": 73.0,
+   "end": 76.6,
+   "text": "주식과 채권 반반에 넣고\n첫해 4%를 꺼낸 뒤"
+  },
+  {
+   "start": 76.6,
+   "end": 79.8,
+   "text": "매년 물가만큼\n늘려 꺼냈더니"
+  },
+  {
+   "start": 80.2,
+   "end": 84.6,
+   "text": "30년 동안 돈이 버틴 경우가\n95%였습니다"
+  },
+  {
+   "start": 84.8,
+   "end": 89.8,
+   "text": "꺼내 쓰는 동안에도\n남은 돈이 계속 불어나거든요"
+  },
+  {
+   "start": 90.2,
+   "end": 92.4,
+   "text": "하지만 주의할 점도 있어요"
+  },
+  {
+   "start": 92.4,
+   "end": 95.4,
+   "text": "은퇴 직후에\n시장이 폭락하면"
+  },
+  {
+   "start": 95.4,
+   "end": 99.8,
+   "text": "같은 수익률도 순서만 바뀌면\n20년 만에 바닥날 수 있어요"
+  },
+  {
+   "start": 100.2,
+   "end": 102.8,
+   "text": "그리고 이건 30년 기준이에요"
+  },
+  {
+   "start": 102.8,
+   "end": 106.4,
+   "text": "40대에 은퇴해서\n50년을 버텨야 한다면"
+  },
+  {
+   "start": 106.4,
+   "end": 109.8,
+   "text": "3~3.5%로 낮추는 게 안전해요"
+  },
+  {
+   "start": 110.2,
+   "end": 113.2,
+   "text": "3%면 생활비 × 33"
+  },
+  {
+   "start": 113.2,
+   "end": 116.8,
+   "text": "월 300만 원이면\n약 12억이 필요하죠"
+  },
+  {
+   "start": 117.2,
+   "end": 122.4,
+   "text": "수수료와 세금, 미국과 다른\n한국 시장도 생각해야 합니다"
+  },
+  {
+   "start": 122.6,
+   "end": 127.8,
+   "text": "그래서 4%는 정답이 아니라\n출발점이에요"
+  },
+  {
+   "start": 128.2,
+   "end": 132.0,
+   "text": "정리하면, 은퇴 자금은\n1년 생활비 × 25"
+  },
+  {
+   "start": 132.0,
+   "end": 135.8,
+   "text": "더 오래 버텨야 하면\n× 33"
+  },
+  {
+   "start": 136.2,
+   "end": 138.9,
+   "text": "퀴즈! 월 250만 원이면?"
+  },
+  {
+   "start": 138.9,
+   "end": 141.8,
+   "text": "정답은 7억 5천만 원!"
+  },
+  {
+   "start": 142.2,
+   "end": 145.8,
+   "text": "내 숫자를\n오늘 계산해 보세요"
+  },
+  {
+   "start": 146.2,
+   "end": 149.8,
+   "text": "더 많은 지식이 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
