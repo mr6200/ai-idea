@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Rebuild the 4%-rule Short. Done so far: scenes, storyboard, narration.
-# Still to adapt from shorts/rule-of-72/build: gen_backgrounds prompts (run on RunPod), gen_thumbnail,
-# gen_subtitles, gen_audio, gen_effectcraft and the render step.
+# Rebuild the 4%-rule Short end to end:
+# SVG parts -> VectorCraft PNG layers -> subtitles/audio -> EffectCraft project -> MP4.
+# AI backgrounds are committed in ai_bg/; to redraw them see gen_backgrounds_runpod.py (README).
 set -euo pipefail
 cd "$(dirname "$0")"
 
@@ -22,7 +22,24 @@ done
 python3 compose_bg.py      # lays ai_bg/Sxx.png under the cream wash when present
 python3 timeline.py
 python3 gen_storyboard.py  # storyboard.html/.png from the scene art
+python3 gen_thumbnail.py
+python3 gen_subtitles.py
 python3 gen_narration.py   # Google Cloud TTS (GOOGLE_TTS_API_KEY); cached in tts/
 # preview copy of the narration for review (narration.wav itself is regenerated, not committed)
 mkdir -p ../audio
 ffmpeg -v error -y -i narration.wav -c:a libmp3lame -b:a 128k ../audio/narration-preview.mp3
+python3 gen_audio.py
+python3 gen_effectcraft.py
+
+mkdir -p ../video
+effectcraft-cli script build.jsx --empty --save-as ../video/four-percent-rule.ecproj
+if [ "${1:-}" = "--render" ]; then
+  effectcraft-cli render --project ../video/four-percent-rule.ecproj --comp Main \
+    --out ../video/raw.mp4 --format h264 --audio on --quality best
+  # loudness-normalised audio (single-pass loudnorm lands near -16, so +1.8 dB under a limiter), H.264 Main profile, moov atom up front for previews
+  ffmpeg -v error -y -i ../video/raw.mp4 \
+    -map 0:v -map 0:a -c:v libx264 -profile:v main -level 4.1 -pix_fmt yuv420p -crf 19 \
+    -af "loudnorm=I=-14:TP=-1.5:LRA=11,volume=1.8dB,alimiter=limit=0.84:level=false" -c:a aac -b:a 192k -ar 48000 \
+    -movflags +faststart -shortest ../video/four-percent-rule-shorts.mp4
+  rm -f ../video/raw.mp4
+fi
