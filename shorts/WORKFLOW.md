@@ -9,7 +9,7 @@
 | 2. 72의 법칙 | `shorts/rule-of-72/` | 완성 |
 | 3. 4%의 법칙 | `shorts/four-percent-rule/` | 완성 |
 | 4. 적립식 vs 거치식 | `shorts/dca-vs-lump/` | 완성 |
-| 5. 예금 vs 적금 | `shorts/deposit-vs-savings/` | 제작 중 |
+| 5. 예금 vs 적금 | `shorts/deposit-vs-savings/` | 완성 |
 
 ## 0. 환경 준비
 
