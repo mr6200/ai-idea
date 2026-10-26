@@ -18,5 +18,5 @@
 - 중간 산출물(스크래치, 테스트 렌더)은 업로드하지 않는다.
 - Drive 커넥터는 파일 내용을 base64로 한 번에 보내야 해서 큰 바이너리(영상 등)는 올릴 수 없다.
   그런 파일은 GitHub 링크를 담은 메모를 Drive 폴더에 올리고, 사용자에게 그렇게 했다고 말한다.
-- 기존 폴더: "복리의 마법 쇼츠" (id 13pq1Rpo-BD7anVeYfYg30VEEplezJ6Ff), "72의 법칙 쇼츠" (id 1-bXT4wqmQr0SQ5y7Cjikz61cpqiFsU-r), "4%의 법칙 쇼츠" (id 1d5LAWlVkBuNWuHLhUwDPeFMI2lATuccV), "적립식 vs 거치식 쇼츠" (id 1ROEb8W9iU2bGKot9KzdwNHegwlnVwfJR), "예금 vs 적금 쇼츠" (id 1-Pjspc__xyiAxM2nltxYdcsC2omMJrRg), "은행의 탄생 쇼츠" (id 1B_Z-pxMtxFYA745ITXJIy8up5qYzSdsL), "은행의 돈벌이 쇼츠" (id 1RJiF3lGZde5708EaxF6LOf98qxD2K1Hu), "이자와 세금 쇼츠" (id 1apUwroQgv0np0KxzW3Q2KlMb0Y5g4gDO), "무이자 할부 쇼츠" (id 1gpmtE9-eXTMoL3bXtcm7SRqxo6Db9ygS), "비행기 창문 쇼츠" (id 10vuq4xTbwq6cbtON0yTtExck9KwP_HeQ)
+- 기존 폴더: "복리의 마법 쇼츠" (id 13pq1Rpo-BD7anVeYfYg30VEEplezJ6Ff), "72의 법칙 쇼츠" (id 1-bXT4wqmQr0SQ5y7Cjikz61cpqiFsU-r), "4%의 법칙 쇼츠" (id 1d5LAWlVkBuNWuHLhUwDPeFMI2lATuccV), "적립식 vs 거치식 쇼츠" (id 1ROEb8W9iU2bGKot9KzdwNHegwlnVwfJR), "예금 vs 적금 쇼츠" (id 1-Pjspc__xyiAxM2nltxYdcsC2omMJrRg), "은행의 탄생 쇼츠" (id 1B_Z-pxMtxFYA745ITXJIy8up5qYzSdsL), "은행의 돈벌이 쇼츠" (id 1RJiF3lGZde5708EaxF6LOf98qxD2K1Hu), "이자와 세금 쇼츠" (id 1apUwroQgv0np0KxzW3Q2KlMb0Y5g4gDO), "무이자 할부 쇼츠" (id 1gpmtE9-eXTMoL3bXtcm7SRqxo6Db9ygS), "비행기 창문 쇼츠" (id 10vuq4xTbwq6cbtON0yTtExck9KwP_HeQ), "귀가 먹먹한 이유 쇼츠" (id 1Bvv3wnIWGczgACwLt_A-N4L6L26GsjEq)
 - 새 편은 Drive에도 새 폴더를 만들어 올린다.
