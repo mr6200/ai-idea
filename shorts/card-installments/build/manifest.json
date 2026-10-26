@@ -1,0 +1,757 @@
+{
+ "duration": 90,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 5,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       510
+      ]
+     }
+    },
+    {
+     "name": "card",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       880
+      ]
+     }
+    },
+    {
+     "name": "stamp",
+     "anim": {
+      "type": "stamp",
+      "at": 1.0,
+      "anchor": [
+       700,
+       760
+      ]
+     }
+    },
+    {
+     "name": "why",
+     "anim": {
+      "type": "pop",
+      "at": 2.6,
+      "anchor": [
+       540,
+       1180
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 5,
+   "end": 12,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "price",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       450
+      ]
+     }
+    },
+    {
+     "name": "m1",
+     "anim": {
+      "type": "pop",
+      "at": 3.4,
+      "anchor": [
+       270,
+       870
+      ]
+     }
+    },
+    {
+     "name": "m2",
+     "anim": {
+      "type": "pop",
+      "at": 3.8,
+      "anchor": [
+       540,
+       870
+      ]
+     }
+    },
+    {
+     "name": "m3",
+     "anim": {
+      "type": "pop",
+      "at": 4.2,
+      "anchor": [
+       810,
+       870
+      ]
+     }
+    },
+    {
+     "name": "zero",
+     "anim": {
+      "type": "stamp",
+      "at": 5.2,
+      "anchor": [
+       540,
+       1150
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 12,
+   "end": 19,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       500
+      ]
+     }
+    },
+    {
+     "name": "pay",
+     "anim": {
+      "type": "slideR",
+      "at": 1.0
+     }
+    },
+    {
+     "name": "first",
+     "anim": {
+      "type": "stamp",
+      "at": 3.8,
+      "anchor": [
+       540,
+       1260
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 19,
+   "end": 26,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "coins",
+     "anim": {
+      "type": "drop",
+      "at": 1.6
+     }
+    },
+    {
+     "name": "eat",
+     "anim": {
+      "type": "stamp",
+      "at": 3.4,
+      "anchor": [
+       540,
+       1250
+      ]
+     }
+    },
+    {
+     "name": "shop",
+     "anim": {
+      "type": "fade",
+      "at": 4.8
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 26,
+   "end": 33,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "hook",
+     "anim": {
+      "type": "drop",
+      "at": 0.0
+     }
+    },
+    {
+     "name": "bait",
+     "anim": {
+      "type": "pop",
+      "at": 0.6,
+      "anchor": [
+       620,
+       1080
+      ]
+     }
+    },
+    {
+     "name": "name",
+     "anim": {
+      "type": "stamp",
+      "at": 1.6,
+      "anchor": [
+       300,
+       720
+      ]
+     }
+    },
+    {
+     "name": "more",
+     "anim": {
+      "type": "fade",
+      "at": 3.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 33,
+   "end": 40,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "fee",
+     "anim": {
+      "type": "slideR",
+      "at": 0.8
+     }
+    },
+    {
+     "name": "base",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       540,
+       1250
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 40,
+   "end": 48,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       495
+      ]
+     }
+    },
+    {
+     "name": "b24",
+     "anim": {
+      "type": "growY",
+      "at": 3.8,
+      "anchor": [
+       380,
+       1142
+      ],
+      "dur": 0.6,
+      "ease": "decel"
+     }
+    },
+    {
+     "name": "b25",
+     "anim": {
+      "type": "growY",
+      "at": 4.4,
+      "anchor": [
+       700,
+       1142
+      ],
+      "dur": 0.6,
+      "ease": "decel"
+     }
+    },
+    {
+     "name": "who",
+     "anim": {
+      "type": "fade",
+      "at": 4.8
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 48,
+   "end": 55,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "r",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       330,
+       520
+      ]
+     }
+    },
+    {
+     "name": "l",
+     "anim": {
+      "type": "pop",
+      "at": 0.6,
+      "anchor": [
+       750,
+       520
+      ]
+     }
+    },
+    {
+     "name": "rate",
+     "anim": {
+      "type": "stamp",
+      "at": 1.6,
+      "anchor": [
+       540,
+       780
+      ]
+     }
+    },
+    {
+     "name": "flow",
+     "anim": {
+      "type": "fade",
+      "at": 3.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 55,
+   "end": 63,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       495
+      ]
+     }
+    },
+    {
+     "name": "b1",
+     "anim": {
+      "type": "growY",
+      "at": 3.6,
+      "anchor": [
+       380,
+       1142
+      ],
+      "dur": 0.6,
+      "ease": "decel"
+     }
+    },
+    {
+     "name": "b2",
+     "anim": {
+      "type": "growY",
+      "at": 5.4,
+      "anchor": [
+       700,
+       1142
+      ],
+      "dur": 0.4,
+      "ease": "decel"
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 63,
+   "end": 70,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       505
+      ]
+     }
+    },
+    {
+     "name": "up",
+     "anim": {
+      "type": "slideU",
+      "at": 1.2
+     }
+    },
+    {
+     "name": "mkt",
+     "anim": {
+      "type": "stamp",
+      "at": 3.8,
+      "anchor": [
+       540,
+       1200
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "start": 70,
+   "end": 80,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       640
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       540,
+       920
+      ]
+     }
+    },
+    {
+     "name": "confetti",
+     "anim": {
+      "type": "drop",
+      "at": 3.8
+     }
+    },
+    {
+     "name": "check",
+     "anim": {
+      "type": "fade",
+      "at": 6.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "start": 80,
+   "end": 90,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "msg",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       530
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 4.8,
+      "anchor": [
+       540,
+       985
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 5.6,
+      "anchor": [
+       785,
+       1120
+      ]
+     }
+    },
+    {
+     "name": "prev",
+     "anim": {
+      "type": "fade",
+      "at": 6.0
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 2.6,
+   "text": "무이자 할부,\n카드사는 손해일까요?"
+  },
+  {
+   "start": 2.6,
+   "end": 4.8,
+   "text": "이자도 안 받는데\n왜 해줄까요?"
+  },
+  {
+   "start": 5.0,
+   "end": 8.4,
+   "text": "120만 원을\n3개월 무이자로 사면"
+  },
+  {
+   "start": 8.4,
+   "end": 11.8,
+   "text": "매달 40만 원,\n이자는 0원이에요"
+  },
+  {
+   "start": 12.0,
+   "end": 15.6,
+   "text": "그런데 가게는 며칠 뒤\n120만 원을 다 받아요"
+  },
+  {
+   "start": 15.6,
+   "end": 18.8,
+   "text": "카드사가 먼저\n돈을 내주는 거죠"
+  },
+  {
+   "start": 19.0,
+   "end": 22.4,
+   "text": "3개월 동안 빌려준 돈의 이자는"
+  },
+  {
+   "start": 22.4,
+   "end": 25.8,
+   "text": "카드사가 대신 떠안아요.\n일부는 가게가 나눠 내고요"
+  },
+  {
+   "start": 26.0,
+   "end": 29.4,
+   "text": "그래도 해주는 이유는\n미끼이기 때문이에요"
+  },
+  {
+   "start": 29.4,
+   "end": 32.8,
+   "text": "무이자가 있으면\n그 카드를 더 많이 쓰게 되니까요"
+  },
+  {
+   "start": 33.0,
+   "end": 36.4,
+   "text": "카드를 쓸 때마다\n가게는 수수료를 내요"
+  },
+  {
+   "start": 36.4,
+   "end": 39.8,
+   "text": "이 가맹점 수수료가\n카드사의 기본 수입이에요"
+  },
+  {
+   "start": 40.0,
+   "end": 43.6,
+   "text": "진짜 수익은 따로 있어요.\n이자가 붙는 할부"
+  },
+  {
+   "start": 43.6,
+   "end": 47.8,
+   "text": "카드사 7곳이 지난해 할부 수수료로\n번 돈만 약 3조 6천억 원"
+  },
+  {
+   "start": 48.0,
+   "end": 51.4,
+   "text": "리볼빙과 카드론도\n연 10%가 넘는 이자를 받아요"
+  },
+  {
+   "start": 51.4,
+   "end": 54.8,
+   "text": "무이자로 들어와서,\n이자로 남는 거죠"
+  },
+  {
+   "start": 55.0,
+   "end": 58.6,
+   "text": "그런데 금리가 오르자\n무이자 기간이 확 줄었어요"
+  },
+  {
+   "start": 58.6,
+   "end": 62.8,
+   "text": "2022년 말엔 최장 12개월,\n요즘은 2~3개월이 대부분"
+  },
+  {
+   "start": 63.0,
+   "end": 66.6,
+   "text": "카드사가 돈을 빌려 오는\n비용이 커졌기 때문이에요"
+  },
+  {
+   "start": 66.6,
+   "end": 69.8,
+   "text": "무이자는 결국\n카드사의 마케팅 비용이에요"
+  },
+  {
+   "start": 70.0,
+   "end": 73.6,
+   "text": "퀴즈! 300만 원을\n6개월 무이자로 사면 매달 얼마?"
+  },
+  {
+   "start": 73.6,
+   "end": 76.4,
+   "text": "정답은 50만 원!"
+  },
+  {
+   "start": 76.6,
+   "end": 79.8,
+   "text": "단, 무이자가 끝나면\n수수료가 붙는지 꼭 확인하세요"
+  },
+  {
+   "start": 80.2,
+   "end": 84.6,
+   "text": "무이자는 공짜가 아니라\n카드사의 미끼예요"
+  },
+  {
+   "start": 84.8,
+   "end": 89.8,
+   "text": "더 많은 지식이 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
