@@ -7,7 +7,7 @@
 |---|---|---|
 | 1. 복리의 마법 | `shorts/` (루트에 바로 있음) | 완성 |
 | 2. 72의 법칙 | `shorts/rule-of-72/` | 완성 |
-| 3. 4%의 법칙 | `shorts/four-percent-rule/` | 대본·콘티·내레이션 완료. 남은 것: AI 배경(RunPod), 썸네일, 자막·BGM, 조립·렌더, 메타데이터, Drive |
+| 3. 4%의 법칙 | `shorts/four-percent-rule/` | 대본·콘티·내레이션·AI 배경 완료. 남은 것: 썸네일, 자막·BGM, 조립·렌더, 메타데이터, Drive |
 
 ## 0. 환경 준비
 
@@ -20,7 +20,7 @@
 | Drive 직접 업로드(선택) | `GDRIVE_CLIENT_ID` / `GDRIVE_CLIENT_SECRET` / `GDRIVE_REFRESH_TOKEN`을 환경에 넣으면 큰 파일도 업로드 가능 (아직 미설정) |
 | OpenAI 이미지 | 사용 불가 (`api.openai.com` 차단, 키 없음) |
 | AI 이미지 (오픈소스) | SDXL + SDXL-Lightning을 CPU에서 실행 (2편부터). 네트워크 허용: `huggingface.co`, `*.hf.co`, `download.pytorch.org`. GPU 없음 → 장당 약 5분, bfloat16으로 메모리 약 11GB (fp32는 메모리 부족으로 죽음) |
-| RunPod (GPU) | `RUNPOD_API_KEY` 설정됨, API 연결 확인. 2026-10-26 기준 잔액이 0원 아래라 Pod를 켜려면 충전 필요. 쓰고 나면 Pod는 바로 삭제 |
+| RunPod (GPU) | `RUNPOD_API_KEY` 설정됨. Pod 웹 주소는 막혀 있어 서버리스 엔드포인트로 배경 생성 (`four-percent-rule/README.md`의 순서). 쓰고 나면 엔드포인트·템플릿 삭제 |
 | Newtake | 사용하지 않음 (사용자 요청) |
 | 한글 글꼴 | 환경에 있는 것은 WenQuanYi Zen Hei뿐 |
 
@@ -48,6 +48,7 @@
 - `build/compose_bg.py`가 배경을 살짝 흐리게 한 뒤 반투명 크림 덮개(`BG_WASH` 0.58) 아래에 깔아 숫자·그래프가 잘 읽히게 함
 - 파이썬 가상환경은 스크래치 폴더에 따로 만듦: `pip install torch diffusers transformers accelerate safetensors peft`
   (PyTorch CPU 전용 인덱스는 프록시 문제로 실패할 수 있음 → 일반 PyPI 판을 써도 CPU에서 동작)
+- 3편부터는 RunPod 서버리스 GPU로 생성 (`build/gen_backgrounds_runpod.py`, 장당 약 11초, 18장 약 $0.03).
 - GPU가 있는 사용자 PC에서 Claude Code를 돌리면 장당 몇 초. 그림만 PC에서 만들어 푸시하고 조립·렌더는 클라우드에서 해도 됨
 
 ## 3. 타임라인·자막·소리
