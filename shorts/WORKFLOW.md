@@ -131,6 +131,14 @@
   - `gen_effectcraft.py`: 상단 고지 문구의 `inPoint`/`outPoint`
 - 빌드 뒤 `gen_narration.py`의 출력 "N sped up, max factor"가 1.15를 넘으면 그 문장의 자막 구간을 늘리거나 문장을 다듬음
 
+### 쉼표에서 쉬기 (6편 수정, `bank-origins/build/gen_narration.py`)
+
+- 문제: 일반 텍스트로 보내면 Chirp 3 HD가 쉼표를 무시하고 띄어 읽기를 스스로 정해 "은행의 / 역사 재밌으셨나요?"처럼 어색하게 끊음 (파형 측정: 쉼표 자리 쉼 0초)
+- 해결: TTS에 `input.markup`으로 보내고 쉼표마다 `[pause short]`를 넣음 (`markup()`), 그리고 한 문장 안의 쉼을 최대 0.22초로 줄임 (`shorten_pauses()`, `MAX_PAUSE`)
+  - `[pause short]`만 쓰면 1.2배속에서 약 0.5초, SSML `<break>`는 길이를 줘도 0.7~0.9초라 너무 김
+- 쉬는 자리를 바꾸려면 자막 문장의 쉼표 위치를 바꾸면 됨 (쉼표 = 짧은 쉼). 쉬면 안 되는 곳에는 쉼표를 쓰지 않음
+- 다음 편부터는 이 `gen_narration.py`를 그대로 복사해서 씀
+
 ## 다음 쇼츠를 만들 때
 
 2편부터는 **편마다 폴더를 따로** 둡니다 (앞 편 빌드를 덮어쓰지 않도록).

@@ -23,6 +23,7 @@ RATE = 1.2
 SR = 48000
 GAP = 0.08
 LAG = 0.35  # how far narration may trail its subtitle
+MAX_PAUSE = 0.22  # longest pause kept inside one subtitle line, in seconds
 
 # spoken forms where the on-screen text reads badly aloud
 SPOKEN = {
@@ -89,13 +90,20 @@ def spoken(text):
     return re.sub(r"(\d{1,3}(?:,\d{3})+|\d+)(?:\.(\d+))?(%|[^\s,]*)", read_number, s)
 
 
+def markup(text):
+    """Pin a short pause to every comma; plain text lets Chirp 3 HD ignore commas and phrase
+    the sentence wrongly ("은행의 / 역사 재밌으셨나요" instead of "은행의 역사, / 재밌으셨나요")."""
+    return re.sub(r",\s*", ", [pause short] ", text.strip().rstrip(","))
+
+
 def synthesize(text):
-    key = hashlib.sha1(f"{VOICE}|{RATE}|{text}".encode()).hexdigest()[:16]
+    text = markup(text)
+    key = hashlib.sha1(f"{VOICE}|{RATE}|markup|{text}".encode()).hexdigest()[:16]
     path = os.path.join(CACHE, f"{key}.wav")
     if os.path.exists(path):
         return path
     body = json.dumps({
-        "input": {"text": text},
+        "input": {"markup": text},
         "voice": {"languageCode": "ko-KR", "name": VOICE},
         "audioConfig": {"audioEncoding": "LINEAR16", "sampleRateHertz": SR, "speakingRate": RATE},
     }).encode()
@@ -118,7 +126,26 @@ def read_wav(path):
             x = x.reshape(-1, 2).mean(axis=1)
     # trim leading/trailing silence
     idx = np.where(np.abs(x) > 0.01)[0]
-    return x[max(0, idx[0] - 480): idx[-1] + 2400] if len(idx) else x
+    x = x[max(0, idx[0] - 480): idx[-1] + 2400] if len(idx) else x
+    return shorten_pauses(x)
+
+
+def shorten_pauses(x, hop=480, floor=0.01):
+    """Cut every pause inside a clip down to MAX_PAUSE ([pause short] alone is about 0.5 s at 1.2x)."""
+    rms = np.sqrt(np.mean(x[:len(x) // hop * hop].reshape(-1, hop) ** 2, axis=1))
+    keep, run = int(MAX_PAUSE * SR / hop), 0
+    out = []
+    for i, loud in enumerate(rms > floor):
+        if loud:
+            if run > keep:
+                start = i - run
+                out.append((start + keep // 2, i - (keep - keep // 2)))  # frames to drop, centre of the pause
+            run = 0
+        else:
+            run += 1
+    for a, b in reversed(out):
+        x = np.concatenate([x[:a * hop], x[b * hop:]])
+    return x
 
 
 def tempo(x, factor):
