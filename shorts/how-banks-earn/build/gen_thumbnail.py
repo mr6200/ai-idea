@@ -5,7 +5,7 @@ import subprocess
 from PIL import Image
 
 from compose_bg import backdrop
-from gen_scenes import BG_WASH, CREAM, GLOW, GLOW_ALPHA, GREEN, INK, MUTED, ORANGE, WHITE, pill, svg, text
+from gen_scenes import BG_WASH, CREAM, GLOW, GLOW_ALPHA, GREEN, INK, MUTED, ORANGE, RED, WHITE, pill, svg, text
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, "..", "thumbnail")
