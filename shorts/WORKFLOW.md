@@ -164,7 +164,7 @@
 
 | 요소 | 규칙 |
 |---|---|
-| 배경 | 남색 `#0f4c8a` + 설계도 모눈(40px 가는 선, 200px 굵은 선, `#e8f4ff`) + 모서리 망점(시안) + 오른쪽 아래 도면 표제란(`DWG. 0NN · 지식 쇼츠`). `bg()` |
+| 배경 | 남색 `#0f4c8a` + 설계도 모눈(40px 가는 선, 200px 굵은 선, `#e8f4ff`) + 모서리 망점(시안). `bg()`. **오른쪽 아래 도면 표제란(`DWG. 0NN · 지식 쇼츠`)은 넣지 않음** (9편에만 있음, 사용자 요청으로 10편부터 뺌 → 복사 후 `bg()`에서 표제란 두 줄 삭제) |
 | 강조 장면 | 훅·사건·퀴즈엔 파란 햇살 무늬 `bg(burst=(x, y))` (`#2f86dc`, 불투명도 0.45) |
 | 그림 | 설계도 선화: 흰 선 `#e8f4ff` 8px, 하늘색 면 `#4cc9f0`, 치수선·주석은 시안 `#7fd3ff` (`dim()`) |
 | 팝 장식 | 굵은 검은 테두리 `#111`, 노랑 `#ffd400`, 빨강 `#e63946`, 폭발 별 `burst_star()`, 말풍선 `bubble()`, 검은 그림자 알약 `pill()`·상자 `panel()`, 의성어 `popword()` (기울임) |
@@ -182,7 +182,7 @@
 
 1. 최근 편의 `build/*.py`, `build/build_all.sh`, `.gitignore`를 새 폴더로 복사 (`svg`, `parts`, `scenes`, `video`, `tts`는 빼고)
 2. 새 주제로 `script.md` 작성 — 사실 확인 표를 붙임 (숫자가 있으면 `verify_numbers.py`로 검증표도)
-3. `gen_scenes.py`의 `LABEL`, 표제란 번호(`DWG. 0NN`), S01–S12 정의, `timeline.py`의 `CUES`를 새 내용으로 교체 (90초)
+3. `gen_scenes.py`의 `LABEL`, S01–S12 정의 (`bg()`의 오른쪽 아래 표제란은 삭제), `timeline.py`의 `CUES`를 새 내용으로 교체 (90초)
 4. `gen_narration.py`의 `SPOKEN`, `gen_audio.py`의 `COIN_PARTS`와 수동 효과음 시각, `gen_thumbnail.py`, `gen_storyboard.py`의 제목을 새 내용에 맞춤
 5. `build_all.sh`의 프로젝트·영상 파일 이름 변경 후 `build_all.sh --render`
 6. 자막 카드를 얹은 장면 시트 → 완성 영상 프레임 시트로 겹침 확인 → 썸네일·메타데이터 → Drive 업로드(편마다 새 폴더)
