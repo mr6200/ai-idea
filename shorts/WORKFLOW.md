@@ -7,7 +7,7 @@
 |---|---|---|
 | 1. 복리의 마법 | `shorts/` (루트에 바로 있음) | 완성 |
 | 2. 72의 법칙 | `shorts/rule-of-72/` | 완성 |
-| 3. 4%의 법칙 | `shorts/four-percent-rule/` | 대본·콘티·내레이션·AI 배경 완료. 남은 것: 썸네일, 자막·BGM, 조립·렌더, 메타데이터, Drive |
+| 3. 4%의 법칙 | `shorts/four-percent-rule/` | 완성 |
 
 ## 0. 환경 준비
 
