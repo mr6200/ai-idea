@@ -386,8 +386,8 @@ scene("S17", 136, 146, [
     ("badge", pill("퀴즈", 540, 420, 64, ORANGE), {"type": "pop", "at": 0.0, "anchor": [540, 420]}),
     ("question", text("월 10만 원, 연 6% 적금", 540, 580, 70) + text("1년 이자는?", 540, 680, 76), {"type": "pop", "at": 0.3, "anchor": [540, 620]}),
     ("formula", text("10만 × 6% × 6.5", 540, 860, 90), {"type": "pop", "at": 1.6, "anchor": [540, 825]}),
-    ("answer", pill("= 3만 9천 원", 540, 1060, 96, GREEN), {"type": "stamp", "at": 3.2, "anchor": [540, 1060]}),
-    ("confetti", confetti_at(spots), {"type": "drop", "at": 3.4}),
+    ("answer", pill("= 3만 9천 원", 540, 1060, 96, GREEN), {"type": "stamp", "at": 3.8, "anchor": [540, 1060]}),
+    ("confetti", confetti_at(spots), {"type": "drop", "at": 4.0}),
     ("tip", text("세금 떼면 약 3만 3천 원", 540, 1250, 50, MUTED), {"type": "fade", "at": 6.2}),
 ])
 

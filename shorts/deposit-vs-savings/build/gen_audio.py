@@ -226,8 +226,8 @@ def main():
     # hand-placed cues
     put(0.05, sfx_whoosh(0.5), 0.5)                                  # opening
     put(65.6, sfx_ding(1568), 0.7)                                   # deposit earns 36만
-    put(136.0, sfx_drumroll(3.2))                                    # quiz countdown
-    put(139.4, sfx_ding(2093))                                       # answer
+    put(136.0, sfx_drumroll(3.8))                                    # quiz countdown
+    put(140.0, sfx_ding(2093))                                       # answer
     for k in range(3):
         put(147.2 + k * 0.4, sfx_click(), 1.0)                       # subscribe taps
     # duck the music (not the SFX) under the narration, when gen_narration.py has run
