@@ -15,6 +15,7 @@
 | 7. 이자에 붙는 세금 | `shorts/interest-tax/` | 완성 (1분 30초) |
 | 8. 무이자 할부, 카드사는 손해일까? | `shorts/card-installments/` | 완성 (1분 30초) |
 | 9. 비행기 창문은 왜 둥글까? | `shorts/airplane-windows/` | 완성 (1분 30초, 설계도+팝아트 스타일 첫 편) |
+| 10. 비행기 타면 귀가 먹먹한 이유 | `shorts/ear-pressure/` | 완성 (1분 30초, 표제란 없는 첫 편) |
 
 ## 0. 환경 준비
 
@@ -178,11 +179,11 @@
 ## 다음 쇼츠를 만들 때
 
 2편부터는 **편마다 폴더를 따로** 둡니다 (앞 편 빌드를 덮어쓰지 않도록).
-9편부터는 `shorts/airplane-windows/`가 틀입니다 (설계도+팝아트 스타일, 1분 30초, 12장면).
+10편부터는 `shorts/ear-pressure/`가 틀입니다 (설계도+팝아트 스타일, 표제란 없음, 1분 30초, 12장면).
 
 1. 최근 편의 `build/*.py`, `build/build_all.sh`, `.gitignore`를 새 폴더로 복사 (`svg`, `parts`, `scenes`, `video`, `tts`는 빼고)
 2. 새 주제로 `script.md` 작성 — 사실 확인 표를 붙임 (숫자가 있으면 `verify_numbers.py`로 검증표도)
-3. `gen_scenes.py`의 `LABEL`, S01–S12 정의 (`bg()`의 오른쪽 아래 표제란은 삭제), `timeline.py`의 `CUES`를 새 내용으로 교체 (90초)
+3. `gen_scenes.py`의 `LABEL`, S01–S12 정의, `timeline.py`의 `CUES`를 새 내용으로 교체 (90초)
 4. `gen_narration.py`의 `SPOKEN`, `gen_audio.py`의 `COIN_PARTS`와 수동 효과음 시각, `gen_thumbnail.py`, `gen_storyboard.py`의 제목을 새 내용에 맞춤
 5. `build_all.sh`의 프로젝트·영상 파일 이름 변경 후 `build_all.sh --render`
 6. 자막 카드를 얹은 장면 시트 → 완성 영상 프레임 시트로 겹침 확인 → 썸네일·메타데이터 → Drive 업로드(편마다 새 폴더)
