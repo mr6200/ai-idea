@@ -112,15 +112,34 @@
 - 이 환경은 논문 PDF·위키백과 등 직접 접속이 막혀 있음 → 검색 결과 요약으로 대조하고, 그 사실을 표에 적음
 - 단정이 과한 문장("계속 불어난다" 등)도 고침
 
+## 6편부터 바뀐 규격 (2026-10-26 사용자 요청)
+
+| 항목 | 5편까지 | 6편부터 |
+|---|---|---|
+| 영상 길이 | 2분 30초 (150초) | **2분 (120초)** |
+| 내용 | 18장면 · 자막 약 40문장 | **그대로** (줄이지 않음) |
+| TTS 속도 | `gen_narration.py`의 `RATE = 1.08` | **`RATE = 1.2`** (Google TTS `speakingRate`) |
+
+- 5편 대본을 120초 · 1.2배속으로 시험해 보니 말하는 시간 약 85초, 39문장 중 1문장만 추가로 1.11배 빨라짐 → 같은 분량이 2분에 들어감
+- 1.2배속에서 `ko-KR-Chirp3-HD-Charon`은 초당 약 7음절. 자막 구간 길이는 (읽는 말 음절 수 ÷ 7) + 0.3초 정도로 잡으면 속도 보정이 거의 생기지 않음
+- 바꿔야 할 곳:
+  - `timeline.py`: `DURATION = 120`, `CUES` 시간 (150초 기준 시각 × 0.8로 시작해 다듬기)
+  - `gen_scenes.py`: 장면 시작·끝 시각과 각 부품의 `at` (장면 평균 약 6.7초, 마지막 S18은 3~4초)
+  - `gen_audio.py`: `DUR = 120.0`, 손으로 넣은 효과음 시각
+  - `gen_narration.py`: `RATE = 1.2`
+  - `gen_effectcraft.py`: 상단 고지 문구의 `inPoint`/`outPoint`
+- 빌드 뒤 `gen_narration.py`의 출력 "N sped up, max factor"가 1.15를 넘으면 그 문장의 자막 구간을 늘리거나 문장을 다듬음
+
 ## 다음 쇼츠를 만들 때
 
-2편부터는 **편마다 폴더를 따로** 둡니다 (1편 빌드를 덮어쓰지 않도록).
-`shorts/rule-of-72/`가 가장 깔끔한 틀입니다. 18장면 모두 `gen_scenes.py` 코드로 그리고, 콘티도 장면 그림에서 자동으로 만듭니다.
+2편부터는 **편마다 폴더를 따로** 둡니다 (앞 편 빌드를 덮어쓰지 않도록).
+가장 최근 편(`shorts/deposit-vs-savings/`)이 가장 깔끔한 틀입니다. 18장면 모두 `gen_scenes.py` 코드로 그리고, 콘티도 장면 그림에서 자동으로 만듭니다.
 
-1. `shorts/rule-of-72/`를 새 폴더로 복사 (`build/svg`, `build/parts`, `scenes`, `video`, `tts`는 빼고)
-2. 새 주제로 `script.md` 작성 — 숫자는 파이썬으로 직접 계산해 검증표를 붙임
-3. `gen_scenes.py`의 `LABEL`과 S01–S18 정의, `timeline.py`의 `CUES`를 새 내용으로 교체
+1. 최근 편의 `build/*.py`, `build/build_all.sh`, `.gitignore`를 새 폴더로 복사 (`svg`, `parts`, `ai_bg`, `scenes`, `video`, `tts`는 빼고)
+2. 새 주제로 `script.md` 작성 — 숫자는 `build/verify_numbers.py`로 직접 계산해 검증표를 붙이고, 사실 확인 표도 붙임
+3. `gen_scenes.py`의 `LABEL`과 S01–S18 정의, `timeline.py`의 `CUES`를 새 내용으로 교체 (위 6편부터 규격대로 120초)
 4. `gen_narration.py`의 `SPOKEN` (화면 글자 → 읽는 말), `gen_audio.py`의 `COIN_PARTS`와 수동 효과음 시각,
-   `gen_effectcraft.py`의 장면별 카운터와 상단 고지 문구를 새 내용에 맞춤
-5. `build_all.sh`의 프로젝트·영상 파일 이름 변경 후 `build_all.sh --render`
-6. 장면 PNG 시트 → Main 프레임 시트로 겹침 확인 → 썸네일·메타데이터 → Drive 업로드(편마다 새 폴더)
+   `gen_effectcraft.py`의 상단 고지 문구, `gen_backgrounds.py`의 장면별 배경 프롬프트를 새 내용에 맞춤
+5. AI 배경은 RunPod 서버리스로 생성 (`shorts/four-percent-rule/README.md`의 순서), 끝나면 엔드포인트·템플릿 삭제
+6. `build_all.sh`의 프로젝트·영상 파일 이름 변경 후 `build_all.sh --render`
+7. 장면 PNG 시트 → 완성 영상 프레임 시트로 겹침 확인 → 썸네일·메타데이터 → Drive 업로드(편마다 새 폴더)
