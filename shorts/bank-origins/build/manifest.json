@@ -1,0 +1,1038 @@
+{
+ "duration": 120,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 5,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       510
+      ]
+     }
+    },
+    {
+     "name": "bank",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       330,
+       900
+      ]
+     }
+    },
+    {
+     "name": "grain",
+     "anim": {
+      "type": "pop",
+      "at": 2.6,
+      "anchor": [
+       790,
+       980
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 5,
+   "end": 9,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       540
+      ]
+     }
+    },
+    {
+     "name": "line",
+     "anim": {
+      "type": "wipeL",
+      "at": 0.8,
+      "dur": 2.0,
+      "ease": "linear"
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 9,
+   "end": 16,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       440
+      ]
+     }
+    },
+    {
+     "name": "temple",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       820
+      ]
+     }
+    },
+    {
+     "name": "goods",
+     "anim": {
+      "type": "drop",
+      "at": 3.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 16,
+   "end": 23,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tablet",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       300,
+       800
+      ]
+     }
+    },
+    {
+     "name": "lend",
+     "anim": {
+      "type": "slideR",
+      "at": 3.4
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "fade",
+      "at": 0.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 23,
+   "end": 29,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "interest",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       260,
+       900
+      ]
+     }
+    },
+    {
+     "name": "stele",
+     "anim": {
+      "type": "slideR",
+      "at": 2.8
+     }
+    },
+    {
+     "name": "cap",
+     "anim": {
+      "type": "stamp",
+      "at": 4.4,
+      "anchor": [
+       720,
+       640
+      ]
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "fade",
+      "at": 0.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 29,
+   "end": 36,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       440
+      ]
+     }
+    },
+    {
+     "name": "coins",
+     "anim": {
+      "type": "drop",
+      "at": 0.6
+     }
+    },
+    {
+     "name": "changer",
+     "anim": {
+      "type": "pop",
+      "at": 3.4,
+      "anchor": [
+       540,
+       1280
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 36,
+   "end": 42,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       480
+      ]
+     }
+    },
+    {
+     "name": "keep",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       300,
+       700
+      ]
+     }
+    },
+    {
+     "name": "lend",
+     "anim": {
+      "type": "pop",
+      "at": 2.8,
+      "anchor": [
+       780,
+       700
+      ]
+     }
+    },
+    {
+     "name": "coins",
+     "anim": {
+      "type": "fade",
+      "at": 0.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 42,
+   "end": 49,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       440
+      ]
+     }
+    },
+    {
+     "name": "coins",
+     "anim": {
+      "type": "drop",
+      "at": 0.6
+     }
+    },
+    {
+     "name": "banco",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       540,
+       1260
+      ]
+     }
+    },
+    {
+     "name": "say",
+     "anim": {
+      "type": "pop",
+      "at": 4.0,
+      "anchor": [
+       540,
+       680
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 49,
+   "end": 55,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "w1",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       600
+      ]
+     }
+    },
+    {
+     "name": "a1",
+     "anim": {
+      "type": "fade",
+      "at": 0.6
+     }
+    },
+    {
+     "name": "w2",
+     "anim": {
+      "type": "pop",
+      "at": 0.8,
+      "anchor": [
+       540,
+       930
+      ]
+     }
+    },
+    {
+     "name": "a2",
+     "anim": {
+      "type": "fade",
+      "at": 2.8
+     }
+    },
+    {
+     "name": "w3",
+     "anim": {
+      "type": "stamp",
+      "at": 3.0,
+      "anchor": [
+       540,
+       1220
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 55,
+   "end": 62,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       510
+      ]
+     }
+    },
+    {
+     "name": "path",
+     "anim": {
+      "type": "wipeL",
+      "at": 3.4,
+      "dur": 1.0
+     }
+    },
+    {
+     "name": "note",
+     "anim": {
+      "type": "pop",
+      "at": 3.8,
+      "anchor": [
+       540,
+       820
+      ]
+     }
+    },
+    {
+     "name": "noload",
+     "anim": {
+      "type": "fade",
+      "at": 5.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "start": 62,
+   "end": 68,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "card",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       660
+      ]
+     }
+    },
+    {
+     "name": "open",
+     "anim": {
+      "type": "stamp",
+      "at": 3.0,
+      "anchor": [
+       540,
+       1030
+      ]
+     }
+    },
+    {
+     "name": "oldest",
+     "anim": {
+      "type": "pop",
+      "at": 3.8,
+      "anchor": [
+       540,
+       1170
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "start": 68,
+   "end": 75,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       440
+      ]
+     }
+    },
+    {
+     "name": "safe",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       340,
+       900
+      ]
+     }
+    },
+    {
+     "name": "receipt",
+     "anim": {
+      "type": "slideR",
+      "at": 3.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "start": 75,
+   "end": 81,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "pass",
+     "anim": {
+      "type": "slideL",
+      "at": 2.8
+     }
+    },
+    {
+     "name": "instead",
+     "anim": {
+      "type": "fade",
+      "at": 3.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "start": 81,
+   "end": 87,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "note",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       800
+      ]
+     }
+    },
+    {
+     "name": "born",
+     "anim": {
+      "type": "stamp",
+      "at": 0.6,
+      "anchor": [
+       540,
+       560
+      ]
+     }
+    },
+    {
+     "name": "sweden",
+     "anim": {
+      "type": "slideR",
+      "at": 2.8
+     }
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "start": 87,
+   "end": 94,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "out",
+     "anim": {
+      "type": "slideR",
+      "at": 3.4
+     }
+    },
+    {
+     "name": "interest",
+     "anim": {
+      "type": "stamp",
+      "at": 5.4,
+      "anchor": [
+       820,
+       1080
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S16",
+   "start": 94,
+   "end": 102,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "r1",
+     "anim": {
+      "type": "slideR",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "r2",
+     "anim": {
+      "type": "slideR",
+      "at": 1.0
+     }
+    },
+    {
+     "name": "r3",
+     "anim": {
+      "type": "slideR",
+      "at": 1.7
+     }
+    },
+    {
+     "name": "r4",
+     "anim": {
+      "type": "slideR",
+      "at": 2.3999999999999995
+     }
+    },
+    {
+     "name": "r5",
+     "anim": {
+      "type": "slideR",
+      "at": 3.0999999999999996
+     }
+    }
+   ]
+  },
+  {
+   "id": "S17",
+   "start": 102,
+   "end": 112,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       420
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       570
+      ]
+     }
+    },
+    {
+     "name": "broken",
+     "anim": {
+      "type": "drop",
+      "at": 3.0
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 3.4,
+      "anchor": [
+       540,
+       800
+      ]
+     }
+    },
+    {
+     "name": "story",
+     "anim": {
+      "type": "fade",
+      "at": 6.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S18",
+   "start": 112,
+   "end": 120,
+   "parts": [
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       535
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 4.2,
+      "anchor": [
+       540,
+       845
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 5.0,
+      "anchor": [
+       785,
+       980
+      ]
+     }
+    },
+    {
+     "name": "prev",
+     "anim": {
+      "type": "fade",
+      "at": 5.4
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 2.6,
+   "text": "은행은 처음부터\n있었을까요?"
+  },
+  {
+   "start": 2.6,
+   "end": 4.8,
+   "text": "아니요, 시작은\n곡식 창고였어요"
+  },
+  {
+   "start": 5.0,
+   "end": 8.8,
+   "text": "은행이 생기기까지,\n4천 년의 이야기"
+  },
+  {
+   "start": 9.0,
+   "end": 12.4,
+   "text": "약 4천 년 전\n메소포타미아"
+  },
+  {
+   "start": 12.4,
+   "end": 15.8,
+   "text": "신전과 궁전에\n곡식과 은을 맡겼어요"
+  },
+  {
+   "start": 16.0,
+   "end": 19.4,
+   "text": "맡긴 사람은 점토판에\n기록을 받았고"
+  },
+  {
+   "start": 19.4,
+   "end": 22.8,
+   "text": "남는 곡식은\n농부에게 빌려줬어요"
+  },
+  {
+   "start": 23.0,
+   "end": 25.8,
+   "text": "갚을 땐 이자를 붙여서"
+  },
+  {
+   "start": 25.8,
+   "end": 28.8,
+   "text": "함무라비 법전은\n이자 상한까지 정했죠"
+  },
+  {
+   "start": 29.0,
+   "end": 32.4,
+   "text": "동전이 생기자\n고대 그리스에선"
+  },
+  {
+   "start": 32.4,
+   "end": 35.8,
+   "text": "탁자에 앉은 환전상이\n돈을 바꿔 주다가"
+  },
+  {
+   "start": 36.0,
+   "end": 38.8,
+   "text": "돈을 맡아 주고"
+  },
+  {
+   "start": 38.8,
+   "end": 41.8,
+   "text": "빌려주는 일까지\n맡았어요"
+  },
+  {
+   "start": 42.0,
+   "end": 45.4,
+   "text": "중세 이탈리아에서도\n환전상은 탁자에서 일했어요"
+  },
+  {
+   "start": 45.4,
+   "end": 48.8,
+   "text": "탁자를 이탈리아어로\n'방코'라고 해요"
+  },
+  {
+   "start": 49.0,
+   "end": 51.8,
+   "text": "여기서 '뱅크'라는\n말이 나왔죠"
+  },
+  {
+   "start": 51.8,
+   "end": 54.8,
+   "text": "은행의 이름은\n탁자였던 셈이에요"
+  },
+  {
+   "start": 55.0,
+   "end": 58.4,
+   "text": "1397년 피렌체에서\n메디치 은행이 문을 열고"
+  },
+  {
+   "start": 58.4,
+   "end": 61.8,
+   "text": "멀리 떨어진 도시로\n어음 한 장으로 돈을 보냈어요"
+  },
+  {
+   "start": 62.0,
+   "end": 65.0,
+   "text": "1472년에 세운\n몬테 데이 파스키 은행은"
+  },
+  {
+   "start": 65.0,
+   "end": 67.8,
+   "text": "지금도 영업 중인\n가장 오래된 은행이에요"
+  },
+  {
+   "start": 68.0,
+   "end": 71.4,
+   "text": "17세기 런던에선\n금을 금세공업자에게 맡기고"
+  },
+  {
+   "start": 71.4,
+   "end": 74.8,
+   "text": "맡겼다는\n보관증을 받았어요"
+  },
+  {
+   "start": 75.0,
+   "end": 77.8,
+   "text": "그런데 이 보관증을"
+  },
+  {
+   "start": 77.8,
+   "end": 80.8,
+   "text": "금 대신 돈처럼\n주고받기 시작했어요"
+  },
+  {
+   "start": 81.0,
+   "end": 83.8,
+   "text": "지폐가 태어난 순간이죠"
+  },
+  {
+   "start": 83.8,
+   "end": 86.8,
+   "text": "1661년 스웨덴에선\n유럽 첫 은행권이 나왔어요"
+  },
+  {
+   "start": 87.0,
+   "end": 90.4,
+   "text": "금세공업자들은 사람들이\n한꺼번에 찾지 않는 걸 알고"
+  },
+  {
+   "start": 90.4,
+   "end": 93.8,
+   "text": "맡은 돈 일부를 빌려주고\n이자를 받았어요"
+  },
+  {
+   "start": 94.0,
+   "end": 97.4,
+   "text": "정리하면, 맡아 주기,\n빌려주기, 바꿔 주기"
+  },
+  {
+   "start": 97.4,
+   "end": 101.6,
+   "text": "보내 주기, 그리고 지폐.\n오늘 은행이 하는 일 그대로예요"
+  },
+  {
+   "start": 102.0,
+   "end": 105.0,
+   "text": "퀴즈! 파산을 뜻하는\n'뱅크럽트'의 어원은?"
+  },
+  {
+   "start": 105.0,
+   "end": 108.0,
+   "text": "부서진 탁자,\n'방카 로타'!"
+  },
+  {
+   "start": 108.2,
+   "end": 111.8,
+   "text": "빚을 못 갚은 환전상의 탁자를\n부쉈다는 이야기가 전해져요"
+  },
+  {
+   "start": 112.4,
+   "end": 116.0,
+   "text": "은행의 역사,\n재밌으셨나요?"
+  },
+  {
+   "start": 116.2,
+   "end": 119.8,
+   "text": "더 많은 지식이 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
