@@ -10,7 +10,7 @@
 | 3. 4%의 법칙 | `shorts/four-percent-rule/` | 완성 |
 | 4. 적립식 vs 거치식 | `shorts/dca-vs-lump/` | 완성 |
 | 5. 예금 vs 적금 | `shorts/deposit-vs-savings/` | 완성 |
-| 6. 은행은 언제 어떻게 처음 생겼을까? | `shorts/bank-origins/` | 완성 (2분 규격 첫 편) |
+| 5. 은행은 언제 어떻게 처음 생겼을까? | `shorts/bank-origins/` | 완성 (2분 규격 첫 편) |
 
 ## 0. 환경 준비
 
@@ -113,15 +113,15 @@
 - 이 환경은 논문 PDF·위키백과 등 직접 접속이 막혀 있음 → 검색 결과 요약으로 대조하고, 그 사실을 표에 적음
 - 단정이 과한 문장("계속 불어난다" 등)도 고침
 
-## 6편부터 바뀐 규격 (2026-10-26 사용자 요청)
+## 2분 규격 (「은행의 탄생」부터, 2026-10-26 사용자 요청)
 
-| 항목 | 5편까지 | 6편부터 |
+| 항목 | 「예금 vs 적금」까지 | 「은행의 탄생」부터 |
 |---|---|---|
 | 영상 길이 | 2분 30초 (150초) | **2분 (120초)** |
 | 내용 | 18장면 · 자막 약 40문장 | **그대로** (줄이지 않음) |
 | TTS 속도 | `gen_narration.py`의 `RATE = 1.08` | **`RATE = 1.2`** (Google TTS `speakingRate`) |
 
-- 5편 대본을 120초 · 1.2배속으로 시험해 보니 말하는 시간 약 85초, 39문장 중 1문장만 추가로 1.11배 빨라짐 → 같은 분량이 2분에 들어감
+- 「예금 vs 적금」 대본을 120초 · 1.2배속으로 시험해 보니 말하는 시간 약 85초, 39문장 중 1문장만 추가로 1.11배 빨라짐 → 같은 분량이 2분에 들어감
 - 1.2배속에서 `ko-KR-Chirp3-HD-Charon`은 초당 약 7음절. 자막 구간 길이는 (읽는 말 음절 수 ÷ 7) + 0.3초 정도로 잡으면 속도 보정이 거의 생기지 않음
 - 바꿔야 할 곳:
   - `timeline.py`: `DURATION = 120`, `CUES` 시간 (150초 기준 시각 × 0.8로 시작해 다듬기)
@@ -131,7 +131,7 @@
   - `gen_effectcraft.py`: 상단 고지 문구의 `inPoint`/`outPoint`
 - 빌드 뒤 `gen_narration.py`의 출력 "N sped up, max factor"가 1.15를 넘으면 그 문장의 자막 구간을 늘리거나 문장을 다듬음
 
-### 쉼표에서 쉬기 (6편 수정, `bank-origins/build/gen_narration.py`)
+### 쉼표에서 쉬기 (「은행의 탄생」에서 수정, `bank-origins/build/gen_narration.py`)
 
 - 문제: 일반 텍스트로 보내면 Chirp 3 HD가 쉼표를 무시하고 띄어 읽기를 스스로 정해 "은행의 / 역사 재밌으셨나요?"처럼 어색하게 끊음 (파형 측정: 쉼표 자리 쉼 0초)
 - 해결: TTS에 `input.markup`으로 보내고 쉼표마다 `[pause short]`를 넣음 (`markup()`), 그리고 한 문장 안의 쉼을 최대 0.22초로 줄임 (`shorten_pauses()`, `MAX_PAUSE`)
@@ -146,7 +146,7 @@
 
 1. 최근 편의 `build/*.py`, `build/build_all.sh`, `.gitignore`를 새 폴더로 복사 (`svg`, `parts`, `ai_bg`, `scenes`, `video`, `tts`는 빼고)
 2. 새 주제로 `script.md` 작성 — 숫자는 `build/verify_numbers.py`로 직접 계산해 검증표를 붙이고, 사실 확인 표도 붙임
-3. `gen_scenes.py`의 `LABEL`과 S01–S18 정의, `timeline.py`의 `CUES`를 새 내용으로 교체 (위 6편부터 규격대로 120초)
+3. `gen_scenes.py`의 `LABEL`과 S01–S18 정의, `timeline.py`의 `CUES`를 새 내용으로 교체 (위 2분 규격대로 120초)
 4. `gen_narration.py`의 `SPOKEN` (화면 글자 → 읽는 말), `gen_audio.py`의 `COIN_PARTS`와 수동 효과음 시각,
    `gen_effectcraft.py`의 상단 고지 문구, `gen_backgrounds.py`의 장면별 배경 프롬프트를 새 내용에 맞춤
 5. AI 배경은 RunPod 서버리스로 생성 (`shorts/four-percent-rule/README.md`의 순서), 끝나면 엔드포인트·템플릿 삭제
