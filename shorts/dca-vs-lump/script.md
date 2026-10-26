@@ -104,7 +104,7 @@
 | 뱅가드가 미국·영국·호주의 수십 년 데이터로 비교, 한 번에 넣기가 3번 중 2번 승 | 맞음. Shtekhman·Tasopoulos·Wimmer, "Dollar-cost averaging just means taking risk later", Vanguard Research, 2012년 7월. 미국·영국·호주, 한 번에 넣기 vs 12개월 나눠 넣기, 약 3분의 2(약 67%)에서 한 번에 넣기가 앞섬 | PWL Capital(Benjamin Felix) 보고서, DTIC 보고서 「Investing Strategies for the Lump-Sum Averse」 등 |
 | 2023년에 다시 분석해도 약 3번 중 2번 | 맞음. Finlay·Zorn, "Cost averaging: Invest now or temporarily hold your cash?", Vanguard Research, 2023년 2월: "Lump-sum investment strategies beat common cost averaging investment strategies two-thirds of the time" (2차 자료에는 MSCI World 1976–2022, 68%로 소개) | Vanguard 2023 보고서 요약, 여러 2차 자료 |
 | 시장은 오르는 때가 더 많아 기다리는 돈이 상승을 놓침 | 두 보고서의 설명과 같음 (주식이 현금보다 수익이 높았기 때문에 나눠 넣으면 그만큼 현금으로 오래 머묾) | 같은 자료 |
-| 뱅가드는 세계 최대 운용사 중 하나 | 맞음 (블랙록에 이어 두 번째 규모로 자주 소개됨) | 일반 보도 |
+| 뱅가드는 세계 최대 운용사 중 하나 | 맞음 (세계 최대급 자산운용사로 널리 알려짐. 순위는 영상에서 말하지 않음) | 일반 보도 |
 | 적립식이 마음 편함 | 2023 보고서도 손실을 매우 싫어하는 투자자에게는 나눠 넣기를 고려할 수 있다고 함 | Vanguard 2023 보고서 요약 |
 
 > 과거 데이터와 예시 계산이며 미래 수익을 보장하지 않습니다. 화면 하단 고지 자막으로 넣습니다.
