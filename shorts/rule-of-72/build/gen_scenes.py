@@ -52,9 +52,13 @@ def svg(body):
             f'<rect x="0" y="0" width="{W}" height="{H}" fill="#000000" fill-opacity="0"/>{body}</svg>')
 
 
+# the cream wash is translucent so compose_bg.py can lay an AI illustration underneath
+BG_WASH, GLOW_ALPHA = 0.58, 0.6
+
+
 def bg_cream(extra=""):
-    return (f'<rect x="0" y="0" width="{W}" height="{H}" fill="{CREAM}"/>'
-            f'<circle cx="540" cy="860" r="470" fill="{GLOW}"/>'
+    return (f'<rect x="0" y="0" width="{W}" height="{H}" fill="{CREAM}" fill-opacity="{BG_WASH}"/>'
+            f'<circle cx="540" cy="860" r="470" fill="{GLOW}" fill-opacity="{GLOW_ALPHA}"/>'
             + pill(LABEL, 540, 256, 38, ORANGE) + extra)
 
 

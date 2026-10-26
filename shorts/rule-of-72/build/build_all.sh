@@ -17,6 +17,9 @@ for d in svg/S*; do
     fi
   done
 done
+# AI backgrounds are committed in ai_bg/; to redraw them run gen_backgrounds.py in an
+# environment with torch + diffusers (see README). compose_bg.py lays them under the cream wash.
+python3 compose_bg.py
 python3 timeline.py
 python3 gen_storyboard.py   # storyboard.html/.png from the scene art
 python3 gen_thumbnail.py
