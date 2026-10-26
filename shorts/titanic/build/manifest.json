@@ -1,0 +1,747 @@
+{
+ "duration": 70,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 5,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 5,
+      "z": [
+       106,
+       120
+      ],
+      "pan": [
+       0,
+       40
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       460
+      ]
+     }
+    },
+    {
+     "name": "time",
+     "anim": {
+      "type": "stamp",
+      "at": 2.8,
+      "anchor": [
+       820,
+       1180
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 5,
+   "end": 12,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7,
+      "z": [
+       112,
+       104
+      ],
+      "pan": [
+       -40,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       450
+      ]
+     }
+    },
+    {
+     "name": "ship",
+     "anim": {
+      "type": "slideR",
+      "at": 0.5
+     }
+    },
+    {
+     "name": "name",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       540,
+       1300
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 12,
+   "end": 19,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7,
+      "z": [
+       104,
+       114
+      ],
+      "pan": [
+       30,
+       -30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "hull",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       910
+      ]
+     }
+    },
+    {
+     "name": "four",
+     "anim": {
+      "type": "pop",
+      "at": 3.4,
+      "anchor": [
+       540,
+       1100
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 19,
+   "end": 26,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7,
+      "z": [
+       110,
+       120
+      ],
+      "pan": [
+       0,
+       -50
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "scene",
+     "anim": {
+      "type": "fade",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "scrape",
+     "anim": {
+      "type": "wipeL",
+      "at": 1.6,
+      "dur": 1.0
+     }
+    },
+    {
+     "name": "six",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       820,
+       1200
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 26,
+   "end": 33,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7,
+      "z": [
+       116,
+       106
+      ],
+      "pan": [
+       0,
+       30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       460
+      ]
+     }
+    },
+    {
+     "name": "hull",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       900
+      ]
+     }
+    },
+    {
+     "name": "spill",
+     "anim": {
+      "type": "wipeL",
+      "at": 3.4,
+      "dur": 1.6
+     }
+    },
+    {
+     "name": "tray",
+     "anim": {
+      "type": "pop",
+      "at": 4.0,
+      "anchor": [
+       540,
+       1290
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 33,
+   "end": 40,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7,
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       -30,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "bars",
+     "anim": {
+      "type": "wipeL",
+      "at": 0.4,
+      "dur": 1.0
+     }
+    },
+    {
+     "name": "people",
+     "anim": {
+      "type": "wipeL",
+      "at": 3.4,
+      "dur": 1.2
+     }
+    },
+    {
+     "name": "boats",
+     "anim": {
+      "type": "fade",
+      "at": 1.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 40,
+   "end": 47,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7,
+      "z": [
+       108,
+       122
+      ],
+      "pan": [
+       0,
+       60
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "ship",
+     "anim": {
+      "type": "fade",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "lost",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       540,
+       1300
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 47,
+   "end": 54,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7,
+      "z": [
+       114,
+       104
+      ],
+      "pan": [
+       40,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "year",
+     "anim": {
+      "type": "stamp",
+      "at": 0.4,
+      "anchor": [
+       540,
+       680
+      ]
+     }
+    },
+    {
+     "name": "boats",
+     "anim": {
+      "type": "slideL",
+      "at": 0.8
+     }
+    },
+    {
+     "name": "ice",
+     "anim": {
+      "type": "slideR",
+      "at": 3.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 54,
+   "end": 62,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 8,
+      "z": [
+       106,
+       118
+      ],
+      "pan": [
+       0,
+       -40
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       360
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       560
+      ]
+     }
+    },
+    {
+     "name": "sea",
+     "anim": {
+      "type": "fade",
+      "at": 0.8
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       300,
+       880
+      ]
+     }
+    },
+    {
+     "name": "when",
+     "anim": {
+      "type": "pop",
+      "at": 6.0,
+      "anchor": [
+       540,
+       1330
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 62,
+   "end": 70,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 8,
+      "z": [
+       110,
+       100
+      ],
+      "pan": [
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "look",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       500
+      ]
+     }
+    },
+    {
+     "name": "ship",
+     "anim": {
+      "type": "fade",
+      "at": 0.6
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 4.2,
+      "anchor": [
+       540,
+       1080
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 5.0,
+      "anchor": [
+       785,
+       1220
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 3.0,
+   "text": "침몰하지 않는 배, 타이타닉은\n왜 가라앉았을까요?"
+  },
+  {
+   "start": 3.0,
+   "end": 4.8,
+   "text": "단 2시간 40분 만에요"
+  },
+  {
+   "start": 5.0,
+   "end": 8.6,
+   "text": "1912년 4월, 당시 세계 최대 여객선\n타이타닉이 첫 항해에 나섰어요"
+  },
+  {
+   "start": 8.6,
+   "end": 11.8,
+   "text": "사람들은 거의 가라앉지 않는\n배라고 불렀죠"
+  },
+  {
+   "start": 12.0,
+   "end": 15.4,
+   "text": "배 밑은 벽으로 나뉜\n16개의 방수 칸"
+  },
+  {
+   "start": 15.4,
+   "end": 18.8,
+   "text": "앞쪽 네 칸까지는\n물이 차도 버티게 만들었죠"
+  },
+  {
+   "start": 19.0,
+   "end": 22.4,
+   "text": "그런데 4월 14일 밤,\n빙산에 옆구리가 긁혔어요"
+  },
+  {
+   "start": 22.4,
+   "end": 25.8,
+   "text": "물이 들어온 칸은 여섯 칸.\n한계를 넘은 거예요"
+  },
+  {
+   "start": 26.0,
+   "end": 29.4,
+   "text": "문제는 칸막이 벽 꼭대기가\n뚫려 있었다는 것"
+  },
+  {
+   "start": 29.4,
+   "end": 32.8,
+   "text": "앞이 가라앉자 물이\n얼음틀처럼 다음 칸으로 넘쳤어요"
+  },
+  {
+   "start": 33.0,
+   "end": 36.4,
+   "text": "구명보트는 20척,\n1,178명분뿐이었어요"
+  },
+  {
+   "start": 36.4,
+   "end": 39.8,
+   "text": "배에는 2,200명이 넘게\n타고 있었는데 말이죠"
+  },
+  {
+   "start": 40.0,
+   "end": 43.4,
+   "text": "결국 배는 둘로 부러져\n바다 밑으로 사라졌어요"
+  },
+  {
+   "start": 43.4,
+   "end": 46.8,
+   "text": "약 1,500명이\n돌아오지 못했죠"
+  },
+  {
+   "start": 47.0,
+   "end": 50.4,
+   "text": "이 사고 뒤 모든 승객이 탈\n구명보트를 싣게 됐고"
+  },
+  {
+   "start": 50.4,
+   "end": 53.8,
+   "text": "빙산을 지켜보는\n국제 빙산 순찰대도 생겼어요"
+  },
+  {
+   "start": 54.0,
+   "end": 57.6,
+   "text": "퀴즈! 타이타닉은 사고 뒤\n몇 년 만에 발견됐을까?"
+  },
+  {
+   "start": 57.6,
+   "end": 60.0,
+   "text": "정답은 73년!"
+  },
+  {
+   "start": 60.0,
+   "end": 61.8,
+   "text": "1985년, 4천 m 바다 밑에서요"
+  },
+  {
+   "start": 62.2,
+   "end": 66.0,
+   "text": "가라앉지 않는 배는 없다,\n타이타닉이 남긴 교훈이에요"
+  },
+  {
+   "start": 66.2,
+   "end": 69.8,
+   "text": "더 많은 지식이 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
