@@ -1,0 +1,848 @@
+{
+ "duration": 90,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 5,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 5,
+      "z": [
+       104,
+       118
+      ],
+      "pan": [
+       0,
+       30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       470
+      ]
+     }
+    },
+    {
+     "name": "house",
+     "anim": {
+      "type": "pop",
+      "at": 0.8,
+      "anchor": [
+       540,
+       960
+      ]
+     }
+    },
+    {
+     "name": "name",
+     "anim": {
+      "type": "stamp",
+      "at": 2.6,
+      "anchor": [
+       540,
+       1270
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 5,
+   "end": 12,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7,
+      "z": [
+       114,
+       104
+      ],
+      "pan": [
+       -30,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       470
+      ]
+     }
+    },
+    {
+     "name": "flow",
+     "anim": {
+      "type": "wipeL",
+      "at": 0.4,
+      "dur": 1.6
+     }
+    },
+    {
+     "name": "live",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       540,
+       1290
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 12,
+   "end": 19,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7,
+      "z": [
+       106,
+       116
+      ],
+      "pan": [
+       30,
+       -20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "age",
+     "anim": {
+      "type": "slideL",
+      "at": 0.4
+     }
+    },
+    {
+     "name": "price",
+     "anim": {
+      "type": "slideR",
+      "at": 3.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 19,
+   "end": 26,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7,
+      "z": [
+       110,
+       120
+      ],
+      "pan": [
+       0,
+       40
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "case",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       750
+      ]
+     }
+    },
+    {
+     "name": "pay",
+     "anim": {
+      "type": "stamp",
+      "at": 3.4,
+      "anchor": [
+       540,
+       1100
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 26,
+   "end": 33,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7,
+      "z": [
+       116,
+       106
+      ],
+      "pan": [
+       0,
+       -30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "more",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       780
+      ]
+     }
+    },
+    {
+     "name": "up",
+     "anim": {
+      "type": "slideU",
+      "at": 3.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 33,
+   "end": 41,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 8,
+      "z": [
+       104,
+       114
+      ],
+      "pan": [
+       -30,
+       20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "couple",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       900
+      ]
+     }
+    },
+    {
+     "name": "same",
+     "anim": {
+      "type": "stamp",
+      "at": 3.8,
+      "anchor": [
+       540,
+       1280
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 41,
+   "end": 48,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7,
+      "z": [
+       112,
+       104
+      ],
+      "pan": [
+       20,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "chart",
+     "anim": {
+      "type": "wipeL",
+      "at": 0.4,
+      "dur": 2.0
+     }
+    },
+    {
+     "name": "gov",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       540,
+       1290
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 48,
+   "end": 55,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7,
+      "z": [
+       106,
+       118
+      ],
+      "pan": [
+       0,
+       -40
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "left",
+     "anim": {
+      "type": "slideL",
+      "at": 0.4
+     }
+    },
+    {
+     "name": "short",
+     "anim": {
+      "type": "slideR",
+      "at": 3.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 55,
+   "end": 62,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7,
+      "z": [
+       114,
+       104
+      ],
+      "pan": [
+       -20,
+       20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "bars",
+     "anim": {
+      "type": "wipeL",
+      "at": 0.4,
+      "dur": 2.4
+     }
+    },
+    {
+     "name": "heir",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       540,
+       1335
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 62,
+   "end": 70,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 8,
+      "z": [
+       104,
+       114
+      ],
+      "pan": [
+       0,
+       30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "up",
+     "anim": {
+      "type": "slideL",
+      "at": 0.4
+     }
+    },
+    {
+     "name": "quit",
+     "anim": {
+      "type": "slideR",
+      "at": 3.8
+     }
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "start": 70,
+   "end": 80,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 10,
+      "z": [
+       106,
+       120
+      ],
+      "pan": [
+       0,
+       -30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       340
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       545
+      ]
+     }
+    },
+    {
+     "name": "ox",
+     "anim": {
+      "type": "pop",
+      "at": 0.8,
+      "anchor": [
+       540,
+       900
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       760,
+       900
+      ]
+     }
+    },
+    {
+     "name": "why",
+     "anim": {
+      "type": "fade",
+      "at": 6.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "start": 80,
+   "end": 90,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 10,
+      "z": [
+       110,
+       100
+      ],
+      "pan": [
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "look",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       500
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 4.8,
+      "anchor": [
+       540,
+       1080
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 5.6,
+      "anchor": [
+       785,
+       1220
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 2.6,
+   "text": "집은 있는데\n현금이 없다면?"
+  },
+  {
+   "start": 2.6,
+   "end": 4.8,
+   "text": "집으로 월급을\n받는 방법이 있어요"
+  },
+  {
+   "start": 5.0,
+   "end": 8.4,
+   "text": "바로 주택연금.\n집을 담보로 매달 연금을 받아요"
+  },
+  {
+   "start": 8.4,
+   "end": 11.8,
+   "text": "그러면서 그 집에\n계속 살 수 있죠"
+  },
+  {
+   "start": 12.0,
+   "end": 15.4,
+   "text": "가입 조건은 부부 중 한 명이\n만 55세 이상"
+  },
+  {
+   "start": 15.4,
+   "end": 18.8,
+   "text": "집값은 공시가격\n12억 원 이하예요"
+  },
+  {
+   "start": 19.0,
+   "end": 22.4,
+   "text": "그럼 얼마나 받을까요?\n72세, 4억 원 집이라면"
+  },
+  {
+   "start": 22.4,
+   "end": 25.8,
+   "text": "매달 약 133만 원을\n평생 받아요"
+  },
+  {
+   "start": 26.0,
+   "end": 29.4,
+   "text": "나이가 많을수록,\n집값이 비쌀수록 더 받아요"
+  },
+  {
+   "start": 29.4,
+   "end": 32.8,
+   "text": "올해 3월부터는\n평균 3% 넘게 올랐죠"
+  },
+  {
+   "start": 33.0,
+   "end": 36.8,
+   "text": "장점은? 부부 중 한 명이\n먼저 떠나도"
+  },
+  {
+   "start": 36.8,
+   "end": 40.8,
+   "text": "남은 배우자가 같은 금액을\n계속 받아요"
+  },
+  {
+   "start": 41.0,
+   "end": 44.4,
+   "text": "집값이 떨어져도\n연금은 그대로"
+  },
+  {
+   "start": 44.4,
+   "end": 47.8,
+   "text": "나라가 지급을\n책임지거든요"
+  },
+  {
+   "start": 48.0,
+   "end": 51.4,
+   "text": "나중에 집을 팔아 정산할 때\n돈이 남으면 자녀에게"
+  },
+  {
+   "start": 51.4,
+   "end": 54.8,
+   "text": "모자라도 자녀에게\n청구하지 않아요"
+  },
+  {
+   "start": 55.0,
+   "end": 58.4,
+   "text": "하지만 단점도 있어요.\n받은 연금에 이자가 붙어서"
+  },
+  {
+   "start": 58.4,
+   "end": 61.8,
+   "text": "집을 물려주기는\n어려워질 수 있죠"
+  },
+  {
+   "start": 62.0,
+   "end": 65.8,
+   "text": "집값이 올라도\n연금은 늘지 않고"
+  },
+  {
+   "start": 65.8,
+   "end": 69.8,
+   "text": "중간에 그만두면\n받은 돈과 이자를 갚아야 해요"
+  },
+  {
+   "start": 70.0,
+   "end": 73.6,
+   "text": "퀴즈! 해지하고 같은 집으로\n바로 다시 가입할 수 있을까?"
+  },
+  {
+   "start": 73.6,
+   "end": 76.6,
+   "text": "정답은 X!"
+  },
+  {
+   "start": 76.6,
+   "end": 79.8,
+   "text": "같은 집으로는\n3년 동안 다시 못 해요"
+  },
+  {
+   "start": 80.2,
+   "end": 84.6,
+   "text": "집 한 채가 노후 월급이 되는\n주택연금, 꼼꼼히 따져 보세요"
+  },
+  {
+   "start": 84.8,
+   "end": 89.8,
+   "text": "더 많은 지식이 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
