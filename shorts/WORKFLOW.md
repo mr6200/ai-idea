@@ -150,6 +150,10 @@
 - 쉬는 자리를 바꾸려면 자막 문장의 쉼표 위치를 바꾸면 됨 (쉼표 = 짧은 쉼). 쉬면 안 되는 곳에는 쉼표를 쓰지 않음
 - 다음 편부터는 이 `gen_narration.py`를 그대로 복사해서 씀
 
+### 썸네일 인트로 (16편부터, 사용자 요청)
+
+완성 영상 맨 앞에 썸네일을 1.5초(무음) 붙인다. `build_all.sh`의 `INTRO=1.5`와 렌더 마무리 ffmpeg(`concat`)가 처리하므로 `--render` 한 번으로 끝난다. 영상 길이는 본편 + 1.5초, 설명란 챕터와 장면 표 시간도 1.5초씩 늦춘다(초는 내림). 틀은 `shorts/house-pension/build/build_all.sh`.
+
 ### TTS 검사 (15편부터, 사용자 요청)
 
 렌더 전에 `build/tts_check.py`를 돌려 `tts_report.md`의 경고를 모두 살핀다 (`pip install faster-whisper` 필요, 모델은 huggingface.co). 한 글자 문장 끝, 줄 안의 마침표, 0.35초 넘는 쉼, 끄는 말, Whisper 받아쓰기 불일치, 빨리 감기를 잡는다. 15편에서 잡은 예: 「오래, 꾸준히」가 「올해 꾸준히」로 들림 → 「오랫동안 꾸준히」. 자세한 내용은 `shorts/pension-return/README.md`.

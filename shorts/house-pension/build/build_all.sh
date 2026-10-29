@@ -35,13 +35,19 @@ python3 gen_effectcraft.py
 
 mkdir -p ../video
 effectcraft-cli script build.jsx --empty --save-as ../video/house-pension.ecproj
+INTRO=1.5   # seconds of thumbnail before the video (subtitle and chapter times shift by this)
 if [ "${1:-}" = "--render" ]; then
   effectcraft-cli render --project ../video/house-pension.ecproj --comp Main \
     --out ../video/raw.mp4 --format h264 --audio on --quality best
+  # the thumbnail as a 1.5 s silent opening card (user request), then the render;
   # loudness-normalised audio (single-pass loudnorm lands near -16, so +1.8 dB under a limiter), H.264 Main profile, moov atom up front for previews
   ffmpeg -v error -y -i ../video/raw.mp4 \
-    -map 0:v -map 0:a -c:v libx264 -profile:v main -level 4.1 -pix_fmt yuv420p -crf 19 \
-    -af "loudnorm=I=-14:TP=-1.5:LRA=11,volume=1.8dB,alimiter=limit=0.84:level=false" -c:a aac -b:a 192k -ar 48000 \
-    -movflags +faststart -shortest ../video/house-pension-shorts.mp4
+    -loop 1 -framerate 30 -t "$INTRO" -i ../thumbnail/thumbnail.png \
+    -f lavfi -t "$INTRO" -i anullsrc=r=48000:cl=stereo \
+    -filter_complex "[1:v]scale=1080:1920,setsar=1,fps=30,format=yuv420p[iv];[0:v]setsar=1,fps=30,format=yuv420p[mv];\
+[0:a]aformat=sample_rates=48000:channel_layouts=stereo[ma];[iv][2:a][mv][ma]concat=n=2:v=1:a=1[v][a0];\
+[a0]loudnorm=I=-14:TP=-1.5:LRA=11,volume=1.8dB,alimiter=limit=0.84:level=false[a]" \
+    -map "[v]" -map "[a]" -c:v libx264 -profile:v main -level 4.1 -pix_fmt yuv420p -crf 19 \
+    -c:a aac -b:a 192k -ar 48000 -movflags +faststart ../video/house-pension-shorts.mp4
   rm -f ../video/raw.mp4
 fi
