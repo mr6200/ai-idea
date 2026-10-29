@@ -11,7 +11,7 @@
 | `audio/narration-preview.mp3` | 내레이션 미리 듣기 (Google Cloud TTS `ko-KR-Chirp3-HD-Charon`, 1.2배속, 쉼표 쉼, 25문장) |
 | `thumbnail/` | 썸네일 (1080×1920) |
 | `youtube-metadata.md` | 제목·설명·태그·챕터 |
-| `video/pension-timing-shorts.mp4` | 완성 영상 (1:30, H.264 Main) |
+| `video/pension-timing-shorts.mp4` | 완성 영상 (1:30, H.264 Main, −13.7 LUFS) |
 | `video/pension-timing.ecproj` | EffectCraft 프로젝트 (장면별 프리컴프 + Main) |
 
 ## 다시 만들기
