@@ -1,0 +1,614 @@
+{
+ "duration": 60,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 4.4,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 4.4,
+      "z": [
+       104,
+       116
+      ],
+      "pan": [
+       0,
+       30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       470
+      ]
+     }
+    },
+    {
+     "name": "balls",
+     "anim": {
+      "type": "pop",
+      "at": 0.6,
+      "anchor": [
+       540,
+       1000
+      ]
+     }
+    },
+    {
+     "name": "really",
+     "anim": {
+      "type": "stamp",
+      "at": 2.8,
+      "anchor": [
+       540,
+       1230
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 4.4,
+   "end": 12.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7.6,
+      "z": [
+       114,
+       104
+      ],
+      "pan": [
+       -30,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "odds",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "prize",
+     "anim": {
+      "type": "slideR",
+      "at": 2.2
+     }
+    },
+    {
+     "name": "net",
+     "anim": {
+      "type": "stamp",
+      "at": 4.6,
+      "anchor": [
+       540,
+       1250
+      ]
+     }
+    },
+    {
+     "name": "tax",
+     "anim": {
+      "type": "fade",
+      "at": 5.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 12.0,
+   "end": 22.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 10,
+      "z": [
+       106,
+       118
+      ],
+      "pan": [
+       30,
+       -20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "rumor",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       780
+      ]
+     }
+    },
+    {
+     "name": "x",
+     "anim": {
+      "type": "stamp",
+      "at": 3.8,
+      "anchor": [
+       540,
+       800
+      ]
+     }
+    },
+    {
+     "name": "nope",
+     "anim": {
+      "type": "stamp",
+      "at": 4.2,
+      "anchor": [
+       540,
+       1010
+      ]
+     }
+    },
+    {
+     "name": "src",
+     "anim": {
+      "type": "slideU",
+      "at": 6.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 22.0,
+   "end": 28.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 6,
+      "z": [
+       112,
+       104
+      ],
+      "pan": [
+       0,
+       30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "study",
+     "anim": {
+      "type": "pop",
+      "at": 0.5,
+      "anchor": [
+       540,
+       880
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 28.0,
+   "end": 37.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 9,
+      "z": [
+       104,
+       116
+      ],
+      "pan": [
+       -30,
+       20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "study",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       820
+      ]
+     }
+    },
+    {
+     "name": "src",
+     "anim": {
+      "type": "fade",
+      "at": 1.0
+     }
+    },
+    {
+     "name": "lesson",
+     "anim": {
+      "type": "stamp",
+      "at": 6.2,
+      "anchor": [
+       540,
+       1230
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 37.0,
+   "end": 42.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 5,
+      "z": [
+       110,
+       120
+      ],
+      "pan": [
+       0,
+       -30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "survey",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       860
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 42.0,
+   "end": 53.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 11,
+      "z": [
+       106,
+       120
+      ],
+      "pan": [
+       0,
+       -30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       340
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       545
+      ]
+     }
+    },
+    {
+     "name": "choices",
+     "anim": {
+      "type": "pop",
+      "at": 0.8,
+      "anchor": [
+       540,
+       860
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 4.4,
+      "anchor": [
+       540,
+       860
+      ]
+     }
+    },
+    {
+     "name": "why",
+     "anim": {
+      "type": "fade",
+      "at": 6.8
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 53.0,
+   "end": 60.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7,
+      "z": [
+       110,
+       100
+      ],
+      "pan": [
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "look",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       500
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 3.4,
+      "anchor": [
+       540,
+       1080
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 4.0,
+      "anchor": [
+       785,
+       1220
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 2.7,
+   "text": "로또 1등에 당첨되면\n결국 다 망한다?"
+  },
+  {
+   "start": 2.8,
+   "end": 4.2,
+   "text": "정말 그럴까요?"
+  },
+  {
+   "start": 4.4,
+   "end": 8.6,
+   "text": "1등 확률은 814만분의 1,\n평균 당첨금은 약 20억 원"
+  },
+  {
+   "start": 8.8,
+   "end": 11.8,
+   "text": "세금을 떼면\n약 13억 7천만 원을 받아요"
+  },
+  {
+   "start": 12.0,
+   "end": 15.4,
+   "text": "당첨자 70%가 파산한다는 말,\n들어 보셨죠?"
+  },
+  {
+   "start": 15.6,
+   "end": 17.8,
+   "text": "그런데 이 숫자는\n근거가 없어요"
+  },
+  {
+   "start": 18.0,
+   "end": 21.8,
+   "text": "출처로 알려진 미국 재단이\n자기 연구가 아니라고 밝혔거든요"
+  },
+  {
+   "start": 22.0,
+   "end": 24.8,
+   "text": "스웨덴 연구에선\n큰돈에 당첨된 사람들이"
+  },
+  {
+   "start": 25.0,
+   "end": 27.8,
+   "text": "10년이 넘게 지나도\n삶의 만족도가 더 높았어요"
+  },
+  {
+   "start": 28.0,
+   "end": 31.0,
+   "text": "반대로 미국 플로리다에선\n1억 원 안팎을 받은 사람들이"
+  },
+  {
+   "start": 31.2,
+   "end": 33.8,
+   "text": "파산을 막지 못하고\n몇 년 미뤘을 뿐이었죠"
+  },
+  {
+   "start": 34.0,
+   "end": 36.8,
+   "text": "결국 돈의 크기보다\n쓰는 방법이 중요한 거예요"
+  },
+  {
+   "start": 37.0,
+   "end": 41.6,
+   "text": "우리나라 1등 당첨자는\n35%가 집부터 사겠다고 답했어요"
+  },
+  {
+   "start": 42.0,
+   "end": 45.4,
+   "text": "퀴즈! 로또 1등 당첨금,\n언제까지 찾아가야 할까?"
+  },
+  {
+   "start": 46.4,
+   "end": 48.6,
+   "text": "정답은, 1년이에요!"
+  },
+  {
+   "start": 48.8,
+   "end": 51.4,
+   "text": "기한이 지나면\n복권기금으로 넘어가요"
+  },
+  {
+   "start": 53.4,
+   "end": 56.4,
+   "text": "더 많은 돈 이야기가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}

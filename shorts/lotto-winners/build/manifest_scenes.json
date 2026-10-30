@@ -1,0 +1,521 @@
+[
+ {
+  "id": "S01",
+  "start": 0,
+  "end": 4.4,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 4.4,
+     "z": [
+      104,
+      116
+     ],
+     "pan": [
+      0,
+      30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      470
+     ]
+    }
+   },
+   {
+    "name": "balls",
+    "anim": {
+     "type": "pop",
+     "at": 0.6,
+     "anchor": [
+      540,
+      1000
+     ]
+    }
+   },
+   {
+    "name": "really",
+    "anim": {
+     "type": "stamp",
+     "at": 2.8,
+     "anchor": [
+      540,
+      1230
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "start": 4.4,
+  "end": 12.0,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 7.6,
+     "z": [
+      114,
+      104
+     ],
+     "pan": [
+      -30,
+      0
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "odds",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   },
+   {
+    "name": "prize",
+    "anim": {
+     "type": "slideR",
+     "at": 2.2
+    }
+   },
+   {
+    "name": "net",
+    "anim": {
+     "type": "stamp",
+     "at": 4.6,
+     "anchor": [
+      540,
+      1250
+     ]
+    }
+   },
+   {
+    "name": "tax",
+    "anim": {
+     "type": "fade",
+     "at": 5.0
+    }
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "start": 12.0,
+  "end": 22.0,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 10,
+     "z": [
+      106,
+      118
+     ],
+     "pan": [
+      30,
+      -20
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "rumor",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      780
+     ]
+    }
+   },
+   {
+    "name": "x",
+    "anim": {
+     "type": "stamp",
+     "at": 3.8,
+     "anchor": [
+      540,
+      800
+     ]
+    }
+   },
+   {
+    "name": "nope",
+    "anim": {
+     "type": "stamp",
+     "at": 4.2,
+     "anchor": [
+      540,
+      1010
+     ]
+    }
+   },
+   {
+    "name": "src",
+    "anim": {
+     "type": "slideU",
+     "at": 6.0
+    }
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "start": 22.0,
+  "end": 28.0,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 6,
+     "z": [
+      112,
+      104
+     ],
+     "pan": [
+      0,
+      30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "study",
+    "anim": {
+     "type": "pop",
+     "at": 0.5,
+     "anchor": [
+      540,
+      880
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "start": 28.0,
+  "end": 37.0,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 9,
+     "z": [
+      104,
+      116
+     ],
+     "pan": [
+      -30,
+      20
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "study",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      820
+     ]
+    }
+   },
+   {
+    "name": "src",
+    "anim": {
+     "type": "fade",
+     "at": 1.0
+    }
+   },
+   {
+    "name": "lesson",
+    "anim": {
+     "type": "stamp",
+     "at": 6.2,
+     "anchor": [
+      540,
+      1230
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "start": 37.0,
+  "end": 42.0,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 5,
+     "z": [
+      110,
+      120
+     ],
+     "pan": [
+      0,
+      -30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "survey",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      860
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "start": 42.0,
+  "end": 53.0,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 11,
+     "z": [
+      106,
+      120
+     ],
+     "pan": [
+      0,
+      -30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "badge",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      340
+     ]
+    }
+   },
+   {
+    "name": "question",
+    "anim": {
+     "type": "pop",
+     "at": 0.3,
+     "anchor": [
+      540,
+      545
+     ]
+    }
+   },
+   {
+    "name": "choices",
+    "anim": {
+     "type": "pop",
+     "at": 0.8,
+     "anchor": [
+      540,
+      860
+     ]
+    }
+   },
+   {
+    "name": "answer",
+    "anim": {
+     "type": "stamp",
+     "at": 4.4,
+     "anchor": [
+      540,
+      860
+     ]
+    }
+   },
+   {
+    "name": "why",
+    "anim": {
+     "type": "fade",
+     "at": 6.8
+    }
+   }
+  ]
+ },
+ {
+  "id": "S08",
+  "start": 53.0,
+  "end": 60.0,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 7,
+     "z": [
+      110,
+      100
+     ],
+     "pan": [
+      0,
+      0
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "look",
+    "anim": {
+     "type": "pop",
+     "at": 0.2,
+     "anchor": [
+      540,
+      500
+     ]
+    }
+   },
+   {
+    "name": "button",
+    "anim": {
+     "type": "pop",
+     "at": 3.4,
+     "anchor": [
+      540,
+      1080
+     ]
+    }
+   },
+   {
+    "name": "finger",
+    "anim": {
+     "type": "tap",
+     "at": 4.0,
+     "anchor": [
+      785,
+      1220
+     ]
+    }
+   }
+  ]
+ }
+]
