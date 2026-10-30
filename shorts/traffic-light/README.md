@@ -12,7 +12,7 @@
 | `audio/narration-preview.mp3` | 내레이션 미리 듣기 (`ko-KR-Chirp3-HD-Charon`, 1.2배속, 25문장) |
 | `thumbnail/` | 썸네일 (1080×1920) |
 | `youtube-metadata.md` | 제목·설명·태그·챕터 |
-| `video/traffic-light-shorts.mp4` | 완성 영상 (썸네일 1.5초 + 1:30, H.264 Main) |
+| `video/traffic-light-shorts.mp4` | 완성 영상 (썸네일 1.5초 + 1:30, H.264 Main, −14.6 LUFS) |
 | `video/traffic-light.ecproj` | EffectCraft 프로젝트 |
 
 ## 다시 만들기
