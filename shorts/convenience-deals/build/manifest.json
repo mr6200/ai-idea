@@ -1,0 +1,628 @@
+{
+ "duration": 60,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 4.4,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 4.4,
+      "z": [
+       104,
+       116
+      ],
+      "pan": [
+       0,
+       30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       470
+      ]
+     }
+    },
+    {
+     "name": "cans",
+     "anim": {
+      "type": "pop",
+      "at": 0.6,
+      "anchor": [
+       540,
+       1110
+      ]
+     }
+    },
+    {
+     "name": "free",
+     "anim": {
+      "type": "stamp",
+      "at": 2.4,
+      "anchor": [
+       680,
+       1320
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 4.4,
+   "end": 11.2,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 6.8,
+      "z": [
+       114,
+       104
+      ],
+      "pan": [
+       -30,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "half",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       790
+      ]
+     }
+    },
+    {
+     "name": "but",
+     "anim": {
+      "type": "stamp",
+      "at": 3.8,
+      "anchor": [
+       540,
+       1180
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 11.2,
+   "end": 18.6,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7.4,
+      "z": [
+       106,
+       118
+      ],
+      "pan": [
+       30,
+       -20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "cmp",
+     "anim": {
+      "type": "wipeL",
+      "at": 0.4,
+      "dur": 1.6
+     }
+    },
+    {
+     "name": "pct",
+     "anim": {
+      "type": "stamp",
+      "at": 3.0,
+      "anchor": [
+       540,
+       1130
+      ]
+     }
+    },
+    {
+     "name": "same",
+     "anim": {
+      "type": "fade",
+      "at": 4.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 18.6,
+   "end": 24.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 5.4,
+      "z": [
+       112,
+       104
+      ],
+      "pan": [
+       0,
+       30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "three",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       830
+      ]
+     }
+    },
+    {
+     "name": "twice",
+     "anim": {
+      "type": "stamp",
+      "at": 3.4,
+      "anchor": [
+       540,
+       1180
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 24.0,
+   "end": 32.8,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 8.8,
+      "z": [
+       104,
+       116
+      ],
+      "pan": [
+       -30,
+       20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "exp",
+     "anim": {
+      "type": "fade",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "pair",
+     "anim": {
+      "type": "pop",
+      "at": 2.4,
+      "anchor": [
+       540,
+       820
+      ]
+     }
+    },
+    {
+     "name": "zero",
+     "anim": {
+      "type": "stamp",
+      "at": 4.0,
+      "anchor": [
+       540,
+       950
+      ]
+     }
+    },
+    {
+     "name": "more",
+     "anim": {
+      "type": "stamp",
+      "at": 5.6,
+      "anchor": [
+       540,
+       1170
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 32.8,
+   "end": 41.2,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 8.4,
+      "z": [
+       110,
+       120
+      ],
+      "pan": [
+       0,
+       -30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "oil",
+     "anim": {
+      "type": "pop",
+      "at": 0.6,
+      "anchor": [
+       540,
+       810
+      ]
+     }
+    },
+    {
+     "name": "fine",
+     "anim": {
+      "type": "stamp",
+      "at": 5.8,
+      "anchor": [
+       540,
+       1170
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 41.2,
+   "end": 50.4,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 9.2,
+      "z": [
+       106,
+       120
+      ],
+      "pan": [
+       0,
+       -30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       340
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       550
+      ]
+     }
+    },
+    {
+     "name": "choices",
+     "anim": {
+      "type": "pop",
+      "at": 0.8,
+      "anchor": [
+       540,
+       860
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 4.0,
+      "anchor": [
+       540,
+       860
+      ]
+     }
+    },
+    {
+     "name": "why",
+     "anim": {
+      "type": "fade",
+      "at": 6.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 50.4,
+   "end": 60.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 9.6,
+      "z": [
+       110,
+       100
+      ],
+      "pan": [
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "look",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       500
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 3.6,
+      "anchor": [
+       540,
+       1080
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 4.2,
+      "anchor": [
+       785,
+       1220
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 3.0,
+   "text": "편의점 1+1,\n무조건 이득일까요?"
+  },
+  {
+   "start": 3.0,
+   "end": 4.4,
+   "text": "계산해 보면\n생각과 달라요"
+  },
+  {
+   "start": 4.6,
+   "end": 8.2,
+   "text": "1+1은 한 개 값에 두 개,\n반값에 사는 셈이죠"
+  },
+  {
+   "start": 8.2,
+   "end": 11.2,
+   "text": "그런데 편의점 정가는\n대형마트보다 비싼 편이에요"
+  },
+  {
+   "start": 11.2,
+   "end": 15.0,
+   "text": "같은 상품 10개를 사 보니\n편의점이 약 37% 더 비쌌죠"
+  },
+  {
+   "start": 15.0,
+   "end": 18.4,
+   "text": "그래서 1+1이라도\n마트보다 크게 싸지 않을 수 있어요"
+  },
+  {
+   "start": 18.6,
+   "end": 22.0,
+   "text": "2+1은 더 조심해야 해요,\n세 개를 다 사야 할인이거든요"
+  },
+  {
+   "start": 22.0,
+   "end": 23.9,
+   "text": "하나만 필요했다면\n두 배를 쓴 셈이죠"
+  },
+  {
+   "start": 24.0,
+   "end": 26.4,
+   "text": "그래도 끌리는 건\n공짜의 힘 때문이에요"
+  },
+  {
+   "start": 26.4,
+   "end": 29.4,
+   "text": "미국 실험에서 초콜릿 값을\n1센트 내려 공짜로 만들자"
+  },
+  {
+   "start": 29.4,
+   "end": 32.6,
+   "text": "더 좋은 초콜릿 대신\n공짜를 고른 사람이 크게 늘었어요"
+  },
+  {
+   "start": 32.8,
+   "end": 38.6,
+   "text": "참기름 값을 4,750원에서\n9,500원으로 올리고\n1+1을 한 마트도 있었죠"
+  },
+  {
+   "start": 38.6,
+   "end": 41.1,
+   "text": "공정거래위원회가\n대형마트 4곳에 과징금을 매겼죠"
+  },
+  {
+   "start": 41.2,
+   "end": 44.4,
+   "text": "퀴즈! 2+1으로 사면\n한 개에 몇 % 할인일까?"
+  },
+  {
+   "start": 45.2,
+   "end": 47.6,
+   "text": "정답은, 약 33%예요!"
+  },
+  {
+   "start": 47.8,
+   "end": 50.2,
+   "text": "세 개를\n두 개 값에 사니까요"
+  },
+  {
+   "start": 50.6,
+   "end": 53.2,
+   "text": "필요한 만큼만,\n한 개 가격을 따져 보세요"
+  },
+  {
+   "start": 53.6,
+   "end": 56.6,
+   "text": "더 많은 돈 이야기가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
