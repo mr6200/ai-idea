@@ -1,0 +1,489 @@
+[
+ {
+  "id": "S01",
+  "start": 0,
+  "end": 5.0,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 5.0,
+     "z": [
+      104,
+      116
+     ],
+     "pan": [
+      0,
+      30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      470
+     ]
+    }
+   },
+   {
+    "name": "zzz",
+    "anim": {
+     "type": "pop",
+     "at": 1.0,
+     "anchor": [
+      830,
+      830
+     ]
+    }
+   },
+   {
+    "name": "more",
+    "anim": {
+     "type": "stamp",
+     "at": 3.2,
+     "anchor": [
+      540,
+      1250
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "start": 5.0,
+  "end": 11.2,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 6.2,
+     "z": [
+      114,
+      104
+     ],
+     "pan": [
+      -30,
+      0
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "total",
+    "anim": {
+     "type": "pop",
+     "at": 0.6,
+     "anchor": [
+      540,
+      810
+     ]
+    }
+   },
+   {
+    "name": "grow",
+    "anim": {
+     "type": "stamp",
+     "at": 3.8,
+     "anchor": [
+      540,
+      1170
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "start": 11.2,
+  "end": 17.8,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 6.6,
+     "z": [
+      106,
+      118
+     ],
+     "pan": [
+      30,
+      -20
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "bars",
+    "anim": {
+     "type": "wipeL",
+     "at": 0.3,
+     "dur": 2.6
+    }
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "start": 17.8,
+  "end": 24.8,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 7.0,
+     "z": [
+      112,
+      104
+     ],
+     "pan": [
+      0,
+      30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "how",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   },
+   {
+    "name": "rule",
+    "anim": {
+     "type": "slideR",
+     "at": 3.0
+    }
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "start": 24.8,
+  "end": 29.2,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 4.4,
+     "z": [
+      104,
+      116
+     ],
+     "pan": [
+      -30,
+      20
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "how",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      820
+     ]
+    }
+   },
+   {
+    "name": "src",
+    "anim": {
+     "type": "fade",
+     "at": 1.0
+    }
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "start": 29.2,
+  "end": 37.0,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 7.8,
+     "z": [
+      110,
+      120
+     ],
+     "pan": [
+      0,
+      -30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "rate",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      800
+     ]
+    }
+   },
+   {
+    "name": "gone",
+    "anim": {
+     "type": "stamp",
+     "at": 4.8,
+     "anchor": [
+      540,
+      1130
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "start": 37.0,
+  "end": 47.4,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 10.4,
+     "z": [
+      106,
+      120
+     ],
+     "pan": [
+      0,
+      -30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "badge",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      340
+     ]
+    }
+   },
+   {
+    "name": "question",
+    "anim": {
+     "type": "pop",
+     "at": 0.3,
+     "anchor": [
+      540,
+      550
+     ]
+    }
+   },
+   {
+    "name": "choices",
+    "anim": {
+     "type": "pop",
+     "at": 0.8,
+     "anchor": [
+      540,
+      860
+     ]
+    }
+   },
+   {
+    "name": "answer",
+    "anim": {
+     "type": "stamp",
+     "at": 4.4,
+     "anchor": [
+      740,
+      860
+     ]
+    }
+   },
+   {
+    "name": "why",
+    "anim": {
+     "type": "fade",
+     "at": 6.6
+    }
+   }
+  ]
+ },
+ {
+  "id": "S08",
+  "start": 47.4,
+  "end": 60.0,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 12.6,
+     "z": [
+      110,
+      100
+     ],
+     "pan": [
+      0,
+      0
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "look",
+    "anim": {
+     "type": "pop",
+     "at": 0.2,
+     "anchor": [
+      540,
+      500
+     ]
+    }
+   },
+   {
+    "name": "steps",
+    "anim": {
+     "type": "slideU",
+     "at": 0.8
+    }
+   },
+   {
+    "name": "button",
+    "anim": {
+     "type": "pop",
+     "at": 3.4,
+     "anchor": [
+      540,
+      1100
+     ]
+    }
+   },
+   {
+    "name": "finger",
+    "anim": {
+     "type": "tap",
+     "at": 4.0,
+     "anchor": [
+      785,
+      1240
+     ]
+    }
+   }
+  ]
+ }
+]
