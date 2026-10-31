@@ -1,0 +1,558 @@
+{
+ "duration": 60,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 5.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 5.0,
+      "z": [
+       104,
+       116
+      ],
+      "pan": [
+       0,
+       30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       470
+      ]
+     }
+    },
+    {
+     "name": "no",
+     "anim": {
+      "type": "stamp",
+      "at": 3.6,
+      "anchor": [
+       540,
+       1250
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 5.0,
+   "end": 10.4,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 5.4,
+      "z": [
+       114,
+       104
+      ],
+      "pan": [
+       -30,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "flow",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       860
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 10.4,
+   "end": 16.8,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 6.4,
+      "z": [
+       106,
+       118
+      ],
+      "pan": [
+       30,
+       -20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "bars",
+     "anim": {
+      "type": "wipeL",
+      "at": 0.3,
+      "dur": 1.8
+     }
+    },
+    {
+     "name": "x2",
+     "anim": {
+      "type": "stamp",
+      "at": 3.4,
+      "anchor": [
+       540,
+       1140
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 16.8,
+   "end": 24.6,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7.8,
+      "z": [
+       112,
+       104
+      ],
+      "pan": [
+       0,
+       30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "who",
+     "anim": {
+      "type": "fade",
+      "at": 0.6
+     }
+    },
+    {
+     "name": "steps",
+     "anim": {
+      "type": "wipeD",
+      "at": 3.4,
+      "dur": 1.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 24.6,
+   "end": 30.8,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 6.2,
+      "z": [
+       104,
+       116
+      ],
+      "pan": [
+       -30,
+       20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "rule",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       790
+      ]
+     }
+    },
+    {
+     "name": "up",
+     "anim": {
+      "type": "stamp",
+      "at": 3.0,
+      "anchor": [
+       540,
+       1120
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 30.8,
+   "end": 36.6,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 5.8,
+      "z": [
+       110,
+       120
+      ],
+      "pan": [
+       0,
+       -30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "quote",
+     "anim": {
+      "type": "pop",
+      "at": 2.0,
+      "anchor": [
+       540,
+       840
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 36.6,
+   "end": 46.4,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 9.8,
+      "z": [
+       106,
+       120
+      ],
+      "pan": [
+       0,
+       -30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       340
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       550
+      ]
+     }
+    },
+    {
+     "name": "choices",
+     "anim": {
+      "type": "pop",
+      "at": 0.8,
+      "anchor": [
+       540,
+       860
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 4.4,
+      "anchor": [
+       260,
+       860
+      ]
+     }
+    },
+    {
+     "name": "why",
+     "anim": {
+      "type": "fade",
+      "at": 6.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 46.4,
+   "end": 60.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 13.6,
+      "z": [
+       110,
+       100
+      ],
+      "pan": [
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "look",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       500
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 4.0,
+      "anchor": [
+       540,
+       1080
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 4.6,
+      "anchor": [
+       785,
+       1220
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 3.5,
+   "text": "맥도날드는 햄버거로\n돈을 가장 많이 벌까요?"
+  },
+  {
+   "start": 3.6,
+   "end": 4.8,
+   "text": "놀랍게도\n아니에요"
+  },
+  {
+   "start": 5.0,
+   "end": 7.4,
+   "text": "맥도날드 매장 대부분은\n가맹점이에요"
+  },
+  {
+   "start": 7.6,
+   "end": 10.2,
+   "text": "본사는 가맹점에서\n로열티와 임대료를 받죠"
+  },
+  {
+   "start": 10.4,
+   "end": 12.8,
+   "text": "그런데 그중 더 큰 건\n로열티가 아니라 임대료예요"
+  },
+  {
+   "start": 13.0,
+   "end": 16.6,
+   "text": "2024년 임대료만 약 100억 달러,\n로열티보다 두 배 가까이 많죠"
+  },
+  {
+   "start": 16.8,
+   "end": 20.0,
+   "text": "비결은 1950년대,\n한 재무 담당자의 아이디어였어요"
+  },
+  {
+   "start": 20.2,
+   "end": 24.4,
+   "text": "본사가 매장 땅을 사거나 빌린 뒤\n점주에게 더 비싸게 빌려주는 거죠"
+  },
+  {
+   "start": 24.6,
+   "end": 26.8,
+   "text": "점주는 매출의 일정 비율을\n임대료로 내요"
+  },
+  {
+   "start": 27.0,
+   "end": 30.4,
+   "text": "햄버거가 잘 팔릴수록\n본사 임대료도 오르는 구조예요"
+  },
+  {
+   "start": 30.8,
+   "end": 32.6,
+   "text": "영화 「파운더」를 보면\n이런 대사가 나와요"
+  },
+  {
+   "start": 32.8,
+   "end": 36.0,
+   "text": "우리는 햄버거가 아니라\n부동산 사업을 하는 겁니다"
+  },
+  {
+   "start": 36.8,
+   "end": 40.0,
+   "text": "퀴즈! 맥도날드 본사가\n직접 운영하는 매장은 몇 %일까?"
+  },
+  {
+   "start": 41.0,
+   "end": 43.0,
+   "text": "정답은, 약 5%예요!"
+  },
+  {
+   "start": 43.2,
+   "end": 45.6,
+   "text": "나머지 95%는\n모두 가맹점이랍니다"
+  },
+  {
+   "start": 46.6,
+   "end": 50.2,
+   "text": "다음에 맥도날드를 보면,\n그 땅 주인을 떠올려 보세요"
+  },
+  {
+   "start": 50.6,
+   "end": 53.4,
+   "text": "더 많은 돈 이야기가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}

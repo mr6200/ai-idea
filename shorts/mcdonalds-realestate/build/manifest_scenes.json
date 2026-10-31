@@ -1,0 +1,465 @@
+[
+ {
+  "id": "S01",
+  "start": 0,
+  "end": 5.0,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 5.0,
+     "z": [
+      104,
+      116
+     ],
+     "pan": [
+      0,
+      30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      470
+     ]
+    }
+   },
+   {
+    "name": "no",
+    "anim": {
+     "type": "stamp",
+     "at": 3.6,
+     "anchor": [
+      540,
+      1250
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "start": 5.0,
+  "end": 10.4,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 5.4,
+     "z": [
+      114,
+      104
+     ],
+     "pan": [
+      -30,
+      0
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "flow",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      860
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "start": 10.4,
+  "end": 16.8,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 6.4,
+     "z": [
+      106,
+      118
+     ],
+     "pan": [
+      30,
+      -20
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "bars",
+    "anim": {
+     "type": "wipeL",
+     "at": 0.3,
+     "dur": 1.8
+    }
+   },
+   {
+    "name": "x2",
+    "anim": {
+     "type": "stamp",
+     "at": 3.4,
+     "anchor": [
+      540,
+      1140
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "start": 16.8,
+  "end": 24.6,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 7.8,
+     "z": [
+      112,
+      104
+     ],
+     "pan": [
+      0,
+      30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "who",
+    "anim": {
+     "type": "fade",
+     "at": 0.6
+    }
+   },
+   {
+    "name": "steps",
+    "anim": {
+     "type": "wipeD",
+     "at": 3.4,
+     "dur": 1.4
+    }
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "start": 24.6,
+  "end": 30.8,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 6.2,
+     "z": [
+      104,
+      116
+     ],
+     "pan": [
+      -30,
+      20
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "rule",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      790
+     ]
+    }
+   },
+   {
+    "name": "up",
+    "anim": {
+     "type": "stamp",
+     "at": 3.0,
+     "anchor": [
+      540,
+      1120
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "start": 30.8,
+  "end": 36.6,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 5.8,
+     "z": [
+      110,
+      120
+     ],
+     "pan": [
+      0,
+      -30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      410
+     ]
+    }
+   },
+   {
+    "name": "quote",
+    "anim": {
+     "type": "pop",
+     "at": 2.0,
+     "anchor": [
+      540,
+      840
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "start": 36.6,
+  "end": 46.4,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 9.8,
+     "z": [
+      106,
+      120
+     ],
+     "pan": [
+      0,
+      -30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "badge",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      340
+     ]
+    }
+   },
+   {
+    "name": "question",
+    "anim": {
+     "type": "pop",
+     "at": 0.3,
+     "anchor": [
+      540,
+      550
+     ]
+    }
+   },
+   {
+    "name": "choices",
+    "anim": {
+     "type": "pop",
+     "at": 0.8,
+     "anchor": [
+      540,
+      860
+     ]
+    }
+   },
+   {
+    "name": "answer",
+    "anim": {
+     "type": "stamp",
+     "at": 4.4,
+     "anchor": [
+      260,
+      860
+     ]
+    }
+   },
+   {
+    "name": "why",
+    "anim": {
+     "type": "fade",
+     "at": 6.6
+    }
+   }
+  ]
+ },
+ {
+  "id": "S08",
+  "start": 46.4,
+  "end": 60.0,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 13.6,
+     "z": [
+      110,
+      100
+     ],
+     "pan": [
+      0,
+      0
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "look",
+    "anim": {
+     "type": "pop",
+     "at": 0.2,
+     "anchor": [
+      540,
+      500
+     ]
+    }
+   },
+   {
+    "name": "button",
+    "anim": {
+     "type": "pop",
+     "at": 4.0,
+     "anchor": [
+      540,
+      1080
+     ]
+    }
+   },
+   {
+    "name": "finger",
+    "anim": {
+     "type": "tap",
+     "at": 4.6,
+     "anchor": [
+      785,
+      1220
+     ]
+    }
+   }
+  ]
+ }
+]
