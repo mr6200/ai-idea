@@ -1,0 +1,11 @@
+torch>=2.4
+diffusers>=0.35.0
+transformers>=4.49
+accelerate
+sentencepiece
+protobuf
+huggingface_hub[cli]
+hf_transfer
+pillow
+pyyaml
+edge-tts>=7.0
