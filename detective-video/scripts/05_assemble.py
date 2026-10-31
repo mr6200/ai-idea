@@ -5,6 +5,7 @@
 
   python scripts/05_assemble.py
   python scripts/05_assemble.py --bgm assets/bgm.mp3 --bgm-volume 0.12
+  python scripts/05_assemble.py --sub-size 28       # 자막 크기 조절 (기본 24)
   python scripts/05_assemble.py --no-subs
 결과: output/final.mp4, output/subtitles.srt
 """
@@ -63,11 +64,28 @@ def srt_time(t):
     return f"{ms // 3600000:02d}:{ms // 60000 % 60:02d}:{ms // 1000 % 60:02d},{ms % 1000:03d}"
 
 
+def wrap_line(text, max_chars=24):
+    """자막을 띄어쓰기 기준으로 고르게 여러 줄로 나눈다 (단어 중간 줄바꿈 방지)."""
+    words = text.split(" ")
+    n_lines = -(-len(text) // max_chars)
+    target = len(text) / n_lines
+    lines, cur = [], ""
+    for w in words:
+        if cur and len(cur) + 1 + len(w) > target + 4 and len(lines) < n_lines - 1:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = f"{cur} {w}" if cur else w
+    lines.append(cur)
+    return "\n".join(lines)
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--story")
     p.add_argument("--bgm")
     p.add_argument("--bgm-volume", type=float, default=0.12)
+    p.add_argument("--sub-size", type=int, default=24, help="자막 글자 크기 (기본 24, 이전 18)")
     p.add_argument("--no-subs", action="store_true")
     args = p.parse_args()
 
@@ -92,8 +110,9 @@ def main():
         stats[make_shot_clip(shot, OUT / manifest[sid]["audio"], dur, video, dst)] += 1
         clips.append(dst)
         name = story["characters"][shot["char"]]["name"]
+        text = wrap_line(f"{name}: {shot['line']}")
         srt.append(f"{n}\n{srt_time(t + video['pad_before'])} --> {srt_time(t + dur - video['pad_after'] * 0.5)}\n"
-                   f"{name}: {shot['line']}\n")
+                   f"{text}\n")
         t += dur
         print(f"{sid}: {dur:.2f}s")
 
@@ -110,7 +129,7 @@ def main():
 
     cmd = ["-i", body.name]
     vf = [] if args.no_subs else [
-        f"subtitles=subtitles.srt:force_style='FontName={FONT_NAME},FontSize=18,Outline=2,MarginV=28'"]
+        f"subtitles=subtitles.srt:force_style='FontName={FONT_NAME},FontSize={args.sub_size},Bold=1,Outline=2.5,MarginV=24,WrapStyle=2'"]
     if args.bgm:
         cmd += ["-stream_loop", "-1", "-i", Path(args.bgm).resolve(),
                 "-filter_complex",

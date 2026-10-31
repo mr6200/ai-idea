@@ -142,5 +142,6 @@ $IMG scripts/05_assemble.py
 | 립싱크 중 CUDA OOM | `--low-vram`, 그래도 안 되면 더 큰 GPU |
 | 입 모양이 어색함 | 기준이미지에서 얼굴이 충분히 크고 정면에 가까워야 함 → 후보를 다시 고르기 |
 | 컷마다 미세하게 흔들림 | 정상 범위의 머리 움직임. `talk_prompt` 의 `static camera` 유지 |
+| 자막이 작거나 큼 | `05_assemble.py --sub-size 28` (기본 24, 숫자가 클수록 큼) |
 | 자막 글자가 네모(□) | `apt-get install -y fonts-nanum && fc-cache -f` |
 | 한 컷만 이상함 | 그 컷만 `--only sXX --force` 로 재생성 (seed 를 바꾸려면 `--extra "--base_seed 7"`) |
