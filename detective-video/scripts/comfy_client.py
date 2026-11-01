@@ -146,3 +146,61 @@ def s2v_workflow(prompt, image_name, audio_name, duration, width, height, seed,
         "filename_prefix": prefix, "format": "video/h264-mp4", "pix_fmt": "yuv420p", "crf": 17,
         "save_metadata": False, "trim_to_audio": False, "pingpong": False, "save_output": True}}
     return wf
+
+
+IT_BASE = os.environ.get("IT_BASE_MODEL", "Wan2_1-I2V-14B-480p_fp8_e4m3fn_scaled_KJ.safetensors")
+IT_MODEL = os.environ.get("IT_MODEL", "Wan2_1-InfiniTetalk-Single_fp16.safetensors")
+IT_LORA = os.environ.get("IT_LORA", "lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors")
+IT_TEXT_ENCODER = os.environ.get("IT_TEXT_ENCODER", "umt5-xxl-enc-bf16.safetensors")
+IT_FPS = 25
+
+
+def infinitetalk_workflow(prompt, image_name, audio_name, duration, width, height, seed,
+                          steps=6, prefix="infinitetalk"):
+    """InfiniteTalk (ComfyUI-WanVideoWrapper): 기준이미지 + 음성 -> 말하는 영상, 25fps.
+
+    lightx2v 증류 LoRA로 6스텝 / cfg 1. 81프레임 창을 9프레임씩 겹쳐 대사 길이만큼 이어서 생성한다.
+    """
+    num_frames = math.ceil(duration * IT_FPS) + 1
+    return {
+        "1": {"class_type": "WanVideoBlockSwap", "inputs": {
+            "blocks_to_swap": 20, "offload_img_emb": False, "offload_txt_emb": False}},
+        "2": {"class_type": "WanVideoLoraSelect", "inputs": {"lora": IT_LORA, "strength": 1.0}},
+        "3": {"class_type": "MultiTalkModelLoader", "inputs": {"model": IT_MODEL}},
+        "4": {"class_type": "WanVideoModelLoader", "inputs": {
+            "model": IT_BASE, "base_precision": "bf16", "quantization": "fp8_e4m3fn_scaled",
+            "load_device": "offload_device", "attention_mode": "sageattn",
+            "block_swap_args": ["1", 0], "lora": ["2", 0], "multitalk_model": ["3", 0]}},
+        "5": {"class_type": "WanVideoVAELoader", "inputs": {"model_name": VAE, "precision": "bf16"}},
+        "6": {"class_type": "CLIPVisionLoader", "inputs": {"clip_name": "clip_vision_h.safetensors"}},
+        "7": {"class_type": "LoadImage", "inputs": {"image": image_name}},
+        "8": {"class_type": "ImageResizeKJv2", "inputs": {
+            "image": ["7", 0], "width": width, "height": height, "upscale_method": "lanczos",
+            "keep_proportion": "stretch", "pad_color": "0, 0, 0", "crop_position": "center", "divisible_by": 16}},
+        "9": {"class_type": "WanVideoClipVisionEncode", "inputs": {
+            "clip_vision": ["6", 0], "image_1": ["8", 0], "strength_1": 1.0, "strength_2": 1.0,
+            "crop": "center", "combine_embeds": "average", "force_offload": True}},
+        "10": {"class_type": "WanVideoTextEncodeCached", "inputs": {
+            "model_name": IT_TEXT_ENCODER, "precision": "bf16", "positive_prompt": prompt,
+            "negative_prompt": NEGATIVE, "quantization": "disabled", "use_disk_cache": False, "device": "gpu"}},
+        "11": {"class_type": "LoadAudio", "inputs": {"audio": audio_name}},
+        "12": {"class_type": "DownloadAndLoadWav2VecModel", "inputs": {
+            "model": "TencentGameMate/chinese-wav2vec2-base", "base_precision": "fp16", "load_device": "main_device"}},
+        "13": {"class_type": "MultiTalkWav2VecEmbeds", "inputs": {
+            "wav2vec_model": ["12", 0], "audio_1": ["11", 0], "normalize_loudness": True,
+            "num_frames": num_frames, "fps": IT_FPS, "audio_scale": 1.0, "audio_cfg_scale": 1.0,
+            "multi_audio_type": "para"}},
+        "14": {"class_type": "WanVideoImageToVideoMultiTalk", "inputs": {
+            "vae": ["5", 0], "width": width, "height": height, "frame_window_size": 81, "motion_frame": 9,
+            "force_offload": False, "colormatch": "disabled", "start_image": ["8", 0], "tiled_vae": False,
+            "clip_embeds": ["9", 0], "mode": "infinitetalk", "output_path": ""}},
+        "15": {"class_type": "WanVideoSampler", "inputs": {
+            "model": ["4", 0], "image_embeds": ["14", 0], "text_embeds": ["10", 0], "multitalk_embeds": ["13", 0],
+            "steps": steps, "cfg": 1.0, "shift": 11.0, "seed": seed, "force_offload": True,
+            "scheduler": "dpm++_sde", "riflex_freq_index": 0}},
+        "16": {"class_type": "WanVideoPassImagesFromSamples", "inputs": {"samples": ["15", 0]}},
+        "17": {"class_type": "VHS_VideoCombine", "inputs": {
+            "images": ["16", 0], "audio": ["11", 0], "frame_rate": IT_FPS, "loop_count": 0,
+            "filename_prefix": prefix, "format": "video/h264-mp4", "pix_fmt": "yuv420p", "crf": 17,
+            "save_metadata": False, "trim_to_audio": False, "pingpong": False, "save_output": True}},
+    }
