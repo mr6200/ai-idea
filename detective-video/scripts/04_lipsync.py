@@ -1,4 +1,8 @@
-"""4단계: 기준이미지 + 대사 음성 -> 말하는 영상 (InfiniteTalk, GPU 필요).
+"""4단계: 기준이미지 + 대사 음성 -> 말하는 영상 (GPU 필요).
+
+엔진 두 가지:
+  --engine s2v         Wan2.2-S2V-14B (Wan 2.2 음성->영상 모델, 기본값)
+  --engine infinitetalk  InfiniteTalk (Wan2.1 I2V 14B 기반)
 
 모든 컷이 같은 기준이미지에서 새로 출발하므로 컷이 바뀌어도 인물/배경이 흔들리지 않습니다.
 이미 만들어진 컷은 건너뜁니다(--force 로 다시).
@@ -7,6 +11,7 @@
   python scripts/04_lipsync.py                       # 전체
   python scripts/04_lipsync.py --fast                # 가속 LoRA 사용 (8스텝)
   python scripts/04_lipsync.py --low-vram            # 24~48GB GPU
+  python scripts/04_lipsync.py --engine s2v --size 832*480   # 빠른 테스트용 저해상도
 """
 import argparse
 import json
@@ -20,7 +25,28 @@ from common import LIPSYNC_DIR, OUT, load_manifest, load_story, shot_ref
 
 IT_DIR = Path(os.environ.get("INFINITETALK_DIR", "/workspace/InfiniteTalk"))
 IT_PYTHON = os.environ.get("INFINITETALK_PYTHON", "/workspace/venv-talk/bin/python")
+WAN22_DIR = Path(os.environ.get("WAN22_DIR", "/workspace/Wan2.2"))
+WAN22_PYTHON = os.environ.get("WAN22_PYTHON", "/workspace/venv-wan22/bin/python")
 FAST_LORA = os.environ.get("FAST_LORA", str(IT_DIR / "weights" / "Wan2.1_I2V_14B_FusionX_LoRA.safetensors"))
+
+
+def build_s2v_cmd(args, prompt, image, audio, save_file):
+    cmd = [
+        WAN22_PYTHON, "generate.py",
+        "--task", "s2v-14B",
+        "--size", args.size or "1280*720",
+        "--ckpt_dir", str(WAN22_DIR / "Wan2.2-S2V-14B"),
+        "--prompt", prompt,
+        "--image", str(image),
+        "--audio", str(audio),
+        "--sample_steps", str(args.steps),
+        "--save_file", f"{save_file}.mp4",
+    ]
+    if args.low_vram:
+        cmd += ["--offload_model", "True", "--convert_model_dtype", "--t5_cpu"]
+    if args.extra:
+        cmd += args.extra.split()
+    return cmd
 
 
 def build_cmd(args, input_json, save_file):
@@ -31,7 +57,7 @@ def build_cmd(args, input_json, save_file):
         "--wav2vec_dir", str(w / "chinese-wav2vec2-base"),
         "--infinitetalk_dir", str(w / "InfiniteTalk" / "single" / "infinitetalk.safetensors"),
         "--input_json", str(input_json),
-        "--size", args.size,
+        "--size", args.size or "infinitetalk-480",
         "--mode", "streaming",
         "--motion_frame", "9",
         "--save_file", str(save_file),
@@ -54,7 +80,8 @@ def main():
     p.add_argument("--story")
     p.add_argument("--only", nargs="*")
     p.add_argument("--force", action="store_true")
-    p.add_argument("--size", default="infinitetalk-480", choices=["infinitetalk-480", "infinitetalk-720"])
+    p.add_argument("--engine", default="s2v", choices=["s2v", "infinitetalk"])
+    p.add_argument("--size", help="s2v: 1280*720(기본), 832*480 등 / infinitetalk: infinitetalk-480(기본), infinitetalk-720")
     p.add_argument("--steps", type=int, default=40)
     p.add_argument("--fast", action="store_true", help="FusionX LoRA로 8스텝 고속 생성")
     p.add_argument("--low-vram", action="store_true")
@@ -88,10 +115,14 @@ def main():
         input_json = jobs / f"{sid}.json"
         input_json.write_text(json.dumps(job, ensure_ascii=False, indent=2), encoding="utf-8")
 
-        save_file = (LIPSYNC_DIR / sid).resolve()  # InfiniteTalk가 .mp4 를 붙여 저장
+        save_file = (LIPSYNC_DIR / sid).resolve()  # 엔진이 <컷>.mp4 (또는 비슷한 이름)로 저장
         print(f"\n=== {sid} [{c['name']}] {manifest[sid]['duration']:.1f}s  ref={ref.name}")
         t0 = time.time()
-        subprocess.run(build_cmd(args, input_json.resolve(), save_file), cwd=IT_DIR, check=True)
+        if args.engine == "s2v":
+            cmd = build_s2v_cmd(args, job["prompt"], job["cond_video"], job["cond_audio"]["person1"], save_file)
+            subprocess.run(cmd, cwd=WAN22_DIR, check=True)
+        else:
+            subprocess.run(build_cmd(args, input_json.resolve(), save_file), cwd=IT_DIR, check=True)
         if not out_mp4.exists():
             candidates = sorted(LIPSYNC_DIR.glob(f"{sid}*.mp4"))
             if not candidates:
