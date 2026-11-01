@@ -184,8 +184,8 @@ def infinitetalk_workflow(prompt, image_name, audio_name, duration, width, heigh
             "model_name": IT_TEXT_ENCODER, "precision": "bf16", "positive_prompt": prompt,
             "negative_prompt": NEGATIVE, "quantization": "disabled", "use_disk_cache": False, "device": "gpu"}},
         "11": {"class_type": "LoadAudio", "inputs": {"audio": audio_name}},
-        "12": {"class_type": "DownloadAndLoadWav2VecModel", "inputs": {
-            "model": "TencentGameMate/chinese-wav2vec2-base", "base_precision": "fp16", "load_device": "main_device"}},
+        "12": {"class_type": "Wav2VecModelLoader", "inputs": {
+            "model": "wav2vec2-chinese-base_fp16.safetensors", "base_precision": "fp16", "load_device": "main_device"}},
         "13": {"class_type": "MultiTalkWav2VecEmbeds", "inputs": {
             "wav2vec_model": ["12", 0], "audio_1": ["11", 0], "normalize_loudness": True,
             "num_frames": num_frames, "fps": IT_FPS, "audio_scale": 1.0, "audio_cfg_scale": 1.0,
