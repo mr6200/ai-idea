@@ -1,0 +1,520 @@
+{
+ "duration": 60,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 4.6,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 4.6,
+      "z": [
+       104,
+       116
+      ],
+      "pan": [
+       0,
+       30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       470
+      ]
+     }
+    },
+    {
+     "name": "coins",
+     "anim": {
+      "type": "pop",
+      "at": 0.8,
+      "anchor": [
+       840,
+       1070
+      ]
+     }
+    },
+    {
+     "name": "name",
+     "anim": {
+      "type": "stamp",
+      "at": 3.4,
+      "anchor": [
+       300,
+       900
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 4.6,
+   "end": 13.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 8.4,
+      "z": [
+       114,
+       104
+      ],
+      "pan": [
+       -30,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "limit",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       765
+      ]
+     }
+    },
+    {
+     "name": "rate",
+     "anim": {
+      "type": "slideU",
+      "at": 4.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 13.0,
+   "end": 21.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 8.0,
+      "z": [
+       106,
+       118
+      ],
+      "pan": [
+       30,
+       -20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "table",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       770
+      ]
+     }
+    },
+    {
+     "name": "calc",
+     "anim": {
+      "type": "slideU",
+      "at": 4.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 21.0,
+   "end": 26.8,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 5.8,
+      "z": [
+       112,
+       104
+      ],
+      "pan": [
+       0,
+       30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "who",
+     "anim": {
+      "type": "wipeD",
+      "at": 0.4,
+      "dur": 3.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 26.8,
+   "end": 35.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 8.2,
+      "z": [
+       104,
+       116
+      ],
+      "pan": [
+       -30,
+       20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "early",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       740
+      ]
+     }
+    },
+    {
+     "name": "more",
+     "anim": {
+      "type": "stamp",
+      "at": 4.0,
+      "anchor": [
+       540,
+       960
+      ]
+     }
+    },
+    {
+     "name": "zero",
+     "anim": {
+      "type": "slideU",
+      "at": 6.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 35.0,
+   "end": 45.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 10.0,
+      "z": [
+       106,
+       120
+      ],
+      "pan": [
+       0,
+       -30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       340
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       550
+      ]
+     }
+    },
+    {
+     "name": "choices",
+     "anim": {
+      "type": "pop",
+      "at": 0.8,
+      "anchor": [
+       540,
+       860
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 4.6,
+      "anchor": [
+       540,
+       860
+      ]
+     }
+    },
+    {
+     "name": "why",
+     "anim": {
+      "type": "fade",
+      "at": 7.8
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 45.0,
+   "end": 60.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 15.0,
+      "z": [
+       110,
+       100
+      ],
+      "pan": [
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "look",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       500
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 3.4,
+      "anchor": [
+       540,
+       1250
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 4.0,
+      "anchor": [
+       785,
+       1390
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 3.4,
+   "text": "연말정산 때 최대 148만 원을\n돌려받는 통장이 있다면?"
+  },
+  {
+   "start": 3.5,
+   "end": 4.6,
+   "text": "바로 연금저축이에요"
+  },
+  {
+   "start": 4.8,
+   "end": 8.6,
+   "text": "연금저축은 한 해 600만 원,\nIRP와 합치면 900만 원까지"
+  },
+  {
+   "start": 8.8,
+   "end": 12.8,
+   "text": "넣은 돈의 13.2%나 16.5%를\n세금에서 깎아 줘요"
+  },
+  {
+   "start": 13.0,
+   "end": 17.4,
+   "text": "연봉 5,500만 원 이하라면 16.5%,\n그보다 많으면 13.2%예요"
+  },
+  {
+   "start": 17.6,
+   "end": 21.0,
+   "text": "월 50만 원씩 600만 원을 넣으면\n최대 99만 원을 돌려받아요"
+  },
+  {
+   "start": 21.2,
+   "end": 24.0,
+   "text": "세금을 내는 직장인이나\n자영업자에게 특히 유리해요"
+  },
+  {
+   "start": 24.2,
+   "end": 26.6,
+   "text": "노후까지 오래 묶어 둘 수 있다면\n더 좋고요"
+  },
+  {
+   "start": 26.8,
+   "end": 30.6,
+   "text": "하지만 55세 전에 깨면\n기타소득세 16.5%를 내야 해요"
+  },
+  {
+   "start": 30.8,
+   "end": 32.9,
+   "text": "돌려받은 세금보다\n더 낼 수도 있어요"
+  },
+  {
+   "start": 33.0,
+   "end": 34.9,
+   "text": "낸 세금이 없다면\n돌려받을 것도 없고요"
+  },
+  {
+   "start": 35.2,
+   "end": 38.8,
+   "text": "퀴즈! 55세 이후 연금으로 받으면\n세금은 얼마일까?"
+  },
+  {
+   "start": 39.6,
+   "end": 42.6,
+   "text": "정답은, 3.3에서 5.5%예요!"
+  },
+  {
+   "start": 42.8,
+   "end": 44.8,
+   "text": "나이가 많을수록\n세율이 낮아져요"
+  },
+  {
+   "start": 45.2,
+   "end": 47.6,
+   "text": "내 소득과 계획에 맞는지\n먼저 따져 보세요"
+  },
+  {
+   "start": 48.0,
+   "end": 50.6,
+   "text": "더 많은 돈 이야기가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
