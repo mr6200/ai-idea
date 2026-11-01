@@ -1,0 +1,542 @@
+{
+ "duration": 60,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 4.8,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 4.8,
+      "z": [
+       104,
+       116
+      ],
+      "pan": [
+       0,
+       30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       470
+      ]
+     }
+    },
+    {
+     "name": "names",
+     "anim": {
+      "type": "pop",
+      "at": 0.8,
+      "anchor": [
+       540,
+       1250
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 4.8,
+   "end": 10.4,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 5.6,
+      "z": [
+       114,
+       104
+      ],
+      "pan": [
+       -30,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "total",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       750
+      ]
+     }
+    },
+    {
+     "name": "solo",
+     "anim": {
+      "type": "stamp",
+      "at": 3.0,
+      "anchor": [
+       540,
+       1000
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 10.4,
+   "end": 15.6,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 5.2,
+      "z": [
+       106,
+       118
+      ],
+      "pan": [
+       30,
+       -20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "vs",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       810
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 15.6,
+   "end": 23.6,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 8.0,
+      "z": [
+       112,
+       104
+      ],
+      "pan": [
+       0,
+       30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "vs",
+     "anim": {
+      "type": "wipeL",
+      "at": 0.4,
+      "dur": 4.4
+     }
+    },
+    {
+     "name": "tax",
+     "anim": {
+      "type": "fade",
+      "at": 5.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 23.6,
+   "end": 30.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 6.4,
+      "z": [
+       104,
+       116
+      ],
+      "pan": [
+       -30,
+       20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "vs",
+     "anim": {
+      "type": "wipeL",
+      "at": 0.4,
+      "dur": 3.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 30.0,
+   "end": 33.6,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 3.6,
+      "z": [
+       110,
+       120
+      ],
+      "pan": [
+       0,
+       -30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       410
+      ]
+     }
+    },
+    {
+     "name": "ret",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       1130
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 33.6,
+   "end": 44.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 10.4,
+      "z": [
+       106,
+       120
+      ],
+      "pan": [
+       0,
+       -30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       340
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       550
+      ]
+     }
+    },
+    {
+     "name": "choices",
+     "anim": {
+      "type": "pop",
+      "at": 0.8,
+      "anchor": [
+       540,
+       860
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 3.8,
+      "anchor": [
+       540,
+       860
+      ]
+     }
+    },
+    {
+     "name": "why",
+     "anim": {
+      "type": "fade",
+      "at": 8.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 44.0,
+   "end": 60.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 16.0,
+      "z": [
+       110,
+       100
+      ],
+      "pan": [
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "look",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       500
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 4.6,
+      "anchor": [
+       540,
+       1250
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 5.2,
+      "anchor": [
+       785,
+       1390
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 3.4,
+   "text": "연금저축과 IRP,\n둘 다 세금을 돌려주는데"
+  },
+  {
+   "start": 3.5,
+   "end": 4.8,
+   "text": "뭐가 다를까요?"
+  },
+  {
+   "start": 5.0,
+   "end": 7.6,
+   "text": "두 통장을 합치면\n900만 원까지 세액공제돼요"
+  },
+  {
+   "start": 7.8,
+   "end": 10.2,
+   "text": "연금저축 혼자서는\n600만 원까지만 되고요"
+  },
+  {
+   "start": 10.4,
+   "end": 12.4,
+   "text": "첫째, 가입 자격이 달라요"
+  },
+  {
+   "start": 12.6,
+   "end": 15.4,
+   "text": "연금저축은 누구나 되지만,\nIRP는 소득이 있어야 해요"
+  },
+  {
+   "start": 15.6,
+   "end": 19.9,
+   "text": "둘째, 돈 꺼내기, 연금저축은\n필요한 만큼 일부만 뺄 수 있어요"
+  },
+  {
+   "start": 20.0,
+   "end": 23.4,
+   "text": "IRP는 집 구입 같은 사유가 없으면\n통째로 해지해야 해요"
+  },
+  {
+   "start": 23.6,
+   "end": 27.6,
+   "text": "셋째, IRP는 주식 같은 위험자산을\n70%까지만 담을 수 있어요"
+  },
+  {
+   "start": 27.8,
+   "end": 29.8,
+   "text": "이런 제한이 없는 건\n연금저축펀드예요"
+  },
+  {
+   "start": 30.0,
+   "end": 33.2,
+   "text": "대신 IRP는 퇴직금을 받아\n연금으로 굴리는 통장도 돼요"
+  },
+  {
+   "start": 33.8,
+   "end": 37.4,
+   "text": "퀴즈! 연금저축에만\n900만 원을 넣으면\n얼마까지 공제될까?"
+  },
+  {
+   "start": 38.2,
+   "end": 40.4,
+   "text": "정답은, 600만 원까지예요!"
+  },
+  {
+   "start": 40.6,
+   "end": 43.8,
+   "text": "그래서 남은 300만 원은\nIRP로 채우는 경우가 많아요"
+  },
+  {
+   "start": 44.2,
+   "end": 48.4,
+   "text": "중간에 쓸 수도 있다면\n연금저축부터, 더 채우고 싶다면\nIRP를 더하세요"
+  },
+  {
+   "start": 48.8,
+   "end": 51.4,
+   "text": "더 많은 돈 이야기가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
