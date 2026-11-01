@@ -164,22 +164,24 @@ def infinitetalk_workflow(prompt, image_name, audio_name, duration, width, heigh
     num_frames = math.ceil(duration * IT_FPS) + 1
     return {
         "1": {"class_type": "WanVideoBlockSwap", "inputs": {
-            "blocks_to_swap": 20, "offload_img_emb": False, "offload_txt_emb": False}},
-        "2": {"class_type": "WanVideoLoraSelect", "inputs": {"lora": IT_LORA, "strength": 1.0}},
+            "blocks_to_swap": 20, "offload_img_emb": False, "offload_txt_emb": False,
+            "use_non_blocking": True, "vace_blocks_to_swap": 0, "prefetch_blocks": 1, "block_swap_debug": False}},
+        "2": {"class_type": "WanVideoLoraSelect", "inputs": {"lora": IT_LORA, "strength": 1.0, "low_mem_load": False, "merge_loras": False}},
         "3": {"class_type": "MultiTalkModelLoader", "inputs": {"model": IT_MODEL}},
         "4": {"class_type": "WanVideoModelLoader", "inputs": {
             "model": IT_BASE, "base_precision": "bf16", "quantization": "fp8_e4m3fn_scaled",
             "load_device": "offload_device", "attention_mode": "sageattn",
-            "block_swap_args": ["1", 0], "lora": ["2", 0], "multitalk_model": ["3", 0]}},
-        "5": {"class_type": "WanVideoVAELoader", "inputs": {"model_name": VAE, "precision": "bf16"}},
+            "block_swap_args": ["1", 0], "lora": ["2", 0], "multitalk_model": ["3", 0], "rms_norm_function": "default"}},
+        "5": {"class_type": "WanVideoVAELoader", "inputs": {"model_name": VAE, "precision": "bf16", "use_cpu_cache": False, "verbose": False}},
         "6": {"class_type": "CLIPVisionLoader", "inputs": {"clip_name": "clip_vision_h.safetensors"}},
         "7": {"class_type": "LoadImage", "inputs": {"image": image_name}},
         "8": {"class_type": "ImageResizeKJv2", "inputs": {
             "image": ["7", 0], "width": width, "height": height, "upscale_method": "lanczos",
-            "keep_proportion": "stretch", "pad_color": "0, 0, 0", "crop_position": "center", "divisible_by": 16}},
+            "keep_proportion": "stretch", "pad_color": "0, 0, 0", "crop_position": "center", "divisible_by": 16,
+            "device": "cpu"}},
         "9": {"class_type": "WanVideoClipVisionEncode", "inputs": {
             "clip_vision": ["6", 0], "image_1": ["8", 0], "strength_1": 1.0, "strength_2": 1.0,
-            "crop": "center", "combine_embeds": "average", "force_offload": True}},
+            "crop": "center", "combine_embeds": "average", "force_offload": True, "tiles": 0, "ratio": 0.5}},
         "10": {"class_type": "WanVideoTextEncodeCached", "inputs": {
             "model_name": IT_TEXT_ENCODER, "precision": "bf16", "positive_prompt": prompt,
             "negative_prompt": NEGATIVE, "quantization": "disabled", "use_disk_cache": False, "device": "gpu"}},
@@ -189,7 +191,7 @@ def infinitetalk_workflow(prompt, image_name, audio_name, duration, width, heigh
         "13": {"class_type": "MultiTalkWav2VecEmbeds", "inputs": {
             "wav2vec_model": ["12", 0], "audio_1": ["11", 0], "normalize_loudness": True,
             "num_frames": num_frames, "fps": IT_FPS, "audio_scale": 1.0, "audio_cfg_scale": 1.0,
-            "multi_audio_type": "para"}},
+            "multi_audio_type": "para", "add_noise_floor": False, "smooth_transients": False}},
         "14": {"class_type": "WanVideoImageToVideoMultiTalk", "inputs": {
             "vae": ["5", 0], "width": width, "height": height, "frame_window_size": 81, "motion_frame": 9,
             "force_offload": False, "colormatch": "disabled", "start_image": ["8", 0], "tiled_vae": False,
@@ -197,7 +199,8 @@ def infinitetalk_workflow(prompt, image_name, audio_name, duration, width, heigh
         "15": {"class_type": "WanVideoSampler", "inputs": {
             "model": ["4", 0], "image_embeds": ["14", 0], "text_embeds": ["10", 0], "multitalk_embeds": ["13", 0],
             "steps": steps, "cfg": 1.0, "shift": 11.0, "seed": seed, "force_offload": True,
-            "scheduler": "dpm++_sde", "riflex_freq_index": 0}},
+            "scheduler": "dpm++_sde", "riflex_freq_index": 0, "denoise_strength": 1.0, "batched_cfg": False,
+            "rope_function": "comfy", "start_step": 0, "end_step": -1, "add_noise_to_samples": True}},
         "16": {"class_type": "WanVideoPassImagesFromSamples", "inputs": {"samples": ["15", 0]}},
         "17": {"class_type": "VHS_VideoCombine", "inputs": {
             "images": ["16", 0], "audio": ["11", 0], "frame_rate": IT_FPS, "loop_count": 0,
