@@ -215,7 +215,7 @@ LC_WHISPER = os.environ.get("LC_WHISPER", "whisper-large-v3.safetensors")
 LC_FPS = 25
 
 
-def longcat_workflow(prompt, image_name, audio_name, seed, resolution="720p", block_num=0, prefix="longcat"):
+def longcat_workflow(prompt, image_name, audio_name, seed, resolution="720p", block_num=1, prefix="longcat"):
     """LongCat-Video-Avatar 1.5 (ComfyUI-LongCat-Avatar 노드): Whisper-large-v3 음성 조건, 증류 LoRA 8스텝, 25fps.
 
     대사 길이에 맞춰 구간 수를 노드가 자동 계산한다. 텍스트 인코더는 ComfyUI의 umt5 fp8 (Load CLIP) 사용.
