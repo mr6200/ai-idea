@@ -59,11 +59,12 @@ characters:
   rookie:
     name: "오민규"
     role: "신참 형사 (20대)"
-    seed: 3301
+    seed: 3311
     prompt: >-
-      a young Korean male police detective in his mid 20s, neat short black hair, navy suit,
-      police ID lanyard, standing near the grey metal door of the interrogation room,
-      holding a manila document folder, looking toward the camera, earnest expression
+      a young Korean plainclothes detective in his mid 20s, neat short black hair, wearing a plain
+      navy business suit with a white shirt and a simple dark tie, no uniform, no badges, no patches,
+      no text on clothing, a small plain ID card on a lanyard, standing near the grey metal door of the
+      interrogation room, holding a manila document folder, looking toward the camera, earnest expression
     talk_prompt: >-
       A young Korean detective in a navy suit holding a folder speaks urgently,
       subtle head movement, static camera
