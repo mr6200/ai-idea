@@ -3,6 +3,7 @@
 엔진 세 가지:
   --engine comfy       ComfyUI(COMFY_URL)의 Wan2.2-S2V-14B (기본값, RTX 5090 등 최신 GPU에서 검증)
   --engine comfy-it    ComfyUI-WanVideoWrapper의 InfiniteTalk (중국어 wav2vec2 - 한국어 입모양에 더 유리)
+  --engine comfy-lc    ComfyUI-LongCat-Avatar의 LongCat-Video-Avatar 1.5 (Whisper-large-v3, 다국어)
   --engine s2v         Wan2.2 공식 저장소 generate.py 로 S2V 실행
   --engine infinitetalk  InfiniteTalk (Wan2.1 I2V 14B 기반)
 
@@ -82,7 +83,7 @@ def main():
     p.add_argument("--story")
     p.add_argument("--only", nargs="*")
     p.add_argument("--force", action="store_true")
-    p.add_argument("--engine", default="comfy", choices=["comfy", "comfy-it", "s2v", "infinitetalk"])
+    p.add_argument("--engine", default="comfy", choices=["comfy", "comfy-it", "comfy-lc", "s2v", "infinitetalk"])
     p.add_argument("--size", help="comfy: 832x480(기본), 1024x576, 1280x720 / s2v: 1280*720 / "
                                   "infinitetalk: infinitetalk-480(기본), infinitetalk-720")
     p.add_argument("--seed", type=int, default=42)
@@ -122,7 +123,13 @@ def main():
         save_file = (LIPSYNC_DIR / sid).resolve()  # 엔진이 <컷>.mp4 (또는 비슷한 이름)로 저장
         print(f"\n=== {sid} [{c['name']}] {manifest[sid]['duration']:.1f}s  ref={ref.name}")
         t0 = time.time()
-        if args.engine == "comfy-it":
+        if args.engine == "comfy-lc":
+            import comfy_client as cc
+            wf = cc.longcat_workflow(job["prompt"], cc.upload(ref), cc.upload(OUT / manifest[sid]["audio"]),
+                                     args.seed, resolution=args.size or "720p", prefix=f"lc_{sid}")
+            files = cc.run(wf)
+            cc.download(next(f for f in files if f["filename"].endswith(".mp4")), out_mp4)
+        elif args.engine == "comfy-it":
             import comfy_client as cc
             w, h = map(int, (args.size or "1024x576").split("x"))
             wf = cc.infinitetalk_workflow(job["prompt"], cc.upload(ref), cc.upload(OUT / manifest[sid]["audio"]),

@@ -204,3 +204,39 @@ def infinitetalk_workflow(prompt, image_name, audio_name, duration, width, heigh
             "filename_prefix": prefix, "format": "video/h264-mp4", "pix_fmt": "yuv420p", "crf": 17,
             "save_metadata": False, "trim_to_audio": False, "pingpong": False, "save_output": True}},
     }
+
+
+LC_LORA = os.environ.get("LC_LORA", "longcat-avatar-dmd_lora.safetensors")
+LC_VAE = os.environ.get("LC_VAE", "LongCat-Video-Avatar-vae.safetensors")
+LC_WHISPER = os.environ.get("LC_WHISPER", "whisper-large-v3.safetensors")
+LC_FPS = 25
+
+
+def longcat_workflow(prompt, image_name, audio_name, seed, resolution="720p", block_num=0, prefix="longcat"):
+    """LongCat-Video-Avatar 1.5 (ComfyUI-LongCat-Avatar 노드): Whisper-large-v3 음성 조건, 증류 LoRA 8스텝, 25fps.
+
+    대사 길이에 맞춰 구간 수를 노드가 자동 계산한다. 텍스트 인코더는 ComfyUI의 umt5 fp8 (Load CLIP) 사용.
+    """
+    return {
+        "1": {"class_type": "LongCat_Video_SM_Model", "inputs": {
+            "inference_weight_mode": "official_int8_sharded", "attention_mode": "sageattn",
+            "auto_download_missing_weights": True, "vae": LC_VAE, "lora": LC_LORA}},
+        "2": {"class_type": "CLIPLoader", "inputs": {"clip_name": TEXT_ENCODER, "type": "wan"}},
+        "3": {"class_type": "LongCat_Video_SM_Encode", "inputs": {
+            "text_encoder_root": "LongCat-Video", "auto_download_missing_text_encoder": False,
+            "offload_device": "cpu", "prompt": prompt, "negative_prompt": NEGATIVE, "clip": ["2", 0]}},
+        "4": {"class_type": "LoadImage", "inputs": {"image": image_name}},
+        "5": {"class_type": "LoadAudio", "inputs": {"audio": audio_name}},
+        "6": {"class_type": "LongCat_Video_SM_WhisperModel", "inputs": {"audio_encoder": LC_WHISPER}},
+        "7": {"class_type": "LongCat_Video_SM_Audio", "inputs": {
+            "audio_encoder": ["6", 0], "audio": ["5", 0], "save_fps": LC_FPS, "audio_type": "para", "p_box": ""}},
+        "8": {"class_type": "LongCat_Video_SM_Sampler", "inputs": {
+            "model": ["1", 0], "te_cond": ["3", 0], "au_cond": ["7", 0], "stage_1": "ai2v",
+            "resolution": resolution, "seed": seed, "steps": 8, "text_guidance_scale": 1.0,
+            "audio_guidance_scale": 1.0, "ref_img_index": 10, "mask_frame_range": 3, "block_num": block_num,
+            "mux_audio_path": "", "offload_device": "cpu", "debug_mode": False, "image": ["4", 0]}},
+        "9": {"class_type": "VHS_VideoCombine", "inputs": {
+            "images": ["8", 0], "audio": ["5", 0], "frame_rate": LC_FPS, "loop_count": 0,
+            "filename_prefix": prefix, "format": "video/h264-mp4", "pix_fmt": "yuv420p", "crf": 17,
+            "save_metadata": False, "trim_to_audio": False, "pingpong": False, "save_output": True}},
+    }
