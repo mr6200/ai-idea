@@ -1,7 +1,8 @@
 """4단계: 기준이미지 + 대사 음성 -> 말하는 영상 (GPU 필요).
 
-엔진 두 가지:
-  --engine s2v         Wan2.2-S2V-14B (Wan 2.2 음성->영상 모델, 기본값)
+엔진 세 가지:
+  --engine comfy       ComfyUI(COMFY_URL)의 Wan2.2-S2V-14B (기본값, RTX 5090 등 최신 GPU에서 검증)
+  --engine s2v         Wan2.2 공식 저장소 generate.py 로 S2V 실행
   --engine infinitetalk  InfiniteTalk (Wan2.1 I2V 14B 기반)
 
 모든 컷이 같은 기준이미지에서 새로 출발하므로 컷이 바뀌어도 인물/배경이 흔들리지 않습니다.
@@ -39,7 +40,7 @@ def build_s2v_cmd(args, prompt, image, audio, save_file):
         "--prompt", prompt,
         "--image", str(image),
         "--audio", str(audio),
-        "--sample_steps", str(args.steps),
+        "--sample_steps", str(args.steps or 40),
         "--save_file", f"{save_file}.mp4",
     ]
     if args.low_vram:
@@ -67,7 +68,7 @@ def build_cmd(args, input_json, save_file):
                 "--sample_shift", "2", "--sample_text_guide_scale", "1",
                 "--sample_audio_guide_scale", "2"]
     else:
-        cmd += ["--sample_steps", str(args.steps)]
+        cmd += ["--sample_steps", str(args.steps or 40)]
     if args.low_vram:
         cmd += ["--num_persistent_param_in_dit", "0"]
     if args.extra:
@@ -80,9 +81,11 @@ def main():
     p.add_argument("--story")
     p.add_argument("--only", nargs="*")
     p.add_argument("--force", action="store_true")
-    p.add_argument("--engine", default="s2v", choices=["s2v", "infinitetalk"])
-    p.add_argument("--size", help="s2v: 1280*720(기본), 832*480 등 / infinitetalk: infinitetalk-480(기본), infinitetalk-720")
-    p.add_argument("--steps", type=int, default=40)
+    p.add_argument("--engine", default="comfy", choices=["comfy", "s2v", "infinitetalk"])
+    p.add_argument("--size", help="comfy: 832x480(기본), 1024x576, 1280x720 / s2v: 1280*720 / "
+                                  "infinitetalk: infinitetalk-480(기본), infinitetalk-720")
+    p.add_argument("--seed", type=int, default=42)
+    p.add_argument("--steps", type=int, help="기본: comfy 20, s2v/infinitetalk 40")
     p.add_argument("--fast", action="store_true", help="FusionX LoRA로 8스텝 고속 생성")
     p.add_argument("--low-vram", action="store_true")
     p.add_argument("--extra", help="generate_infinitetalk.py 에 그대로 넘길 추가 인자")
@@ -118,7 +121,15 @@ def main():
         save_file = (LIPSYNC_DIR / sid).resolve()  # 엔진이 <컷>.mp4 (또는 비슷한 이름)로 저장
         print(f"\n=== {sid} [{c['name']}] {manifest[sid]['duration']:.1f}s  ref={ref.name}")
         t0 = time.time()
-        if args.engine == "s2v":
+        if args.engine == "comfy":
+            import comfy_client as cc
+            w, h = map(int, (args.size or "832x480").split("x"))
+            wf = cc.s2v_workflow(job["prompt"], cc.upload(ref), cc.upload(OUT / manifest[sid]["audio"]),
+                                 manifest[sid]["duration"], w, h, args.seed, steps=args.steps or 20,
+                                 prefix=f"lipsync_{sid}")
+            files = cc.run(wf)
+            cc.download(next(f for f in files if f["filename"].endswith(".mp4")), out_mp4)
+        elif args.engine == "s2v":
             cmd = build_s2v_cmd(args, job["prompt"], job["cond_video"], job["cond_audio"]["person1"], save_file)
             subprocess.run(cmd, cwd=WAN22_DIR, check=True)
         else:

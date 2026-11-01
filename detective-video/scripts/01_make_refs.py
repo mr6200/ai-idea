@@ -1,4 +1,6 @@
-"""1단계: 인물별 기준이미지 후보 생성 (FLUX.1-dev, HF_TOKEN 없으면 FLUX.1-schnell / GPU 필요).
+"""1단계: 인물별 기준이미지 후보 생성 (GPU 필요).
+
+모델: --model dev (FLUX.1-dev, HF_TOKEN 필요) / schnell (FLUX.1-schnell) / wan22 (ComfyUI의 Wan2.2 T2V)
 
 사용법:
   python scripts/01_make_refs.py                       # 인물마다 후보 4장 생성
@@ -32,7 +34,30 @@ MODELS = {
 }
 
 
+def generate_wan22(story, chars, n, steps, guidance):
+    """ComfyUI 의 Wan2.2 T2V A14B로 1프레임(정지 이미지) 생성."""
+    import comfy_client as cc
+
+    video = story["video"]
+    out_dir = REFS / "candidates"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for char in chars:
+        c = story["characters"][char]
+        prompt = f"{c['prompt']}, {story['setting']}"
+        for i in range(n):
+            seed = c["seed"] + i
+            wf = cc.t2i_workflow(prompt, video["ref_width"], video["ref_height"], seed,
+                                 steps=steps or 20, cfg=3.5 if guidance is None else guidance,
+                                 prefix=f"ref_{char}_{seed}")
+            files = cc.run(wf)
+            path = out_dir / f"{char}_{seed}.png"
+            cc.download(files[0], path)
+            print(f"[{char}] {path}", flush=True)
+
+
 def generate(story, chars, n, model, steps, guidance):
+    if model == "wan22":
+        return generate_wan22(story, chars, n, steps, guidance)
     import torch
     from diffusers import FluxPipeline
 
@@ -67,7 +92,8 @@ def main():
     p.add_argument("--story")
     p.add_argument("--chars", nargs="*", help="생성할 인물 키 (기본: 전부)")
     p.add_argument("-n", type=int, default=4, help="인물당 후보 수")
-    p.add_argument("--model", choices=list(MODELS), default="dev" if os.environ.get("HF_TOKEN") else "schnell")
+    p.add_argument("--model", choices=[*MODELS, "wan22"], default="dev" if os.environ.get("HF_TOKEN") else "schnell",
+                   help="wan22: ComfyUI(COMFY_URL)의 Wan2.2 T2V로 생성")
     p.add_argument("--steps", type=int)
     p.add_argument("--guidance", type=float)
     p.add_argument("--pick", nargs="*", metavar="CHAR=SEED", help="후보 중 기준이미지 확정")
