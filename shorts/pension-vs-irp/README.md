@@ -1,6 +1,6 @@
-# 22편 · 연금저축 vs IRP, 뭐가 다를까? (60초 · 3D 클레이 AI + 인포그래픽)
+# 22편 · 연금저축 vs IRP, 뭐가 다를까? (54초 · 3D 클레이 AI + 인포그래픽)
 
-- 60초 + 맨 앞 썸네일 1초, 8장면, TTS `ko-KR-Chirp3-HD-Charon` 1.2배속
+- 54초 + 맨 앞 썸네일 1초 (처음엔 60초로 만들었지만 53초부터 사실상 끝나서 사용자 요청으로 마지막 말 뒤 2.5초에서 끝냄), 8장면, TTS `ko-KR-Chirp3-HD-Charon` 1.2배속
 - 21편 `shorts/pension-savings/` 후속 (사용자 선택), 같은 틀
 - 대본 · 사실 확인 · TTS 검사: `script.md` / 업로드 정보: `youtube-metadata.md` / 콘티: `storyboard.html` · `.png`
 - 완성 영상: `video/pension-vs-irp-shorts.mp4`, 썸네일: `thumbnail/thumbnail.png`

@@ -10,7 +10,7 @@ import numpy as np
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SR = 48000
-DUR = 60.0
+DUR = 54.0
 rng = np.random.default_rng(42)
 
 
@@ -229,7 +229,7 @@ def main():
     put(37.3, sfx_drumroll(0.9))                                     # quiz countdown
     put(38.2, sfx_ding(2093))                                        # answer
     for k in range(3):
-        put(53.0 + k * 0.4, sfx_click(), 1.0)                        # subscribe taps
+        put(49.4 + k * 0.4, sfx_click(), 1.0)                        # subscribe taps
     # duck the music (not the SFX) under the narration, when gen_narration.py has run
     nar = os.path.join(ROOT, "narration.wav")
     if os.path.exists(nar):

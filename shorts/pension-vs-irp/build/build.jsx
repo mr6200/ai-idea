@@ -2,7 +2,7 @@ var P = app.project;
 function imp(p){ return P.importFile(new ImportOptions(new File(p))); }
 function tg(L){ return L.property('ADBE Transform Group'); }
 function setText(L, size, color, font){ var tp=L.property('ADBE Text Properties').property('ADBE Text Document'); var d=tp.value; d.font=font||'WenQuanYi Zen Hei'; d.fontSize=size; d.fillColor=color; try{ d.justification=ParagraphJustification.CENTER_JUSTIFY; }catch(e){} tp.setValue(d); return tp; }
-var main = P.items.addComp('Main', 1080, 1920, 1, 60, 30);
+var main = P.items.addComp('Main', 1080, 1920, 1, 54, 30);
 main.bgColor = [0.961, 0.953, 0.933];
 var c_S01 = P.items.addComp('S01', 1080, 1920, 1, 5.0, 30);
 (function(){ var L=c_S01.layers.add(imp('/home/user/ai-idea/shorts/pension-vs-irp/build/parts/S01/ai.png')); L.name='ai'; L.moveToBeginning(); var T=tg(L);
@@ -149,10 +149,10 @@ var c_S07 = P.items.addComp('S07', 1080, 1920, 1, 10.599999999999998, 30);
  T.property('ADBE Opacity').expression="var p=(time-8.0)/0.45; p<0?0:(p>1?100:100*p)";
 })();
 (function(){ var L=main.layers.add(c_S07); L.startTime=33.6; L.outPoint=44.0; L.moveToEnd(); tg(L).property('ADBE Scale').expression="var t=time-inPoint; var s=100+2.5*t/10.399999999999999+(t<0.25?3*(1-t/0.25):0); [s,s]"; })();
-var c_S08 = P.items.addComp('S08', 1080, 1920, 1, 16.2, 30);
+var c_S08 = P.items.addComp('S08', 1080, 1920, 1, 10.2, 30);
 (function(){ var L=c_S08.layers.add(imp('/home/user/ai-idea/shorts/pension-vs-irp/build/parts/S08/ai.png')); L.name='ai'; L.moveToBeginning(); var T=tg(L);
- T.property('ADBE Scale').expression="var p=Math.min(1,Math.max(0,time/16.0)); p=p*p*(3-2*p); var s=110+(-10)*p; [s,s]";
- T.property('ADBE Position').expression="var p=Math.min(1,Math.max(0,time/16.0)); p=p*p*(3-2*p); [540+0*p, 960+0*p]";
+ T.property('ADBE Scale').expression="var p=Math.min(1,Math.max(0,time/10.0)); p=p*p*(3-2*p); var s=110+(-10)*p; [s,s]";
+ T.property('ADBE Position').expression="var p=Math.min(1,Math.max(0,time/10.0)); p=p*p*(3-2*p); [540+0*p, 960+0*p]";
 })();
 (function(){ var L=c_S08.layers.add(imp('/home/user/ai-idea/shorts/pension-vs-irp/build/parts/S08/bg.png')); L.name='bg'; L.moveToBeginning(); var T=tg(L);
 })();
@@ -170,7 +170,7 @@ var c_S08 = P.items.addComp('S08', 1080, 1920, 1, 16.2, 30);
  T.property('ADBE Anchor Point').setValue([785, 1390]); T.property('ADBE Position').setValue([785, 1390]);
  T.property('ADBE Scale').expression="var t=time-5.2; var k=t<0?0:Math.abs(Math.sin(t*5)); var s=t<0?0:100-10*k; [s,s]";
 })();
-(function(){ var L=main.layers.add(c_S08); L.startTime=44.0; L.outPoint=60.0; L.moveToEnd(); tg(L).property('ADBE Scale').expression="var t=time-inPoint; var s=100+2.5*t/16.0+(t<0.25?3*(1-t/0.25):0); [s,s]"; })();
+(function(){ var L=main.layers.add(c_S08); L.startTime=44.0; L.outPoint=54.0; L.moveToEnd(); tg(L).property('ADBE Scale').expression="var t=time-inPoint; var s=100+2.5*t/10.0+(t<0.25?3*(1-t/0.25):0); [s,s]"; })();
 (function(){ var L=main.layers.add(imp('/home/user/ai-idea/shorts/pension-vs-irp/build/film.png')); L.name='film'; tg(L).property('ADBE Opacity').expression='100'; })();
 (function(){ var L=main.layers.add(imp('/home/user/ai-idea/shorts/pension-vs-irp/build/parts/subs/sub00.png')); L.startTime=0.1; L.inPoint=0.1; L.outPoint=3.4; var T=tg(L); T.property('ADBE Anchor Point').setValue([540,1480]); T.property('ADBE Position').setValue([540,1480]); T.property('ADBE Scale').expression='var t=time-inPoint; var s=t<0.15?92+8*t/0.15:100; [s,s]'; T.property('ADBE Opacity').expression='var t=time-inPoint, r=outPoint-time; Math.min(100, t/0.12*100, r/0.1*100)'; })();
 (function(){ var L=main.layers.add(imp('/home/user/ai-idea/shorts/pension-vs-irp/build/parts/subs/sub01.png')); L.startTime=3.5; L.inPoint=3.5; L.outPoint=4.8; var T=tg(L); T.property('ADBE Anchor Point').setValue([540,1480]); T.property('ADBE Position').setValue([540,1480]); T.property('ADBE Scale').expression='var t=time-inPoint; var s=t<0.15?92+8*t/0.15:100; [s,s]'; T.property('ADBE Opacity').expression='var t=time-inPoint, r=outPoint-time; Math.min(100, t/0.12*100, r/0.1*100)'; })();

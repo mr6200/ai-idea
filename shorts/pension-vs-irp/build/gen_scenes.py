@@ -1,4 +1,4 @@
-"""Generate SVG parts for all 8 scenes of the pension-vs-irp Short (60 s) (1080x1920).
+"""Generate SVG parts for all 8 scenes of the pension-vs-irp Short (54 s) (1080x1920).
 
 Style (episode 13 on): 3D clay AI paintings mixed with a minimal infographic. Each scene's bottom
 layer is a clay painting (Seedream 4.0 via RunPod, gen_backgrounds_seedream.py) (ai_bg/Sxx.png) that drifts slowly (kenburns); over it a teal
@@ -191,8 +191,8 @@ scene("S07", 33.6, 44.0, [
 # S08 마무리 + 구독 --------------------------------------------------------------------------------------
 finger = (f'<path d="M700 1145 V1250 C700 1280 740 1300 770 1300 H820 C850 1300 870 1270 870 1240 V1200 C870 1185 845 1180 835 1195 '
           f'C835 1175 810 1170 800 1188 C800 1170 775 1165 765 1185 V1145 C765 1120 700 1120 700 1145 Z" fill="#f6d2b3" stroke="{PLUM}" stroke-width="6"/>')
-scene("S08", 44.0, 60.0, [
-    ai(16.0, (110, 100), (0, 0)),
+scene("S08", 44.0, 54.0, [
+    ai(10.0, (110, 100), (0, 0)),
     ("bg", bg(), {"type": "none"}),
     ("look", head("중간에 쓸 돈이면 연금저축", 540, 430, 80) + head("더 채우려면 + IRP", 540, 560, 96, YELLOW), {"type": "pop", "at": 0.2, "anchor": [540, 500]}),
     ("button", pill("구독하기", 540, 1250, 80, RED, WHITE), {"type": "pop", "at": 4.6, "anchor": [540, 1250]}),

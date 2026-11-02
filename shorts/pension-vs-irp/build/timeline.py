@@ -25,7 +25,7 @@ CUES = [
 ]
 
 IDLE = set()
-DURATION = 60
+DURATION = 54  # ends about 2.5 s after the last line (no padding to 60 s, user request)
 
 
 def build():

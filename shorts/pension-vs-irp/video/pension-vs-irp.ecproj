@@ -35,7 +35,7 @@
           "num": 30,
           "den": 1
         },
-        "duration": 15240960000000,
+        "duration": 13716864000000,
         "display_start": 0,
         "background": [
           0.961,
@@ -44,7 +44,7 @@
         ],
         "work_area": [
           0,
-          15240960000000
+          13716864000000
         ],
         "layers": [
           {
@@ -58,7 +58,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 15240960000000,
+            "out_point": 13716864000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -7789,7 +7789,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 15240960000000,
+            "out_point": 13716864000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -11635,7 +11635,7 @@
             "comment": "",
             "start_time": 11176704000000,
             "in_point": 11176704000000,
-            "out_point": 15240960000000,
+            "out_point": 13716864000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -11760,7 +11760,7 @@
                         ]
                       },
                       "expr": {
-                        "text": "var t=time-inPoint; var s=100+2.5*t/16.0+(t<0.25?3*(1-t/0.25):0); [s,s]",
+                        "text": "var t=time-inPoint; var s=100+2.5*t/10.0+(t<0.25?3*(1-t/0.25):0); [s,s]",
                         "enabled": true
                       },
                       "ui": {
@@ -12120,7 +12120,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 15240960000000,
+            "out_point": 13716864000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -12601,7 +12601,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 15240960000000,
+            "out_point": 13716864000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -29876,7 +29876,7 @@
           "num": 30,
           "den": 1
         },
-        "duration": 4115059200000,
+        "duration": 2590963200000,
         "display_start": 0,
         "background": [
           0.0,
@@ -29885,7 +29885,7 @@
         ],
         "work_area": [
           0,
-          4115059200000
+          2590963200000
         ],
         "layers": [
           {
@@ -29899,7 +29899,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 4115059200000,
+            "out_point": 2590963200000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -30350,7 +30350,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 4115059200000,
+            "out_point": 2590963200000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -30805,7 +30805,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 4115059200000,
+            "out_point": 2590963200000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -31260,7 +31260,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 4115059200000,
+            "out_point": 2590963200000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -31707,7 +31707,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 4115059200000,
+            "out_point": 2590963200000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -31809,7 +31809,7 @@
                         ]
                       },
                       "expr": {
-                        "text": "var p=Math.min(1,Math.max(0,time/16.0)); p=p*p*(3-2*p); [540+0*p, 960+0*p]",
+                        "text": "var p=Math.min(1,Math.max(0,time/10.0)); p=p*p*(3-2*p); [540+0*p, 960+0*p]",
                         "enabled": true
                       },
                       "ui": {
@@ -31836,7 +31836,7 @@
                         ]
                       },
                       "expr": {
-                        "text": "var p=Math.min(1,Math.max(0,time/16.0)); p=p*p*(3-2*p); var s=110+(-10)*p; [s,s]",
+                        "text": "var p=Math.min(1,Math.max(0,time/10.0)); p=p*p*(3-2*p); var s=110+(-10)*p; [s,s]",
                         "enabled": true
                       },
                       "ui": {
@@ -32955,7 +32955,7 @@
           "den": 1
         },
         "native_rate": null,
-        "duration": 15240960000000,
+        "duration": 13716864000000,
         "has_video": false,
         "has_audio": true,
         "alpha": "Ignore",
@@ -32987,7 +32987,7 @@
           "den": 1
         },
         "native_rate": null,
-        "duration": 15240960000000,
+        "duration": 13716864000000,
         "has_video": false,
         "has_audio": true,
         "alpha": "Ignore",
