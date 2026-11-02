@@ -1,0 +1,470 @@
+{
+ "duration": 45,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 4.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 4.0,
+      "z": [
+       104,
+       114
+      ],
+      "pan": [
+       0,
+       30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       370
+      ]
+     }
+    },
+    {
+     "name": "sfx",
+     "anim": {
+      "type": "stamp",
+      "at": 0.5,
+      "anchor": [
+       850,
+       1100
+      ]
+     }
+    },
+    {
+     "name": "bubble",
+     "anim": {
+      "type": "pop",
+      "at": 1.0,
+      "anchor": [
+       260,
+       965
+      ]
+     }
+    },
+    {
+     "name": "three",
+     "anim": {
+      "type": "stamp",
+      "at": 2.8,
+      "anchor": [
+       540,
+       1280
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 4.0,
+   "end": 11.8,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7.8,
+      "z": [
+       112,
+       104
+      ],
+      "pan": [
+       -30,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       260
+      ]
+     }
+    },
+    {
+     "name": "amount",
+     "anim": {
+      "type": "pop",
+      "at": 2.8,
+      "anchor": [
+       540,
+       1090
+      ]
+     }
+    },
+    {
+     "name": "where",
+     "anim": {
+      "type": "fade",
+      "at": 5.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 11.8,
+   "end": 17.4,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 5.6,
+      "z": [
+       106,
+       116
+      ],
+      "pan": [
+       30,
+       -20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       260
+      ]
+     }
+    },
+    {
+     "name": "flow",
+     "anim": {
+      "type": "wipeL",
+      "at": 1.2,
+      "dur": 1.6
+     }
+    },
+    {
+     "name": "bubble",
+     "anim": {
+      "type": "pop",
+      "at": 3.4,
+      "anchor": [
+       320,
+       485
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 17.4,
+   "end": 27.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 9.6,
+      "z": [
+       104,
+       114
+      ],
+      "pan": [
+       -30,
+       20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       260
+      ]
+     }
+    },
+    {
+     "name": "rule",
+     "anim": {
+      "type": "wipeD",
+      "at": 2.2,
+      "dur": 3.0
+     }
+    },
+    {
+     "name": "x2",
+     "anim": {
+      "type": "stamp",
+      "at": 6.4,
+      "anchor": [
+       880,
+       830
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 27.0,
+   "end": 36.4,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 9.4,
+      "z": [
+       106,
+       116
+      ],
+      "pan": [
+       0,
+       -30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       240
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       455
+      ]
+     }
+    },
+    {
+     "name": "choices",
+     "anim": {
+      "type": "pop",
+      "at": 0.9,
+      "anchor": [
+       540,
+       810
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 4.4,
+      "anchor": [
+       540,
+       875
+      ]
+     }
+    },
+    {
+     "name": "why",
+     "anim": {
+      "type": "fade",
+      "at": 6.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 36.4,
+   "end": 45.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 8.6,
+      "z": [
+       110,
+       102
+      ],
+      "pan": [
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "look",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       310
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 3.6,
+      "anchor": [
+       540,
+       1250
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 4.2,
+      "anchor": [
+       785,
+       1390
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 2.7,
+   "text": "첫 월급, 받자마자\n뭐부터 해야 할까요?"
+  },
+  {
+   "start": 2.8,
+   "end": 4.0,
+   "text": "딱 세 가지만 기억하세요"
+  },
+  {
+   "start": 4.2,
+   "end": 6.6,
+   "text": "첫째, 비상금 통장부터 만드세요"
+  },
+  {
+   "start": 6.8,
+   "end": 9.2,
+   "text": "생활비 3에서 6개월 치를\n따로 모아 두는 거예요"
+  },
+  {
+   "start": 9.4,
+   "end": 11.6,
+   "text": "언제든 꺼낼 수 있는\n파킹통장에 두면 좋아요"
+  },
+  {
+   "start": 11.8,
+   "end": 15.0,
+   "text": "둘째, 저축은 월급날\n자동이체로 먼저 하세요"
+  },
+  {
+   "start": 15.2,
+   "end": 17.2,
+   "text": "쓰고 남은 돈을 모으면\n남는 돈이 없거든요"
+  },
+  {
+   "start": 17.4,
+   "end": 19.4,
+   "text": "셋째, 카드는 나눠서 쓰세요"
+  },
+  {
+   "start": 19.6,
+   "end": 23.4,
+   "text": "연말정산에서 카드 공제는\n총급여의 25%를 넘게\n쓴 부분부터예요"
+  },
+  {
+   "start": 23.6,
+   "end": 26.8,
+   "text": "그다음부터는 공제율이 두 배인\n체크카드가 유리하죠"
+  },
+  {
+   "start": 27.0,
+   "end": 30.6,
+   "text": "퀴즈! 총급여가 3천만 원이면\n얼마부터 카드 공제가 시작될까?"
+  },
+  {
+   "start": 31.4,
+   "end": 33.2,
+   "text": "정답은, 750만 원이에요!"
+  },
+  {
+   "start": 33.4,
+   "end": 36.2,
+   "text": "3천만 원의 25%를\n넘게 쓴 돈부터예요"
+  },
+  {
+   "start": 36.6,
+   "end": 39.6,
+   "text": "첫 월급부터 습관을 만들면\n돈이 쌓이기 시작해요"
+  },
+  {
+   "start": 40.0,
+   "end": 42.4,
+   "text": "더 많은 돈 이야기가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
