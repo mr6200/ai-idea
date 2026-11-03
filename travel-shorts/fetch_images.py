@@ -98,7 +98,7 @@ def main(project_dir):
             url = meta["url"]
         elif "url" in src:
             url = src["url"]
-            credits.append({"key": key, "title": key, "page": url,
+            credits.append({"key": key, "title": src.get("title", key), "page": src.get("page", url),
                             "artist": src.get("credit", ""), "license": src.get("license", "")})
         else:
             shutil.copy(proj / src["path"], dest)

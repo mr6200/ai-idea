@@ -135,7 +135,7 @@ def header_overlay(scene, spec):
 
     if "hook" in scene or "outro" in scene:
         box = scene.get("hook") or scene.get("outro")
-        gradient(img, 0, H, 70, 70)  # 전체 살짝 어둡게
+        gradient(img, 0, H, 95, 95)  # 전체 살짝 어둡게
         top_y = 560 if "hook" in scene else 620
         if box.get("top"):
             draw_rich(img, box["top"], font("black", 64), W / 2, top_y, 960, stroke=6)
@@ -170,8 +170,8 @@ def header_overlay(scene, spec):
     for chip in hotel.get("chips", []):
         cw, ch = pill(img, (cx, y), chip, chip_f, (255, 255, 255, 235), (20, 20, 20), pad=(24, 12))
         cx += cw + 14
-    if hotel.get("chips") and spec.get("price_note"):
-        draw_rich(img, spec["price_note"], font("medium", 28), x + 4, y + 82, W, align="left",
+    if hotel.get("chips") and hotel.get("note"):
+        draw_rich(img, hotel["note"], font("medium", 28), x + 4, y + 82, W, align="left",
                   stroke=3, shadow=False)
     return img
 
@@ -446,7 +446,7 @@ def main():
     credits = json.loads((proj / "credits.json").read_text(encoding="utf-8")) if (proj / "credits.json").exists() else []
     used = {sc["image"] for sc in scenes}
     lines = [spec.get("title", ""), "", " ".join(spec.get("hashtags", [])), "",
-             "※ 가격은 날짜·시즌·환율에 따라 달라질 수 있어요.", "", "📷 사진 출처"]
+             "※ 가격은 날짜·시즌·환율에 따라 달라질 수 있어요.", "", "📷 사진 출처 (다운로드 링크)"]
     for c in credits:
         if c["key"] in used:
             lines.append(f"- {c['title']} / {c.get('artist') or 'unknown'} / {c.get('license', '')} {c.get('page', '')}".rstrip())

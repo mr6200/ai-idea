@@ -12,16 +12,16 @@
 
 ```bash
 ./setup.sh                                          # 패키지와 폰트 설치 (ffmpeg은 따로 설치)
-python fetch_images.py projects/landmark-hotels-top3 # 사진 다운로드와 credits.json 생성
-python build_short.py  projects/landmark-hotels-top3 --preview   # 장면별 미리보기 이미지
-python build_short.py  projects/landmark-hotels-top3             # 최종 mp4
+python fetch_images.py projects/singapore-marina-bay-sands # 사진 다운로드와 credits.json 생성
+python build_short.py  projects/singapore-marina-bay-sands --preview   # 장면별 미리보기 이미지
+python build_short.py  projects/singapore-marina-bay-sands             # 최종 mp4
 ```
 
 결과는 `projects/<이름>/output/` 에 저장돼요 (`<이름>.mp4`, `description.txt`).
 
 ## 새 영상 만들기
 
-`projects/landmark-hotels-top3` 폴더를 복사한 뒤 `spec.json` 만 수정하면 돼요.
+`projects/singapore-marina-bay-sands` 폴더를 복사한 뒤 `spec.json` 만 수정하면 돼요.
 
 | 항목 | 설명 |
 |---|---|
@@ -35,6 +35,8 @@ python build_short.py  projects/landmark-hotels-top3             # 최종 mp4
 | `voice`, `rate` | TTS 목소리와 속도. 예: `ko-KR-SunHiNeural`(여), `ko-KR-InJoonNeural`(남), `+12%` |
 | `bgm` | `"synth"`(자체 생성 잔잔한 음악) 또는 mp3 경로. YouTube 오디오 보관함 음원을 추천해요 |
 
+**기본 포맷 (예시 영상): 숙소 1곳 + 주변 명소.** 숙소 장면 4개 정도를 넣은 뒤 `hotels` 에 명소를 `badge: "주변 명소 1"` 처럼 추가하고, 명소마다 장면 1~2개를 이어 붙이면 돼요.
+
 **한 숙소 집중 소개** 영상은 `hotels` 에 숙소 하나만 넣고, 외관 → 객실 → 수영장 → 조식 → 가격 순서로 장면 4~6개를 구성하면 돼요.
 **모음집** 영상은 예시처럼 숙소마다 장면 2~3개씩 배치하면 돼요. 문장 15~20개가 대략 40~50초 분량이에요.
 
@@ -44,7 +46,7 @@ python build_short.py  projects/landmark-hotels-top3             # 최종 mp4
 플랫폼 약관상 무단 재사용이 금지되어 있어서, 그대로 쓰면 유튜브 저작권 신고나 수익 창출 제한을 받을 수 있어요.
 구글 이미지 검색 결과도 마찬가지예요. 아래처럼 안전한 사진을 사용하세요.
 
-1. **위키미디어 공용(CC 라이선스)**: 이 도구가 저작자와 라이선스를 자동으로 기록하고 설명란에 출처를 넣어줘요 (예시 영상이 이 방식이에요).
+1. **Unsplash 무료 사진 (예시 영상에서 사용)**: 상업적 사용과 수익화가 가능하고 출처 표기도 필수는 아니에요. 단, 유료인 **Unsplash+** 사진은 제외하세요. spec 에 `page`(사진 페이지 링크)와 `credit` 을 적어두면 `description.txt` 에 다운로드 링크가 자동으로 들어가요. Pexels, Pixabay, 위키미디어 CC0 사진도 같은 방식으로 쓸 수 있어요.
 2. **호텔 공식 미디어 키트 / 보도자료 사진**: 호텔 홍보팀에 사용 허락을 받으면 가장 고화질이에요.
 3. **제휴(어필리에이트) 프로그램**: 아고다 파트너스, 트립닷컴 어필리에이트 등은 제휴 링크와 함께 쓸 수 있는 콘텐츠와 API를 제공해요. 제휴 링크로 수익도 낼 수 있어요.
 4. **Unsplash / Pexels 무료 사진**, 또는 **직접 촬영한 사진과 영상**.

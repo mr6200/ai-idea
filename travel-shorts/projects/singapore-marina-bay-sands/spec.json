@@ -1,0 +1,93 @@
+{
+  "title": "싱가포르 가면 여기서 꼭 하룻밤! 마리나 베이 샌즈 + 주변 명소 3곳",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+12%",
+  "bgm": "synth",
+  "bgm_volume": 0.10,
+  "hashtags": ["#싱가포르여행", "#마리나베이샌즈", "#호텔추천", "#가든스바이더베이", "#멀라이언", "#해외여행", "#여행쇼츠"],
+
+  "images": {
+    "mbs_light":   {"url": "https://images.unsplash.com/photo-1572148884483-794c9b6c6963?fm=jpg&q=85&w=2400",
+                    "page": "https://unsplash.com/photos/marina-bay-sands-d9VkFbtL1ig",
+                    "title": "Marina Bay Sands light show", "credit": "Shawnn Tan", "license": "Unsplash License"},
+    "mbs_bay":     {"url": "https://images.unsplash.com/photo-1561115210-2b43f96ac25b?fm=jpg&q=85&w=2400",
+                    "page": "https://unsplash.com/photos/marina-bay-sands-singapore-cpEMZPKs7Lg",
+                    "title": "Marina Bay Sands, Singapore", "credit": "SR (@lemonmelon)", "license": "Unsplash License"},
+    "pool_deck":   {"url": "https://images.unsplash.com/photo-1536625737227-92a1fc042e7e?fm=jpg&q=85&w=2400",
+                    "page": "https://unsplash.com/photos/group-of-people-at-the-swimming-pool-under-white-clouds-7ZZ_FmVelQY",
+                    "title": "Rooftop pool", "credit": "Will Truettner", "license": "Unsplash License"},
+    "pool_view":   {"url": "https://images.unsplash.com/photo-1519446152406-2657aaa88084?fm=jpg&q=85&w=2400",
+                    "page": "https://unsplash.com/photos/two-womens-swimming-in-pool-while-looking-at-building-ioJqc7UM-kY",
+                    "title": "Infinity pool view", "credit": "Li Yang", "license": "Unsplash License"},
+    "mbs_aerial":  {"url": "https://images.unsplash.com/photo-1489462301595-b0d577c664c5?fm=jpg&q=85&w=2400",
+                    "page": "https://unsplash.com/photos/marina-bay-sands-under-sunny-sky-NptzXxoZNv4",
+                    "title": "Marina Bay Sands aerial", "credit": "CHUTTERSNAP", "license": "Unsplash License"},
+    "gbtb_night":  {"url": "https://images.unsplash.com/photo-1698513924628-4f6e0e4c00f6?fm=jpg&q=85&w=2400",
+                    "page": "https://unsplash.com/photos/a-night-view-of-the-gardens-by-the-bay-in-singapore-s3i02B7qiVA",
+                    "title": "Supertree Grove at night", "credit": "Joshua Kettle", "license": "Unsplash License"},
+    "gbtb_skyway": {"url": "https://images.unsplash.com/photo-1485257334450-84ec1ba6393d?fm=jpg&q=85&w=2400",
+                    "page": "https://unsplash.com/photos/gardens-by-the-bay-singapore-McM5BW4jQHc",
+                    "title": "Gardens by the Bay skyway", "credit": "Annie Spratt", "license": "Unsplash License"},
+    "artscience":  {"url": "https://images.unsplash.com/photo-1756206958678-40bfa1bb37a7?fm=jpg&q=85&w=2400",
+                    "page": "https://unsplash.com/photos/iconic-marina-bay-sands-hotel-and-artscience-museum-in-singapore-2NV0RLPb-RA",
+                    "title": "ArtScience Museum & Marina Bay Sands", "credit": "Umang Goel", "license": "Unsplash License"},
+    "merlion_day": {"url": "https://images.unsplash.com/photo-1600664356348-10686526af4f?fm=jpg&q=85&w=2400",
+                    "page": "https://unsplash.com/photos/white-concrete-statue-near-city-buildings-during-daytime-cjSsSQ7Yedk",
+                    "title": "Merlion", "credit": "Jisun Han", "license": "Unsplash License"},
+    "merlion_long":{"url": "https://images.unsplash.com/photo-1552790920-0ba96dc99d01?fm=jpg&q=85&w=2400",
+                    "page": "https://unsplash.com/photos/v0BgDZTJyPY",
+                    "title": "Merlion, Singapore", "credit": "Jay Ang", "license": "Unsplash License"},
+    "mbs_garden":  {"url": "https://images.unsplash.com/photo-1527623629755-17eaa73534e2?fm=jpg&q=85&w=2400",
+                    "page": "https://unsplash.com/photos/marina-bay-sands-singapore-hotel-during-daytime-17IW7yH4U2o",
+                    "title": "Marina Bay Sands during daytime", "credit": "Jacob Peters-Lehm", "license": "Unsplash License"}
+  },
+
+  "hotels": {
+    "mbs":     {"badge": "추천 숙소", "name": "마리나 베이 샌즈", "place": "싱가포르 · 마리나 베이",
+                "chips": ["1박 80만원대~", "57층 인피니티풀"], "note": "* 가격은 날짜·시즌별로 달라요"},
+    "gbtb":    {"badge": "주변 명소 1", "name": "가든스 바이 더 베이", "place": "호텔에서 도보 약 10분",
+                "chips": ["슈퍼트리 무료", "밤 조명쇼 무료"]},
+    "art":     {"badge": "주변 명소 2", "name": "아트사이언스 뮤지엄", "place": "호텔 바로 옆 · 도보 5분",
+                "chips": ["연꽃 모양 건물", "전시 유료"]},
+    "merlion": {"badge": "주변 명소 3", "name": "멀라이언 파크", "place": "호텔에서 도보 약 20분",
+                "chips": ["입장 무료", "야경 명소"]}
+  },
+
+  "scenes": [
+    {"image": "mbs_light", "captions": false,
+     "hook": {"top": "싱가포르 여행 간다면", "big": "여기서 꼭\n*하룻밤!*"},
+     "lines": [{"text": "싱가포르에 간다면 여기서 꼭 하룻밤!",
+                "say": "싱가포르에 간다면, 여기서 꼭 하룻밤 묵어보세요!"}]},
+
+    {"image": "mbs_bay", "hotel": "mbs", "focus": 0.5,
+     "lines": [{"text": "싱가포르의 상징\n*마리나 베이 샌즈*", "say": "싱가포르의 상징, 마리나 베이 샌즈."},
+               "타워 세 개 위에\n*거대한 배*를 올린 호텔이에요"]},
+    {"image": "pool_deck", "hotel": "mbs", "focus": 0.45,
+     "lines": [{"text": "핵심은 57층\n*인피니티 풀*", "say": "핵심은 57층 인피니티 풀."},
+               "*투숙객만* 들어갈 수 있어요"]},
+    {"image": "pool_view", "hotel": "mbs", "focus": 0.65,
+     "lines": ["수영하면서 보는\n*싱가포르 스카이라인*"]},
+    {"image": "mbs_aerial", "hotel": "mbs",
+     "lines": ["쇼핑몰과 맛집까지\n*건물 안에 다* 있어요"]},
+
+    {"image": "gbtb_night", "hotel": "gbtb",
+     "lines": [{"text": "이제 주변 명소!\n*가든스 바이 더 베이*", "say": "이제 주변 명소! 첫 번째는 가든스 바이 더 베이."},
+               "밤마다 슈퍼트리에서\n*무료 조명쇼*가 열려요"]},
+    {"image": "gbtb_skyway", "hotel": "gbtb", "focus": 0.6,
+     "lines": ["나무 사이 *공중 산책로*도\n걸어볼 수 있어요"]},
+
+    {"image": "artscience", "hotel": "art", "focus": 0.35,
+     "lines": [{"text": "호텔 바로 옆\n*아트사이언스 뮤지엄*", "say": "두 번째는 호텔 바로 옆, 아트사이언스 뮤지엄."},
+               "*연꽃 모양* 건물 자체가 포토존이에요"]},
+
+    {"image": "merlion_day", "hotel": "merlion", "focus": 0.3,
+     "lines": [{"text": "마지막은\n*멀라이언 파크*", "say": "마지막은 멀라이언 파크."},
+               "싱가포르 대표\n*인생샷 명소*예요"]},
+
+    {"image": "mbs_garden", "captions": false,
+     "outro": {"top": "저장해두고 여행 때 꺼내보세요", "big": "다음 숙소는\n*어디*로 갈까요?"},
+     "footer": "가격 비교: 아고다 · 트립닷컴 · 호텔스컴바인",
+     "lines": [{"text": "가격은 아고다, 트립닷컴, 호텔스컴바인에서 비교해 보세요.",
+                "say": "가격은 아고다, 트립닷컴, 호텔스컴바인에서 비교해 보시고, 다음에 소개할 숙소는 댓글로 추천해 주세요!"}]}
+  ]
+}
