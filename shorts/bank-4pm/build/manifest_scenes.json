@@ -1,0 +1,437 @@
+[
+ {
+  "id": "S01",
+  "start": 0,
+  "end": 4.8,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 4.8,
+     "z": [
+      104,
+      114
+     ],
+     "pan": [
+      0,
+      30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      370
+     ]
+    }
+   },
+   {
+    "name": "sfx",
+    "anim": {
+     "type": "stamp",
+     "at": 0.4,
+     "anchor": [
+      850,
+      610
+     ]
+    }
+   },
+   {
+    "name": "bubble",
+    "anim": {
+     "type": "pop",
+     "at": 1.0,
+     "anchor": [
+      270,
+      965
+     ]
+    }
+   },
+   {
+    "name": "flip",
+    "anim": {
+     "type": "stamp",
+     "at": 3.7,
+     "anchor": [
+      540,
+      1280
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "start": 4.8,
+  "end": 14.0,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 9.2,
+     "z": [
+      112,
+      104
+     ],
+     "pan": [
+      -30,
+      0
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      260
+     ]
+    }
+   },
+   {
+    "name": "list",
+    "anim": {
+     "type": "wipeD",
+     "at": 3.0,
+     "dur": 3.4
+    }
+   },
+   {
+    "name": "sfx",
+    "anim": {
+     "type": "stamp",
+     "at": 3.4,
+     "anchor": [
+      820,
+      830
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "start": 14.0,
+  "end": 17.8,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 3.8,
+     "z": [
+      106,
+      116
+     ],
+     "pan": [
+      30,
+      -20
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      260
+     ]
+    }
+   },
+   {
+    "name": "tasks",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      480,
+      1090
+     ]
+    }
+   },
+   {
+    "name": "late",
+    "anim": {
+     "type": "fade",
+     "at": 2.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "start": 17.8,
+  "end": 24.6,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 6.8,
+     "z": [
+      110,
+      104
+     ],
+     "pan": [
+      0,
+      30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      260
+     ]
+    }
+   },
+   {
+    "name": "rows",
+    "anim": {
+     "type": "wipeD",
+     "at": 0.5,
+     "dur": 3.4
+    }
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "start": 24.6,
+  "end": 30.2,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 5.6,
+     "z": [
+      104,
+      114
+     ],
+     "pan": [
+      -30,
+      20
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      260
+     ]
+    }
+   },
+   {
+    "name": "new",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      595
+     ]
+    }
+   },
+   {
+    "name": "sfx",
+    "anim": {
+     "type": "stamp",
+     "at": 1.0,
+     "anchor": [
+      260,
+      870
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "start": 30.2,
+  "end": 39.8,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 9.6,
+     "z": [
+      106,
+      116
+     ],
+     "pan": [
+      0,
+      -30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "badge",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      240
+     ]
+    }
+   },
+   {
+    "name": "question",
+    "anim": {
+     "type": "pop",
+     "at": 0.3,
+     "anchor": [
+      540,
+      455
+     ]
+    }
+   },
+   {
+    "name": "choices",
+    "anim": {
+     "type": "pop",
+     "at": 0.9,
+     "anchor": [
+      540,
+      925
+     ]
+    }
+   },
+   {
+    "name": "answer",
+    "anim": {
+     "type": "stamp",
+     "at": 4.2,
+     "anchor": [
+      540,
+      995
+     ]
+    }
+   },
+   {
+    "name": "why",
+    "anim": {
+     "type": "fade",
+     "at": 6.0
+    }
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "start": 39.8,
+  "end": 48.0,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 8.2,
+     "z": [
+      110,
+      102
+     ],
+     "pan": [
+      0,
+      0
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "look",
+    "anim": {
+     "type": "pop",
+     "at": 0.2,
+     "anchor": [
+      540,
+      310
+     ]
+    }
+   },
+   {
+    "name": "button",
+    "anim": {
+     "type": "pop",
+     "at": 3.0,
+     "anchor": [
+      540,
+      1250
+     ]
+    }
+   },
+   {
+    "name": "finger",
+    "anim": {
+     "type": "tap",
+     "at": 3.6,
+     "anchor": [
+      785,
+      1390
+     ]
+    }
+   }
+  ]
+ }
+]
