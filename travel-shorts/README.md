@@ -52,3 +52,15 @@ python build_short.py  projects/singapore-marina-bay-sands             # 최종 
 4. **Unsplash / Pexels 무료 사진**, 또는 **직접 촬영한 사진과 영상**.
 
 가격 칩(`1박 50만원대~`)은 예시용 대략적인 값이에요. 업로드 전에 실제 사이트에서 확인하고 수정하세요.
+
+## 구글 드라이브 자동 업로드
+
+`./upload_to_drive.sh projects/<이름> "드라이브 폴더 이름"` 을 실행하면 `output/` 의 mp4 와 txt 가 내 드라이브의 해당 폴더로 올라가요. 폴더가 없으면 새로 만들어요.
+
+**처음 한 번만 준비하면 돼요.**
+1. 내 컴퓨터에 rclone 을 설치해요: https://rclone.org/downloads/
+2. 터미널에서 `rclone authorize "drive"` 를 실행해요. 브라우저가 열리면 구글 계정으로 로그인하고 허용을 눌러요.
+3. 터미널에 출력된 `{"access_token": ... "refresh_token": ...}` 전체(JSON)를 복사해요.
+4. Claude Code 클라우드 환경 설정에 `GDRIVE_TOKEN` 이라는 이름으로 저장해요 (세션 상단의 환경 메뉴 → Edit → 환경 변수 또는 Network secrets). 저장 후에는 새 세션에서 적용돼요.
+
+⚠️ 이 토큰이 있으면 내 구글 드라이브 전체에 접근할 수 있어요. 채팅창에는 절대 붙여넣지 마세요. 필요 없어지면 https://myaccount.google.com/permissions 에서 rclone 권한을 해제하세요.
