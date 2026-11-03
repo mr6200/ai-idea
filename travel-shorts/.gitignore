@@ -1,0 +1,6 @@
+fonts/*.ttf
+projects/*/images/
+projects/*/build/
+projects/*/output/
+__pycache__/
+projects/_test/
