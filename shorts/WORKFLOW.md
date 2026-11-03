@@ -259,6 +259,14 @@
 - 25편: 두 번째 인물(은행원 `TELLER`)도 프롬프트에 고정 설명으로 넣음. 간판 · 문 위에 엉터리 글씨가 잘 나오니 "no signboard, no writing anywhere"를 넣음
 - 나머지 예시(픽셀 · 콜라주 · 화이트보드)는 나중에 다른 편에서 쓸 수 있게 예시 코드와 그림을 남겨 둠
 
+### 흑백 만화(스크린톤) 그림체 (26편부터, 2026-11-03 사용자 선택)
+
+웹툰 그림체 예시 5종(`shorts/webtoon-styles/`, ① 수채화 · ② SD 개그 · ③ 흑백 만화 · ④ 액션 세미리얼 · ⑤ 심플 일상툰) 중 **③ 흑백 만화**를 고르셨습니다. 칸 테두리 · 말풍선 · 효과음 · 대사 상자 자막 같은 웹툰 틀은 그대로, 그림체만 바꿉니다.
+
+- `gen_backgrounds.py`의 `STYLE`: "black and white korean manhwa style, crisp ink line art, halftone screentone shading, dramatic speed lines, high contrast, only one red accent color on the tie" (+ no text 문구)
+- 같은 캐릭터 `CHAR` 유지. 포인트 색은 빨강 하나 (넥타이, 효과음 · 강조 글씨)
+- 글씨 얹기: 제목은 흰 글씨 + 검은 외곽선(노랑 대신 흰색/빨강), 효과음은 빨강 (`shorts/webtoon-styles/compose.py`의 `3_manga` 설정)
+
 ## 다음 쇼츠를 만들 때
 
 2편부터는 **편마다 폴더를 따로** 둡니다 (앞 편 빌드를 덮어쓰지 않도록).
