@@ -12,7 +12,8 @@
 | 저장소 · 브랜치 | `mr6200/ai-idea`. 쇼츠 파일은 **`ccr-78413b83-erbceh` 브랜치에만 있음** (`main`에는 없음). 새 세션 브랜치가 다르면 먼저 `git fetch origin ccr-78413b83-erbceh` 후 그 내용을 가져와서(`git merge origin/ccr-78413b83-erbceh` 또는 그 브랜치에서 작업) 시작 |
 | 소통 | 진행 상황 · 중간 보고 · 완성 보고는 **한글** |
 | PR | 사용자가 요청할 때만 만듦 |
-| 다음 편 번호 | **26편** |
+| 다음 편 번호 | **26편** (`CLAUDE.md` · `WORKFLOW.md` 목록에만 적음) |
+| 편 번호 표시 | 결과물 **내용 상단에 몇 편인지 적지 않음** (사용자 요청, 2026-11-05): README · `script.md` · `youtube-metadata.md`의 제목과 첫 줄, 콘티 머리말(`gen_storyboard.py`), 썸네일, Drive 문서 모두. 25편 README의 「# 25편 · 제목」처럼 쓰지 말고 「# 제목 (NN초 · 스타일)」으로 |
 | 길이 | 본편 **최대 60초** + 맨 앞 썸네일 **1초**. 내용이 일찍 끝나면 채우지 말고 마지막 말 뒤 약 2.5초(구독 버튼 탭)에서 끝냄. 23~25편은 45~48초 |
 | 주제 | 돈 · 생활. "와, 진짜?" 하는 반전 · 질문형 · 이야기형. 첫 2초에 질문이나 놀라운 사실 |
 | 화면 스타일 | **웹툰풍 틀 + 액션 세미리얼 그림체** (26편부터, 사용자 선택, `shorts/webtoon-styles/4_action.png`). 같은 직장인 캐릭터 유지 |
@@ -62,7 +63,7 @@ cp bank-4pm/.gitignore NEW/
 | `gen_narration.py` | `SPOKEN`(읽기 어려운 기호 → 읽는 말, 예: `"1+1": "원 플러스 원"`), `NATIVE_COUNTERS`(살 · 번 · 달 · 곳 · 시는 고유어 숫자) |
 | `gen_audio.py` | `DUR = DURATION`, 퀴즈 드럼롤 · 정답 딩 · 구독 클릭 효과음 시각 |
 | `gen_thumbnail.py` | 썸네일 제목(두 줄, 얼굴을 가리지 않게) · 말풍선 · 효과음 |
-| `gen_storyboard.py` | 콘티 제목 · 편 번호 · 길이 |
+| `gen_storyboard.py` | 콘티 제목 · 길이 (편 번호는 넣지 않음) |
 | `build_all.sh` | 폴더 · 파일 이름 (`INTRO=1.0` 그대로) |
 
 ## 5. AI 그림 (RunPod Seedream 4.0)
@@ -131,9 +132,9 @@ until grep -q "^finished:" render.log; do sleep 10; done; tail -3 render.log
 
 | 파일 | 내용 (틀: `shorts/bank-4pm/`) |
 |---|---|
-| `script.md` | 길이 · 편 번호 · 스타일 · 기준 날짜, 장면별 「화면」 + 내레이션, **TTS 검사 표**, **사실 확인 표**(영상 속 내용 / 확인 결과 / 근거), AI 그림 장수 · 비용 |
+| `script.md` | 길이 · 스타일 · 기준 날짜 (편 번호는 적지 않음), 장면별 「화면」 + 내레이션, **TTS 검사 표**, **사실 확인 표**(영상 속 내용 / 확인 결과 / 근거), AI 그림 장수 · 비용 |
 | `youtube-metadata.md` | 추천 제목(#shorts) + 후보 3개, 설명(📌 다루는 것, ⏱ 챕터, 📚 참고, ※ 안내 문구 "교육 목적의 일반 정보 · 영상 속 인물은 AI로 그린 그림"), 해시태그, 태그, 장면별 챕터 표 |
-| `README.md` | 길이 · 장면 수 · TTS, 틀로 쓴 편, 이번 편 메모(새 도우미, 고친 문제), RunPod 사용액, 다시 만들기 명령 |
+| `README.md` | 제목 줄은 「# 제목 (NN초 · 스타일)」(편 번호 없이), 길이 · 장면 수 · TTS, 틀로 쓴 편, 이번 편 메모(새 도우미, 고친 문제), RunPod 사용액, 다시 만들기 명령 |
 
 **챕터 규칙**
 - 모든 시간은 본편보다 **+1초**(썸네일), 초는 내림
@@ -158,7 +159,7 @@ until grep -q "^finished:" render.log; do sleep 10; done; tail -3 render.log
 
 ```bash
 git add CLAUDE.md shorts/WORKFLOW.md shorts/NEW
-git commit -m "26편 「제목」 쇼츠 완성 (NN초 + 썸네일 1초, 웹툰풍 액션 세미리얼)"
+git commit -m "「제목」 쇼츠 완성 (NN초 + 썸네일 1초, 웹툰풍 액션 세미리얼)"
 git push -u origin <브랜치>      # 네트워크 오류면 2·4·8·16초 간격으로 재시도
 ```
 그다음 `SendUserFile`로 완성 영상 · 썸네일 · 콘티(storyboard.png)를 보냄.
