@@ -46,8 +46,8 @@ def main():
   .nar {{ background:#2e323a; border-radius:6px; padding:5px 7px; }}
   @media (max-width:900px) {{ .grid {{ grid-template-columns:1fr; padding:12px 16px; }} header {{ padding:20px 16px 4px; }} }}
 </style></head><body>
-<header><h1>메리 셀레스트호, 선원들은 어디로? — 7장면 콘티</h1>
-<div class="meta">56초 (+ 썸네일 1초) · 1080×1920 · 30fps · 자막 y=1480 · 내레이션 ko-KR-Chirp3-HD-Charon · 세계의 미스터리 1화 · 실사 역사 다큐 (Seedream 4.0 사진 → WAN 2.2 영상)</div></header>
+<header><h1>유령선 미스터리. 진실은 어디에..? — 8장면 콘티</h1>
+<div class="meta">61초 (+ 썸네일 1.5초) · 1080×1920 · 30fps · 자막 y=1480 · 내레이션 ko-KR-Chirp3-HD-Charon · 세계의 미스터리 1화 · 실사 역사 다큐 (Seedream 4.0 사진 → WAN 2.2 영상)</div></header>
 <div class="grid">{''.join(cards)}</div></body></html>"""
     out = os.path.join(EP, "storyboard.html")
     with open(out, "w") as f:

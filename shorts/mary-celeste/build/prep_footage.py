@@ -20,7 +20,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 FOOT = os.path.join(ROOT, "footage")
 W, H = 1080, 1920
 PAD = 0.2      # scene precomps run 0.2 s past their end
-SPLIT = {"S03": 3.2, "S04": 5.3, "S05": 5.0}   # scene-local second where the second clip starts
+SPLIT = {"S03": 3.2, "S04": 5.3, "S05": 4.5}   # scene-local second where the second clip starts
 GRADE = ("eq=saturation=0.86:contrast=1.05:gamma=0.98,colorbalance=rs=0.03:bs=-0.03:rm=0.02:bm=-0.02,"
          "noise=alls=7:allf=t")
 

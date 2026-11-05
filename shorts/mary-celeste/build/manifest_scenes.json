@@ -193,7 +193,7 @@
  {
   "id": "S05",
   "start": 30.9,
-  "end": 40.5,
+  "end": 38.0,
   "parts": [
    {
     "name": "video",
@@ -212,58 +212,44 @@
     }
    },
    {
-    "name": "quiz",
-    "anim": {
-     "type": "stamp",
-     "at": 0.1,
-     "anchor": [
-      540,
-      350
-     ]
-    }
-   },
-   {
-    "name": "q",
-    "anim": {
-     "type": "fade",
-     "at": 0.5
-    }
-   },
-   {
-    "name": "ab",
+    "name": "t",
     "anim": {
      "type": "pop",
-     "at": 1.2,
+     "at": 0.15,
      "anchor": [
       540,
-      1230
+      340
      ]
     }
    },
    {
-    "name": "ans",
+    "name": "boat",
     "anim": {
      "type": "stamp",
-     "at": 5.0,
+     "at": 0.6,
      "anchor": [
       540,
-      1230
+      560
      ]
     }
    },
    {
-    "name": "tag",
+    "name": "rest",
     "anim": {
-     "type": "slideL",
-     "at": 7.2
+     "type": "pop",
+     "at": 2.4,
+     "anchor": [
+      540,
+      720
+     ]
     }
    }
   ]
  },
  {
   "id": "S06",
-  "start": 40.5,
-  "end": 48.3,
+  "start": 38.0,
+  "end": 44.9,
   "parts": [
    {
     "name": "video",
@@ -271,6 +257,46 @@
      "type": "video",
      "clips": [
       "S06"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "court",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   },
+   {
+    "name": "none",
+    "anim": {
+     "type": "stamp",
+     "at": 4.0,
+     "anchor": [
+      540,
+      548
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "start": 44.9,
+  "end": 52.7,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S07"
      ]
     }
    },
@@ -308,16 +334,16 @@
   ]
  },
  {
-  "id": "S07",
-  "start": 48.3,
-  "end": 56.0,
+  "id": "S08",
+  "start": 52.7,
+  "end": 61.0,
   "parts": [
    {
     "name": "video",
     "anim": {
      "type": "video",
      "clips": [
-      "S07"
+      "S08"
      ]
     }
    },

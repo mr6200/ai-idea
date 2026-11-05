@@ -15,10 +15,11 @@ OUT_LINE = 'stroke="#000" stroke-opacity="0.7" stroke-width="7" paint-order="str
 body = (
     shade()
     + '<rect y="1000" width="1080" height="920" fill="#000" fill-opacity="0.3"/>'
-    + head("배 위 10명이", 540, 1150, 140)
-    + head("사라졌다", 540, 1320, 170, GOLD)
-    + pill("배는 멀쩡했는데…", 540, 1480, 64, RED, "#ffffff")
-    + text("1872년 유령선 메리 셀레스트호", 540, 1630, 50, "#ffffff", extra=OUT_LINE)
+    # title chosen by the user before the thumbnail was made: 「유령선 미스터리. 진실은 어디에..?」
+    + head("유령선 미스터리", 540, 1150, 128)
+    + head("진실은 어디에..?", 540, 1320, 128, GOLD)
+    + pill("배는 멀쩡한데 10명이 사라졌다", 540, 1480, 54, RED, "#ffffff")
+    + text("1872년 · 메리 셀레스트호", 540, 1630, 50, "#ffffff", extra=OUT_LINE)
 )
 
 

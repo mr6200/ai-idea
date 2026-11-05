@@ -54,17 +54,21 @@ SCENES = {
     "S05b": ("A small wooden rowing boat with a few 1870s sailors and a woman rowing away across a grey misty sea, "
              "seen from far behind, the figures tiny and anonymous, lonely mood",
              "the little boat rows slowly away into the fog, the oars dip, waves roll, slow push-in"),
-    "S06": ("Dark cargo hold of an 1870s wooden ship packed with rows of old oak barrels, seawater sloshing on the "
+    "S06": ("Reenactment of an 1873 Victorian courtroom in Gibraltar, an elderly judge in a white wig and black robe "
+            "at a high wooden bench seen from the back of the room, lawyers in dark coats, a few sailors standing, "
+            "stacks of papers, tall windows with dusty daylight, figures small and faces not detailed, no flags, no writing",
+            "dust floats in the window light, a lawyer turns a page, the judge leans forward, slow push-in"),
+    "S07": ("Dark cargo hold of an 1870s wooden ship packed with rows of old oak barrels, seawater sloshing on the "
             "floor, a single lantern, a faint haze of vapour in the air, nobody there",
             "water sloshes across the floor between the barrels, the lantern sways, haze drifts, slow dolly forward"),
-    "S07": (f"Silhouette of {SHIP} with ragged sails fading into the fog at dusk on a calm grey sea, "
+    "S08": (f"Silhouette of {SHIP} with ragged sails fading into the fog at dusk on a calm grey sea, "
             "last light on the horizon, lonely and mysterious, wide shot",
             "the ship slowly drifts away into the fog, the mist thickens, slow pull-back"),
 }
 
 # picked still per scene after looking at footage/cand ('a' or 'b')
 PICK = {"S01": "a", "S02": "a", "S03": "b", "S03b": "d", "S04": "a", "S04b": "a", "S05": "e", "S05b": "b",
-        "S06": "a", "S07": "a"}
+        "S06": "b", "S07": "a", "S08": "a"}
 
 
 def post(endpoint, payload, timeout=420):

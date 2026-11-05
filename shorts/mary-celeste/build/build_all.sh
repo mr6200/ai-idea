@@ -35,11 +35,11 @@ python3 gen_effectcraft.py
 
 mkdir -p ../video
 effectcraft-cli script build.jsx --empty --save-as ../video/mary-celeste.ecproj
-INTRO=1.0   # seconds of thumbnail before the video (subtitle and chapter times shift by this)
+INTRO=1.5   # (user request, 2026-11-05) seconds of thumbnail before the video (subtitle and chapter times shift by this)
 if [ "${1:-}" = "--render" ]; then
   effectcraft-cli render --project ../video/mary-celeste.ecproj --comp Main \
     --out ../video/raw.mp4 --format h264 --audio on --quality best
-  # the thumbnail as a 1 s silent opening card (user request), then the render;
+  # the thumbnail as a 1.5 s silent opening card (user request), then the render;
   # loudness-normalised audio (single-pass loudnorm lands near -16, so +1.8 dB under a limiter), H.264 Main profile, moov atom up front for previews
   ffmpeg -v error -y -i ../video/raw.mp4 \
     -loop 1 -framerate 30 -t "$INTRO" -i ../thumbnail/thumbnail.png \

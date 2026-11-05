@@ -1,4 +1,4 @@
-"""Overlay parts for the 7 scenes of the mary-celeste Short (1080x1920) plus the scene manifest.
+"""Overlay parts for the 8 scenes of the mary-celeste Short (1080x1920) plus the scene manifest.
 
 Style (mystery series, episode 1): realistic historical documentary. The bottom layer of every scene is
 AI documentary footage (Seedream still animated by WAN 2.2, prepared by prep_footage.py as parts/Sxx/video.mp4);
@@ -97,7 +97,7 @@ def static(name, body):
 # scene timing in seconds; scenes with two clips cut at prep_footage.SPLIT
 S = {
     "S01": (0.0, 6.3), "S02": (6.3, 11.6), "S03": (11.6, 21.1), "S04": (21.1, 30.9),
-    "S05": (30.9, 40.5), "S06": (40.5, 48.3), "S07": (48.3, 56.0),
+    "S05": (30.9, 38.0), "S06": (38.0, 44.9), "S07": (44.9, 52.7), "S08": (52.7, 61.0),
 }
 
 OUTLINE = 'stroke="#000" stroke-opacity="0.8" stroke-width="8" paint-order="stroke"'
@@ -121,18 +121,18 @@ SCENES = {
             ("no", pill("기록에 없어요", 540, 560, 64, RED, WHITE), {"type": "stamp", "at": 3.8, "anchor": [540, 560]}),
             ("doyle", lower("1884년 · 코난 도일의 단편소설", "배 이름도 「마리 셀레스트」로 바꿈", y=720), {"type": "slideL", "at": 5.5})],
     "S05": [video("S05", "S05b"), static("shade", shade()),
-            ("quiz", head("QUIZ", 540, 400, 150, GOLD), {"type": "stamp", "at": 0.1, "anchor": [540, 350]}),
-            ("q", head("배에서 사라진 것은?", 540, 530, 80), {"type": "fade", "at": 0.5}),
-            ("ab", pill("식량", 250, 1230, 50, "#000", WHITE) + pill("구명보트", 540, 1230, 50, "#000", WHITE)
-                   + pill("술통", 830, 1230, 50, "#000", WHITE), {"type": "pop", "at": 1.2, "anchor": [540, 1230]}),
-            ("ans", '<rect x="50" y="1140" width="980" height="180" rx="24" fill="#0b0f14" fill-opacity="0.94"/>'
-                    + pill("정답 · 구명보트", 540, 1230, 80, RED, WHITE), {"type": "stamp", "at": 5.0, "anchor": [540, 1230]}),
-            ("tag", lower("함께 없어진 것", "항해 도구 · 배 서류 대부분", y=640), {"type": "slideL", "at": 7.2})],
+            ("t", head("정말 사라진 것", 540, 380, 110), {"type": "pop", "at": 0.15, "anchor": [540, 340]}),
+            ("boat", pill("작은 구명보트", 540, 560, 62, RED, WHITE), {"type": "stamp", "at": 0.6, "anchor": [540, 560]}),
+            ("rest", pill("항해 도구 · 배 서류 대부분", 540, 720, 46), {"type": "pop", "at": 2.4, "anchor": [540, 720]})],
+    # the judge's back fills the bottom of the frame; cards stay in the top band
     "S06": [video("S06"), static("shade", shade()),
+            ("court", lower("1872년 12월 ~ 1873년 · 지브롤터 법정", "살인 의심 → 배를 꼼꼼히 조사", y=300), {"type": "slideL", "at": 0.3}),
+            ("none", pill("범죄 흔적 없음", 540, 548, 66, RED, WHITE), {"type": "stamp", "at": 4.0, "anchor": [540, 548]})],
+    "S07": [video("S07"), static("shade", shade()),
             ("t", head("남은 단서", 540, 380, 120), {"type": "pop", "at": 0.15, "anchor": [540, 340]}),
             ("water", lower("짐칸에 찬 바닷물", "약 1.1m (3.5피트)", y=470), {"type": "slideL", "at": 0.5}),
             ("theory", lower("여러 가설 · 아무것도 확인되지 않음", "펌프 고장 · 알코올 증기 · 해상 지진", y=1150), {"type": "slideL", "at": 2.8})],
-    "S07": [video("S07"), static("shade", shade()),
+    "S08": [video("S08"), static("shade", shade()),
             ("t1", head("150년 넘게", 540, 380, 110), {"type": "pop", "at": 0.15, "anchor": [540, 340]}),
             ("t2", head("풀리지 않은 수수께끼", 540, 520, 90, GOLD), {"type": "pop", "at": 0.7, "anchor": [540, 480]}),
             ("sub", pill("구독하고 다음 미스터리 보기", 540, 1250, 50, RED, WHITE), {"type": "pop", "at": 3.2, "anchor": [540, 1250]})],

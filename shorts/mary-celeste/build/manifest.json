@@ -1,5 +1,5 @@
 {
- "duration": 56,
+ "duration": 61,
  "fps": 30,
  "width": 1080,
  "height": 1920,
@@ -198,7 +198,7 @@
   {
    "id": "S05",
    "start": 30.9,
-   "end": 40.5,
+   "end": 38.0,
    "parts": [
     {
      "name": "video",
@@ -217,58 +217,44 @@
      }
     },
     {
-     "name": "quiz",
-     "anim": {
-      "type": "stamp",
-      "at": 0.1,
-      "anchor": [
-       540,
-       350
-      ]
-     }
-    },
-    {
-     "name": "q",
-     "anim": {
-      "type": "fade",
-      "at": 0.5
-     }
-    },
-    {
-     "name": "ab",
+     "name": "t",
      "anim": {
       "type": "pop",
-      "at": 1.2,
+      "at": 0.15,
       "anchor": [
        540,
-       1230
+       340
       ]
      }
     },
     {
-     "name": "ans",
+     "name": "boat",
      "anim": {
       "type": "stamp",
-      "at": 5.0,
+      "at": 0.6,
       "anchor": [
        540,
-       1230
+       560
       ]
      }
     },
     {
-     "name": "tag",
+     "name": "rest",
      "anim": {
-      "type": "slideL",
-      "at": 7.2
+      "type": "pop",
+      "at": 2.4,
+      "anchor": [
+       540,
+       720
+      ]
      }
     }
    ]
   },
   {
    "id": "S06",
-   "start": 40.5,
-   "end": 48.3,
+   "start": 38.0,
+   "end": 44.9,
    "parts": [
     {
      "name": "video",
@@ -276,6 +262,46 @@
       "type": "video",
       "clips": [
        "S06"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "court",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "none",
+     "anim": {
+      "type": "stamp",
+      "at": 4.0,
+      "anchor": [
+       540,
+       548
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 44.9,
+   "end": 52.7,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S07"
       ]
      }
     },
@@ -313,16 +339,16 @@
    ]
   },
   {
-   "id": "S07",
-   "start": 48.3,
-   "end": 56.0,
+   "id": "S08",
+   "start": 52.7,
+   "end": 61.0,
    "parts": [
     {
      "name": "video",
      "anim": {
       "type": "video",
       "clips": [
-       "S07"
+       "S08"
       ]
      }
     },
@@ -421,42 +447,52 @@
   },
   {
    "start": 31.1,
-   "end": 33.2,
-   "text": "퀴즈! 배에서 사라진 건\n무엇이었을까요?"
+   "end": 33.1,
+   "text": "정말 없어진 건\n작은 구명보트 하나,"
   },
   {
-   "start": 35.9,
+   "start": 33.2,
+   "end": 35.3,
+   "text": "그리고 항해 도구와\n배 서류들이었어요"
+  },
+  {
+   "start": 35.4,
    "end": 37.8,
-   "text": "정답은, 구명보트예요!"
-  },
-  {
-   "start": 37.9,
-   "end": 40.3,
    "text": "스스로 배를 버리고\n떠났을 가능성이 크다는 뜻이죠"
   },
   {
-   "start": 40.7,
-   "end": 43.0,
+   "start": 38.2,
+   "end": 41.6,
+   "text": "당시 법정은 살인을 의심하고\n배를 꼼꼼히 조사했어요"
+  },
+  {
+   "start": 41.7,
+   "end": 44.7,
+   "text": "하지만 석 달 넘게 따져 봐도\n범죄 흔적은 찾지 못했죠"
+  },
+  {
+   "start": 45.1,
+   "end": 47.4,
    "text": "짐칸엔 바닷물이\n1미터 넘게 차 있었고"
   },
   {
-   "start": 43.1,
-   "end": 45.8,
+   "start": 47.5,
+   "end": 50.2,
    "text": "새어 나온 술 냄새에 폭발을\n걱정했다는 추측도 있어요"
   },
   {
-   "start": 45.9,
-   "end": 48.1,
-   "text": "하지만 열 명은 끝내\n돌아오지 않았어요"
+   "start": 50.3,
+   "end": 52.5,
+   "text": "그리고 열 명은\n끝내 돌아오지 않았어요"
   },
   {
-   "start": 48.5,
-   "end": 51.1,
+   "start": 52.9,
+   "end": 55.5,
    "text": "150년이 지난 지금도\n풀리지 않은 수수께끼예요"
   },
   {
-   "start": 51.2,
-   "end": 53.7,
+   "start": 55.6,
+   "end": 58.1,
    "text": "더 많은 미스터리가 궁금하다면\n구독해 주세요"
   }
  ]

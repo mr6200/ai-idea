@@ -327,7 +327,7 @@
               "appearance": {
                 "items": [
                   {
-                    "kind": "stroke",
+                    "kind": "fill",
                     "paint": {
                       "type": "solid",
                       "color": {
@@ -337,13 +337,385 @@
                         "b": 0.0
                       }
                     },
-                    "width": 7.0,
-                    "join": "Round",
-                    "miter_limit": 4.0
+                    "opacity": 0.5
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            82.0,
+                            300.0
+                          ],
+                          "in": [
+                            75.3725814819336,
+                            300.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            826.0,
+                            300.0
+                          ],
+                          "out": [
+                            832.62744140625,
+                            300.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            838.0,
+                            312.0
+                          ],
+                          "in": [
+                            838.0,
+                            305.3725891113281
+                          ]
+                        },
+                        {
+                          "p": [
+                            838.0,
+                            438.0
+                          ],
+                          "out": [
+                            838.0,
+                            444.6274108886719
+                          ]
+                        },
+                        {
+                          "p": [
+                            826.0,
+                            450.0
+                          ],
+                          "in": [
+                            832.62744140625,
+                            450.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            82.0,
+                            450.0
+                          ],
+                          "out": [
+                            75.3725814819336,
+                            450.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            70.0,
+                            438.0
+                          ],
+                          "in": [
+                            70.0,
+                            444.6274108886719
+                          ]
+                        },
+                        {
+                          "p": [
+                            70.0,
+                            312.0
+                          ],
+                          "out": [
+                            70.0,
+                            305.3725891113281
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 7,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.9490196,
+                        "g": 0.75686276,
+                        "b": 0.30588236
+                      }
+                    }
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            82.0,
+                            314.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            91.0,
+                            314.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            91.0,
+                            436.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            82.0,
+                            436.0
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 8,
+              "kind": {
+                "type": "text",
+                "kind": {
+                  "kind": "point"
+                },
+                "xf": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  114.0,
+                  354.0
+                ],
+                "runs": [
+                  {
+                    "text": "1872년 12월 ~ 1873년 · 지브롤터 법정",
+                    "style": {
+                      "font_family": "Do Hyeon",
+                      "font_style": "Regular",
+                      "size": 34.0,
+                      "tracking": 0.0,
+                      "baseline_shift": 0.0,
+                      "h_scale": 100.0,
+                      "v_scale": 100.0,
+                      "rotation": 0.0,
+                      "fill": {
+                        "type": "solid",
+                        "color": {
+                          "model": "rgb",
+                          "r": 0.8509804,
+                          "g": 0.8509804,
+                          "b": 0.8509804
+                        }
+                      },
+                      "stroke": {
+                        "type": "none"
+                      },
+                      "stroke_width": 0.0,
+                      "underline": false,
+                      "strikethrough": false,
+                      "all_caps": false
+                    }
                   }
                 ],
-                "contents_index": 1
+                "para": {
+                  "justify": "Left",
+                  "left_indent": 0.0,
+                  "right_indent": 0.0,
+                  "first_line_indent": 0.0,
+                  "space_before": 0.0,
+                  "space_after": 0.0,
+                  "hyphenate": false
+                }
+              }
+            },
+            {
+              "id": 9,
+              "kind": {
+                "type": "text",
+                "kind": {
+                  "kind": "point"
+                },
+                "xf": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  114.0,
+                  422.0
+                ],
+                "runs": [
+                  {
+                    "text": "살인 의심 → 배를 꼼꼼히 조사",
+                    "style": {
+                      "font_family": "Do Hyeon",
+                      "font_style": "Regular",
+                      "size": 54.0,
+                      "tracking": 0.0,
+                      "baseline_shift": 0.0,
+                      "h_scale": 100.0,
+                      "v_scale": 100.0,
+                      "rotation": 0.0,
+                      "fill": {
+                        "type": "solid",
+                        "color": {
+                          "model": "rgb",
+                          "r": 1.0,
+                          "g": 1.0,
+                          "b": 1.0
+                        }
+                      },
+                      "stroke": {
+                        "type": "none"
+                      },
+                      "stroke_width": 0.0,
+                      "underline": false,
+                      "strikethrough": false,
+                      "all_caps": false
+                    }
+                  }
+                ],
+                "para": {
+                  "justify": "Left",
+                  "left_indent": 0.0,
+                  "right_indent": 0.0,
+                  "first_line_indent": 0.0,
+                  "space_before": 0.0,
+                  "space_after": 0.0,
+                  "hyphenate": false
+                }
+              }
+            },
+            {
+              "id": 10,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.89411765,
+                        "g": 0.34117648,
+                        "b": 0.18039216
+                      }
+                    }
+                  }
+                ]
               },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            362.0,
+                            489.0
+                          ],
+                          "in": [
+                            329.4151916503906,
+                            489.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            718.0,
+                            489.0
+                          ],
+                          "out": [
+                            750.5847778320312,
+                            489.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            777.0,
+                            548.0
+                          ],
+                          "in": [
+                            777.0,
+                            515.4152221679688
+                          ]
+                        },
+                        {
+                          "p": [
+                            777.0,
+                            549.0
+                          ],
+                          "out": [
+                            777.0,
+                            581.5847778320312
+                          ]
+                        },
+                        {
+                          "p": [
+                            718.0,
+                            608.0
+                          ],
+                          "in": [
+                            750.5847778320312,
+                            608.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            362.0,
+                            608.0
+                          ],
+                          "out": [
+                            329.4151916503906,
+                            608.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            303.0,
+                            549.0
+                          ],
+                          "in": [
+                            303.0,
+                            581.5847778320312
+                          ]
+                        },
+                        {
+                          "p": [
+                            303.0,
+                            548.0
+                          ],
+                          "out": [
+                            303.0,
+                            515.4152221679688
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 11,
               "kind": {
                 "type": "text",
                 "kind": {
@@ -355,15 +727,15 @@
                   0.0,
                   1.0,
                   540.0,
-                  380.0
+                  571.1
                 ],
                 "runs": [
                   {
-                    "text": "남은 단서",
+                    "text": "범죄 흔적 없음",
                     "style": {
-                      "font_family": "Black Han Sans",
+                      "font_family": "Do Hyeon",
                       "font_style": "Regular",
-                      "size": 120.0,
+                      "size": 66.0,
                       "tracking": 0.0,
                       "baseline_shift": 0.0,
                       "h_scale": 100.0,
@@ -390,568 +762,6 @@
                 ],
                 "para": {
                   "justify": "Center",
-                  "left_indent": 0.0,
-                  "right_indent": 0.0,
-                  "first_line_indent": 0.0,
-                  "space_before": 0.0,
-                  "space_after": 0.0,
-                  "hyphenate": false
-                }
-              }
-            },
-            {
-              "id": 7,
-              "appearance": {
-                "items": [
-                  {
-                    "kind": "fill",
-                    "paint": {
-                      "type": "solid",
-                      "color": {
-                        "model": "rgb",
-                        "r": 0.0,
-                        "g": 0.0,
-                        "b": 0.0
-                      }
-                    },
-                    "opacity": 0.5
-                  }
-                ]
-              },
-              "kind": {
-                "type": "path",
-                "path": {
-                  "subpaths": [
-                    {
-                      "anchors": [
-                        {
-                          "p": [
-                            82.0,
-                            470.0
-                          ],
-                          "in": [
-                            75.3725814819336,
-                            470.0
-                          ]
-                        },
-                        {
-                          "p": [
-                            622.0,
-                            470.0
-                          ],
-                          "out": [
-                            628.62744140625,
-                            470.0
-                          ]
-                        },
-                        {
-                          "p": [
-                            634.0,
-                            482.0
-                          ],
-                          "in": [
-                            634.0,
-                            475.3725891113281
-                          ]
-                        },
-                        {
-                          "p": [
-                            634.0,
-                            608.0
-                          ],
-                          "out": [
-                            634.0,
-                            614.62744140625
-                          ]
-                        },
-                        {
-                          "p": [
-                            622.0,
-                            620.0
-                          ],
-                          "in": [
-                            628.62744140625,
-                            620.0
-                          ]
-                        },
-                        {
-                          "p": [
-                            82.0,
-                            620.0
-                          ],
-                          "out": [
-                            75.3725814819336,
-                            620.0
-                          ]
-                        },
-                        {
-                          "p": [
-                            70.0,
-                            608.0
-                          ],
-                          "in": [
-                            70.0,
-                            614.62744140625
-                          ]
-                        },
-                        {
-                          "p": [
-                            70.0,
-                            482.0
-                          ],
-                          "out": [
-                            70.0,
-                            475.3725891113281
-                          ]
-                        }
-                      ],
-                      "closed": true
-                    }
-                  ]
-                }
-              }
-            },
-            {
-              "id": 8,
-              "appearance": {
-                "items": [
-                  {
-                    "kind": "fill",
-                    "paint": {
-                      "type": "solid",
-                      "color": {
-                        "model": "rgb",
-                        "r": 0.9490196,
-                        "g": 0.75686276,
-                        "b": 0.30588236
-                      }
-                    }
-                  }
-                ]
-              },
-              "kind": {
-                "type": "path",
-                "path": {
-                  "subpaths": [
-                    {
-                      "anchors": [
-                        {
-                          "p": [
-                            82.0,
-                            484.0
-                          ]
-                        },
-                        {
-                          "p": [
-                            91.0,
-                            484.0
-                          ]
-                        },
-                        {
-                          "p": [
-                            91.0,
-                            606.0
-                          ]
-                        },
-                        {
-                          "p": [
-                            82.0,
-                            606.0
-                          ]
-                        }
-                      ],
-                      "closed": true
-                    }
-                  ]
-                }
-              }
-            },
-            {
-              "id": 9,
-              "kind": {
-                "type": "text",
-                "kind": {
-                  "kind": "point"
-                },
-                "xf": [
-                  1.0,
-                  0.0,
-                  0.0,
-                  1.0,
-                  114.0,
-                  524.0
-                ],
-                "runs": [
-                  {
-                    "text": "짐칸에 찬 바닷물",
-                    "style": {
-                      "font_family": "Do Hyeon",
-                      "font_style": "Regular",
-                      "size": 34.0,
-                      "tracking": 0.0,
-                      "baseline_shift": 0.0,
-                      "h_scale": 100.0,
-                      "v_scale": 100.0,
-                      "rotation": 0.0,
-                      "fill": {
-                        "type": "solid",
-                        "color": {
-                          "model": "rgb",
-                          "r": 0.8509804,
-                          "g": 0.8509804,
-                          "b": 0.8509804
-                        }
-                      },
-                      "stroke": {
-                        "type": "none"
-                      },
-                      "stroke_width": 0.0,
-                      "underline": false,
-                      "strikethrough": false,
-                      "all_caps": false
-                    }
-                  }
-                ],
-                "para": {
-                  "justify": "Left",
-                  "left_indent": 0.0,
-                  "right_indent": 0.0,
-                  "first_line_indent": 0.0,
-                  "space_before": 0.0,
-                  "space_after": 0.0,
-                  "hyphenate": false
-                }
-              }
-            },
-            {
-              "id": 10,
-              "kind": {
-                "type": "text",
-                "kind": {
-                  "kind": "point"
-                },
-                "xf": [
-                  1.0,
-                  0.0,
-                  0.0,
-                  1.0,
-                  114.0,
-                  592.0
-                ],
-                "runs": [
-                  {
-                    "text": "약 1.1m (3.5피트)",
-                    "style": {
-                      "font_family": "Do Hyeon",
-                      "font_style": "Regular",
-                      "size": 54.0,
-                      "tracking": 0.0,
-                      "baseline_shift": 0.0,
-                      "h_scale": 100.0,
-                      "v_scale": 100.0,
-                      "rotation": 0.0,
-                      "fill": {
-                        "type": "solid",
-                        "color": {
-                          "model": "rgb",
-                          "r": 1.0,
-                          "g": 1.0,
-                          "b": 1.0
-                        }
-                      },
-                      "stroke": {
-                        "type": "none"
-                      },
-                      "stroke_width": 0.0,
-                      "underline": false,
-                      "strikethrough": false,
-                      "all_caps": false
-                    }
-                  }
-                ],
-                "para": {
-                  "justify": "Left",
-                  "left_indent": 0.0,
-                  "right_indent": 0.0,
-                  "first_line_indent": 0.0,
-                  "space_before": 0.0,
-                  "space_after": 0.0,
-                  "hyphenate": false
-                }
-              }
-            },
-            {
-              "id": 11,
-              "appearance": {
-                "items": [
-                  {
-                    "kind": "fill",
-                    "paint": {
-                      "type": "solid",
-                      "color": {
-                        "model": "rgb",
-                        "r": 0.0,
-                        "g": 0.0,
-                        "b": 0.0
-                      }
-                    },
-                    "opacity": 0.5
-                  }
-                ]
-              },
-              "kind": {
-                "type": "path",
-                "path": {
-                  "subpaths": [
-                    {
-                      "anchors": [
-                        {
-                          "p": [
-                            82.0,
-                            1150.0
-                          ],
-                          "in": [
-                            75.3725814819336,
-                            1150.0
-                          ]
-                        },
-                        {
-                          "p": [
-                            988.0,
-                            1150.0
-                          ],
-                          "out": [
-                            994.62744140625,
-                            1150.0
-                          ]
-                        },
-                        {
-                          "p": [
-                            1000.0,
-                            1162.0
-                          ],
-                          "in": [
-                            1000.0,
-                            1155.37255859375
-                          ]
-                        },
-                        {
-                          "p": [
-                            1000.0,
-                            1288.0
-                          ],
-                          "out": [
-                            1000.0,
-                            1294.62744140625
-                          ]
-                        },
-                        {
-                          "p": [
-                            988.0,
-                            1300.0
-                          ],
-                          "in": [
-                            994.62744140625,
-                            1300.0
-                          ]
-                        },
-                        {
-                          "p": [
-                            82.0,
-                            1300.0
-                          ],
-                          "out": [
-                            75.3725814819336,
-                            1300.0
-                          ]
-                        },
-                        {
-                          "p": [
-                            70.0,
-                            1288.0
-                          ],
-                          "in": [
-                            70.0,
-                            1294.62744140625
-                          ]
-                        },
-                        {
-                          "p": [
-                            70.0,
-                            1162.0
-                          ],
-                          "out": [
-                            70.0,
-                            1155.37255859375
-                          ]
-                        }
-                      ],
-                      "closed": true
-                    }
-                  ]
-                }
-              }
-            },
-            {
-              "id": 12,
-              "appearance": {
-                "items": [
-                  {
-                    "kind": "fill",
-                    "paint": {
-                      "type": "solid",
-                      "color": {
-                        "model": "rgb",
-                        "r": 0.9490196,
-                        "g": 0.75686276,
-                        "b": 0.30588236
-                      }
-                    }
-                  }
-                ]
-              },
-              "kind": {
-                "type": "path",
-                "path": {
-                  "subpaths": [
-                    {
-                      "anchors": [
-                        {
-                          "p": [
-                            82.0,
-                            1164.0
-                          ]
-                        },
-                        {
-                          "p": [
-                            91.0,
-                            1164.0
-                          ]
-                        },
-                        {
-                          "p": [
-                            91.0,
-                            1286.0
-                          ]
-                        },
-                        {
-                          "p": [
-                            82.0,
-                            1286.0
-                          ]
-                        }
-                      ],
-                      "closed": true
-                    }
-                  ]
-                }
-              }
-            },
-            {
-              "id": 13,
-              "kind": {
-                "type": "text",
-                "kind": {
-                  "kind": "point"
-                },
-                "xf": [
-                  1.0,
-                  0.0,
-                  0.0,
-                  1.0,
-                  114.0,
-                  1204.0
-                ],
-                "runs": [
-                  {
-                    "text": "여러 가설 · 아무것도 확인되지 않음",
-                    "style": {
-                      "font_family": "Do Hyeon",
-                      "font_style": "Regular",
-                      "size": 34.0,
-                      "tracking": 0.0,
-                      "baseline_shift": 0.0,
-                      "h_scale": 100.0,
-                      "v_scale": 100.0,
-                      "rotation": 0.0,
-                      "fill": {
-                        "type": "solid",
-                        "color": {
-                          "model": "rgb",
-                          "r": 0.8509804,
-                          "g": 0.8509804,
-                          "b": 0.8509804
-                        }
-                      },
-                      "stroke": {
-                        "type": "none"
-                      },
-                      "stroke_width": 0.0,
-                      "underline": false,
-                      "strikethrough": false,
-                      "all_caps": false
-                    }
-                  }
-                ],
-                "para": {
-                  "justify": "Left",
-                  "left_indent": 0.0,
-                  "right_indent": 0.0,
-                  "first_line_indent": 0.0,
-                  "space_before": 0.0,
-                  "space_after": 0.0,
-                  "hyphenate": false
-                }
-              }
-            },
-            {
-              "id": 14,
-              "kind": {
-                "type": "text",
-                "kind": {
-                  "kind": "point"
-                },
-                "xf": [
-                  1.0,
-                  0.0,
-                  0.0,
-                  1.0,
-                  114.0,
-                  1272.0
-                ],
-                "runs": [
-                  {
-                    "text": "펌프 고장 · 알코올 증기 · 해상 지진",
-                    "style": {
-                      "font_family": "Do Hyeon",
-                      "font_style": "Regular",
-                      "size": 54.0,
-                      "tracking": 0.0,
-                      "baseline_shift": 0.0,
-                      "h_scale": 100.0,
-                      "v_scale": 100.0,
-                      "rotation": 0.0,
-                      "fill": {
-                        "type": "solid",
-                        "color": {
-                          "model": "rgb",
-                          "r": 1.0,
-                          "g": 1.0,
-                          "b": 1.0
-                        }
-                      },
-                      "stroke": {
-                        "type": "none"
-                      },
-                      "stroke_width": 0.0,
-                      "underline": false,
-                      "strikethrough": false,
-                      "all_caps": false
-                    }
-                  }
-                ],
-                "para": {
-                  "justify": "Left",
                   "left_indent": 0.0,
                   "right_indent": 0.0,
                   "first_line_indent": 0.0,
@@ -1897,7 +1707,7 @@
     },
     "raster_effects_ppi": 72.0,
     "images": {},
-    "next_id": 15
+    "next_id": 12
   },
   "images": {}
 }

@@ -1,4 +1,4 @@
-"""Synthesize the BGM and SFX track for the mary-celeste Short (56 s, 48 kHz stereo WAV) from the manifest.
+"""Synthesize the BGM and SFX track for the mary-celeste Short (61 s, 48 kHz stereo WAV) from the manifest.
 
 Everything is generated here with numpy, so there are no licensing questions.
 """
@@ -10,7 +10,7 @@ import numpy as np
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SR = 48000
-DUR = 56.0
+DUR = 61.0
 rng = np.random.default_rng(42)
 
 
@@ -215,10 +215,8 @@ def main():
                 put(t, sfx_ticks(a.get("dur", 0.6)), 0.8)
     # hand-placed cues
     put(0.05, sfx_whoosh(0.5), 0.5)                                  # opening
-    put(33.3, sfx_ticks(2.5, 4), 1.2)                                # quiz: clock ticks while thinking
-    put(35.9, sfx_ding(1568))                                        # answer
     for k in range(3):
-        put(51.6 + k * 0.4, sfx_click(), 1.0)                        # subscribe taps
+        put(56.0 + k * 0.4, sfx_click(), 1.0)                        # subscribe taps
     # duck the music (not the SFX) under the narration, when gen_narration.py has run
     nar = os.path.join(ROOT, "narration.wav")
     if os.path.exists(nar):
