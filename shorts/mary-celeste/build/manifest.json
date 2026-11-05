@@ -1,0 +1,463 @@
+{
+ "duration": 56,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "end": 6.3,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S01"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t1",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       1070
+      ]
+     }
+    },
+    {
+     "name": "t2",
+     "anim": {
+      "type": "stamp",
+      "at": 0.7,
+      "anchor": [
+       540,
+       1230
+      ]
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 1.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 6.3,
+   "end": 11.6,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S02"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "none",
+     "anim": {
+      "type": "stamp",
+      "at": 3.7,
+      "anchor": [
+       540,
+       330
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 11.6,
+   "end": 21.1,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S03",
+       "S03b"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "who",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "food",
+     "anim": {
+      "type": "slideL",
+      "at": 3.3
+     }
+    },
+    {
+     "name": "cargo",
+     "anim": {
+      "type": "pop",
+      "at": 6.4,
+      "anchor": [
+       540,
+       740
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 21.1,
+   "end": 30.9,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S04",
+       "S04b"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       340
+      ]
+     }
+    },
+    {
+     "name": "no",
+     "anim": {
+      "type": "stamp",
+      "at": 3.8,
+      "anchor": [
+       540,
+       560
+      ]
+     }
+    },
+    {
+     "name": "doyle",
+     "anim": {
+      "type": "slideL",
+      "at": 5.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 30.9,
+   "end": 40.5,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S05",
+       "S05b"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "quiz",
+     "anim": {
+      "type": "stamp",
+      "at": 0.1,
+      "anchor": [
+       540,
+       350
+      ]
+     }
+    },
+    {
+     "name": "q",
+     "anim": {
+      "type": "fade",
+      "at": 0.5
+     }
+    },
+    {
+     "name": "ab",
+     "anim": {
+      "type": "pop",
+      "at": 1.2,
+      "anchor": [
+       540,
+       1230
+      ]
+     }
+    },
+    {
+     "name": "ans",
+     "anim": {
+      "type": "stamp",
+      "at": 5.0,
+      "anchor": [
+       540,
+       1230
+      ]
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "slideL",
+      "at": 7.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 40.5,
+   "end": 48.3,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S06"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       340
+      ]
+     }
+    },
+    {
+     "name": "water",
+     "anim": {
+      "type": "slideL",
+      "at": 0.5
+     }
+    },
+    {
+     "name": "theory",
+     "anim": {
+      "type": "slideL",
+      "at": 2.8
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 48.3,
+   "end": 56.0,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S07"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t1",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       340
+      ]
+     }
+    },
+    {
+     "name": "t2",
+     "anim": {
+      "type": "pop",
+      "at": 0.7,
+      "anchor": [
+       540,
+       480
+      ]
+     }
+    },
+    {
+     "name": "sub",
+     "anim": {
+      "type": "pop",
+      "at": 3.2,
+      "anchor": [
+       540,
+       1250
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 3.9,
+   "text": "1872년 대서양 한가운데,\n유령선이 발견됐어요"
+  },
+  {
+   "start": 4.0,
+   "end": 6.1,
+   "text": "배는 멀쩡한데\n사람만 사라졌죠"
+  },
+  {
+   "start": 6.5,
+   "end": 9.8,
+   "text": "12월 4일, 지나던 배가\n홀로 떠도는 배를 만났어요"
+  },
+  {
+   "start": 9.9,
+   "end": 11.4,
+   "text": "올라가 보니\n아무도 없었어요"
+  },
+  {
+   "start": 11.8,
+   "end": 14.7,
+   "text": "선장과 아내, 두 살 딸까지\n열 명이 사라졌어요"
+  },
+  {
+   "start": 14.8,
+   "end": 17.8,
+   "text": "그런데 배에는 여섯 달 치\n식량과 물이 그대로"
+  },
+  {
+   "start": 17.9,
+   "end": 20.9,
+   "text": "짐칸의 술통 1,701개도\n거의 그대로였어요"
+  },
+  {
+   "start": 21.3,
+   "end": 24.7,
+   "text": "따뜻한 찻잔이 남아 있었다는\n이야기, 들어 보셨나요?"
+  },
+  {
+   "start": 24.8,
+   "end": 26.3,
+   "text": "사실 그런 기록은\n없어요"
+  },
+  {
+   "start": 26.4,
+   "end": 30.7,
+   "text": "셜록 홈스 작가 코난 도일의\n1884년 소설과 함께 퍼진 이야기죠"
+  },
+  {
+   "start": 31.1,
+   "end": 33.2,
+   "text": "퀴즈! 배에서 사라진 건\n무엇이었을까요?"
+  },
+  {
+   "start": 35.9,
+   "end": 37.8,
+   "text": "정답은, 구명보트예요!"
+  },
+  {
+   "start": 37.9,
+   "end": 40.3,
+   "text": "스스로 배를 버리고\n떠났을 가능성이 크다는 뜻이죠"
+  },
+  {
+   "start": 40.7,
+   "end": 43.0,
+   "text": "짐칸엔 바닷물이\n1미터 넘게 차 있었고"
+  },
+  {
+   "start": 43.1,
+   "end": 45.8,
+   "text": "새어 나온 술 냄새에 폭발을\n걱정했다는 추측도 있어요"
+  },
+  {
+   "start": 45.9,
+   "end": 48.1,
+   "text": "하지만 열 명은 끝내\n돌아오지 않았어요"
+  },
+  {
+   "start": 48.5,
+   "end": 51.1,
+   "text": "150년이 지난 지금도\n풀리지 않은 수수께끼예요"
+  },
+  {
+   "start": 51.2,
+   "end": 53.7,
+   "text": "더 많은 미스터리가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}

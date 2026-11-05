@@ -1,0 +1,365 @@
+[
+ {
+  "id": "S01",
+  "start": 0.0,
+  "end": 6.3,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S01"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t1",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      1070
+     ]
+    }
+   },
+   {
+    "name": "t2",
+    "anim": {
+     "type": "stamp",
+     "at": 0.7,
+     "anchor": [
+      540,
+      1230
+     ]
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 1.0
+    }
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "start": 6.3,
+  "end": 11.6,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S02"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   },
+   {
+    "name": "none",
+    "anim": {
+     "type": "stamp",
+     "at": 3.7,
+     "anchor": [
+      540,
+      330
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "start": 11.6,
+  "end": 21.1,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S03",
+      "S03b"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "who",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   },
+   {
+    "name": "food",
+    "anim": {
+     "type": "slideL",
+     "at": 3.3
+    }
+   },
+   {
+    "name": "cargo",
+    "anim": {
+     "type": "pop",
+     "at": 6.4,
+     "anchor": [
+      540,
+      740
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "start": 21.1,
+  "end": 30.9,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S04",
+      "S04b"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      340
+     ]
+    }
+   },
+   {
+    "name": "no",
+    "anim": {
+     "type": "stamp",
+     "at": 3.8,
+     "anchor": [
+      540,
+      560
+     ]
+    }
+   },
+   {
+    "name": "doyle",
+    "anim": {
+     "type": "slideL",
+     "at": 5.5
+    }
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "start": 30.9,
+  "end": 40.5,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S05",
+      "S05b"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "quiz",
+    "anim": {
+     "type": "stamp",
+     "at": 0.1,
+     "anchor": [
+      540,
+      350
+     ]
+    }
+   },
+   {
+    "name": "q",
+    "anim": {
+     "type": "fade",
+     "at": 0.5
+    }
+   },
+   {
+    "name": "ab",
+    "anim": {
+     "type": "pop",
+     "at": 1.2,
+     "anchor": [
+      540,
+      1230
+     ]
+    }
+   },
+   {
+    "name": "ans",
+    "anim": {
+     "type": "stamp",
+     "at": 5.0,
+     "anchor": [
+      540,
+      1230
+     ]
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "slideL",
+     "at": 7.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "start": 40.5,
+  "end": 48.3,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S06"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      340
+     ]
+    }
+   },
+   {
+    "name": "water",
+    "anim": {
+     "type": "slideL",
+     "at": 0.5
+    }
+   },
+   {
+    "name": "theory",
+    "anim": {
+     "type": "slideL",
+     "at": 2.8
+    }
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "start": 48.3,
+  "end": 56.0,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S07"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t1",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      340
+     ]
+    }
+   },
+   {
+    "name": "t2",
+    "anim": {
+     "type": "pop",
+     "at": 0.7,
+     "anchor": [
+      540,
+      480
+     ]
+    }
+   },
+   {
+    "name": "sub",
+    "anim": {
+     "type": "pop",
+     "at": 3.2,
+     "anchor": [
+      540,
+      1250
+     ]
+    }
+   }
+  ]
+ }
+]
