@@ -1,0 +1,422 @@
+[
+ {
+  "id": "S01",
+  "start": 0.0,
+  "end": 6.2,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S01"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t1",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      320
+     ]
+    }
+   },
+   {
+    "name": "t2",
+    "anim": {
+     "type": "pop",
+     "at": 0.7,
+     "anchor": [
+      540,
+      460
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "start": 6.2,
+  "end": 11.45,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S03_b",
+     "z": [
+      104,
+      114
+     ],
+     "pan": [
+      0,
+      30
+     ],
+     "dur": 5.45
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   },
+   {
+    "name": "who",
+    "anim": {
+     "type": "pop",
+     "at": 2.6,
+     "anchor": [
+      540,
+      560
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "start": 11.45,
+  "end": 15.4,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S04_a",
+     "z": [
+      106,
+      116
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 4.15
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "size",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "start": 15.4,
+  "end": 20.75,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S05_a",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      -30
+     ],
+     "dur": 5.55
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "how",
+    "anim": {
+     "type": "slideL",
+     "at": 2.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "start": 20.75,
+  "end": 23.6,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S02_b",
+     "z": [
+      102,
+      110
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 3.05
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "dry",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "start": 23.6,
+  "end": 28.0,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S06"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "fly",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "start": 28.0,
+  "end": 35.45,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S07_a",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      20,
+      0
+     ],
+     "dur": 7.65
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "who",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   },
+   {
+    "name": "n",
+    "anim": {
+     "type": "stamp",
+     "at": 4.9,
+     "anchor": [
+      540,
+      330
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S08",
+  "start": 35.45,
+  "end": 42.8,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S07_b",
+     "z": [
+      108,
+      116
+     ],
+     "pan": [
+      0,
+      20
+     ],
+     "dur": 7.55
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "count",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   },
+   {
+    "name": "small",
+    "anim": {
+     "type": "pop",
+     "at": 3.7,
+     "anchor": [
+      540,
+      505
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S09",
+  "start": 42.8,
+  "end": 50.0,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S08_a",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      -30
+     ],
+     "dur": 7.4
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "q",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      300
+     ]
+    }
+   },
+   {
+    "name": "astro",
+    "anim": {
+     "type": "slideL",
+     "at": 1.5
+    }
+   },
+   {
+    "name": "water",
+    "anim": {
+     "type": "slideL",
+     "at": 4.4
+    }
+   }
+  ]
+ },
+ {
+  "id": "S10",
+  "start": 50.0,
+  "end": 57.0,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S09"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      300
+     ]
+    }
+   },
+   {
+    "name": "sub",
+    "anim": {
+     "type": "pop",
+     "at": 2.3,
+     "anchor": [
+      540,
+      490
+     ]
+    }
+   }
+  ]
+ }
+]

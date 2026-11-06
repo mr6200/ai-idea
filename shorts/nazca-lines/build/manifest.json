@@ -1,0 +1,520 @@
+{
+ "duration": 57,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "end": 6.2,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S01"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t1",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       320
+      ]
+     }
+    },
+    {
+     "name": "t2",
+     "anim": {
+      "type": "pop",
+      "at": 0.7,
+      "anchor": [
+       540,
+       460
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 6.2,
+   "end": 11.45,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S03_b",
+      "z": [
+       104,
+       114
+      ],
+      "pan": [
+       0,
+       30
+      ],
+      "dur": 5.45
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "who",
+     "anim": {
+      "type": "pop",
+      "at": 2.6,
+      "anchor": [
+       540,
+       560
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 11.45,
+   "end": 15.4,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S04_a",
+      "z": [
+       106,
+       116
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 4.15
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "size",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 15.4,
+   "end": 20.75,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S05_a",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       -30
+      ],
+      "dur": 5.55
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "how",
+     "anim": {
+      "type": "slideL",
+      "at": 2.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 20.75,
+   "end": 23.6,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S02_b",
+      "z": [
+       102,
+       110
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 3.05
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "dry",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 23.6,
+   "end": 28.0,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S06"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "fly",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 28.0,
+   "end": 35.45,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S07_a",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       20,
+       0
+      ],
+      "dur": 7.65
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "who",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "n",
+     "anim": {
+      "type": "stamp",
+      "at": 4.9,
+      "anchor": [
+       540,
+       330
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 35.45,
+   "end": 42.8,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S07_b",
+      "z": [
+       108,
+       116
+      ],
+      "pan": [
+       0,
+       20
+      ],
+      "dur": 7.55
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "count",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    },
+    {
+     "name": "small",
+     "anim": {
+      "type": "pop",
+      "at": 3.7,
+      "anchor": [
+       540,
+       505
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 42.8,
+   "end": 50.0,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S08_a",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       -30
+      ],
+      "dur": 7.4
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "q",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       300
+      ]
+     }
+    },
+    {
+     "name": "astro",
+     "anim": {
+      "type": "slideL",
+      "at": 1.5
+     }
+    },
+    {
+     "name": "water",
+     "anim": {
+      "type": "slideL",
+      "at": 4.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 50.0,
+   "end": 57.0,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S09"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       300
+      ]
+     }
+    },
+    {
+     "name": "sub",
+     "anim": {
+      "type": "pop",
+      "at": 2.3,
+      "anchor": [
+       540,
+       490
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 3.4,
+   "text": "사막 바닥에 그려진 거대한 그림,\n그런데 땅에서는 알아보기 어려워요"
+  },
+  {
+   "start": 3.5,
+   "end": 5.9,
+   "text": "높은 곳에 올라가야\n비로소 모양이 드러나죠"
+  },
+  {
+   "start": 6.3,
+   "end": 8.6,
+   "text": "페루 남부 사막의\n나스카 라인이에요"
+  },
+  {
+   "start": 8.7,
+   "end": 11.4,
+   "text": "약 2,000년 전 나스카 사람들이\n그린 것으로 보여요"
+  },
+  {
+   "start": 11.5,
+   "end": 15.2,
+   "text": "원숭이 그림은 길이 93미터,\n콘도르는 130미터가 넘어요"
+  },
+  {
+   "start": 15.6,
+   "end": 17.5,
+   "text": "그리는 방법은\n의외로 간단했어요"
+  },
+  {
+   "start": 17.6,
+   "end": 20.7,
+   "text": "땅을 덮은 붉은 돌을 걷어 내\n밝은 흙을 드러낸 거죠"
+  },
+  {
+   "start": 20.8,
+   "end": 23.4,
+   "text": "비가 거의 오지 않는 사막이라\n지금까지 남아 있어요"
+  },
+  {
+   "start": 23.8,
+   "end": 27.8,
+   "text": "그림이 널리 알려진 건 1930년대,\n비행기가 그 위를 날면서부터예요"
+  },
+  {
+   "start": 28.2,
+   "end": 32.7,
+   "text": "그리고 2024년, 일본 연구팀이\nAI로 항공 사진을 분석했더니"
+  },
+  {
+   "start": 32.8,
+   "end": 35.4,
+   "text": "6개월 만에\n새 그림 303개를 찾아냈어요"
+  },
+  {
+   "start": 35.5,
+   "end": 39.0,
+   "text": "알려진 그림이 430개에서\n733개로 늘어난 거죠"
+  },
+  {
+   "start": 39.1,
+   "end": 42.6,
+   "text": "새로 찾은 그림은 대부분 작고,\n옛 오솔길 옆에 있었어요"
+  },
+  {
+   "start": 43.0,
+   "end": 44.2,
+   "text": "그런데 왜 그렸을까요?"
+  },
+  {
+   "start": 44.3,
+   "end": 47.1,
+   "text": "별을 보는 달력이라는 설은\n지금은 의심받고 있고"
+  },
+  {
+   "start": 47.2,
+   "end": 49.7,
+   "text": "물과 풍요를 비는\n의식의 길이었다는 설명이 많아요"
+  },
+  {
+   "start": 50.1,
+   "end": 52.1,
+   "text": "정답은 아직\n사막 위에 숨어 있어요"
+  },
+  {
+   "start": 52.2,
+   "end": 54.7,
+   "text": "더 많은 미스터리가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}

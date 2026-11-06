@@ -96,7 +96,7 @@
 
 ## AI 사진 · 영상 (RunPod Public Endpoints)
 
-`build/gen_footage.py` (시드 2801 · 2802, 다시 그리기 2804 · 2805)
+`build/gen_footage.py` (시드 2801 · 2802, 다시 그리기 d = 2704 · e = 2805 — d 시드는 1화 값이 그대로 남아 있었음)
 
 | 항목 | 개수 | 금액 |
 |---|---|---|
