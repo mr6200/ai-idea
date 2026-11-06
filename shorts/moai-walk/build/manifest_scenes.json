@@ -1,0 +1,448 @@
+[
+ {
+  "id": "S01",
+  "start": 0.0,
+  "end": 4.4,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S01"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t1",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      1070
+     ]
+    }
+   },
+   {
+    "name": "t2",
+    "anim": {
+     "type": "pop",
+     "at": 0.7,
+     "anchor": [
+      540,
+      1230
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "start": 4.4,
+  "end": 7.75,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S02_d",
+     "z": [
+      102,
+      116
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 3.55
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "start": 7.75,
+  "end": 13.3,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S03_a",
+     "z": [
+      106,
+      114
+     ],
+     "pan": [
+      0,
+      40
+     ],
+     "dur": 5.75
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "n",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   },
+   {
+    "name": "size",
+    "anim": {
+     "type": "slideL",
+     "at": 2.9
+    }
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "start": 13.3,
+  "end": 20.9,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S04_e",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      -30,
+      0
+     ],
+     "dur": 7.8
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "q",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   },
+   {
+    "name": "far",
+    "anim": {
+     "type": "pop",
+     "at": 3.9,
+     "anchor": [
+      540,
+      560
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "start": 20.9,
+  "end": 26.95,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S05_b",
+     "z": [
+      108,
+      116
+     ],
+     "pan": [
+      0,
+      -30
+     ],
+     "dur": 6.25
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      290
+     ]
+    }
+   },
+   {
+    "name": "quote",
+    "anim": {
+     "type": "fade",
+     "at": 0.6
+    }
+   },
+   {
+    "name": "old",
+    "anim": {
+     "type": "slideL",
+     "at": 2.6
+    }
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "start": 26.95,
+  "end": 33.25,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S06_a",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      30
+     ],
+     "dur": 6.5
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "start": 33.25,
+  "end": 39.4,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S06"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "how",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      1180
+     ]
+    }
+   },
+   {
+    "name": "res",
+    "anim": {
+     "type": "stamp",
+     "at": 3.5,
+     "anchor": [
+      540,
+      1300
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S08",
+  "start": 39.4,
+  "end": 46.9,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S07_b",
+     "z": [
+      104,
+      114
+     ],
+     "pan": [
+      0,
+      -40
+     ],
+     "dur": 7.7
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "study",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   },
+   {
+    "name": "road",
+    "anim": {
+     "type": "pop",
+     "at": 4.0,
+     "anchor": [
+      540,
+      560
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S09",
+  "start": 46.9,
+  "end": 52.25,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S03_b",
+     "z": [
+      110,
+      102
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 5.55
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      290
+     ]
+    }
+   },
+   {
+    "name": "debate",
+    "anim": {
+     "type": "stamp",
+     "at": 3.2,
+     "anchor": [
+      540,
+      480
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S10",
+  "start": 52.25,
+  "end": 58.0,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S08"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      290
+     ]
+    }
+   },
+   {
+    "name": "sub",
+    "anim": {
+     "type": "pop",
+     "at": 0.5,
+     "anchor": [
+      540,
+      480
+     ]
+    }
+   }
+  ]
+ }
+]

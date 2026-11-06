@@ -1,0 +1,541 @@
+{
+ "duration": 58,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "end": 4.4,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S01"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t1",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       1070
+      ]
+     }
+    },
+    {
+     "name": "t2",
+     "anim": {
+      "type": "pop",
+      "at": 0.7,
+      "anchor": [
+       540,
+       1230
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 4.4,
+   "end": 7.75,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S02_d",
+      "z": [
+       102,
+       116
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 3.55
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 7.75,
+   "end": 13.3,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S03_a",
+      "z": [
+       106,
+       114
+      ],
+      "pan": [
+       0,
+       40
+      ],
+      "dur": 5.75
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "n",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    },
+    {
+     "name": "size",
+     "anim": {
+      "type": "slideL",
+      "at": 2.9
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 13.3,
+   "end": 20.9,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S04_e",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       -30,
+       0
+      ],
+      "dur": 7.8
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "q",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    },
+    {
+     "name": "far",
+     "anim": {
+      "type": "pop",
+      "at": 3.9,
+      "anchor": [
+       540,
+       560
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 20.9,
+   "end": 26.95,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S05_b",
+      "z": [
+       108,
+       116
+      ],
+      "pan": [
+       0,
+       -30
+      ],
+      "dur": 6.25
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       290
+      ]
+     }
+    },
+    {
+     "name": "quote",
+     "anim": {
+      "type": "fade",
+      "at": 0.6
+     }
+    },
+    {
+     "name": "old",
+     "anim": {
+      "type": "slideL",
+      "at": 2.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 26.95,
+   "end": 33.25,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S06_a",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       30
+      ],
+      "dur": 6.5
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 33.25,
+   "end": 39.4,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S06"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "how",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       1180
+      ]
+     }
+    },
+    {
+     "name": "res",
+     "anim": {
+      "type": "stamp",
+      "at": 3.5,
+      "anchor": [
+       540,
+       1300
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 39.4,
+   "end": 46.9,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S07_b",
+      "z": [
+       104,
+       114
+      ],
+      "pan": [
+       0,
+       -40
+      ],
+      "dur": 7.7
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "study",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    },
+    {
+     "name": "road",
+     "anim": {
+      "type": "pop",
+      "at": 4.0,
+      "anchor": [
+       540,
+       560
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 46.9,
+   "end": 52.25,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S03_b",
+      "z": [
+       110,
+       102
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 5.55
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       290
+      ]
+     }
+    },
+    {
+     "name": "debate",
+     "anim": {
+      "type": "stamp",
+      "at": 3.2,
+      "anchor": [
+       540,
+       480
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 52.25,
+   "end": 58.0,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S08"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       290
+      ]
+     }
+    },
+    {
+     "name": "sub",
+     "anim": {
+      "type": "pop",
+      "at": 0.5,
+      "anchor": [
+       540,
+       480
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 4.1,
+   "text": "바퀴도, 큰 가축도 없던 섬,\n이 거대한 석상은 어떻게 옮겼을까요?"
+  },
+  {
+   "start": 4.5,
+   "end": 7.7,
+   "text": "남미에서 3,500km 떨어진\n외딴섬, 이스터섬"
+  },
+  {
+   "start": 7.8,
+   "end": 10.5,
+   "text": "이곳엔 모아이라는 석상이\n천 개 가까이 서 있어요"
+  },
+  {
+   "start": 10.6,
+   "end": 13.0,
+   "text": "높이는 평균 4미터,\n무게는 12톤이 넘어요"
+  },
+  {
+   "start": 13.4,
+   "end": 17.1,
+   "text": "대부분은 화산 라노 라라쿠에서\n바위를 깎아 만들었어요"
+  },
+  {
+   "start": 17.2,
+   "end": 20.6,
+   "text": "그리고 섬 곳곳의 바닷가까지\n몇 킬로미터를 옮겼죠"
+  },
+  {
+   "start": 21.0,
+   "end": 23.4,
+   "text": "섬에는 모아이가 스스로\n걸어갔다는 전설이 있어요"
+  },
+  {
+   "start": 23.5,
+   "end": 26.7,
+   "text": "학자들은 오랫동안 통나무나 썰매에\n눕혀 끌었다고 생각했죠"
+  },
+  {
+   "start": 27.1,
+   "end": 30.1,
+   "text": "그런데 2012년,\n고고학자들이 직접 실험해 봤어요"
+  },
+  {
+   "start": 30.2,
+   "end": 33.2,
+   "text": "약 4톤짜리 모형 석상을 세워\n밧줄 세 개를 묶고"
+  },
+  {
+   "start": 33.3,
+   "end": 36.6,
+   "text": "양옆에서 번갈아 당기자,\n석상이 좌우로 흔들리며 앞으로!"
+  },
+  {
+   "start": 36.7,
+   "end": 39.1,
+   "text": "18명이 40분 만에\n100미터를 옮겼어요"
+  },
+  {
+   "start": 39.5,
+   "end": 43.3,
+   "text": "2025년 연구는 옛길 위에\n남은 모아이 62개를 살폈는데"
+  },
+  {
+   "start": 43.4,
+   "end": 46.6,
+   "text": "밑동이 넓고 앞으로 살짝 기운,\n걷기 좋은 모양이었어요"
+  },
+  {
+   "start": 47.0,
+   "end": 50.0,
+   "text": "전설 속 걷는 석상은\n운반 방법이었을지도 몰라요"
+  },
+  {
+   "start": 50.1,
+   "end": 52.2,
+   "text": "다만 모든 학자가\n동의하는 건 아니에요"
+  },
+  {
+   "start": 52.3,
+   "end": 54.8,
+   "text": "더 많은 미스터리가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
