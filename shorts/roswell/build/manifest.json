@@ -1,0 +1,528 @@
+{
+ "duration": 58,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "end": 4.4,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S01"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t1",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       320
+      ]
+     }
+    },
+    {
+     "name": "t2",
+     "anim": {
+      "type": "stamp",
+      "at": 0.8,
+      "anchor": [
+       540,
+       470
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 4.4,
+   "end": 11.85,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S02_a",
+      "z": [
+       104,
+       114
+      ],
+      "pan": [
+       0,
+       40
+      ],
+      "dur": 7.65
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "where",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "what",
+     "anim": {
+      "type": "pop",
+      "at": 3.8,
+      "anchor": [
+       540,
+       1060
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 11.85,
+   "end": 16.05,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/front_page_1947.jpg",
+      "z": [
+       100,
+       110
+      ],
+      "pan": [
+       0,
+       60
+      ],
+      "dur": 4.4
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 16.05,
+   "end": 20.4,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S04_a",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 4.55
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "balloon",
+     "anim": {
+      "type": "stamp",
+      "at": 1.8,
+      "anchor": [
+       540,
+       1180
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 20.4,
+   "end": 28.5,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S05_a",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       -20,
+       0
+      ],
+      "dur": 8.3
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "revive",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "bodies",
+     "anim": {
+      "type": "slideL",
+      "at": 5.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 28.5,
+   "end": 32.15,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/report_1995.jpg",
+      "z": [
+       100,
+       106
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 3.85
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 32.15,
+   "end": 38.85,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/mogul_train_1995.png",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       -40
+      ],
+      "dur": 6.9
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 38.85,
+   "end": 42.5,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S08"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "mogul",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 42.5,
+   "end": 48.2,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/report_1997.jpg",
+      "z": [
+       100,
+       106
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 5.9
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 48.2,
+   "end": 52.45,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S10_b",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       30
+      ],
+      "dur": 4.45
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       320
+      ]
+     }
+    },
+    {
+     "name": "town",
+     "anim": {
+      "type": "slideL",
+      "at": 0.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "start": 52.45,
+   "end": 58.0,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S10"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       300
+      ]
+     }
+    },
+    {
+     "name": "sub",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       490
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 4.2,
+   "text": "1947년, 미군이 직접\n「비행접시를 회수했다」고 발표했어요"
+  },
+  {
+   "start": 4.6,
+   "end": 8.0,
+   "text": "미국 뉴멕시코의 한 목장에서\n이상한 잔해가 발견됐거든요"
+  },
+  {
+   "start": 8.1,
+   "end": 11.6,
+   "text": "은박지 같은 조각과 고무,\n종이, 나무 막대들이었죠"
+  },
+  {
+   "start": 12.0,
+   "end": 16.0,
+   "text": "그날 지역 신문 1면 제목도\n「비행접시를 잡았다」였죠"
+  },
+  {
+   "start": 16.1,
+   "end": 17.7,
+   "text": "그런데 하루 만에\n말이 바뀌었어요"
+  },
+  {
+   "start": 17.8,
+   "end": 20.2,
+   "text": "잔해는 그저\n기상 관측 풍선이라는 거예요"
+  },
+  {
+   "start": 20.6,
+   "end": 25.7,
+   "text": "사건은 30년 넘게 잊혔다가,\n1978년 당시 장교의 인터뷰로\n되살아났어요"
+  },
+  {
+   "start": 25.8,
+   "end": 28.3,
+   "text": "이어서 외계인 시신을 봤다는\n이야기까지 퍼졌죠"
+  },
+  {
+   "start": 28.7,
+   "end": 32.1,
+   "text": "결국 1994년,\n미 공군이 조사 보고서를 냈어요"
+  },
+  {
+   "start": 32.2,
+   "end": 35.4,
+   "text": "잔해의 정체는 「프로젝트 모굴」,\n비밀 풍선 작전이었어요"
+  },
+  {
+   "start": 35.5,
+   "end": 38.8,
+   "text": "풍선에 소리 감지기를 달아\n소련의 핵실험을 엿들으려 했죠"
+  },
+  {
+   "start": 38.9,
+   "end": 42.3,
+   "text": "기상 풍선이라고 둘러댄 건\n비밀 작전을 감추려던 거였대요"
+  },
+  {
+   "start": 42.7,
+   "end": 48.0,
+   "text": "1997년 보고서는\n외계인 시신 이야기도 낙하 시험용\n인형을 착각한 거라고 했죠"
+  },
+  {
+   "start": 48.4,
+   "end": 50.5,
+   "text": "그래도 로스웰은 지금\nUFO 마을로 불려요"
+  },
+  {
+   "start": 50.6,
+   "end": 52.4,
+   "text": "여러분은\n어느 쪽을 믿나요?"
+  },
+  {
+   "start": 52.5,
+   "end": 55.0,
+   "text": "더 많은 미스터리가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}

@@ -1,0 +1,440 @@
+[
+ {
+  "id": "S01",
+  "start": 0.0,
+  "end": 4.4,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S01"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t1",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      320
+     ]
+    }
+   },
+   {
+    "name": "t2",
+    "anim": {
+     "type": "stamp",
+     "at": 0.8,
+     "anchor": [
+      540,
+      470
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "start": 4.4,
+  "end": 11.85,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S02_a",
+     "z": [
+      104,
+      114
+     ],
+     "pan": [
+      0,
+      40
+     ],
+     "dur": 7.65
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "where",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   },
+   {
+    "name": "what",
+    "anim": {
+     "type": "pop",
+     "at": 3.8,
+     "anchor": [
+      540,
+      1060
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "start": 11.85,
+  "end": 16.05,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/front_page_1947.jpg",
+     "z": [
+      100,
+      110
+     ],
+     "pan": [
+      0,
+      60
+     ],
+     "dur": 4.4
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "start": 16.05,
+  "end": 20.4,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S04_a",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 4.55
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "balloon",
+    "anim": {
+     "type": "stamp",
+     "at": 1.8,
+     "anchor": [
+      540,
+      1180
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "start": 20.4,
+  "end": 28.5,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S05_a",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      -20,
+      0
+     ],
+     "dur": 8.3
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "revive",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   },
+   {
+    "name": "bodies",
+    "anim": {
+     "type": "slideL",
+     "at": 5.4
+    }
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "start": 28.5,
+  "end": 32.15,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/report_1995.jpg",
+     "z": [
+      100,
+      106
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 3.85
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "start": 32.15,
+  "end": 38.85,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/mogul_train_1995.png",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      -40
+     ],
+     "dur": 6.9
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   }
+  ]
+ },
+ {
+  "id": "S08",
+  "start": 38.85,
+  "end": 42.5,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S08"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "mogul",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S09",
+  "start": 42.5,
+  "end": 48.2,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/report_1997.jpg",
+     "z": [
+      100,
+      106
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 5.9
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   }
+  ]
+ },
+ {
+  "id": "S10",
+  "start": 48.2,
+  "end": 52.45,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S10_b",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      30
+     ],
+     "dur": 4.45
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      320
+     ]
+    }
+   },
+   {
+    "name": "town",
+    "anim": {
+     "type": "slideL",
+     "at": 0.5
+    }
+   }
+  ]
+ },
+ {
+  "id": "S11",
+  "start": 52.45,
+  "end": 58.0,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S10"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      300
+     ]
+    }
+   },
+   {
+    "name": "sub",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      490
+     ]
+    }
+   }
+  ]
+ }
+]
