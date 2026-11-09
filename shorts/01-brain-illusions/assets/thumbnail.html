@@ -1,0 +1,32 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><style>
+@font-face{font-family:'NSKR';src:url('/assets/fonts/NotoSansKR.ttf');font-weight:100 900;}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:'NSKR',sans-serif;color:#fff;position:relative}
+.photo{position:absolute;inset:-80px;background:#0a0a14 url('/assets/photos/brain_fill.jpg') 50% 55%/cover no-repeat;filter:blur(28px) saturate(1.2) brightness(.7)}
+.photo2{position:absolute;inset:0;background:url('/assets/photos/brain_fill.jpg') 50% -30px/1500px auto no-repeat;filter:saturate(1.3) contrast(1.12);-webkit-mask-image:linear-gradient(180deg,transparent 45%,#000 53%,#000 85%,transparent 92%);mask-image:linear-gradient(180deg,transparent 45%,#000 53%,#000 85%,transparent 92%)}
+.tint{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 58%,rgba(255,40,90,.35) 0%,transparent 55%),linear-gradient(180deg,rgba(5,5,20,.92) 0%,rgba(5,5,20,.55) 28%,rgba(5,5,20,.05) 50%,rgba(5,5,20,.15) 70%,rgba(5,5,20,.95) 100%)}
+.vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,transparent 45%,rgba(0,0,0,.75) 100%)}
+.wrap{position:absolute;inset:0;text-align:center}
+.top{position:absolute;top:120px;left:0;right:0;font-size:78px;font-weight:900;letter-spacing:-2px;color:#fff;text-shadow:0 6px 30px rgba(0,0,0,.9)}
+.top b{color:#ffe600}
+.h{position:absolute;top:215px;left:0;right:0;font-size:270px;line-height:.98;font-weight:900;letter-spacing:-12px;color:#fff;
+  -webkit-text-stroke:18px #0a0a14;paint-order:stroke fill;
+  text-shadow:0 14px 0 #0a0a14,0 22px 0 #0a0a14,0 40px 80px rgba(0,0,0,.85)}
+.sticker{position:absolute;top:760px;left:50%;transform:translateX(-50%) rotate(-5deg);background:#ffe600;color:#0a0a14;font-size:190px;line-height:1;font-weight:900;letter-spacing:-8px;padding:14px 70px 34px;white-space:nowrap;border-radius:40px;box-shadow:0 30px 80px rgba(0,0,0,.7),inset 0 -14px 0 rgba(0,0,0,.18);border:8px solid #0a0a14}
+.circle{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.bottom{position:absolute;bottom:190px;left:50%;transform:translateX(-50%) rotate(-2deg);background:#ff1f4b;padding:30px 70px;border-radius:30px;font-size:84px;font-weight:900;letter-spacing:-2px;white-space:nowrap;box-shadow:0 20px 70px rgba(255,31,75,.6),0 0 0 8px #0a0a14;text-shadow:0 4px 0 rgba(0,0,0,.35)}
+.bang{position:absolute;right:90px;top:920px;width:190px;height:190px;border-radius:50%;background:#fff;color:#ff1f4b;font-size:140px;font-weight:900;line-height:190px;text-align:center;transform:rotate(12deg);box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 0 8px #0a0a14}
+.brand{position:absolute;bottom:60px;left:0;right:0;text-align:center;font-size:30px;font-weight:700;letter-spacing:7px;color:rgba(255,255,255,.45)}
+</style></head><body>
+<div class="photo"></div><div class="photo2"></div><div class="tint"></div><div class="vig"></div>
+<svg class="circle" viewBox="0 0 1080 1920"><ellipse cx="520" cy="1300" rx="360" ry="250" fill="none" stroke="#ff1f4b" stroke-width="16" stroke-dasharray="1700 300" stroke-linecap="round" transform="rotate(-10 520 1300)" filter="drop-shadow(0 0 20px rgba(255,31,75,.9))"/></svg>
+<div class="wrap">
+  <div class="top"><b>99%</b>가 매일 속는</div>
+  <div class="h">뇌의<br>착각</div>
+  <div class="sticker">3가지</div>
+  <div class="bang">!</div>
+  <div class="bottom">당신도 지금 속고 있다</div>
+</div>
+<div class="brand">BRAIN HACKS</div>
+<script>document.fonts.ready.then(()=>{window.ready=true});</script>
+</body></html>

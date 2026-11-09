@@ -4,11 +4,12 @@
 
 단계:
   1. 대본 → Edge TTS 음성(ko-KR-SunHiNeural) + 단어 타이밍
-  2. 장면 HTML → Playwright(Chromium) 로 2x 해상도 PNG 렌더링
+  2. 실사 사진 배경 + Three.js 3D 오브젝트 + 모션 텍스트 장면(assets/scene.html)을
+     Playwright(Chromium/WebGL) 로 프레임 단위 렌더링 (assets/render.js, 병렬)
   3. 배경음(신스 패드 + 비트) numpy 합성, 내레이션에 맞춰 더킹
-  4. ffmpeg: 장면별 줌 + 슬라이드 전환 + 오디오 합성 → short_nosub.mp4
+  4. ffmpeg: 프레임 시퀀스 + 오디오 합성 → short_nosub.mp4
   5. 단어 하이라이트 ASS 자막 생성 → short.mp4 (번인), subtitles.srt
-  6. 썸네일 PNG
+  6. 썸네일 PNG (assets/thumbnail.html)
 
 실행: python3 build.py   (의존: ffmpeg(libass), playwright+chromium, edge-tts, pillow, numpy)
 """
@@ -36,25 +37,25 @@ LEAD, TAIL = 0.30, 0.55   # 장면 시작 후 음성까지 / 음성 후 여백
 LAST_HOLD = 1.3
 
 SCENES = [
-    dict(id="hook", icon="brain", badge="매일 겪는 3가지 착각", num=None,
+    dict(id="hook", photo="brain_fill", bg_level=0.55, icon="brain", badge="매일 겪는 3가지 착각", num=None,
          head=["당신의 뇌는", "지금도 당신을", "<em>속이고 있다</em>"], sub="99%가 눈치채지 못합니다",
          accent="#ff4d6d", accent2="#7c3aed",
          tts="당신의 뇌는 지금 이 순간에도 당신을 속이고 있습니다. 매일 겪지만 아무도 눈치채지 못하는 세 가지 착각, 지금 공개합니다."),
-    dict(id="one", icon="car", badge="착각 1 / 3", num="1",
+    dict(id="one", photo="car", icon="car", badge="착각 1 / 3", num="1",
          head=["바더-마인호프", "<em>현상</em>"], sub="새 차를 사면 같은 차만 보이는 이유",
          accent="#38bdf8", accent2="#2563eb",
          tts="첫 번째, 바더 마인호프 현상. 새 차를 사면 갑자기 도로에 같은 차가 가득 보이죠? 차가 늘어난 게 아닙니다. 뇌가 방금 배운 것만 골라서 보여주는 겁니다."),
-    dict(id="two", icon="tv", badge="착각 2 / 3", num="2",
+    dict(id="two", photo="tv", icon="tv", badge="착각 2 / 3", num="2",
          head=["자이가르닉", "<em>효과</em>"], sub="드라마가 결정적 순간에 끝나는 이유",
          accent="#a78bfa", accent2="#db2777",
          tts="두 번째, 자이가르닉 효과. 드라마가 왜 꼭 결정적인 순간에 끝날까요? 뇌는 끝내지 못한 일을 완료한 일보다 훨씬 오래 기억합니다. 그래서 다음 화를 참을 수 없는 거죠."),
-    dict(id="three", icon="tag", badge="착각 3 / 3", num="3",
+    dict(id="three", photo="sale", icon="tag", badge="착각 3 / 3", num="3",
          head=["앵커링", "<em>효과</em>"], sub=None, price=("99,000원", "39,000원"),
          accent="#fbbf24", accent2="#f97316",
          tts="세 번째, 앵커링 효과. 정가 9만 9천 원에 줄을 긋고, 3만 9천 원. 6만 원을 아꼈다고 느끼시죠? 하지만 뇌는 처음 본 숫자에 닻을 내렸을 뿐입니다."),
-    dict(id="outro", icon="chat", badge="당신은 몇 개?", num=None,
+    dict(id="outro", photo="hand", icon="chat", badge="당신은 몇 개?", num=None,
          head=["오늘 몇 개나", "<em>당하셨나요?</em>"], sub="댓글로 알려주세요 👇", cta="팔로우하면 다음 착각도 알려드려요",
-         accent="#34d399", accent2="#0ea5e9",
+         accent="#4ade80", accent2="#0ea5e9",
          tts="오늘 당신은 몇 개나 당하셨나요? 댓글로 알려주세요. 팔로우하면 다음 착각도 알려드릴게요."),
 ]
 
@@ -123,110 +124,41 @@ def make_voice():
     return total
 
 
-# ---------------------------------------------------------------- 2. 장면 렌더링
-CSS = """
-@font-face{font-family:'NSKR';src:url('file://%(font)s');font-weight:100 900;}
-*{margin:0;padding:0;box-sizing:border-box}
-html,body{width:1080px;height:1920px;overflow:hidden;background:#0b0f1e;font-family:'NSKR',sans-serif;color:#fff}
-body{position:relative}
-.blob{position:absolute;border-radius:50%%;filter:blur(90px);opacity:.65}
-.b1{width:780px;height:780px;left:-220px;top:120px;background:%(accent)s}
-.b2{width:720px;height:720px;right:-240px;top:980px;background:%(accent2)s}
-.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:90px 90px;mask-image:radial-gradient(circle at 50%% 45%%,#000 30%%,transparent 75%%);-webkit-mask-image:radial-gradient(circle at 50%% 45%%,#000 30%%,transparent 75%%)}
-.vignette{position:absolute;inset:0;background:radial-gradient(ellipse at 50%% 50%%,transparent 55%%,rgba(0,0,0,.55) 100%%)}
-.wrap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:240px}
-.badge{display:inline-flex;align-items:center;gap:14px;padding:16px 38px;border-radius:999px;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.22);font-size:40px;font-weight:700;letter-spacing:1px;backdrop-filter:blur(10px)}
-.badge .dot{width:16px;height:16px;border-radius:50%%;background:%(accent)s;box-shadow:0 0 18px %(accent)s}
-.iconwrap{position:relative;margin-top:44px;width:380px;height:380px;display:flex;align-items:center;justify-content:center}
-.iconwrap::before{content:'';position:absolute;inset:0;border-radius:50%%;background:radial-gradient(circle,%(accent)s55,transparent 68%%)}
-.iconwrap img{width:280px;height:280px;filter:drop-shadow(0 24px 40px rgba(0,0,0,.55))}
-.num{position:absolute;right:-10px;top:10px;width:120px;height:120px;border-radius:50%%;background:%(accent)s;color:#0b0f1e;font-size:72px;font-weight:900;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.4);border:6px solid #0b0f1e}
-h1{margin-top:36px;font-size:%(hsize)spx;line-height:1.14;font-weight:900;letter-spacing:-3px;text-shadow:0 10px 40px rgba(0,0,0,.5)}
-h1 em{font-style:normal;color:%(accent)s}
-.sub{margin-top:28px;font-size:52px;font-weight:500;color:rgba(255,255,255,.82);letter-spacing:-1px}
-.price{margin-top:34px;display:flex;align-items:center;gap:34px;font-weight:900}
-.price .old{font-size:70px;color:rgba(255,255,255,.55);text-decoration:line-through;text-decoration-color:#ff4d6d;text-decoration-thickness:8px}
-.price .arrow{font-size:60px;color:rgba(255,255,255,.6)}
-.price .new{font-size:104px;color:%(accent)s;text-shadow:0 0 40px %(accent)s88}
-.cta{margin-top:40px;padding:22px 52px;border-radius:24px;background:%(accent)s;color:#0b0f1e;font-size:44px;font-weight:900;box-shadow:0 14px 40px %(accent)s66}
-.brand{position:absolute;bottom:90px;left:0;right:0;text-align:center;font-size:30px;font-weight:700;letter-spacing:6px;color:rgba(255,255,255,.35)}
-"""
+# ---------------------------------------------------------------- 2. 장면 렌더링 (Three.js 프레임 시퀀스)
+def word_time(s, prefix):
+    """장면 s 의 단어 중 prefix 로 시작하는 첫 단어의 (음성 시작 기준) 시각."""
+    for w in s["words"]:
+        if w["w"].startswith(prefix):
+            return round(w["t"] + LEAD, 2)
+    return 1.0
 
 
-def scene_html(s):
-    hsize = 112 if len(s["head"]) >= 3 else 126
-    css = CSS % dict(font=FONT, accent=s["accent"], accent2=s["accent2"], hsize=hsize)
-    head = "<br>".join(s["head"])
-    num = f'<div class="num">{s["num"]}</div>' if s.get("num") else ""
-    sub = f'<div class="sub">{s["sub"]}</div>' if s.get("sub") else ""
-    price = ""
-    if s.get("price"):
-        o, n = s["price"]
-        price = f'<div class="price"><span class="old">{o}</span><span class="arrow">→</span><span class="new">{n}</span></div>'
-    cta = f'<div class="cta">{s["cta"]}</div>' if s.get("cta") else ""
-    icon = (ASSETS / "icons" / f"{s['icon']}.svg").as_uri()
-    return f"""<!doctype html><html lang="ko"><head><meta charset="utf-8"><style>{css}</style></head><body>
-<div class="blob b1"></div><div class="blob b2"></div><div class="grid"></div><div class="vignette"></div>
-<div class="wrap">
-  <div class="badge"><span class="dot"></span>{s['badge']}</div>
-  <div class="iconwrap"><img src="{icon}">{num}</div>
-  <h1>{head}</h1>{sub}{price}{cta}
-</div>
-<div class="brand">BRAIN HACKS</div>
-</body></html>"""
-
-
-THUMB_HTML = """<!doctype html><html lang="ko"><head><meta charset="utf-8"><style>%(css)s
-.wrap{padding-top:250px}
-.iconwrap{margin-top:40px}
-.top{font-size:66px;font-weight:700;color:rgba(255,255,255,.9);letter-spacing:-1px}
-h1{font-size:196px;line-height:1.02;margin-top:30px;letter-spacing:-8px}
-.three{display:inline-block;color:#0b0f1e;background:#ffd400;padding:0 34px;border-radius:30px;transform:rotate(-3deg);box-shadow:0 20px 50px rgba(0,0,0,.45)}
-.iconwrap{margin-top:40px;width:560px;height:560px}
-.iconwrap img{width:430px;height:430px}
-.bottom{margin-top:30px;padding:26px 60px;border-radius:999px;background:#ff2d55;font-size:62px;font-weight:900;letter-spacing:-1px;box-shadow:0 18px 50px rgba(255,45,85,.5)}
-</style></head><body>
-<div class="blob b1"></div><div class="blob b2"></div><div class="grid"></div><div class="vignette"></div>
-<div class="wrap">
-  <div class="top">99%%가 매일 당하는</div>
-  <h1>뇌의 착각<br><span class="three">3가지</span></h1>
-  <div class="iconwrap"><img src="%(icon)s"></div>
-  <div class="bottom">당신도 지금 속고 있다</div>
-</div>
-<div class="brand">BRAIN HACKS</div>
-</body></html>"""
-
-
-def render_scenes():
-    pages = []
+def write_timeline(total):
+    scenes = []
     for s in SCENES:
-        p = WORK / f"{s['id']}.html"
-        p.write_text(scene_html(s), encoding="utf-8")
-        pages.append((p, WORK / f"{s['id']}.png", 2))
-    css = CSS % dict(font=FONT, accent="#ff4d6d", accent2="#7c3aed", hsize=120)
-    th = WORK / "thumbnail.html"
-    th.write_text(THUMB_HTML % dict(css=css, icon=(ASSETS / "icons" / "brain.svg").as_uri()), encoding="utf-8")
-    pages.append((th, OUT / "thumbnail.png", 1))
-    js = WORK / "render.js"
-    js.write_text("""
-const { chromium } = require('playwright');
-const jobs = JSON.parse(process.argv[2]);
-(async () => {
-  const browser = await chromium.launch();
-  for (const [html, png, scale] of jobs) {
-    const ctx = await browser.newContext({ viewport: { width: 1080, height: 1920 }, deviceScaleFactor: scale });
-    const page = await ctx.newPage();
-    await page.goto('file://' + html, { waitUntil: 'networkidle' });
-    await page.evaluate(() => document.fonts.ready);
-    await page.waitForTimeout(150);
-    await page.screenshot({ path: png, type: 'png' });
-    await ctx.close();
-    console.log('rendered', png);
-  }
-  await browser.close();
-})();
-""")
-    run(["node", js, json.dumps([[str(a), str(b), c] for a, b, c in pages])], cwd=str(WORK))
+        cues = {}
+        if s["id"] == "three":
+            cues = dict(strike_at=word_time(s, "줄을"), new_at=word_time(s, "3만"))
+        if s["id"] == "outro":
+            cues = dict(cta_at=word_time(s, "팔로우"))
+        scenes.append(dict(id=s["id"], photo=s["photo"], bg_level=s.get("bg_level"), accent=s["accent"], badge=s["badge"], num=s.get("num"),
+                           head=s["head"], sub=s.get("sub"), price=s.get("price"), cta=s.get("cta"),
+                           start=round(s["start"], 3), voice_at=round(s["voice_at"], 3), cues=cues))
+    tl = dict(total=round(total, 3), fps=FPS, scenes=scenes)
+    html = (ASSETS / "scene.html").read_text(encoding="utf-8").replace("__TIMELINE__", json.dumps(tl, ensure_ascii=False))
+    (WORK / "scene.html").write_text(html, encoding="utf-8")
+    (WORK / "timeline.json").write_text(json.dumps(tl, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+def render_frames(total, workers=3):
+    frames = WORK / "frames"
+    n = int(round(total * FPS))
+    run(["node", ASSETS / "render.js", "frames", ROOT, "work/scene.html", frames, n, FPS, workers])
+    return frames, n
+
+
+def render_thumbnail():
+    run(["node", ASSETS / "render.js", "still", ROOT, "assets/thumbnail.html", OUT / "thumbnail.png"])
 
 
 # ---------------------------------------------------------------- 3. 배경음
@@ -308,31 +240,11 @@ def mix_audio(total):
 
 
 # ---------------------------------------------------------------- 4. 영상 합성
-def build_video(total, wav):
-    cmd = ["ffmpeg", "-y", "-v", "error", "-stats"]
-    fc = []
-    for i, s in enumerate(SCENES):
-        cmd += ["-i", str(WORK / f"{s['id']}.png")]
-        frames = int(round(s["clip"] * FPS))
-        if i % 2 == 0:
-            z = f"1+0.09*on/{frames}"
-        else:
-            z = f"1.09-0.09*on/{frames}"
-        fc.append(f"[{i}:v]zoompan=z='{z}':d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={W}x{H}:fps={FPS},"
-                  f"format=yuv420p,setpts=PTS-STARTPTS[v{i}]")
-    cmd += ["-i", str(wav)]
-    prev = "v0"
-    transitions = ["slideup", "slideup", "slideleft", "slideup", "smoothleft"]
-    for i in range(1, len(SCENES)):
-        off = SCENES[i]["start"] - TRANS
-        outl = f"x{i}" if i < len(SCENES) - 1 else "vout"
-        fc.append(f"[{prev}][v{i}]xfade=transition={transitions[i % len(transitions)]}:duration={TRANS}:offset={off:.3f}[{outl}]")
-        prev = outl
+def build_video(total, wav, frames):
     nosub = OUT / "short_nosub.mp4"
-    cmd += ["-filter_complex", ";".join(fc), "-map", "[vout]", "-map", f"{len(SCENES)}:a",
-            "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p", "-r", str(FPS),
-            "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-t", f"{total:.3f}", str(nosub)]
-    run(cmd)
+    run(["ffmpeg", "-y", "-v", "error", "-stats", "-framerate", str(FPS), "-i", str(frames / "%05d.jpg"), "-i", str(wav),
+         "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p", "-r", str(FPS),
+         "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-t", f"{total:.3f}", str(nosub)])
     return nosub
 
 
@@ -422,9 +334,16 @@ def main():
     for s in SCENES:
         print(f"  {s['id']:6s} start={s['start']:6.2f}  voice={s['voice_at']:6.2f}  vdur={s['vdur']:5.2f}  clip={s['clip']:5.2f}")
     print(f"  total = {total:.2f}s")
-    render_scenes()
+    write_timeline(total)
+    if "--no-frames" not in sys.argv:
+        if "--clean" in sys.argv:
+            shutil.rmtree(WORK / "frames", ignore_errors=True)
+        frames, n = render_frames(total, workers=int(os.environ.get("WORKERS", "3")))
+    else:
+        frames = WORK / "frames"
+    render_thumbnail()
     wav = mix_audio(total)
-    nosub = build_video(total, wav)
+    nosub = build_video(total, wav, frames)
     ass = build_subtitles(total)
     final = burn(nosub, ass)
     print("done:", final)

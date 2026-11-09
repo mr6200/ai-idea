@@ -4,6 +4,12 @@
 - **형식**: 세로 1080×1920, 30fps, 약 55초
 - **타깃**: 심리학·자기계발·일상 꿀팁에 관심 있는 10~40대
 - **훅 전략**: "지금 이 순간에도 속고 있다"는 1인칭 도발 → 번호 매기기(3가지)로 끝까지 시청 유도 → 댓글 질문으로 참여 유도
+- **비주얼**: 실사 사진 배경(켄번스 줌 + 크로스페이드) 위에 Three.js 3D 오브젝트(PBR 재질, 환경광 반사, 블룸)와 모션 텍스트를 올려 프레임 단위로 렌더링
+  - 훅: 뉴런 네트워크 구체 + 뇌 해부 모형 사진
+  - 착각 1: 크롬 블루 3D 숫자 "1" + 스피드 라이트 스트릭 + 포르쉐 사진
+  - 착각 2: 퍼플 글래스 3D 숫자 "2" + 궤도를 도는 필름 프레임 + TV 리모컨 사진
+  - 착각 3: 골드 3D 숫자 "3" + 떨어지는 금화 + SALE 태그 사진 (정가 취소선 애니메이션)
+  - 아웃트로: 글로시 그린 3D "?" + 말풍선 + 보케 사진
 - **음성**: Microsoft Edge TTS `ko-KR-SunHiNeural` (속도 +10%)
 - **자막**: 말하는 단어를 노란색으로 강조하는 단어 단위 자막 (ASS 번인 + SRT 별도 제공)
 
@@ -32,8 +38,22 @@
 - `subtitles.srt` / `subtitles.ass` — 자막 파일
 - `voice.mp3` — 내레이션 음성
 
+## 사진 출처 (Unsplash License, 상업적 이용 가능 · 출처 표기 불필요)
+- 뇌 모형: https://unsplash.com/photos/5c350d0d3c56 (`photo-1559757148-5c350d0d3c56`)
+- 자동차: `photo-1503376780353-7e6692767b70`
+- TV/리모컨: `photo-1522869635100-9f4c5e86aa37`
+- SALE 태그: `photo-1607083206968-13611e3d76db`
+- 보케/스마트폰: `photo-1483478550801-ceba5fe50e8e`
+
 ## 다시 만들기
 ```bash
 pip install edge-tts pillow numpy   # playwright + chromium, ffmpeg(libass) 필요
-python3 build.py                     # 폰트(Noto Sans KR)는 처음 실행 시 자동 다운로드
+WORKERS=3 python3 build.py           # 폰트(Noto Sans KR)는 처음 실행 시 자동 다운로드. 프레임 렌더 약 8~10분(4코어 기준)
+python3 build.py --no-frames         # 렌더된 프레임 재사용(자막·음성·썸네일만 다시)
+```
+- `assets/scene.html`: 장면 연출(3D 오브젝트, 사진, 텍스트 애니메이션). `window.seek(t)` 로 임의 시각 프레임을 그림
+- `assets/render.js`: Playwright(Chromium WebGL/SwiftShader) 병렬 프레임 렌더러. `probe` 모드로 특정 시각만 미리보기 가능
+- `assets/thumbnail.html`: 썸네일 디자인
+```bash
+node assets/render.js probe . work/scene.html /tmp/probe 3.0,12.5,41.5   # 미리보기
 ```
