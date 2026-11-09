@@ -1,0 +1,118 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Noto Sans KR,74,&H00FFFFFF,&H00FFFFFF,&H00120C1E,&H9A000000,1,0,0,0,100,100,-1,0,1,8,4,2,50,50,440,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:00.79,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}당신의{\c&HFFFFFF&} 뇌는 지금 이
+Dialogue: 0,0:00:00.79,0:00:01.18,Sub,,0,0,0,,당신의 {\c&H00E5FF&}뇌는{\c&HFFFFFF&} 지금 이
+Dialogue: 0,0:00:01.18,0:00:01.66,Sub,,0,0,0,,당신의 뇌는 {\c&H00E5FF&}지금{\c&HFFFFFF&} 이
+Dialogue: 0,0:00:01.66,0:00:01.78,Sub,,0,0,0,,당신의 뇌는 지금 {\c&H00E5FF&}이{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.80,0:00:02.37,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}순간에도{\c&HFFFFFF&} 당신을 속이고
+Dialogue: 0,0:00:02.37,0:00:02.93,Sub,,0,0,0,,순간에도 {\c&H00E5FF&}당신을{\c&HFFFFFF&} 속이고
+Dialogue: 0,0:00:02.93,0:00:03.26,Sub,,0,0,0,,순간에도 당신을 {\c&H00E5FF&}속이고{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.28,0:00:04.67,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}있습니다.{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.69,0:00:05.02,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}매일{\c&HFFFFFF&} 겪지만 아무도
+Dialogue: 0,0:00:05.02,0:00:05.64,Sub,,0,0,0,,매일 {\c&H00E5FF&}겪지만{\c&HFFFFFF&} 아무도
+Dialogue: 0,0:00:05.64,0:00:05.95,Sub,,0,0,0,,매일 겪지만 {\c&H00E5FF&}아무도{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.97,0:00:06.52,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}눈치채지{\c&HFFFFFF&} 못하는 세
+Dialogue: 0,0:00:06.52,0:00:06.95,Sub,,0,0,0,,눈치채지 {\c&H00E5FF&}못하는{\c&HFFFFFF&} 세
+Dialogue: 0,0:00:06.95,0:00:07.09,Sub,,0,0,0,,눈치채지 못하는 {\c&H00E5FF&}세{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.11,0:00:07.33,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}가지{\c&HFFFFFF&} 착각,
+Dialogue: 0,0:00:07.33,0:00:07.92,Sub,,0,0,0,,가지 {\c&H00E5FF&}착각,{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.94,0:00:08.30,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}지금{\c&HFFFFFF&} 공개합니다.
+Dialogue: 0,0:00:08.30,0:00:09.46,Sub,,0,0,0,,지금 {\c&H00E5FF&}공개합니다.{\c&HFFFFFF&}
+Dialogue: 0,0:00:10.08,0:00:10.29,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}첫{\c&HFFFFFF&} 번째,
+Dialogue: 0,0:00:10.29,0:00:10.90,Sub,,0,0,0,,첫 {\c&H00E5FF&}번째,{\c&HFFFFFF&}
+Dialogue: 0,0:00:10.92,0:00:11.25,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}바더{\c&HFFFFFF&} 마인호프 현상.
+Dialogue: 0,0:00:11.25,0:00:11.82,Sub,,0,0,0,,바더 {\c&H00E5FF&}마인호프{\c&HFFFFFF&} 현상.
+Dialogue: 0,0:00:11.82,0:00:13.17,Sub,,0,0,0,,바더 마인호프 {\c&H00E5FF&}현상.{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.19,0:00:13.37,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}새{\c&HFFFFFF&} 차를 사면 갑자기
+Dialogue: 0,0:00:13.37,0:00:13.67,Sub,,0,0,0,,새 {\c&H00E5FF&}차를{\c&HFFFFFF&} 사면 갑자기
+Dialogue: 0,0:00:13.67,0:00:14.09,Sub,,0,0,0,,새 차를 {\c&H00E5FF&}사면{\c&HFFFFFF&} 갑자기
+Dialogue: 0,0:00:14.09,0:00:14.62,Sub,,0,0,0,,새 차를 사면 {\c&H00E5FF&}갑자기{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.64,0:00:15.00,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}도로에{\c&HFFFFFF&} 같은 차가 가득
+Dialogue: 0,0:00:15.00,0:00:15.31,Sub,,0,0,0,,도로에 {\c&H00E5FF&}같은{\c&HFFFFFF&} 차가 가득
+Dialogue: 0,0:00:15.31,0:00:15.61,Sub,,0,0,0,,도로에 같은 {\c&H00E5FF&}차가{\c&HFFFFFF&} 가득
+Dialogue: 0,0:00:15.61,0:00:15.91,Sub,,0,0,0,,도로에 같은 차가 {\c&H00E5FF&}가득{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.93,0:00:17.25,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}보이죠?{\c&HFFFFFF&} 차가 늘어난
+Dialogue: 0,0:00:17.25,0:00:17.58,Sub,,0,0,0,,보이죠? {\c&H00E5FF&}차가{\c&HFFFFFF&} 늘어난
+Dialogue: 0,0:00:17.58,0:00:17.99,Sub,,0,0,0,,보이죠? 차가 {\c&H00E5FF&}늘어난{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.01,0:00:18.16,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}게{\c&HFFFFFF&} 아닙니다.
+Dialogue: 0,0:00:18.16,0:00:19.55,Sub,,0,0,0,,게 {\c&H00E5FF&}아닙니다.{\c&HFFFFFF&}
+Dialogue: 0,0:00:19.57,0:00:19.89,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}뇌가{\c&HFFFFFF&} 방금 배운 것만
+Dialogue: 0,0:00:19.89,0:00:20.27,Sub,,0,0,0,,뇌가 {\c&H00E5FF&}방금{\c&HFFFFFF&} 배운 것만
+Dialogue: 0,0:00:20.27,0:00:20.56,Sub,,0,0,0,,뇌가 방금 {\c&H00E5FF&}배운{\c&HFFFFFF&} 것만
+Dialogue: 0,0:00:20.56,0:00:20.88,Sub,,0,0,0,,뇌가 방금 배운 {\c&H00E5FF&}것만{\c&HFFFFFF&}
+Dialogue: 0,0:00:20.90,0:00:21.36,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}골라서{\c&HFFFFFF&} 보여주는
+Dialogue: 0,0:00:21.36,0:00:21.83,Sub,,0,0,0,,골라서 {\c&H00E5FF&}보여주는{\c&HFFFFFF&}
+Dialogue: 0,0:00:21.85,0:00:22.74,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}겁니다.{\c&HFFFFFF&}
+Dialogue: 0,0:00:23.36,0:00:23.52,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}두{\c&HFFFFFF&} 번째,
+Dialogue: 0,0:00:23.52,0:00:24.24,Sub,,0,0,0,,두 {\c&H00E5FF&}번째,{\c&HFFFFFF&}
+Dialogue: 0,0:00:24.26,0:00:24.98,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}자이가르닉{\c&HFFFFFF&} 효과.
+Dialogue: 0,0:00:24.98,0:00:26.28,Sub,,0,0,0,,자이가르닉 {\c&H00E5FF&}효과.{\c&HFFFFFF&}
+Dialogue: 0,0:00:26.30,0:00:26.82,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}드라마가{\c&HFFFFFF&} 왜 꼭
+Dialogue: 0,0:00:26.82,0:00:27.00,Sub,,0,0,0,,드라마가 {\c&H00E5FF&}왜{\c&HFFFFFF&} 꼭
+Dialogue: 0,0:00:27.00,0:00:27.19,Sub,,0,0,0,,드라마가 왜 {\c&H00E5FF&}꼭{\c&HFFFFFF&}
+Dialogue: 0,0:00:27.21,0:00:27.81,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}결정적인{\c&HFFFFFF&} 순간에
+Dialogue: 0,0:00:27.81,0:00:28.20,Sub,,0,0,0,,결정적인 {\c&H00E5FF&}순간에{\c&HFFFFFF&}
+Dialogue: 0,0:00:28.22,0:00:29.67,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}끝날까요?{\c&HFFFFFF&}
+Dialogue: 0,0:00:29.69,0:00:30.04,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}뇌는{\c&HFFFFFF&} 끝내지 못한 일을
+Dialogue: 0,0:00:30.04,0:00:30.40,Sub,,0,0,0,,뇌는 {\c&H00E5FF&}끝내지{\c&HFFFFFF&} 못한 일을
+Dialogue: 0,0:00:30.40,0:00:30.74,Sub,,0,0,0,,뇌는 끝내지 {\c&H00E5FF&}못한{\c&HFFFFFF&} 일을
+Dialogue: 0,0:00:30.74,0:00:30.90,Sub,,0,0,0,,뇌는 끝내지 못한 {\c&H00E5FF&}일을{\c&HFFFFFF&}
+Dialogue: 0,0:00:30.92,0:00:31.40,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}완료한{\c&HFFFFFF&} 일보다 훨씬
+Dialogue: 0,0:00:31.40,0:00:31.84,Sub,,0,0,0,,완료한 {\c&H00E5FF&}일보다{\c&HFFFFFF&} 훨씬
+Dialogue: 0,0:00:31.84,0:00:32.23,Sub,,0,0,0,,완료한 일보다 {\c&H00E5FF&}훨씬{\c&HFFFFFF&}
+Dialogue: 0,0:00:32.25,0:00:32.54,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}오래{\c&HFFFFFF&} 기억합니다.
+Dialogue: 0,0:00:32.54,0:00:34.05,Sub,,0,0,0,,오래 {\c&H00E5FF&}기억합니다.{\c&HFFFFFF&}
+Dialogue: 0,0:00:34.07,0:00:34.43,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}그래서{\c&HFFFFFF&} 다음 화를 참을
+Dialogue: 0,0:00:34.43,0:00:34.76,Sub,,0,0,0,,그래서 {\c&H00E5FF&}다음{\c&HFFFFFF&} 화를 참을
+Dialogue: 0,0:00:34.76,0:00:35.01,Sub,,0,0,0,,그래서 다음 {\c&H00E5FF&}화를{\c&HFFFFFF&} 참을
+Dialogue: 0,0:00:35.01,0:00:35.29,Sub,,0,0,0,,그래서 다음 화를 {\c&H00E5FF&}참을{\c&HFFFFFF&}
+Dialogue: 0,0:00:35.31,0:00:35.46,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}수{\c&HFFFFFF&} 없는 거죠.
+Dialogue: 0,0:00:35.46,0:00:35.75,Sub,,0,0,0,,수 {\c&H00E5FF&}없는{\c&HFFFFFF&} 거죠.
+Dialogue: 0,0:00:35.75,0:00:36.52,Sub,,0,0,0,,수 없는 {\c&H00E5FF&}거죠.{\c&HFFFFFF&}
+Dialogue: 0,0:00:37.18,0:00:37.39,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}세{\c&HFFFFFF&} 번째,
+Dialogue: 0,0:00:37.39,0:00:38.03,Sub,,0,0,0,,세 {\c&H00E5FF&}번째,{\c&HFFFFFF&}
+Dialogue: 0,0:00:38.05,0:00:38.49,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}앵커링{\c&HFFFFFF&} 효과.
+Dialogue: 0,0:00:38.49,0:00:39.75,Sub,,0,0,0,,앵커링 {\c&H00E5FF&}효과.{\c&HFFFFFF&}
+Dialogue: 0,0:00:39.77,0:00:40.13,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}정가{\c&HFFFFFF&} 9만 9천 원에
+Dialogue: 0,0:00:40.13,0:00:40.44,Sub,,0,0,0,,정가 {\c&H00E5FF&}9만{\c&HFFFFFF&} 9천 원에
+Dialogue: 0,0:00:40.44,0:00:40.74,Sub,,0,0,0,,정가 9만 {\c&H00E5FF&}9천{\c&HFFFFFF&} 원에
+Dialogue: 0,0:00:40.74,0:00:40.92,Sub,,0,0,0,,정가 9만 9천 {\c&H00E5FF&}원에{\c&HFFFFFF&}
+Dialogue: 0,0:00:40.94,0:00:41.19,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}줄을{\c&HFFFFFF&} 긋고,
+Dialogue: 0,0:00:41.19,0:00:41.82,Sub,,0,0,0,,줄을 {\c&H00E5FF&}긋고,{\c&HFFFFFF&}
+Dialogue: 0,0:00:41.84,0:00:42.19,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}3만{\c&HFFFFFF&} 9천 원.
+Dialogue: 0,0:00:42.19,0:00:42.51,Sub,,0,0,0,,3만 {\c&H00E5FF&}9천{\c&HFFFFFF&} 원.
+Dialogue: 0,0:00:42.51,0:00:42.69,Sub,,0,0,0,,3만 9천 {\c&H00E5FF&}원.{\c&HFFFFFF&}
+Dialogue: 0,0:00:42.71,0:00:42.99,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}6만{\c&HFFFFFF&} 원을 아꼈다고
+Dialogue: 0,0:00:42.99,0:00:43.19,Sub,,0,0,0,,6만 {\c&H00E5FF&}원을{\c&HFFFFFF&} 아꼈다고
+Dialogue: 0,0:00:43.19,0:00:43.74,Sub,,0,0,0,,6만 원을 {\c&H00E5FF&}아꼈다고{\c&HFFFFFF&}
+Dialogue: 0,0:00:43.76,0:00:45.28,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}느끼시죠?{\c&HFFFFFF&}
+Dialogue: 0,0:00:45.30,0:00:45.72,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}하지만{\c&HFFFFFF&} 뇌는 처음 본
+Dialogue: 0,0:00:45.72,0:00:46.22,Sub,,0,0,0,,하지만 {\c&H00E5FF&}뇌는{\c&HFFFFFF&} 처음 본
+Dialogue: 0,0:00:46.22,0:00:46.55,Sub,,0,0,0,,하지만 뇌는 {\c&H00E5FF&}처음{\c&HFFFFFF&} 본
+Dialogue: 0,0:00:46.55,0:00:46.70,Sub,,0,0,0,,하지만 뇌는 처음 {\c&H00E5FF&}본{\c&HFFFFFF&}
+Dialogue: 0,0:00:46.72,0:00:47.15,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}숫자에{\c&HFFFFFF&} 닻을 내렸을
+Dialogue: 0,0:00:47.15,0:00:47.55,Sub,,0,0,0,,숫자에 {\c&H00E5FF&}닻을{\c&HFFFFFF&} 내렸을
+Dialogue: 0,0:00:47.55,0:00:47.97,Sub,,0,0,0,,숫자에 닻을 {\c&H00E5FF&}내렸을{\c&HFFFFFF&}
+Dialogue: 0,0:00:47.99,0:00:48.99,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}뿐입니다.{\c&HFFFFFF&}
+Dialogue: 0,0:00:49.62,0:00:49.92,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}오늘{\c&HFFFFFF&} 당신은 몇 개나
+Dialogue: 0,0:00:49.92,0:00:50.35,Sub,,0,0,0,,오늘 {\c&H00E5FF&}당신은{\c&HFFFFFF&} 몇 개나
+Dialogue: 0,0:00:50.35,0:00:50.58,Sub,,0,0,0,,오늘 당신은 {\c&H00E5FF&}몇{\c&HFFFFFF&} 개나
+Dialogue: 0,0:00:50.58,0:00:50.78,Sub,,0,0,0,,오늘 당신은 몇 {\c&H00E5FF&}개나{\c&HFFFFFF&}
+Dialogue: 0,0:00:50.80,0:00:52.40,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}당하셨나요?{\c&HFFFFFF&}
+Dialogue: 0,0:00:52.42,0:00:52.89,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}댓글로{\c&HFFFFFF&} 알려주세요.
+Dialogue: 0,0:00:52.89,0:00:54.47,Sub,,0,0,0,,댓글로 {\c&H00E5FF&}알려주세요.{\c&HFFFFFF&}
+Dialogue: 0,0:00:54.49,0:00:55.15,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}팔로우하면{\c&HFFFFFF&} 다음 착각도
+Dialogue: 0,0:00:55.15,0:00:55.55,Sub,,0,0,0,,팔로우하면 {\c&H00E5FF&}다음{\c&HFFFFFF&} 착각도
+Dialogue: 0,0:00:55.55,0:00:55.99,Sub,,0,0,0,,팔로우하면 다음 {\c&H00E5FF&}착각도{\c&HFFFFFF&}
+Dialogue: 0,0:00:56.01,0:00:57.29,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}알려드릴게요.{\c&HFFFFFF&}
