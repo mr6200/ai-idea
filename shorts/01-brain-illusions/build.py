@@ -277,14 +277,15 @@ def build_video(total, wav, frames):
 
 
 # ---------------------------------------------------------------- 5. 자막
-def chunk_words(words, maxlen=12):
+def chunk_words(words, maxlen=9):
     chunks, cur = [], []
     for w in words:
         cand = " ".join(x["w"] for x in cur + [w])
         if cur and len(cand) > maxlen:
             chunks.append(cur); cur = []
         cur.append(w)
-        if w["w"][-1] in ".?!," and len(" ".join(x["w"] for x in cur)) >= 5:
+        last = w["w"][-1]
+        if last in ".?!" or (last == "," and len(" ".join(x["w"] for x in cur)) >= 5):
             chunks.append(cur); cur = []
     if cur:
         chunks.append(cur)
@@ -311,7 +312,7 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Sub,Noto Sans KR,74,&H00FFFFFF,&H00FFFFFF,&H00120C1E,&H9A000000,1,0,0,0,100,100,-1,0,1,8,4,2,50,50,440,1
+Style: Sub,Noto Sans KR,100,&H00FFFFFF,&H00FFFFFF,&H00120C1E,&H9A000000,1,0,0,0,100,100,-2,0,1,10,5,2,40,40,430,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
