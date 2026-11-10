@@ -35,6 +35,7 @@ VOICE, RATE = "ko-KR-SunHiNeural", "+10%"
 TRANS = 0.45          # 장면 전환 길이(초)
 LEAD, TAIL = 0.30, 0.55   # 장면 시작 후 음성까지 / 음성 후 여백
 LAST_HOLD = 1.3
+INTRO = 1.5           # 영상 맨 앞 썸네일 노출 시간(초)
 
 SCENES = [
     dict(id="hook", photo="brain_fill", bg_level=0.55, icon="brain", badge="매일 겪는 3가지 착각", num=None,
@@ -217,19 +218,40 @@ def make_music(total):
     return out[:end]
 
 
+def intro_sfx(n):
+    """썸네일 인트로용 라이저(노이즈 스윕) + 컷 시점의 임팩트 붐."""
+    out = np.zeros(n, dtype=np.float32)
+    rng = np.random.default_rng(7)
+    L = int(INTRO * SR); t = np.arange(L) / SR
+    noise = rng.standard_normal(L).astype(np.float32)
+    # 간단한 원폴 로우패스 → 점점 열리는 느낌
+    y = np.zeros(L, dtype=np.float32); a = 0.0
+    cut = 0.02 + 0.25 * (t / INTRO) ** 2
+    for i in range(L):
+        a += cut[i] * (noise[i] - a); y[i] = a
+    out[:L] += y * (0.02 + 0.16 * (t / INTRO) ** 2.2)
+    tb = np.arange(int(0.9 * SR)) / SR
+    boom = np.sin(2 * np.pi * (38 + 120 * np.exp(-tb * 18)) * tb) * np.exp(-tb * 4.5) * 0.7
+    boom += rng.standard_normal(len(tb)).astype(np.float32) * np.exp(-tb * 40) * 0.25
+    out[L:L + len(tb)] += boom[: max(0, min(len(tb), n - L))]
+    return out
+
+
 def mix_audio(total):
-    n = int(total * SR)
+    n = int((total + INTRO) * SR)
     voice = np.zeros(n, dtype=np.float32)
     for s in SCENES:
-        i0 = int(s["voice_at"] * SR)
+        i0 = int((s["voice_at"] + INTRO) * SR)
         a = s["audio"]
         voice[i0:i0 + len(a)] += a[: n - i0]
     voice *= 0.89 / max(1e-6, np.abs(voice).max())
-    music = make_music(total)
+    music = np.zeros(n, dtype=np.float32)
+    m = make_music(total); music[int(INTRO * SR):int(INTRO * SR) + len(m)] = m[: n - int(INTRO * SR)]
+    music[: int(INTRO * SR)] = 0
     # 더킹: 음성 구간에서 배경음 감소
     envv = np.convolve(np.abs(voice), np.ones(int(0.25 * SR)) / int(0.25 * SR), mode="same")
     duck = 1 - 0.55 * np.clip(envv / 0.08, 0, 1)
-    mix = voice + music * duck * 0.9
+    mix = voice + music * duck * 0.9 + intro_sfx(n)
     mix = np.clip(mix, -0.98, 0.98)
     wav = WORK / "mix.wav"
     run(["ffmpeg", "-y", "-v", "error", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-", "-c:a", "pcm_s16le", str(wav)],
@@ -242,9 +264,15 @@ def mix_audio(total):
 # ---------------------------------------------------------------- 4. 영상 합성
 def build_video(total, wav, frames):
     nosub = OUT / "short_nosub.mp4"
-    run(["ffmpeg", "-y", "-v", "error", "-stats", "-framerate", str(FPS), "-i", str(frames / "%05d.jpg"), "-i", str(wav),
+    zoom = f"(1+0.07*t/{INTRO})"
+    fc = (f"[0:v]scale=w='trunc(1080*{zoom}/2)*2':h='trunc(1920*{zoom}/2)*2':eval=frame,crop=1080:1920,setsar=1,format=yuv420p[intro];"
+          f"[1:v]setsar=1,format=yuv420p[main];[intro][main]concat=n=2:v=1:a=0[v]")
+    run(["ffmpeg", "-y", "-v", "error", "-stats",
+         "-loop", "1", "-framerate", str(FPS), "-t", f"{INTRO:.3f}", "-i", str(OUT / "thumbnail.png"),
+         "-framerate", str(FPS), "-i", str(frames / "%05d.jpg"), "-i", str(wav),
+         "-filter_complex", fc, "-map", "[v]", "-map", "2:a",
          "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p", "-r", str(FPS),
-         "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-t", f"{total:.3f}", str(nosub)])
+         "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-t", f"{total + INTRO:.3f}", str(nosub)])
     return nosub
 
 
@@ -290,7 +318,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     ev, srt, idx = [], [], 1
     for s in SCENES:
-        base = s["voice_at"]
+        base = s["voice_at"] + INTRO
         chunks = chunk_words(s["words"])
         for ci, ch in enumerate(chunks):
             c_start = base + ch[0]["t"]
