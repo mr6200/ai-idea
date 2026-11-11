@@ -1,0 +1,39 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><style>
+@font-face{font-family:'NSKR';src:url('/assets/fonts/NotoSansKR.ttf');font-weight:100 900;}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#07060f;font-family:'NSKR',sans-serif;color:#fff;position:relative}
+.photo{position:absolute;inset:-80px;background:#07060f url('/assets/photos/pay.jpg') 50% 50%/cover no-repeat;filter:blur(30px) saturate(1.3) brightness(.55)}
+.photo2{position:absolute;inset:0;background:url('/assets/photos/pay.jpg') 50% 62%/cover no-repeat;filter:saturate(1.35) contrast(1.15) brightness(1.05);
+  -webkit-mask-image:radial-gradient(ellipse 52% 26% at 50% 66%,#000 58%,transparent 100%);mask-image:radial-gradient(ellipse 52% 26% at 50% 66%,#000 58%,transparent 100%)}
+.rays{position:absolute;left:-600px;top:400px;width:2280px;height:2280px;background:repeating-conic-gradient(from 0deg,rgba(255,190,40,.22) 0deg 7deg,transparent 7deg 16deg);border-radius:50%;filter:blur(2px);opacity:.9;
+  -webkit-mask-image:radial-gradient(circle,#000 20%,transparent 62%);mask-image:radial-gradient(circle,#000 20%,transparent 62%)}
+.tint{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,6,15,.75) 0%,rgba(7,6,15,.2) 30%,transparent 50%,rgba(7,6,15,.25) 75%,rgba(7,6,15,.92) 100%)}
+.vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,transparent 45%,rgba(0,0,0,.7) 100%)}
+.wrap{position:absolute;inset:0;text-align:center}
+.pct{position:absolute;top:70px;left:0;right:0;font-size:300px;line-height:1;font-weight:900;letter-spacing:-18px;color:#ffe600;
+  -webkit-text-stroke:20px #0a0a14;paint-order:stroke fill;text-shadow:0 16px 0 #0a0a14,0 26px 0 #b3001b,0 50px 90px rgba(0,0,0,.9);transform:rotate(-4deg)}
+.pct small{font-size:120px;letter-spacing:-4px;color:#fff;-webkit-text-stroke:14px #0a0a14;margin-left:10px}
+.h{position:absolute;top:410px;left:0;right:0;font-size:250px;line-height:1;font-weight:900;letter-spacing:-12px;color:#fff;
+  -webkit-text-stroke:20px #0a0a14;paint-order:stroke fill;text-shadow:0 14px 0 #0a0a14,0 24px 0 #ff1f4b,0 40px 80px rgba(0,0,0,.85)}
+.burst{position:absolute;left:50%;top:690px;width:760px;height:460px;transform:translateX(-50%) rotate(-5deg)}
+.sticker{position:absolute;top:760px;left:50%;transform:translateX(-50%) rotate(-5deg);background:#ffe600;color:#0a0a14;font-size:200px;line-height:1;font-weight:900;letter-spacing:-8px;padding:10px 70px 34px;border-radius:36px;white-space:nowrap;box-shadow:0 30px 80px rgba(0,0,0,.7),inset 0 -14px 0 rgba(0,0,0,.18);border:10px solid #0a0a14}
+.circle{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.bang{position:absolute;right:50px;top:980px;width:210px;height:210px;border-radius:50%;background:#fff;color:#ff1f4b;font-size:160px;font-weight:900;line-height:210px;text-align:center;transform:rotate(14deg);box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 0 10px #0a0a14}
+.now{position:absolute;left:30px;top:1010px;background:#fff;color:#0a0a14;font-size:58px;font-weight:900;padding:14px 34px;border-radius:20px;transform:rotate(-10deg);box-shadow:0 14px 40px rgba(0,0,0,.6),0 0 0 8px #0a0a14;white-space:nowrap}
+.bottom{position:absolute;bottom:200px;left:50%;transform:translateX(-50%) rotate(-2deg);background:#ff1f4b;padding:30px 60px;border-radius:30px;font-size:76px;font-weight:900;letter-spacing:-2px;white-space:nowrap;box-shadow:0 20px 70px rgba(255,31,75,.65),0 0 0 10px #0a0a14;text-shadow:0 4px 0 rgba(0,0,0,.35)}
+.brand{position:absolute;bottom:70px;left:0;right:0;text-align:center;font-size:30px;font-weight:700;letter-spacing:7px;color:rgba(255,255,255,.5)}
+</style></head><body>
+<div class="photo"></div><div class="rays"></div><div class="photo2"></div><div class="tint"></div><div class="vig"></div>
+<svg class="circle" viewBox="0 0 1080 1920"><ellipse cx="540" cy="1300" rx="410" ry="215" fill="none" stroke="#ff1f4b" stroke-width="18" stroke-dasharray="2200 260" stroke-linecap="round" transform="rotate(-8 540 1300)" filter="drop-shadow(0 0 24px rgba(255,31,75,1))"/></svg>
+<div class="wrap">
+  <div class="pct">지갑<small>을 여는</small></div>
+  <div class="h">뇌의 착각</div>
+  <svg class="burst" viewBox="0 0 760 460"><polygon fill="#ff1f4b" stroke="#0a0a14" stroke-width="10" points="380,10 430,70 500,30 520,100 600,90 590,165 670,180 630,240 700,290 630,330 650,410 570,400 540,460 470,420 400,450 330,410 260,445 230,380 150,400 170,330 90,290 160,240 120,180 200,165 190,90 270,100 290,30 350,70"/></svg>
+  <div class="sticker">3가지</div>
+  <div class="now">이번 주도 당함</div>
+  <div class="bang">!</div>
+  <div class="bottom">마트가 당신 뇌를 조종한다</div>
+</div>
+<div class="brand">BRAIN HACKS</div>
+<script>document.fonts.ready.then(()=>{window.ready=true});</script>
+</body></html>
