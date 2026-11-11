@@ -1,0 +1,123 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Noto Sans KR,100,&H00FFFFFF,&H00FFFFFF,&H00120C1E,&H9A000000,1,0,0,0,100,100,-2,0,1,10,5,2,40,40,430,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.90,0:00:02.38,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}방금{\c&HFFFFFF&} 산 그거,
+Dialogue: 0,0:00:02.38,0:00:02.61,Sub,,0,0,0,,방금 {\c&H00E5FF&}산{\c&HFFFFFF&} 그거,
+Dialogue: 0,0:00:02.61,0:00:03.22,Sub,,0,0,0,,방금 산 {\c&H00E5FF&}그거,{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.24,0:00:03.71,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}당신이{\c&HFFFFFF&} 고른 게
+Dialogue: 0,0:00:03.71,0:00:04.05,Sub,,0,0,0,,당신이 {\c&H00E5FF&}고른{\c&HFFFFFF&} 게
+Dialogue: 0,0:00:04.05,0:00:04.21,Sub,,0,0,0,,당신이 고른 {\c&H00E5FF&}게{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.22,0:00:05.64,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}아닙니다.{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.66,0:00:06.11,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}마트가{\c&HFFFFFF&} 당신 뇌를
+Dialogue: 0,0:00:06.11,0:00:06.52,Sub,,0,0,0,,마트가 {\c&H00E5FF&}당신{\c&HFFFFFF&} 뇌를
+Dialogue: 0,0:00:06.52,0:00:06.79,Sub,,0,0,0,,마트가 당신 {\c&H00E5FF&}뇌를{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.81,0:00:07.23,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}조종한{\c&HFFFFFF&} 겁니다.
+Dialogue: 0,0:00:07.23,0:00:08.53,Sub,,0,0,0,,조종한 {\c&H00E5FF&}겁니다.{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.55,0:00:09.04,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}지갑을{\c&HFFFFFF&} 열게
+Dialogue: 0,0:00:09.04,0:00:09.29,Sub,,0,0,0,,지갑을 {\c&H00E5FF&}열게{\c&HFFFFFF&}
+Dialogue: 0,0:00:09.31,0:00:09.72,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}만드는{\c&HFFFFFF&} 착각 세
+Dialogue: 0,0:00:09.72,0:00:10.08,Sub,,0,0,0,,만드는 {\c&H00E5FF&}착각{\c&HFFFFFF&} 세
+Dialogue: 0,0:00:10.08,0:00:10.23,Sub,,0,0,0,,만드는 착각 {\c&H00E5FF&}세{\c&HFFFFFF&}
+Dialogue: 0,0:00:10.25,0:00:11.04,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}가지.{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.55,0:00:11.75,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}첫{\c&HFFFFFF&} 번째,
+Dialogue: 0,0:00:11.75,0:00:12.39,Sub,,0,0,0,,첫 {\c&H00E5FF&}번째,{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.41,0:00:12.79,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}미끼{\c&HFFFFFF&} 효과.
+Dialogue: 0,0:00:12.79,0:00:14.06,Sub,,0,0,0,,미끼 {\c&H00E5FF&}효과.{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.08,0:00:14.45,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}팝콘{\c&HFFFFFF&} 작은 사이즈
+Dialogue: 0,0:00:14.45,0:00:14.75,Sub,,0,0,0,,팝콘 {\c&H00E5FF&}작은{\c&HFFFFFF&} 사이즈
+Dialogue: 0,0:00:14.75,0:00:15.14,Sub,,0,0,0,,팝콘 작은 {\c&H00E5FF&}사이즈{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.16,0:00:15.54,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}4천{\c&HFFFFFF&} 원,
+Dialogue: 0,0:00:15.54,0:00:16.00,Sub,,0,0,0,,4천 {\c&H00E5FF&}원,{\c&HFFFFFF&}
+Dialogue: 0,0:00:16.02,0:00:16.26,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}큰{\c&HFFFFFF&} 사이즈 7천
+Dialogue: 0,0:00:16.26,0:00:16.66,Sub,,0,0,0,,큰 {\c&H00E5FF&}사이즈{\c&HFFFFFF&} 7천
+Dialogue: 0,0:00:16.66,0:00:17.04,Sub,,0,0,0,,큰 사이즈 {\c&H00E5FF&}7천{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.06,0:00:17.22,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}원.{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.24,0:00:17.36,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}그{\c&HFFFFFF&} 사이에 6천
+Dialogue: 0,0:00:17.36,0:00:17.86,Sub,,0,0,0,,그 {\c&H00E5FF&}사이에{\c&HFFFFFF&} 6천
+Dialogue: 0,0:00:17.86,0:00:18.42,Sub,,0,0,0,,그 사이에 {\c&H00E5FF&}6천{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.44,0:00:18.73,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}5백{\c&HFFFFFF&} 원짜리
+Dialogue: 0,0:00:18.73,0:00:19.10,Sub,,0,0,0,,5백 {\c&H00E5FF&}원짜리{\c&HFFFFFF&}
+Dialogue: 0,0:00:19.12,0:00:19.54,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}중간이{\c&HFFFFFF&} 있죠?
+Dialogue: 0,0:00:19.54,0:00:20.71,Sub,,0,0,0,,중간이 {\c&H00E5FF&}있죠?{\c&HFFFFFF&}
+Dialogue: 0,0:00:20.73,0:00:21.19,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}중간은{\c&HFFFFFF&} 팔려고 둔
+Dialogue: 0,0:00:21.19,0:00:21.61,Sub,,0,0,0,,중간은 {\c&H00E5FF&}팔려고{\c&HFFFFFF&} 둔
+Dialogue: 0,0:00:21.61,0:00:21.79,Sub,,0,0,0,,중간은 팔려고 {\c&H00E5FF&}둔{\c&HFFFFFF&}
+Dialogue: 0,0:00:21.81,0:00:21.94,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}게{\c&HFFFFFF&} 아니라,
+Dialogue: 0,0:00:21.94,0:00:22.51,Sub,,0,0,0,,게 {\c&H00E5FF&}아니라,{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.53,0:00:22.74,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}큰{\c&HFFFFFF&} 걸 싸 보이게
+Dialogue: 0,0:00:22.74,0:00:22.89,Sub,,0,0,0,,큰 {\c&H00E5FF&}걸{\c&HFFFFFF&} 싸 보이게
+Dialogue: 0,0:00:22.89,0:00:23.07,Sub,,0,0,0,,큰 걸 {\c&H00E5FF&}싸{\c&HFFFFFF&} 보이게
+Dialogue: 0,0:00:23.07,0:00:23.38,Sub,,0,0,0,,큰 걸 싸 {\c&H00E5FF&}보이게{\c&HFFFFFF&}
+Dialogue: 0,0:00:23.40,0:00:23.82,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}만드는{\c&HFFFFFF&}
+Dialogue: 0,0:00:23.84,0:00:24.93,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}미끼입니다.{\c&HFFFFFF&}
+Dialogue: 0,0:00:25.42,0:00:25.58,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}두{\c&HFFFFFF&} 번째,
+Dialogue: 0,0:00:25.58,0:00:26.31,Sub,,0,0,0,,두 {\c&H00E5FF&}번째,{\c&HFFFFFF&}
+Dialogue: 0,0:00:26.33,0:00:26.75,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}왼쪽{\c&HFFFFFF&} 자릿수
+Dialogue: 0,0:00:26.75,0:00:27.18,Sub,,0,0,0,,왼쪽 {\c&H00E5FF&}자릿수{\c&HFFFFFF&}
+Dialogue: 0,0:00:27.20,0:00:28.46,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}효과.{\c&HFFFFFF&}
+Dialogue: 0,0:00:28.48,0:00:28.70,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}만{\c&HFFFFFF&} 원과 9천
+Dialogue: 0,0:00:28.70,0:00:29.03,Sub,,0,0,0,,만 {\c&H00E5FF&}원과{\c&HFFFFFF&} 9천
+Dialogue: 0,0:00:29.03,0:00:29.39,Sub,,0,0,0,,만 원과 {\c&H00E5FF&}9천{\c&HFFFFFF&}
+Dialogue: 0,0:00:29.41,0:00:29.70,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}9백{\c&HFFFFFF&} 원,
+Dialogue: 0,0:00:29.70,0:00:30.22,Sub,,0,0,0,,9백 {\c&H00E5FF&}원,{\c&HFFFFFF&}
+Dialogue: 0,0:00:30.24,0:00:30.76,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}차이는{\c&HFFFFFF&} 단돈 백
+Dialogue: 0,0:00:30.76,0:00:31.15,Sub,,0,0,0,,차이는 {\c&H00E5FF&}단돈{\c&HFFFFFF&} 백
+Dialogue: 0,0:00:31.15,0:00:31.29,Sub,,0,0,0,,차이는 단돈 {\c&H00E5FF&}백{\c&HFFFFFF&}
+Dialogue: 0,0:00:31.31,0:00:31.47,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}원.{\c&HFFFFFF&}
+Dialogue: 0,0:00:31.49,0:00:31.85,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}하지만{\c&HFFFFFF&} 뇌는 첫
+Dialogue: 0,0:00:31.85,0:00:32.35,Sub,,0,0,0,,하지만 {\c&H00E5FF&}뇌는{\c&HFFFFFF&} 첫
+Dialogue: 0,0:00:32.35,0:00:32.50,Sub,,0,0,0,,하지만 뇌는 {\c&H00E5FF&}첫{\c&HFFFFFF&}
+Dialogue: 0,0:00:32.52,0:00:33.01,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}숫자만{\c&HFFFFFF&} 보고
+Dialogue: 0,0:00:33.01,0:00:33.30,Sub,,0,0,0,,숫자만 {\c&H00E5FF&}보고{\c&HFFFFFF&}
+Dialogue: 0,0:00:33.32,0:00:33.80,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}판단을{\c&HFFFFFF&} 끝냅니다.
+Dialogue: 0,0:00:33.80,0:00:35.21,Sub,,0,0,0,,판단을 {\c&H00E5FF&}끝냅니다.{\c&HFFFFFF&}
+Dialogue: 0,0:00:35.23,0:00:35.63,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}그래서{\c&HFFFFFF&} 9천
+Dialogue: 0,0:00:35.63,0:00:35.96,Sub,,0,0,0,,그래서 {\c&H00E5FF&}9천{\c&HFFFFFF&}
+Dialogue: 0,0:00:35.98,0:00:36.39,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}원대로{\c&HFFFFFF&} 느껴지죠.
+Dialogue: 0,0:00:36.39,0:00:37.48,Sub,,0,0,0,,원대로 {\c&H00E5FF&}느껴지죠.{\c&HFFFFFF&}
+Dialogue: 0,0:00:37.99,0:00:38.22,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}세{\c&HFFFFFF&} 번째,
+Dialogue: 0,0:00:38.22,0:00:38.89,Sub,,0,0,0,,세 {\c&H00E5FF&}번째,{\c&HFFFFFF&}
+Dialogue: 0,0:00:38.91,0:00:39.33,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}손실{\c&HFFFFFF&} 회피.
+Dialogue: 0,0:00:39.33,0:00:40.60,Sub,,0,0,0,,손실 {\c&H00E5FF&}회피.{\c&HFFFFFF&}
+Dialogue: 0,0:00:40.62,0:00:40.84,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}원{\c&HFFFFFF&} 플러스 원
+Dialogue: 0,0:00:40.84,0:00:41.23,Sub,,0,0,0,,원 {\c&H00E5FF&}플러스{\c&HFFFFFF&} 원
+Dialogue: 0,0:00:41.23,0:00:41.38,Sub,,0,0,0,,원 플러스 {\c&H00E5FF&}원{\c&HFFFFFF&}
+Dialogue: 0,0:00:41.40,0:00:41.78,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}앞에서{\c&HFFFFFF&} 안 사면
+Dialogue: 0,0:00:41.78,0:00:41.94,Sub,,0,0,0,,앞에서 {\c&H00E5FF&}안{\c&HFFFFFF&} 사면
+Dialogue: 0,0:00:41.94,0:00:42.26,Sub,,0,0,0,,앞에서 안 {\c&H00E5FF&}사면{\c&HFFFFFF&}
+Dialogue: 0,0:00:42.28,0:00:42.78,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}손해라는{\c&HFFFFFF&} 기분,
+Dialogue: 0,0:00:42.78,0:00:43.34,Sub,,0,0,0,,손해라는 {\c&H00E5FF&}기분,{\c&HFFFFFF&}
+Dialogue: 0,0:00:43.36,0:00:45.00,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}느껴보셨죠?{\c&HFFFFFF&}
+Dialogue: 0,0:00:45.02,0:00:45.39,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}뇌는{\c&HFFFFFF&} 이득보다
+Dialogue: 0,0:00:45.39,0:00:45.88,Sub,,0,0,0,,뇌는 {\c&H00E5FF&}이득보다{\c&HFFFFFF&}
+Dialogue: 0,0:00:45.90,0:00:46.39,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}손실을{\c&HFFFFFF&} 두 배
+Dialogue: 0,0:00:46.39,0:00:46.54,Sub,,0,0,0,,손실을 {\c&H00E5FF&}두{\c&HFFFFFF&} 배
+Dialogue: 0,0:00:46.54,0:00:46.69,Sub,,0,0,0,,손실을 두 {\c&H00E5FF&}배{\c&HFFFFFF&}
+Dialogue: 0,0:00:46.71,0:00:47.01,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}크게{\c&HFFFFFF&} 느낍니다.
+Dialogue: 0,0:00:47.01,0:00:48.47,Sub,,0,0,0,,크게 {\c&H00E5FF&}느낍니다.{\c&HFFFFFF&}
+Dialogue: 0,0:00:48.49,0:00:48.75,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}필요{\c&HFFFFFF&} 없어도
+Dialogue: 0,0:00:48.75,0:00:49.27,Sub,,0,0,0,,필요 {\c&H00E5FF&}없어도{\c&HFFFFFF&}
+Dialogue: 0,0:00:49.29,0:00:49.71,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}지갑이{\c&HFFFFFF&} 열리는
+Dialogue: 0,0:00:49.71,0:00:50.09,Sub,,0,0,0,,지갑이 {\c&H00E5FF&}열리는{\c&HFFFFFF&}
+Dialogue: 0,0:00:50.11,0:00:50.92,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}이유죠.{\c&HFFFFFF&}
+Dialogue: 0,0:00:51.42,0:00:51.70,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}이번{\c&HFFFFFF&} 주에 몇
+Dialogue: 0,0:00:51.70,0:00:51.94,Sub,,0,0,0,,이번 {\c&H00E5FF&}주에{\c&HFFFFFF&} 몇
+Dialogue: 0,0:00:51.94,0:00:52.11,Sub,,0,0,0,,이번 주에 {\c&H00E5FF&}몇{\c&HFFFFFF&}
+Dialogue: 0,0:00:52.13,0:00:52.36,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}개나{\c&HFFFFFF&} 당하셨나요?
+Dialogue: 0,0:00:52.36,0:00:53.97,Sub,,0,0,0,,개나 {\c&H00E5FF&}당하셨나요?{\c&HFFFFFF&}
+Dialogue: 0,0:00:53.99,0:00:54.44,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}댓글로{\c&HFFFFFF&}
+Dialogue: 0,0:00:54.46,0:00:56.04,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}알려주세요.{\c&HFFFFFF&}
+Dialogue: 0,0:00:56.06,0:00:56.72,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}팔로우하면{\c&HFFFFFF&} 다음
+Dialogue: 0,0:00:56.72,0:00:57.10,Sub,,0,0,0,,팔로우하면 {\c&H00E5FF&}다음{\c&HFFFFFF&}
+Dialogue: 0,0:00:57.12,0:00:57.56,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}착각도{\c&HFFFFFF&}
+Dialogue: 0,0:00:57.58,0:00:58.86,Sub,,0,0,0,,{\fscx86\fscy86\t(0,110,\fscx100\fscy100)}{\c&H00E5FF&}알려드릴게요.{\c&HFFFFFF&}
