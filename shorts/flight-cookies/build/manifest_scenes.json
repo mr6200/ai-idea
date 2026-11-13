@@ -1,0 +1,444 @@
+[
+ {
+  "id": "S01",
+  "start": 0,
+  "end": 8.6,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 8.6,
+     "z": [
+      104,
+      114
+     ],
+     "pan": [
+      0,
+      30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      310
+     ]
+    }
+   },
+   {
+    "name": "bubble",
+    "anim": {
+     "type": "pop",
+     "at": 3.2,
+     "anchor": [
+      260,
+      1060
+     ]
+    }
+   },
+   {
+    "name": "flip",
+    "anim": {
+     "type": "stamp",
+     "at": 6.4,
+     "anchor": [
+      540,
+      1280
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "start": 8.6,
+  "end": 18.2,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 9.6,
+     "z": [
+      112,
+      104
+     ],
+     "pan": [
+      -30,
+      0
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      260
+     ]
+    }
+   },
+   {
+    "name": "study",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      480
+     ]
+    }
+   },
+   {
+    "name": "rows",
+    "anim": {
+     "type": "wipeD",
+     "at": 3.7,
+     "dur": 1.6
+    }
+   },
+   {
+    "name": "sky",
+    "anim": {
+     "type": "fade",
+     "at": 6.8
+    }
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "start": 18.2,
+  "end": 26.7,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 8.5,
+     "z": [
+      106,
+      116
+     ],
+     "pan": [
+      0,
+      -30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      260
+     ]
+    }
+   },
+   {
+    "name": "ladder",
+    "anim": {
+     "type": "wipeU",
+     "at": 2.5,
+     "dur": 2.4
+    }
+   },
+   {
+    "name": "sfx",
+    "anim": {
+     "type": "stamp",
+     "at": 5.5,
+     "anchor": [
+      540,
+      960
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "start": 26.7,
+  "end": 34.0,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 7.3,
+     "z": [
+      110,
+      104
+     ],
+     "pan": [
+      0,
+      30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      260
+     ]
+    }
+   },
+   {
+    "name": "times",
+    "anim": {
+     "type": "pop",
+     "at": 0.3,
+     "anchor": [
+      540,
+      535
+     ]
+    }
+   },
+   {
+    "name": "third",
+    "anim": {
+     "type": "pop",
+     "at": 3.5,
+     "anchor": [
+      540,
+      775
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "start": 34.0,
+  "end": 40.5,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 6.5,
+     "z": [
+      104,
+      114
+     ],
+     "pan": [
+      -20,
+      20
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "title",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      260
+     ]
+    }
+   },
+   {
+    "name": "aiprice",
+    "anim": {
+     "type": "pop",
+     "at": 2.4,
+     "anchor": [
+      540,
+      500
+     ]
+    }
+   },
+   {
+    "name": "now",
+    "anim": {
+     "type": "fade",
+     "at": 3.6
+    }
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "start": 40.5,
+  "end": 49.6,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 9.1,
+     "z": [
+      106,
+      116
+     ],
+     "pan": [
+      0,
+      -30
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "badge",
+    "anim": {
+     "type": "pop",
+     "at": 0.0,
+     "anchor": [
+      540,
+      240
+     ]
+    }
+   },
+   {
+    "name": "question",
+    "anim": {
+     "type": "pop",
+     "at": 0.3,
+     "anchor": [
+      540,
+      455
+     ]
+    }
+   },
+   {
+    "name": "choices",
+    "anim": {
+     "type": "pop",
+     "at": 0.9,
+     "anchor": [
+      540,
+      1060
+     ]
+    }
+   },
+   {
+    "name": "answer",
+    "anim": {
+     "type": "stamp",
+     "at": 4.5,
+     "anchor": [
+      540,
+      1060
+     ]
+    }
+   },
+   {
+    "name": "why",
+    "anim": {
+     "type": "fade",
+     "at": 7.0
+    }
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "start": 49.6,
+  "end": 58.0,
+  "parts": [
+   {
+    "name": "ai",
+    "anim": {
+     "type": "kenburns",
+     "dur": 8.4,
+     "z": [
+      110,
+      102
+     ],
+     "pan": [
+      0,
+      0
+     ]
+    }
+   },
+   {
+    "name": "bg",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "look",
+    "anim": {
+     "type": "pop",
+     "at": 0.2,
+     "anchor": [
+      540,
+      310
+     ]
+    }
+   },
+   {
+    "name": "button",
+    "anim": {
+     "type": "pop",
+     "at": 2.9,
+     "anchor": [
+      540,
+      1250
+     ]
+    }
+   },
+   {
+    "name": "finger",
+    "anim": {
+     "type": "tap",
+     "at": 3.5,
+     "anchor": [
+      785,
+      1390
+     ]
+    }
+   }
+  ]
+ }
+]

@@ -199,6 +199,8 @@ curl -s -H "Authorization: Bearer $K" "https://rest.runpod.io/v1/billing/pods?bu
 | `timeline.py`를 정규식으로 고치다 `\n`이 깨짐 | 치환에 lambda를 쓰거나 파일을 다시 씀 |
 | 그림 속 엉터리 글씨 · 로고 | 프롬프트에 no signboard / no writing, 다시 그림 (`--seed N`) |
 | 겹친 글씨가 얼굴을 가림 | 시험 프레임으로 확인 후 위치 옮김 |
+| 장면 제목 · 부품이 통째로 안 보임 | 부품 이름을 `ai`로 지으면 배경 그림 레이어와 겹침 → 다른 이름으로 (27편) |
+| 인물이 화면 아래에 있어 자막에 얼굴이 가림 | 프롬프트에 "his face in the middle of the frame"을 넣어 다시 그림 (27편) |
 | 숫자를 이상하게 읽음 (「3,600만」 → 「삼 육백만」) | `gen_narration.py`가 숫자를 한글로 바꿔 TTS에 보냄. 새 단위는 `SPOKEN`/`NATIVE_COUNTERS`에 추가 |
 | 일부 뉴스 · 공공 사이트 접속 차단 | 웹 검색 결과로 여러 자료 대조, `script.md`에 그렇게 적음 |
 | `git push` 실패 | 네트워크 오류면 재시도 (2 · 4 · 8 · 16초) |
