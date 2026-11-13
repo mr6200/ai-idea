@@ -1,0 +1,574 @@
+{
+ "duration": 49,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 4.6,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 4.6,
+      "z": [
+       104,
+       114
+      ],
+      "pan": [
+       0,
+       30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       370
+      ]
+     }
+    },
+    {
+     "name": "bubble",
+     "anim": {
+      "type": "pop",
+      "at": 0.8,
+      "anchor": [
+       230,
+       615
+      ]
+     }
+    },
+    {
+     "name": "flip",
+     "anim": {
+      "type": "stamp",
+      "at": 2.1,
+      "anchor": [
+       540,
+       1280
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 4.6,
+   "end": 10.6,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 6.0,
+      "z": [
+       112,
+       104
+      ],
+      "pan": [
+       -30,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       260
+      ]
+     }
+    },
+    {
+     "name": "q",
+     "anim": {
+      "type": "pop",
+      "at": 0.6,
+      "anchor": [
+       540,
+       450
+      ]
+     }
+    },
+    {
+     "name": "flow",
+     "anim": {
+      "type": "wipeL",
+      "at": 2.6,
+      "dur": 1.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 10.6,
+   "end": 17.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 6.4,
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       20,
+       -20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       260
+      ]
+     }
+    },
+    {
+     "name": "credit",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       300,
+       670
+      ]
+     }
+    },
+    {
+     "name": "debit",
+     "anim": {
+      "type": "pop",
+      "at": 3.1,
+      "anchor": [
+       780,
+       670
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 17.0,
+   "end": 20.3,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 3.3,
+      "z": [
+       106,
+       116
+      ],
+      "pan": [
+       30,
+       -20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       260
+      ]
+     }
+    },
+    {
+     "name": "perks",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       640
+      ]
+     }
+    },
+    {
+     "name": "sfx",
+     "anim": {
+      "type": "stamp",
+      "at": 1.6,
+      "anchor": [
+       540,
+       810
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 20.3,
+   "end": 27.3,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7.0,
+      "z": [
+       110,
+       104
+      ],
+      "pan": [
+       0,
+       30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       260
+      ]
+     }
+    },
+    {
+     "name": "news",
+     "anim": {
+      "type": "wipeD",
+      "at": 2.8,
+      "dur": 2.0
+     }
+    },
+    {
+     "name": "sfx",
+     "anim": {
+      "type": "stamp",
+      "at": 5.0,
+      "anchor": [
+       860,
+       870
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 27.3,
+   "end": 29.7,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 2.4,
+      "z": [
+       104,
+       114
+      ],
+      "pan": [
+       -20,
+       20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       260
+      ]
+     }
+    },
+    {
+     "name": "sfx",
+     "anim": {
+      "type": "stamp",
+      "at": 0.8,
+      "anchor": [
+       540,
+       1180
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 29.7,
+   "end": 39.7,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 10.0,
+      "z": [
+       106,
+       116
+      ],
+      "pan": [
+       0,
+       -30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       240
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       455
+      ]
+     }
+    },
+    {
+     "name": "choices",
+     "anim": {
+      "type": "pop",
+      "at": 0.9,
+      "anchor": [
+       540,
+       1060
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 4.1,
+      "anchor": [
+       540,
+       1060
+      ]
+     }
+    },
+    {
+     "name": "why",
+     "anim": {
+      "type": "fade",
+      "at": 6.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 39.7,
+   "end": 49.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 9.3,
+      "z": [
+       110,
+       102
+      ],
+      "pan": [
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "look",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       310
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 3.9,
+      "anchor": [
+       540,
+       1250
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 4.5,
+      "anchor": [
+       785,
+       1390
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 2.0,
+   "text": "체크카드만 쓰면\n무조건 이득일까요?"
+  },
+  {
+   "start": 2.1,
+   "end": 4.4,
+   "text": "아껴 쓰기엔 좋지만,\n놓치는 게 있어요"
+  },
+  {
+   "start": 4.7,
+   "end": 7.1,
+   "text": "신용점수는 빌린 돈을\n잘 갚았는지를 봐요"
+  },
+  {
+   "start": 7.2,
+   "end": 10.4,
+   "text": "신용카드는 먼저 쓰고\n다음 달에 갚는 작은 빚이에요"
+  },
+  {
+   "start": 10.8,
+   "end": 13.6,
+   "text": "그래서 제때 갚은 기록이\n믿을 만하다는 증거가 돼요"
+  },
+  {
+   "start": 13.7,
+   "end": 16.9,
+   "text": "체크카드도 점수에 반영되지만,\n갚은 기록은 남지 않아요"
+  },
+  {
+   "start": 17.2,
+   "end": 20.1,
+   "text": "할인이나 포인트 적립도\n대체로 신용카드가 더 커요"
+  },
+  {
+   "start": 20.5,
+   "end": 23.0,
+   "text": "그런데 체크카드에도\n반가운 소식이 있어요"
+  },
+  {
+   "start": 23.1,
+   "end": 27.1,
+   "text": "이번 가을부터 대출 이자를\n깎아 주는 카드 실적에\n체크카드도 들어가요"
+  },
+  {
+   "start": 27.4,
+   "end": 29.6,
+   "text": "단, 신용카드에도\n함정이 있어요"
+  },
+  {
+   "start": 29.9,
+   "end": 32.9,
+   "text": "퀴즈! 신용카드를 쓸 때\n가장 피해야 할 습관은?"
+  },
+  {
+   "start": 33.8,
+   "end": 35.6,
+   "text": "정답은, 리볼빙이에요!"
+  },
+  {
+   "start": 35.7,
+   "end": 39.6,
+   "text": "남은 카드값이 다음 달로 넘어가\n연 17%쯤 이자가 붙거든요"
+  },
+  {
+   "start": 39.9,
+   "end": 43.3,
+   "text": "신용카드 한 장, 조금만 쓰고\n매달 다 갚는 게 정답이에요"
+  },
+  {
+   "start": 43.4,
+   "end": 46.0,
+   "text": "더 많은 돈 이야기가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
