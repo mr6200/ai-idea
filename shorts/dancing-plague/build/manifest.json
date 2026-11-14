@@ -1,0 +1,542 @@
+{
+ "duration": 60,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "end": 5.9,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S01"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t1",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       300
+      ]
+     }
+    },
+    {
+     "name": "t2",
+     "anim": {
+      "type": "stamp",
+      "at": 0.8,
+      "anchor": [
+       540,
+       450
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 5.9,
+   "end": 9.55,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/strasbourg_1518_old.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 3.85
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 9.55,
+   "end": 15.4,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S02_a",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       30
+      ],
+      "dur": 6.05
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "n",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 15.4,
+   "end": 20.35,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S04_a",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 5.15
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "rx",
+     "anim": {
+      "type": "slideL",
+      "at": 2.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 20.35,
+   "end": 25.9,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S05"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "hall",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       330
+      ]
+     }
+    },
+    {
+     "name": "ban",
+     "anim": {
+      "type": "stamp",
+      "at": 2.7,
+      "anchor": [
+       540,
+       470
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 25.9,
+   "end": 33.0,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S07_a",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       -30
+      ],
+      "dur": 7.3
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "end",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    },
+    {
+     "name": "dead",
+     "anim": {
+      "type": "stamp",
+      "at": 4.3,
+      "anchor": [
+       540,
+       540
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 33.0,
+   "end": 38.45,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S09_d",
+      "z": [
+       102,
+       112
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 5.65
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "q",
+     "anim": {
+      "type": "pop",
+      "at": 0.1,
+      "anchor": [
+       540,
+       300
+      ]
+     }
+    },
+    {
+     "name": "ergot",
+     "anim": {
+      "type": "slideL",
+      "at": 1.7
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 38.45,
+   "end": 42.6,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S10_a",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       -20,
+       0
+      ],
+      "dur": 4.35
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "psy",
+     "anim": {
+      "type": "slideL",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 42.6,
+   "end": 50.55,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/molenbeek_engraving.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       40
+      ],
+      "dur": 8.15
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 50.55,
+   "end": 55.3,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/molenbeek_painting.jpg",
+      "z": [
+       100,
+       110
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 4.95
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "start": 55.3,
+   "end": 60.0,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S12"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       300
+      ]
+     }
+    },
+    {
+     "name": "sub",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       490
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 3.4,
+   "text": "1518년 여름, 한 여성이\n거리에서 춤을 추기 시작했어요"
+  },
+  {
+   "start": 3.5,
+   "end": 5.7,
+   "text": "그런데 며칠이 지나도\n멈추지 못했죠"
+  },
+  {
+   "start": 6.1,
+   "end": 9.5,
+   "text": "프랑스 스트라스부르,\n당시엔 신성 로마 제국의 도시였어요"
+  },
+  {
+   "start": 9.6,
+   "end": 12.1,
+   "text": "며칠 만에 30명이 넘게\n따라 추기 시작했고"
+  },
+  {
+   "start": 12.2,
+   "end": 15.1,
+   "text": "8월엔 50명에서 400명까지\n늘었다는 기록이 있어요"
+  },
+  {
+   "start": 15.5,
+   "end": 17.5,
+   "text": "시 의회의 대처는\n더 놀라웠어요"
+  },
+  {
+   "start": 17.6,
+   "end": 20.3,
+   "text": "의사들은 실컷 춤을 춰서\n털어 내야 한다고 했고"
+  },
+  {
+   "start": 20.4,
+   "end": 22.8,
+   "text": "의회는 회관을 내주고\n악사까지 불러 줬죠"
+  },
+  {
+   "start": 22.9,
+   "end": 25.7,
+   "text": "하지만 오히려 더 늘자,\n결국 춤을 금지했어요"
+  },
+  {
+   "start": 26.1,
+   "end": 30.1,
+   "text": "9월, 사람들을 성인의 성지로 보내\n기도하게 하자 잦아들었다고 해요"
+  },
+  {
+   "start": 30.2,
+   "end": 32.7,
+   "text": "죽은 사람이 있었는지는\n지금도 논쟁 중이에요"
+  },
+  {
+   "start": 33.1,
+   "end": 34.6,
+   "text": "그럼 원인은 뭐였을까요?"
+  },
+  {
+   "start": 34.7,
+   "end": 38.4,
+   "text": "곡물 곰팡이 중독설은\n며칠씩 춤출 수 없다는 반론이 많고"
+  },
+  {
+   "start": 38.5,
+   "end": 42.4,
+   "text": "굶주림과 병에 지친 사람들의\n집단 심리 현상이라는 설명이\n많이 꼽혀요"
+  },
+  {
+   "start": 42.8,
+   "end": 45.8,
+   "text": "비슷한 춤 전염병은\n중세 유럽에 여러 번 있었어요"
+  },
+  {
+   "start": 45.9,
+   "end": 50.5,
+   "text": "1374년 아헨에서 시작된 춤은\n쾰른과 스트라스부르까지 번졌고"
+  },
+  {
+   "start": 50.6,
+   "end": 55.1,
+   "text": "1278년엔 다리 위에서 춤추던\n약 200명 때문에 다리가\n무너졌다는 기록도 있죠"
+  },
+  {
+   "start": 55.5,
+   "end": 57.9,
+   "text": "더 많은 미스터리가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
