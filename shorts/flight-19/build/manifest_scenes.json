@@ -1,0 +1,534 @@
+[
+ {
+  "id": "S01",
+  "start": 0.0,
+  "end": 5.05,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S01"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t1",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      300
+     ]
+    }
+   },
+   {
+    "name": "t2",
+    "anim": {
+     "type": "stamp",
+     "at": 0.8,
+     "anchor": [
+      540,
+      440
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "start": 5.05,
+  "end": 8.9,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/avengers_1942.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 4.05
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "start": 8.9,
+  "end": 13.6,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S03_a",
+     "z": [
+      104,
+      114
+     ],
+     "pan": [
+      -30,
+      0
+     ],
+     "dur": 4.9
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "who",
+    "anim": {
+     "type": "slideL",
+     "at": 2.6
+    }
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "start": 13.6,
+  "end": 16.15,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S04_a",
+     "z": [
+      104,
+      110
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 2.75
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "lost",
+    "anim": {
+     "type": "stamp",
+     "at": 0.3,
+     "anchor": [
+      540,
+      330
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "start": 16.15,
+  "end": 20.2,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S05"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "night",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "start": 20.2,
+  "end": 24.35,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/pbm5_mariner_1945.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 4.35
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "start": 24.35,
+  "end": 27.85,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S07_d",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      -20
+     ],
+     "dur": 3.7
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "fire",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S08",
+  "start": 27.85,
+  "end": 34.6,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S08_a",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 6.95
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "search",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   },
+   {
+    "name": "n",
+    "anim": {
+     "type": "stamp",
+     "at": 3.9,
+     "anchor": [
+      540,
+      560
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S09",
+  "start": 34.6,
+  "end": 41.35,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/flight19_map.png",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 6.95
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   }
+  ]
+ },
+ {
+  "id": "S10",
+  "start": 41.35,
+  "end": 45.45,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S04_b",
+     "z": [
+      106,
+      112
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 4.3
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "navy",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S11",
+  "start": 45.45,
+  "end": 48.6,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/pbm_takeoff.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 3.35
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   }
+  ]
+ },
+ {
+  "id": "S12",
+  "start": 48.6,
+  "end": 52.55,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S10_a",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      30
+     ],
+     "dur": 4.15
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "safe",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S13",
+  "start": 52.55,
+  "end": 55.4,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S11_b",
+     "z": [
+      104,
+      110
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 3.05
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "six",
+    "anim": {
+     "type": "stamp",
+     "at": 0.3,
+     "anchor": [
+      540,
+      330
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S14",
+  "start": 55.4,
+  "end": 61.0,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S11"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      300
+     ]
+    }
+   },
+   {
+    "name": "sub",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      490
+     ]
+    }
+   }
+  ]
+ }
+]

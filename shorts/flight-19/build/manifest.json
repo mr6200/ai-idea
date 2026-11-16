@@ -1,0 +1,627 @@
+{
+ "duration": 61,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "end": 5.05,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S01"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t1",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       300
+      ]
+     }
+    },
+    {
+     "name": "t2",
+     "anim": {
+      "type": "stamp",
+      "at": 0.8,
+      "anchor": [
+       540,
+       440
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 5.05,
+   "end": 8.9,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/avengers_1942.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 4.05
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 8.9,
+   "end": 13.6,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S03_a",
+      "z": [
+       104,
+       114
+      ],
+      "pan": [
+       -30,
+       0
+      ],
+      "dur": 4.9
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "who",
+     "anim": {
+      "type": "slideL",
+      "at": 2.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 13.6,
+   "end": 16.15,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S04_a",
+      "z": [
+       104,
+       110
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 2.75
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "lost",
+     "anim": {
+      "type": "stamp",
+      "at": 0.3,
+      "anchor": [
+       540,
+       330
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 16.15,
+   "end": 20.2,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S05"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "night",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 20.2,
+   "end": 24.35,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/pbm5_mariner_1945.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 4.35
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 24.35,
+   "end": 27.85,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S07_d",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       -20
+      ],
+      "dur": 3.7
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "fire",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 27.85,
+   "end": 34.6,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S08_a",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 6.95
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "search",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    },
+    {
+     "name": "n",
+     "anim": {
+      "type": "stamp",
+      "at": 3.9,
+      "anchor": [
+       540,
+       560
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 34.6,
+   "end": 41.35,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/flight19_map.png",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 6.95
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 41.35,
+   "end": 45.45,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S04_b",
+      "z": [
+       106,
+       112
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 4.3
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "navy",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "start": 45.45,
+   "end": 48.6,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/pbm_takeoff.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 3.35
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "start": 48.6,
+   "end": 52.55,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S10_a",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       30
+      ],
+      "dur": 4.15
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "safe",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "start": 52.55,
+   "end": 55.4,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S11_b",
+      "z": [
+       104,
+       110
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 3.05
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "six",
+     "anim": {
+      "type": "stamp",
+      "at": 0.3,
+      "anchor": [
+       540,
+       330
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "start": 55.4,
+   "end": 61.0,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S11"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       300
+      ]
+     }
+    },
+    {
+     "name": "sub",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       490
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 5.0,
+   "text": "1945년 12월, 미 해군 폭격기 다섯 대가\n훈련 비행 중 통째로 사라졌어요"
+  },
+  {
+   "start": 5.1,
+   "end": 8.7,
+   "text": "플로리다 기지를 떠난 어벤저 폭격기,\n탄 사람은 14명이었죠"
+  },
+  {
+   "start": 9.1,
+   "end": 11.6,
+   "text": "얼마 뒤, 편대장의\n다급한 교신이 들어와요"
+  },
+  {
+   "start": 11.7,
+   "end": 13.4,
+   "text": "「나침반이 둘 다 고장 났다」"
+  },
+  {
+   "start": 13.8,
+   "end": 16.1,
+   "text": "편대는 방향을 잃고\n바다 위를 헤맸어요"
+  },
+  {
+   "start": 16.2,
+   "end": 20.0,
+   "text": "날은 어두워지고 파도는 거세졌고,\n저녁 무렵 교신이 끊겼죠"
+  },
+  {
+   "start": 20.4,
+   "end": 24.3,
+   "text": "구조 비행정이 13명을 태우고 떴지만,\n이 비행기도 돌아오지 않았어요"
+  },
+  {
+   "start": 24.4,
+   "end": 27.8,
+   "text": "근처 유조선은 그날 밤\n하늘에서 불길을 봤다고 보고했죠"
+  },
+  {
+   "start": 27.9,
+   "end": 31.5,
+   "text": "닷새 동안 넓은 바다를 뒤졌지만\n잔해는 하나도 찾지 못했어요"
+  },
+  {
+   "start": 31.6,
+   "end": 34.4,
+   "text": "모두 27명,\n돌아온 사람은 없었어요"
+  },
+  {
+   "start": 34.8,
+   "end": 37.9,
+   "text": "이 사건은 훗날 버뮤다 삼각지대\n전설의 대표 사례가 돼요"
+  },
+  {
+   "start": 38.0,
+   "end": 41.3,
+   "text": "하지만 해군 조사는 길을 잃고\n연료가 떨어졌을 거라고 봤어요"
+  },
+  {
+   "start": 41.4,
+   "end": 45.4,
+   "text": "처음엔 편대장의 실수라고 했다가,\n나중에 원인 불명으로 고쳤죠"
+  },
+  {
+   "start": 45.5,
+   "end": 48.4,
+   "text": "구조기는 연료 증기로\n폭발 사고가 나던 기종이었고요"
+  },
+  {
+   "start": 48.8,
+   "end": 52.5,
+   "text": "보험사와 해안 경비대는 이 바다가\n다른 곳보다 위험하지 않다고 해요"
+  },
+  {
+   "start": 52.6,
+   "end": 55.2,
+   "text": "다만 여섯 대의 비행기는\n지금도 발견되지 않았어요"
+  },
+  {
+   "start": 55.6,
+   "end": 58.0,
+   "text": "더 많은 미스터리가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
