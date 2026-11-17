@@ -1,0 +1,480 @@
+[
+ {
+  "id": "S01",
+  "start": 0.0,
+  "end": 6.1,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S01"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t1",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      300
+     ]
+    }
+   },
+   {
+    "name": "t2",
+    "anim": {
+     "type": "stamp",
+     "at": 0.8,
+     "anchor": [
+      540,
+      450
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "start": 6.1,
+  "end": 9.3,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/lake_2014.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 3.4
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "start": 9.3,
+  "end": 16.35,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S03_a",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      30
+     ],
+     "dur": 7.25
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "find",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "start": 16.35,
+  "end": 20.7,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/skeletons.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 4.55
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "start": 20.7,
+  "end": 24.25,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S05_a",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      -30
+     ],
+     "dur": 3.75
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "old",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "start": 24.25,
+  "end": 27.6,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S06"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "hail",
+    "anim": {
+     "type": "stamp",
+     "at": 0.2,
+     "anchor": [
+      540,
+      330
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "start": 27.6,
+  "end": 32.85,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S08_a",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 5.45
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "study",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S08",
+  "start": 32.85,
+  "end": 39.35,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S08_b",
+     "z": [
+      106,
+      112
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 6.7
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "sa",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   },
+   {
+    "name": "med",
+    "anim": {
+     "type": "slideL",
+     "at": 3.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S09",
+  "start": 39.35,
+  "end": 45.4,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S10_a",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      30
+     ],
+     "dur": 6.25
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "sea",
+    "anim": {
+     "type": "pop",
+     "at": 0.1,
+     "anchor": [
+      540,
+      330
+     ]
+    }
+   },
+   {
+    "name": "gap",
+    "anim": {
+     "type": "stamp",
+     "at": 2.1,
+     "anchor": [
+      540,
+      470
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S10",
+  "start": 45.4,
+  "end": 49.15,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/mystery_lake.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 3.95
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "raj",
+    "anim": {
+     "type": "slideL",
+     "at": 0.4
+    }
+   }
+  ]
+ },
+ {
+  "id": "S11",
+  "start": 49.15,
+  "end": 53.3,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S10_b",
+     "z": [
+      106,
+      114
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 4.35
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      300
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S12",
+  "start": 53.3,
+  "end": 58.0,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S12"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      300
+     ]
+    }
+   },
+   {
+    "name": "sub",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      490
+     ]
+    }
+   }
+  ]
+ }
+]
