@@ -1,0 +1,682 @@
+{
+ "duration": 58,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "end": 5.0,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S01"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t1",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       300
+      ]
+     }
+    },
+    {
+     "name": "t2",
+     "anim": {
+      "type": "stamp",
+      "at": 0.8,
+      "anchor": [
+       540,
+       450
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 5.0,
+   "end": 7.05,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/page_flowers.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 2.25
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 7.05,
+   "end": 10.95,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/wilfrid_voynich.jpg",
+      "z": [
+       100,
+       106
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 4.1
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 10.95,
+   "end": 14.55,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S04_a",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 3.8
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "c14",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 14.55,
+   "end": 19.2,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/page_text.jpg",
+      "z": [
+       100,
+       110
+      ],
+      "pan": [
+       0,
+       40
+      ],
+      "dur": 4.85
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "n",
+     "anim": {
+      "type": "slideL",
+      "at": 0.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 19.2,
+   "end": 22.95,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/page_plant.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 3.95
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 22.95,
+   "end": 24.65,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/page_rosettes.jpg",
+      "z": [
+       100,
+       110
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 1.9
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 24.65,
+   "end": 26.75,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/page_bathing.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 2.3
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 26.75,
+   "end": 30.1,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/page_jars.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       40
+      ],
+      "dur": 3.55
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 30.1,
+   "end": 35.25,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/rudolf2.jpg",
+      "z": [
+       100,
+       106
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 5.35
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "claim",
+     "anim": {
+      "type": "slideL",
+      "at": 0.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "start": 35.25,
+   "end": 39.1,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S11"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "wf",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "start": 39.1,
+   "end": 44.75,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S01_b",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       30
+      ],
+      "dur": 5.85
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "hoax",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    },
+    {
+     "name": "rule",
+     "anim": {
+      "type": "pop",
+      "at": 2.7,
+      "anchor": [
+       540,
+       560
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "start": 44.75,
+   "end": 48.55,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S04_b",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 4.0
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "none",
+     "anim": {
+      "type": "stamp",
+      "at": 0.3,
+      "anchor": [
+       540,
+       330
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "start": 48.55,
+   "end": 52.6,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S16_b",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 4.25
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       300
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "start": 52.6,
+   "end": 58.0,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S16"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       300
+      ]
+     }
+    },
+    {
+     "name": "sub",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       490
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 2.7,
+   "text": "600년 된 책 한 권,\n그런데 아무도 읽지 못해요"
+  },
+  {
+   "start": 2.8,
+   "end": 4.8,
+   "text": "세상에 없는 글자로\n가득하거든요"
+  },
+  {
+   "start": 5.2,
+   "end": 7.0,
+   "text": "보이니치 필사본이라고 불러요"
+  },
+  {
+   "start": 7.1,
+   "end": 10.9,
+   "text": "1912년 고서 수집가\n윌프리드 보이니치가 사들이며 알려졌죠"
+  },
+  {
+   "start": 11.0,
+   "end": 14.5,
+   "text": "양피지를 조사해 보니\n1400년대 초에 만든 것이었어요"
+  },
+  {
+   "start": 14.6,
+   "end": 18.9,
+   "text": "약 240쪽, 단어는 3만 8천 개쯤인데\n그 뜻을 아는 사람이 없어요"
+  },
+  {
+   "start": 19.3,
+   "end": 21.1,
+   "text": "책 속엔 이상한 그림이\n가득해요"
+  },
+  {
+   "start": 21.2,
+   "end": 22.9,
+   "text": "세상에서 찾을 수 없는 식물들,"
+  },
+  {
+   "start": 23.0,
+   "end": 24.6,
+   "text": "별자리 같은 둥근 무늬,"
+  },
+  {
+   "start": 24.7,
+   "end": 26.7,
+   "text": "초록빛 물에 몸을 담근\n여인들까지"
+  },
+  {
+   "start": 26.8,
+   "end": 29.9,
+   "text": "약병 그림 옆에는\n요리법 같은 짧은 글들도 있죠"
+  },
+  {
+   "start": 30.3,
+   "end": 35.2,
+   "text": "17세기 편지엔 황제 루돌프 2세가\n금화 600두카트에 샀다는\n말도 적혀 있죠"
+  },
+  {
+   "start": 35.3,
+   "end": 38.9,
+   "text": "미국 최고의 암호 해독가\n윌리엄 프리드먼도 끝내 풀지 못했어요"
+  },
+  {
+   "start": 39.3,
+   "end": 41.6,
+   "text": "누군가 꾸며 낸\n가짜라는 주장도 있지만,"
+  },
+  {
+   "start": 41.7,
+   "end": 44.7,
+   "text": "글자 배열엔 진짜 언어 같은\n규칙이 있다는 분석도 있어요"
+  },
+  {
+   "start": 44.8,
+   "end": 48.3,
+   "text": "해독했다는 주장은 여러 번 나왔지만,\n인정받은 건 하나도 없어요"
+  },
+  {
+   "start": 48.7,
+   "end": 52.4,
+   "text": "600년 넘게 아무도 읽지 못한 책,\n여러분이라면 풀 수 있을까요?"
+  },
+  {
+   "start": 52.8,
+   "end": 55.3,
+   "text": "더 많은 미스터리가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
