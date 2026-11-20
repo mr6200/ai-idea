@@ -1,0 +1,652 @@
+{
+ "duration": 61,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "end": 6.8,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S01"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t1",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       300
+      ]
+     }
+    },
+    {
+     "name": "t2",
+     "anim": {
+      "type": "stamp",
+      "at": 0.8,
+      "anchor": [
+       540,
+       450
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 6.8,
+   "end": 12.05,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/giza_khufu.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 5.45
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "shape",
+     "anim": {
+      "type": "slideL",
+      "at": 1.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 12.05,
+   "end": 15.2,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/kukulcan.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 3.35
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "shape",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 15.2,
+   "end": 19.35,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/giza_all.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 4.35
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "use",
+     "anim": {
+      "type": "slideL",
+      "at": 2.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 19.35,
+   "end": 22.85,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S07"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "use",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 22.85,
+   "end": 27.2,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/pakal_tomb.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 4.55
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "exc",
+     "anim": {
+      "type": "slideL",
+      "at": 0.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 27.2,
+   "end": 34.55,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/teo_avenue.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 7.55
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "age",
+     "anim": {
+      "type": "slideL",
+      "at": 2.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 34.55,
+   "end": 38.55,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/cholula_model.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 4.2
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "layer",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 38.55,
+   "end": 44.95,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/cholula.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 6.6
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "age",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "big",
+     "anim": {
+      "type": "stamp",
+      "at": 2.9,
+      "anchor": [
+       540,
+       520
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 44.95,
+   "end": 47.8,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/cholula.jpg",
+      "z": [
+       112,
+       124
+      ],
+      "pan": [
+       60,
+       80
+      ],
+      "dur": 3.05
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "church",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       1180
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "start": 47.8,
+   "end": 50.45,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S16_a",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 2.85
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "q",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       300
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "start": 50.45,
+   "end": 55.75,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S16_b",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       30
+      ],
+      "dur": 5.5
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "why",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "start": 55.75,
+   "end": 61.0,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S18"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       300
+      ]
+     }
+    },
+    {
+     "name": "sub",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       490
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 3.4,
+   "text": "서로 만난 적도 없는 두 문명이\n똑같이 피라미드를 쌓았어요"
+  },
+  {
+   "start": 3.5,
+   "end": 6.6,
+   "text": "이집트와 멕시코,\n그런데 자세히 보면 완전히 달라요"
+  },
+  {
+   "start": 7.0,
+   "end": 8.3,
+   "text": "첫째, 모양이에요"
+  },
+  {
+   "start": 8.4,
+   "end": 12.0,
+   "text": "이집트 피라미드는 원래 면이 매끈하고\n꼭대기가 뾰족했죠"
+  },
+  {
+   "start": 12.1,
+   "end": 15.0,
+   "text": "멕시코 피라미드는 계단식이고,\n꼭대기가 평평해요"
+  },
+  {
+   "start": 15.4,
+   "end": 17.1,
+   "text": "둘째, 쓰임이 달라요"
+  },
+  {
+   "start": 17.2,
+   "end": 19.3,
+   "text": "이집트 피라미드는\n파라오의 무덤이었고"
+  },
+  {
+   "start": 19.4,
+   "end": 22.8,
+   "text": "멕시코 피라미드는 꼭대기에 신전을 올려\n제사를 지내던 곳이었죠"
+  },
+  {
+   "start": 22.9,
+   "end": 27.0,
+   "text": "다만 멕시코 팔렝케에선\n피라미드 속 왕의 무덤이\n발견되기도 했어요"
+  },
+  {
+   "start": 27.4,
+   "end": 29.2,
+   "text": "셋째, 시대가 달라요"
+  },
+  {
+   "start": 29.3,
+   "end": 34.4,
+   "text": "기자의 대피라미드는 약 4,500년 전,\n태양의 피라미드는\n약 1,800년 전에 지어졌어요"
+  },
+  {
+   "start": 34.7,
+   "end": 38.5,
+   "text": "멕시코에선 옛 피라미드 위에\n새 층을 덧씌워 키우기도 했죠"
+  },
+  {
+   "start": 38.6,
+   "end": 41.3,
+   "text": "그렇게 1,000년 넘게 쌓은 게\n촐룰라 피라미드예요"
+  },
+  {
+   "start": 41.4,
+   "end": 44.9,
+   "text": "부피로는 이집트를 제치고\n세계에서 가장 큰 피라미드죠"
+  },
+  {
+   "start": 45.0,
+   "end": 47.6,
+   "text": "지금은 언덕처럼 보여서\n꼭대기엔 교회가 서 있어요"
+  },
+  {
+   "start": 48.0,
+   "end": 50.4,
+   "text": "그런데 왜 둘 다 피라미드였을까요?"
+  },
+  {
+   "start": 50.5,
+   "end": 55.5,
+   "text": "돌과 흙으로 높이 쌓으려면\n아래가 넓고 위가 좁은 모양이\n가장 튼튼하다는 설명이 많아요"
+  },
+  {
+   "start": 55.9,
+   "end": 58.8,
+   "text": "더 많은 미스터리가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}

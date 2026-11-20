@@ -1,0 +1,554 @@
+[
+ {
+  "id": "S01",
+  "start": 0.0,
+  "end": 6.8,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S01"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t1",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      300
+     ]
+    }
+   },
+   {
+    "name": "t2",
+    "anim": {
+     "type": "stamp",
+     "at": 0.8,
+     "anchor": [
+      540,
+      450
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "start": 6.8,
+  "end": 12.05,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/giza_khufu.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 5.45
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "shape",
+    "anim": {
+     "type": "slideL",
+     "at": 1.6
+    }
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "start": 12.05,
+  "end": 15.2,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/kukulcan.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 3.35
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "shape",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "start": 15.2,
+  "end": 19.35,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/giza_all.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 4.35
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "use",
+    "anim": {
+     "type": "slideL",
+     "at": 2.0
+    }
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "start": 19.35,
+  "end": 22.85,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S07"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "use",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "start": 22.85,
+  "end": 27.2,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/pakal_tomb.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 4.55
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "exc",
+    "anim": {
+     "type": "slideL",
+     "at": 0.4
+    }
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "start": 27.2,
+  "end": 34.55,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/teo_avenue.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 7.55
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "age",
+    "anim": {
+     "type": "slideL",
+     "at": 2.1
+    }
+   }
+  ]
+ },
+ {
+  "id": "S08",
+  "start": 34.55,
+  "end": 38.55,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/cholula_model.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 4.2
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "layer",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S09",
+  "start": 38.55,
+  "end": 44.95,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/cholula.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 6.6
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "age",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   },
+   {
+    "name": "big",
+    "anim": {
+     "type": "stamp",
+     "at": 2.9,
+     "anchor": [
+      540,
+      520
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S10",
+  "start": 44.95,
+  "end": 47.8,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/cholula.jpg",
+     "z": [
+      112,
+      124
+     ],
+     "pan": [
+      60,
+      80
+     ],
+     "dur": 3.05
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "church",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      1180
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S11",
+  "start": 47.8,
+  "end": 50.45,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S16_a",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 2.85
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "q",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      300
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S12",
+  "start": 50.45,
+  "end": 55.75,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S16_b",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      30
+     ],
+     "dur": 5.5
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "why",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S13",
+  "start": 55.75,
+  "end": 61.0,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S18"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      300
+     ]
+    }
+   },
+   {
+    "name": "sub",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      490
+     ]
+    }
+   }
+  ]
+ }
+]
