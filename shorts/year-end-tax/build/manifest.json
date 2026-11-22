@@ -1,0 +1,523 @@
+{
+ "duration": 53,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0,
+   "end": 6.6,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 6.6,
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       330
+      ]
+     }
+    },
+    {
+     "name": "sfx",
+     "anim": {
+      "type": "stamp",
+      "at": 1.9,
+      "anchor": [
+       860,
+       530
+      ]
+     }
+    },
+    {
+     "name": "flip",
+     "anim": {
+      "type": "stamp",
+      "at": 2.4,
+      "anchor": [
+       540,
+       1280
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 6.6,
+   "end": 14.6,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 8.0,
+      "z": [
+       112,
+       104
+      ],
+      "pan": [
+       -30,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       260
+      ]
+     }
+    },
+    {
+     "name": "how",
+     "anim": {
+      "type": "wipeD",
+      "at": 2.8,
+      "dur": 1.6
+     }
+    },
+    {
+     "name": "tip",
+     "anim": {
+      "type": "pop",
+      "at": 5.6,
+      "anchor": [
+       540,
+       760
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 14.6,
+   "end": 23.4,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 8.8,
+      "z": [
+       106,
+       116
+      ],
+      "pan": [
+       0,
+       -30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       230
+      ]
+     }
+    },
+    {
+     "name": "limit",
+     "anim": {
+      "type": "pop",
+      "at": 0.6,
+      "anchor": [
+       540,
+       830
+      ]
+     }
+    },
+    {
+     "name": "back",
+     "anim": {
+      "type": "pop",
+      "at": 5.4,
+      "anchor": [
+       540,
+       1080
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 23.4,
+   "end": 30.6,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 7.2,
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       220
+      ]
+     }
+    },
+    {
+     "name": "flow",
+     "anim": {
+      "type": "wipeL",
+      "at": 2.2,
+      "dur": 2.4
+     }
+    },
+    {
+     "name": "gift",
+     "anim": {
+      "type": "stamp",
+      "at": 5.1,
+      "anchor": [
+       300,
+       1190
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 30.6,
+   "end": 34.2,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 3.6,
+      "z": [
+       104,
+       114
+      ],
+      "pan": [
+       -20,
+       20
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "title",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       260
+      ]
+     }
+    },
+    {
+     "name": "cond",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       450
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 34.2,
+   "end": 43.8,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 9.6,
+      "z": [
+       106,
+       116
+      ],
+      "pan": [
+       0,
+       -30
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "badge",
+     "anim": {
+      "type": "pop",
+      "at": 0.0,
+      "anchor": [
+       540,
+       210
+      ]
+     }
+    },
+    {
+     "name": "question",
+     "anim": {
+      "type": "pop",
+      "at": 0.3,
+      "anchor": [
+       540,
+       385
+      ]
+     }
+    },
+    {
+     "name": "choices",
+     "anim": {
+      "type": "pop",
+      "at": 0.9,
+      "anchor": [
+       540,
+       1060
+      ]
+     }
+    },
+    {
+     "name": "answer",
+     "anim": {
+      "type": "stamp",
+      "at": 4.9,
+      "anchor": [
+       540,
+       1200
+      ]
+     }
+    },
+    {
+     "name": "why",
+     "anim": {
+      "type": "fade",
+      "at": 7.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 43.8,
+   "end": 53.0,
+   "parts": [
+    {
+     "name": "ai",
+     "anim": {
+      "type": "kenburns",
+      "dur": 9.2,
+      "z": [
+       110,
+       102
+      ],
+      "pan": [
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "name": "bg",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "look",
+     "anim": {
+      "type": "pop",
+      "at": 0.2,
+      "anchor": [
+       540,
+       310
+      ]
+     }
+    },
+    {
+     "name": "button",
+     "anim": {
+      "type": "pop",
+      "at": 3.3,
+      "anchor": [
+       540,
+       1250
+      ]
+     }
+    },
+    {
+     "name": "finger",
+     "anim": {
+      "type": "tap",
+      "at": 3.9,
+      "anchor": [
+       785,
+       1390
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 1.8,
+   "text": "연말정산은 1월에\n하는 거 아니에요?"
+  },
+  {
+   "start": 1.9,
+   "end": 4.3,
+   "text": "사실 승부는\n12월 31일에 끝나요"
+  },
+  {
+   "start": 4.4,
+   "end": 6.5,
+   "text": "1월엔 이미 쓴 돈을\n정리만 하거든요"
+  },
+  {
+   "start": 6.8,
+   "end": 9.3,
+   "text": "첫째, 홈택스\n연말정산 미리보기"
+  },
+  {
+   "start": 9.4,
+   "end": 12.1,
+   "text": "9월까지 쓴 카드값으로\n예상 환급액을 보여 줘요"
+  },
+  {
+   "start": 12.2,
+   "end": 14.4,
+   "text": "토해낼 것 같으면\n아직 손쓸 시간이 있죠"
+  },
+  {
+   "start": 14.8,
+   "end": 19.9,
+   "text": "둘째, 연금저축과 IRP는\n12월 31일까지 넣은 돈만\n올해 공제예요"
+  },
+  {
+   "start": 20.0,
+   "end": 23.3,
+   "text": "합쳐서 900만 원까지,\n최대 16.5%를 돌려받아요"
+  },
+  {
+   "start": 23.6,
+   "end": 25.5,
+   "text": "셋째, 고향사랑기부제"
+  },
+  {
+   "start": 25.6,
+   "end": 28.3,
+   "text": "10만 원을 내면 10만 원을\n세금으로 돌려받고"
+  },
+  {
+   "start": 28.4,
+   "end": 30.5,
+   "text": "3만 원어치\n답례품까지 받아요"
+  },
+  {
+   "start": 30.8,
+   "end": 34.0,
+   "text": "단, 내야 할 세금이 있어야\n돌려받을 수 있어요"
+  },
+  {
+   "start": 34.4,
+   "end": 38.3,
+   "text": "퀴즈! 고향사랑기부로\n10만 원을 내고 다 돌려받으면\n실제 부담은?"
+  },
+  {
+   "start": 39.1,
+   "end": 41.6,
+   "text": "정답은, 부담 0원이에요!"
+  },
+  {
+   "start": 41.7,
+   "end": 43.6,
+   "text": "오히려 답례품만큼\n이득이죠"
+  },
+  {
+   "start": 43.9,
+   "end": 47.0,
+   "text": "올해 남은 공제,\n12월 31일이 마감이에요"
+  },
+  {
+   "start": 47.1,
+   "end": 50.0,
+   "text": "더 많은 돈 이야기가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}
