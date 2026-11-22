@@ -1,0 +1,638 @@
+{
+ "duration": 62,
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "scenes": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "end": 6.85,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S01"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t1",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       310
+      ]
+     }
+    },
+    {
+     "name": "t2",
+     "anim": {
+      "type": "stamp",
+      "at": 3.8,
+      "anchor": [
+       540,
+       450
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "start": 6.85,
+   "end": 11.25,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/landscape.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 4.6
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "find",
+     "anim": {
+      "type": "slideL",
+      "at": 0.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "start": 11.25,
+   "end": 16.55,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/pillars_c.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 5.5
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "who",
+     "anim": {
+      "type": "slideL",
+      "at": 0.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "start": 16.55,
+   "end": 23.15,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/site_circles.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 6.8
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "ring",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    },
+    {
+     "name": "big",
+     "anim": {
+      "type": "stamp",
+      "at": 2.8,
+      "anchor": [
+       540,
+       1080
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "start": 23.15,
+   "end": 26.65,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/reliefs.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 3.7
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "ani",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "start": 26.65,
+   "end": 30.45,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/arm_fox.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 4.0
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "arm",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "start": 30.45,
+   "end": 34.75,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S07_e",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 4.5
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "age",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S08",
+   "start": 34.75,
+   "end": 39.25,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S08"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "no",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S09",
+   "start": 39.25,
+   "end": 44.55,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S09_a",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 5.5
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "q",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       300
+      ]
+     }
+    },
+    {
+     "name": "idea",
+     "anim": {
+      "type": "slideL",
+      "at": 1.7
+     }
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "start": 44.55,
+   "end": 47.95,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "S10_a",
+      "z": [
+       104,
+       112
+      ],
+      "pan": [
+       0,
+       30
+      ],
+      "dur": 3.6
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "farm",
+     "anim": {
+      "type": "slideL",
+      "at": 0.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "start": 47.95,
+   "end": 52.85,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/pillars_c.jpg",
+      "z": [
+       112,
+       122
+      ],
+      "pan": [
+       -60,
+       40
+      ],
+      "dur": 5.1
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "new",
+     "anim": {
+      "type": "slideL",
+      "at": 0.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "start": 52.85,
+   "end": 56.25,
+   "parts": [
+    {
+     "name": "still",
+     "anim": {
+      "type": "kenburns",
+      "src": "photos/roof2023.jpg",
+      "z": [
+       100,
+       108
+      ],
+      "pan": [
+       0,
+       0
+      ],
+      "dur": 3.6
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "tag",
+     "anim": {
+      "type": "fade",
+      "at": 0.1
+     }
+    },
+    {
+     "name": "now",
+     "anim": {
+      "type": "slideL",
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "start": 56.25,
+   "end": 62.0,
+   "parts": [
+    {
+     "name": "video",
+     "anim": {
+      "type": "video",
+      "clips": [
+       "S13"
+      ]
+     }
+    },
+    {
+     "name": "shade",
+     "anim": {
+      "type": "none"
+     }
+    },
+    {
+     "name": "t",
+     "anim": {
+      "type": "pop",
+      "at": 0.15,
+      "anchor": [
+       540,
+       300
+      ]
+     }
+    },
+    {
+     "name": "sub",
+     "anim": {
+      "type": "pop",
+      "at": 0.4,
+      "anchor": [
+       540,
+       490
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.1,
+   "end": 3.6,
+   "text": "피라미드보다 7,000년이나 앞서\n거대한 돌기둥을 세운 사람들이 있어요"
+  },
+  {
+   "start": 3.7,
+   "end": 6.7,
+   "text": "농사도 짓기 전이었죠.\n튀르키예의 괴베클리 테페예요"
+  },
+  {
+   "start": 7.0,
+   "end": 11.1,
+   "text": "1963년 조사단은 이 언덕을\n중세 무덤 터로 여기고 지나쳤어요"
+  },
+  {
+   "start": 11.4,
+   "end": 16.4,
+   "text": "1994년, 독일 고고학자가\n그 돌이 T자 기둥이라는 걸 알아봤죠"
+  },
+  {
+   "start": 16.7,
+   "end": 19.1,
+   "text": "파 보니 돌기둥들이\n원을 그리며 둘러서 있었어요"
+  },
+  {
+   "start": 19.2,
+   "end": 23.0,
+   "text": "가운데 큰 기둥은 높이 5.5미터,\n무게는 10톤 가까이 돼요"
+  },
+  {
+   "start": 23.3,
+   "end": 26.5,
+   "text": "기둥엔 여우와 멧돼지, 뱀 같은\n동물이 새겨져 있고"
+  },
+  {
+   "start": 26.8,
+   "end": 30.3,
+   "text": "어떤 기둥엔 팔과 손까지 새겨져\n사람을 나타낸 것처럼 보여요"
+  },
+  {
+   "start": 30.6,
+   "end": 34.6,
+   "text": "지어진 건 약 1만 1,600년 전,\n스톤헨지보다도 6,000년 넘게 앞서요"
+  },
+  {
+   "start": 34.9,
+   "end": 39.1,
+   "text": "글자도, 바퀴도, 금속 도구도 없던\n사냥꾼과 채집민이 해낸 거예요"
+  },
+  {
+   "start": 39.4,
+   "end": 40.8,
+   "text": "그럼 왜 지었을까요?"
+  },
+  {
+   "start": 40.9,
+   "end": 44.4,
+   "text": "발굴자는 여러 무리가 모여\n잔치와 의식을 벌이던 신전이라고 봤어요"
+  },
+  {
+   "start": 44.7,
+   "end": 47.8,
+   "text": "또 사람들을 먹이려다\n농사가 시작됐을지도 모른다고 했죠"
+  },
+  {
+   "start": 48.1,
+   "end": 52.7,
+   "text": "하지만 최근엔 집과\n물 저장고 흔적도 나와\n사람들이 이곳에 살았다는 주장도 있어요"
+  },
+  {
+   "start": 53.0,
+   "end": 56.1,
+   "text": "누가, 왜 지었는지는\n아직도 수수께끼예요"
+  },
+  {
+   "start": 56.4,
+   "end": 59.3,
+   "text": "더 많은 미스터리가 궁금하다면\n구독해 주세요"
+  }
+ ]
+}

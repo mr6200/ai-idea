@@ -1,0 +1,550 @@
+[
+ {
+  "id": "S01",
+  "start": 0.0,
+  "end": 6.85,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S01"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t1",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      310
+     ]
+    }
+   },
+   {
+    "name": "t2",
+    "anim": {
+     "type": "stamp",
+     "at": 3.8,
+     "anchor": [
+      540,
+      450
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "start": 6.85,
+  "end": 11.25,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/landscape.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 4.6
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "find",
+    "anim": {
+     "type": "slideL",
+     "at": 0.4
+    }
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "start": 11.25,
+  "end": 16.55,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/pillars_c.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 5.5
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "who",
+    "anim": {
+     "type": "slideL",
+     "at": 0.4
+    }
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "start": 16.55,
+  "end": 23.15,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/site_circles.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 6.8
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "ring",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   },
+   {
+    "name": "big",
+    "anim": {
+     "type": "stamp",
+     "at": 2.8,
+     "anchor": [
+      540,
+      1080
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "start": 23.15,
+  "end": 26.65,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/reliefs.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 3.7
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "ani",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "start": 26.65,
+  "end": 30.45,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/arm_fox.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 4.0
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "arm",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "start": 30.45,
+  "end": 34.75,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S07_e",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 4.5
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "age",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S08",
+  "start": 34.75,
+  "end": 39.25,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S08"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "no",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S09",
+  "start": 39.25,
+  "end": 44.55,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S09_a",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 5.5
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "q",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      300
+     ]
+    }
+   },
+   {
+    "name": "idea",
+    "anim": {
+     "type": "slideL",
+     "at": 1.7
+    }
+   }
+  ]
+ },
+ {
+  "id": "S10",
+  "start": 44.55,
+  "end": 47.95,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S10_a",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      30
+     ],
+     "dur": 3.6
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "farm",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S11",
+  "start": 47.95,
+  "end": 52.85,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/pillars_c.jpg",
+     "z": [
+      112,
+      122
+     ],
+     "pan": [
+      -60,
+      40
+     ],
+     "dur": 5.1
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "new",
+    "anim": {
+     "type": "slideL",
+     "at": 0.4
+    }
+   }
+  ]
+ },
+ {
+  "id": "S12",
+  "start": 52.85,
+  "end": 56.25,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/roof2023.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 3.6
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "now",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S13",
+  "start": 56.25,
+  "end": 62.0,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S13"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      300
+     ]
+    }
+   },
+   {
+    "name": "sub",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      490
+     ]
+    }
+   }
+  ]
+ }
+]
