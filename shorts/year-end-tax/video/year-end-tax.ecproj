@@ -35,7 +35,7 @@
           "num": 30,
           "den": 1
         },
-        "duration": 13462848000000,
+        "duration": 13716864000000,
         "display_start": 0,
         "background": [
           0.961,
@@ -44,21 +44,21 @@
         ],
         "work_area": [
           0,
-          13462848000000
+          13716864000000
         ],
         "layers": [
           {
-            "id": 1490,
+            "id": 1514,
             "name": "progress",
             "source": {
               "type": "Solid",
-              "item": 1489
+              "item": 1513
             },
             "label": "Red",
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 13462848000000,
+            "out_point": 13716864000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -83,7 +83,7 @@
             "markers": [],
             "auto_orient": "Off",
             "props": {
-              "uid": 1491,
+              "uid": 1515,
               "match": "layer",
               "name": "progress",
               "kind": {
@@ -93,7 +93,7 @@
               "children": [
                 {
                   "node": "Group",
-                  "uid": 1492,
+                  "uid": 1516,
                   "match": "masks",
                   "name": "Masks",
                   "kind": {
@@ -104,7 +104,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1493,
+                  "uid": 1517,
                   "match": "effects",
                   "name": "Effects",
                   "kind": {
@@ -115,7 +115,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1502,
+                  "uid": 1526,
                   "match": "transform",
                   "name": "Transform",
                   "kind": {
@@ -125,7 +125,7 @@
                   "children": [
                     {
                       "node": "Prop",
-                      "uid": 1494,
+                      "uid": 1518,
                       "match": "anchor",
                       "name": "Anchor Point",
                       "value": {
@@ -148,7 +148,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1495,
+                      "uid": 1519,
                       "match": "position",
                       "name": "Position",
                       "value": {
@@ -171,7 +171,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1496,
+                      "uid": 1520,
                       "match": "scale",
                       "name": "Scale",
                       "value": {
@@ -198,7 +198,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1497,
+                      "uid": 1521,
                       "match": "orientation",
                       "name": "Orientation",
                       "value": {
@@ -221,7 +221,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1498,
+                      "uid": 1522,
                       "match": "rotationX",
                       "name": "X Rotation",
                       "value": {
@@ -240,7 +240,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1499,
+                      "uid": 1523,
                       "match": "rotationY",
                       "name": "Y Rotation",
                       "value": {
@@ -259,7 +259,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1500,
+                      "uid": 1524,
                       "match": "rotation",
                       "name": "Rotation",
                       "value": {
@@ -278,7 +278,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1501,
+                      "uid": 1525,
                       "match": "opacity",
                       "name": "Opacity",
                       "value": {
@@ -304,7 +304,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1503,
+                  "uid": 1527,
                   "match": "materialOptions",
                   "name": "Material Options",
                   "kind": {
@@ -314,7 +314,7 @@
                   "children": [
                     {
                       "node": "Prop",
-                      "uid": 1504,
+                      "uid": 1528,
                       "match": "castsShadows",
                       "name": "Casts Shadows",
                       "value": {
@@ -338,7 +338,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1505,
+                      "uid": 1529,
                       "match": "lightTransmission",
                       "name": "Light Transmission",
                       "value": {
@@ -357,7 +357,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1506,
+                      "uid": 1530,
                       "match": "acceptsShadows",
                       "name": "Accepts Shadows",
                       "value": {
@@ -381,7 +381,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1507,
+                      "uid": 1531,
                       "match": "acceptsLights",
                       "name": "Accepts Lights",
                       "value": {
@@ -400,7 +400,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1508,
+                      "uid": 1532,
                       "match": "ambient",
                       "name": "Ambient",
                       "value": {
@@ -419,7 +419,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1509,
+                      "uid": 1533,
                       "match": "diffuse",
                       "name": "Diffuse",
                       "value": {
@@ -438,7 +438,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1510,
+                      "uid": 1534,
                       "match": "specularIntensity",
                       "name": "Specular Intensity",
                       "value": {
@@ -457,7 +457,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1511,
+                      "uid": 1535,
                       "match": "specularShininess",
                       "name": "Specular Shininess",
                       "value": {
@@ -476,7 +476,462 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1512,
+                      "uid": 1536,
+                      "match": "metal",
+                      "name": "Metal",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 100.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": 1489,
+            "name": "sub16.png",
+            "source": {
+              "type": "Footage",
+              "item": 1488
+            },
+            "label": "Lavender",
+            "comment": "",
+            "start_time": 12268972800000,
+            "in_point": 12268972800000,
+            "out_point": 13005619200000,
+            "stretch": 100.0,
+            "switches": {
+              "video": true,
+              "audio": true,
+              "solo": false,
+              "locked": false,
+              "shy": false,
+              "collapse": false,
+              "quality": "Best",
+              "sampling": "Bilinear",
+              "effects": true,
+              "frame_blend": "Off",
+              "motion_blur": false,
+              "adjustment": false,
+              "three_d": false,
+              "guide": false
+            },
+            "blend_mode": "Normal",
+            "preserve_transparency": false,
+            "track_matte": null,
+            "parent": null,
+            "markers": [],
+            "auto_orient": "Off",
+            "props": {
+              "uid": 1490,
+              "match": "layer",
+              "name": "sub16.png",
+              "kind": {
+                "kind": "Plain"
+              },
+              "enabled": true,
+              "children": [
+                {
+                  "node": "Group",
+                  "uid": 1491,
+                  "match": "masks",
+                  "name": "Masks",
+                  "kind": {
+                    "kind": "Plain"
+                  },
+                  "enabled": true,
+                  "children": []
+                },
+                {
+                  "node": "Group",
+                  "uid": 1492,
+                  "match": "effects",
+                  "name": "Effects",
+                  "kind": {
+                    "kind": "Plain"
+                  },
+                  "enabled": true,
+                  "children": []
+                },
+                {
+                  "node": "Group",
+                  "uid": 1501,
+                  "match": "transform",
+                  "name": "Transform",
+                  "kind": {
+                    "kind": "Plain"
+                  },
+                  "enabled": true,
+                  "children": [
+                    {
+                      "node": "Prop",
+                      "uid": 1493,
+                      "match": "anchor",
+                      "name": "Anchor Point",
+                      "value": {
+                        "t": "Vec3",
+                        "v": [
+                          540.0,
+                          1480.0,
+                          0.0
+                        ]
+                      },
+                      "ui": {
+                        "kind": "Point"
+                      },
+                      "spatial": true,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 2,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1494,
+                      "match": "position",
+                      "name": "Position",
+                      "value": {
+                        "t": "Vec3",
+                        "v": [
+                          540.0,
+                          1480.0,
+                          0.0
+                        ]
+                      },
+                      "ui": {
+                        "kind": "Point"
+                      },
+                      "spatial": true,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 2,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1495,
+                      "match": "scale",
+                      "name": "Scale",
+                      "value": {
+                        "t": "Vec3",
+                        "v": [
+                          100.0,
+                          100.0,
+                          100.0
+                        ]
+                      },
+                      "expr": {
+                        "text": "var t=time-inPoint; var s=t<0.15?92+8*t/0.15:100; [s,s]",
+                        "enabled": true
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 2,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1496,
+                      "match": "orientation",
+                      "name": "Orientation",
+                      "value": {
+                        "t": "Vec3",
+                        "v": [
+                          0.0,
+                          0.0,
+                          0.0
+                        ]
+                      },
+                      "ui": {
+                        "kind": "Angle"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": true,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1497,
+                      "match": "rotationX",
+                      "name": "X Rotation",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 0.0
+                      },
+                      "ui": {
+                        "kind": "Angle"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": true,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1498,
+                      "match": "rotationY",
+                      "name": "Y Rotation",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 0.0
+                      },
+                      "ui": {
+                        "kind": "Angle"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": true,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1499,
+                      "match": "rotation",
+                      "name": "Rotation",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 0.0
+                      },
+                      "ui": {
+                        "kind": "Angle"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1500,
+                      "match": "opacity",
+                      "name": "Opacity",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 100.0
+                      },
+                      "expr": {
+                        "text": "var t=time-inPoint, r=outPoint-time; Math.min(100, t/0.12*100, r/0.1*100)",
+                        "enabled": true
+                      },
+                      "ui": {
+                        "kind": "Slider",
+                        "min": 0.0,
+                        "max": 100.0,
+                        "slider_min": 0.0,
+                        "slider_max": 100.0,
+                        "decimals": 0
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    }
+                  ]
+                },
+                {
+                  "node": "Group",
+                  "uid": 1502,
+                  "match": "materialOptions",
+                  "name": "Material Options",
+                  "kind": {
+                    "kind": "Plain"
+                  },
+                  "enabled": true,
+                  "children": [
+                    {
+                      "node": "Prop",
+                      "uid": 1503,
+                      "match": "castsShadows",
+                      "name": "Casts Shadows",
+                      "value": {
+                        "t": "Enum",
+                        "v": 0
+                      },
+                      "ui": {
+                        "kind": "Popup",
+                        "options": [
+                          "Off",
+                          "On",
+                          "Only"
+                        ]
+                      },
+                      "spatial": false,
+                      "hold_only": true,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1504,
+                      "match": "lightTransmission",
+                      "name": "Light Transmission",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 0.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1505,
+                      "match": "acceptsShadows",
+                      "name": "Accepts Shadows",
+                      "value": {
+                        "t": "Enum",
+                        "v": 1
+                      },
+                      "ui": {
+                        "kind": "Popup",
+                        "options": [
+                          "Off",
+                          "On",
+                          "Only"
+                        ]
+                      },
+                      "spatial": false,
+                      "hold_only": true,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1506,
+                      "match": "acceptsLights",
+                      "name": "Accepts Lights",
+                      "value": {
+                        "t": "Bool",
+                        "v": true
+                      },
+                      "ui": {
+                        "kind": "Checkbox"
+                      },
+                      "spatial": false,
+                      "hold_only": true,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1507,
+                      "match": "ambient",
+                      "name": "Ambient",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 100.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1508,
+                      "match": "diffuse",
+                      "name": "Diffuse",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 50.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1509,
+                      "match": "specularIntensity",
+                      "name": "Specular Intensity",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 50.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1510,
+                      "match": "specularShininess",
+                      "name": "Specular Shininess",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 5.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1511,
                       "match": "metal",
                       "name": "Metal",
                       "value": {
@@ -500,16 +955,16 @@
           },
           {
             "id": 1465,
-            "name": "sub16.png",
+            "name": "sub15.png",
             "source": {
               "type": "Footage",
               "item": 1464
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 11964153600000,
-            "in_point": 11964153600000,
-            "out_point": 12700800000000,
+            "start_time": 11456121600000,
+            "in_point": 11456121600000,
+            "out_point": 12243571200000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -536,7 +991,7 @@
             "props": {
               "uid": 1466,
               "match": "layer",
-              "name": "sub16.png",
+              "name": "sub15.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -955,16 +1410,16 @@
           },
           {
             "id": 1441,
-            "name": "sub15.png",
+            "name": "sub14.png",
             "source": {
               "type": "Footage",
               "item": 1440
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 11151302400000,
-            "in_point": 11151302400000,
-            "out_point": 11938752000000,
+            "start_time": 10871884800000,
+            "in_point": 10871884800000,
+            "out_point": 11354515200000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -991,7 +1446,7 @@
             "props": {
               "uid": 1442,
               "match": "layer",
-              "name": "sub15.png",
+              "name": "sub14.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -1410,16 +1865,16 @@
           },
           {
             "id": 1417,
-            "name": "sub14.png",
+            "name": "sub13.png",
             "source": {
               "type": "Footage",
               "item": 1416
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 10592467200000,
-            "in_point": 10592467200000,
-            "out_point": 11075097600000,
+            "start_time": 10236844800000,
+            "in_point": 10236844800000,
+            "out_point": 10846483200000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -1446,7 +1901,7 @@
             "props": {
               "uid": 1418,
               "match": "layer",
-              "name": "sub14.png",
+              "name": "sub13.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -1865,16 +2320,16 @@
           },
           {
             "id": 1393,
-            "name": "sub13.png",
+            "name": "sub12.png",
             "source": {
               "type": "Footage",
               "item": 1392
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 9932025600000,
-            "in_point": 9932025600000,
-            "out_point": 10567065600000,
+            "start_time": 9017568000000,
+            "in_point": 9017568000000,
+            "out_point": 10008230400000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -1901,7 +2356,7 @@
             "props": {
               "uid": 1394,
               "match": "layer",
-              "name": "sub13.png",
+              "name": "sub12.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -2320,16 +2775,16 @@
           },
           {
             "id": 1369,
-            "name": "sub12.png",
+            "name": "sub11.png",
             "source": {
               "type": "Footage",
               "item": 1368
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 8738150400000,
-            "in_point": 8738150400000,
-            "out_point": 9728812800000,
+            "start_time": 8128512000000,
+            "in_point": 8128512000000,
+            "out_point": 8941363200000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -2356,7 +2811,7 @@
             "props": {
               "uid": 1370,
               "match": "layer",
-              "name": "sub12.png",
+              "name": "sub11.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -2775,16 +3230,16 @@
           },
           {
             "id": 1345,
-            "name": "sub11.png",
+            "name": "sub10.png",
             "source": {
               "type": "Footage",
               "item": 1344
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 7823692800000,
-            "in_point": 7823692800000,
-            "out_point": 8636544000000,
+            "start_time": 7518873600000,
+            "in_point": 7518873600000,
+            "out_point": 8052307200000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -2811,7 +3266,7 @@
             "props": {
               "uid": 1346,
               "match": "layer",
-              "name": "sub11.png",
+              "name": "sub10.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -3230,16 +3685,16 @@
           },
           {
             "id": 1321,
-            "name": "sub10.png",
+            "name": "sub09.png",
             "source": {
               "type": "Footage",
               "item": 1320
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 7214054400000,
-            "in_point": 7214054400000,
-            "out_point": 7747488000000,
+            "start_time": 6807628800000,
+            "in_point": 6807628800000,
+            "out_point": 7493472000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -3266,7 +3721,7 @@
             "props": {
               "uid": 1322,
               "match": "layer",
-              "name": "sub10.png",
+              "name": "sub09.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -3685,16 +4140,16 @@
           },
           {
             "id": 1297,
-            "name": "sub09.png",
+            "name": "sub08.png",
             "source": {
               "type": "Footage",
               "item": 1296
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 6502809600000,
-            "in_point": 6502809600000,
-            "out_point": 7188652800000,
+            "start_time": 6299596800000,
+            "in_point": 6299596800000,
+            "out_point": 6782227200000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -3721,7 +4176,7 @@
             "props": {
               "uid": 1298,
               "match": "layer",
-              "name": "sub09.png",
+              "name": "sub08.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -4140,16 +4595,16 @@
           },
           {
             "id": 1273,
-            "name": "sub08.png",
+            "name": "sub07.png",
             "source": {
               "type": "Footage",
               "item": 1272
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 5994777600000,
-            "in_point": 5994777600000,
-            "out_point": 6477408000000,
+            "start_time": 5385139200000,
+            "in_point": 5385139200000,
+            "out_point": 6223392000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -4176,7 +4631,7 @@
             "props": {
               "uid": 1274,
               "match": "layer",
-              "name": "sub08.png",
+              "name": "sub07.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -4595,16 +5050,16 @@
           },
           {
             "id": 1249,
-            "name": "sub07.png",
+            "name": "sub06.png",
             "source": {
               "type": "Footage",
               "item": 1248
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 5080320000000,
-            "in_point": 5080320000000,
-            "out_point": 5918572800000,
+            "start_time": 4038854400000,
+            "in_point": 4038854400000,
+            "out_point": 5359737600000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -4631,7 +5086,7 @@
             "props": {
               "uid": 1250,
               "match": "layer",
-              "name": "sub07.png",
+              "name": "sub06.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -5050,16 +5505,16 @@
           },
           {
             "id": 1225,
-            "name": "sub06.png",
+            "name": "sub05.png",
             "source": {
               "type": "Footage",
               "item": 1224
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 3759436800000,
-            "in_point": 3759436800000,
-            "out_point": 5054918400000,
+            "start_time": 3403814400000,
+            "in_point": 3403814400000,
+            "out_point": 3962649600000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -5086,7 +5541,7 @@
             "props": {
               "uid": 1226,
               "match": "layer",
-              "name": "sub06.png",
+              "name": "sub05.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -5505,16 +5960,16 @@
           },
           {
             "id": 1201,
-            "name": "sub05.png",
+            "name": "sub04.png",
             "source": {
               "type": "Footage",
               "item": 1200
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 3098995200000,
-            "in_point": 3098995200000,
-            "out_point": 3657830400000,
+            "start_time": 2667168000000,
+            "in_point": 2667168000000,
+            "out_point": 3378412800000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -5541,7 +5996,7 @@
             "props": {
               "uid": 1202,
               "match": "layer",
-              "name": "sub05.png",
+              "name": "sub04.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -5960,16 +6415,16 @@
           },
           {
             "id": 1177,
-            "name": "sub04.png",
+            "name": "sub03.png",
             "source": {
               "type": "Footage",
               "item": 1176
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 2387750400000,
-            "in_point": 2387750400000,
-            "out_point": 3073593600000,
+            "start_time": 1727308800000,
+            "in_point": 1727308800000,
+            "out_point": 2641766400000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -5996,7 +6451,7 @@
             "props": {
               "uid": 1178,
               "match": "layer",
-              "name": "sub04.png",
+              "name": "sub03.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -6415,16 +6870,16 @@
           },
           {
             "id": 1153,
-            "name": "sub03.png",
+            "name": "sub02.png",
             "source": {
               "type": "Footage",
               "item": 1152
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 1727308800000,
-            "in_point": 1727308800000,
-            "out_point": 2362348800000,
+            "start_time": 1117670400000,
+            "in_point": 1117670400000,
+            "out_point": 1651104000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -6451,7 +6906,7 @@
             "props": {
               "uid": 1154,
               "match": "layer",
-              "name": "sub03.png",
+              "name": "sub02.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -6870,16 +7325,16 @@
           },
           {
             "id": 1129,
-            "name": "sub02.png",
+            "name": "sub01.png",
             "source": {
               "type": "Footage",
               "item": 1128
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 1117670400000,
-            "in_point": 1117670400000,
-            "out_point": 1651104000000,
+            "start_time": 482630400000,
+            "in_point": 482630400000,
+            "out_point": 1092268800000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -6906,7 +7361,7 @@
             "props": {
               "uid": 1130,
               "match": "layer",
-              "name": "sub02.png",
+              "name": "sub01.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -7325,16 +7780,16 @@
           },
           {
             "id": 1105,
-            "name": "sub01.png",
+            "name": "sub00.png",
             "source": {
               "type": "Footage",
               "item": 1104
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 482630400000,
-            "in_point": 482630400000,
-            "out_point": 1092268800000,
+            "start_time": 25401600000,
+            "in_point": 25401600000,
+            "out_point": 457228800000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -7361,7 +7816,7 @@
             "props": {
               "uid": 1106,
               "match": "layer",
-              "name": "sub01.png",
+              "name": "sub00.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -7780,16 +8235,16 @@
           },
           {
             "id": 1081,
-            "name": "sub00.png",
+            "name": "film",
             "source": {
               "type": "Footage",
               "item": 1080
             },
             "label": "Lavender",
             "comment": "",
-            "start_time": 25401600000,
-            "in_point": 25401600000,
-            "out_point": 457228800000,
+            "start_time": 0,
+            "in_point": 0,
+            "out_point": 13716864000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -7816,7 +8271,7 @@
             "props": {
               "uid": 1082,
               "match": "layer",
-              "name": "sub00.png",
+              "name": "film.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -7863,7 +8318,7 @@
                         "t": "Vec3",
                         "v": [
                           540.0,
-                          1480.0,
+                          960.0,
                           0.0
                         ]
                       },
@@ -7886,7 +8341,7 @@
                         "t": "Vec3",
                         "v": [
                           540.0,
-                          1480.0,
+                          960.0,
                           0.0
                         ]
                       },
@@ -7912,10 +8367,6 @@
                           100.0,
                           100.0
                         ]
-                      },
-                      "expr": {
-                        "text": "var t=time-inPoint; var s=t<0.15?92+8*t/0.15:100; [s,s]",
-                        "enabled": true
                       },
                       "ui": {
                         "kind": "Percent"
@@ -8017,7 +8468,7 @@
                         "v": 100.0
                       },
                       "expr": {
-                        "text": "var t=time-inPoint, r=outPoint-time; Math.min(100, t/0.12*100, r/0.1*100)",
+                        "text": "100",
                         "enabled": true
                       },
                       "ui": {
@@ -8212,457 +8663,6 @@
                     {
                       "node": "Prop",
                       "uid": 1103,
-                      "match": "metal",
-                      "name": "Metal",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 100.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "id": 1057,
-            "name": "film",
-            "source": {
-              "type": "Footage",
-              "item": 1056
-            },
-            "label": "Lavender",
-            "comment": "",
-            "start_time": 0,
-            "in_point": 0,
-            "out_point": 13462848000000,
-            "stretch": 100.0,
-            "switches": {
-              "video": true,
-              "audio": true,
-              "solo": false,
-              "locked": false,
-              "shy": false,
-              "collapse": false,
-              "quality": "Best",
-              "sampling": "Bilinear",
-              "effects": true,
-              "frame_blend": "Off",
-              "motion_blur": false,
-              "adjustment": false,
-              "three_d": false,
-              "guide": false
-            },
-            "blend_mode": "Normal",
-            "preserve_transparency": false,
-            "track_matte": null,
-            "parent": null,
-            "markers": [],
-            "auto_orient": "Off",
-            "props": {
-              "uid": 1058,
-              "match": "layer",
-              "name": "film.png",
-              "kind": {
-                "kind": "Plain"
-              },
-              "enabled": true,
-              "children": [
-                {
-                  "node": "Group",
-                  "uid": 1059,
-                  "match": "masks",
-                  "name": "Masks",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": []
-                },
-                {
-                  "node": "Group",
-                  "uid": 1060,
-                  "match": "effects",
-                  "name": "Effects",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": []
-                },
-                {
-                  "node": "Group",
-                  "uid": 1069,
-                  "match": "transform",
-                  "name": "Transform",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": [
-                    {
-                      "node": "Prop",
-                      "uid": 1061,
-                      "match": "anchor",
-                      "name": "Anchor Point",
-                      "value": {
-                        "t": "Vec3",
-                        "v": [
-                          540.0,
-                          960.0,
-                          0.0
-                        ]
-                      },
-                      "ui": {
-                        "kind": "Point"
-                      },
-                      "spatial": true,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 2,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1062,
-                      "match": "position",
-                      "name": "Position",
-                      "value": {
-                        "t": "Vec3",
-                        "v": [
-                          540.0,
-                          960.0,
-                          0.0
-                        ]
-                      },
-                      "ui": {
-                        "kind": "Point"
-                      },
-                      "spatial": true,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 2,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1063,
-                      "match": "scale",
-                      "name": "Scale",
-                      "value": {
-                        "t": "Vec3",
-                        "v": [
-                          100.0,
-                          100.0,
-                          100.0
-                        ]
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 2,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1064,
-                      "match": "orientation",
-                      "name": "Orientation",
-                      "value": {
-                        "t": "Vec3",
-                        "v": [
-                          0.0,
-                          0.0,
-                          0.0
-                        ]
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": true,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1065,
-                      "match": "rotationX",
-                      "name": "X Rotation",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": true,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1066,
-                      "match": "rotationY",
-                      "name": "Y Rotation",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": true,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1067,
-                      "match": "rotation",
-                      "name": "Rotation",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1068,
-                      "match": "opacity",
-                      "name": "Opacity",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 100.0
-                      },
-                      "expr": {
-                        "text": "100",
-                        "enabled": true
-                      },
-                      "ui": {
-                        "kind": "Slider",
-                        "min": 0.0,
-                        "max": 100.0,
-                        "slider_min": 0.0,
-                        "slider_max": 100.0,
-                        "decimals": 0
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    }
-                  ]
-                },
-                {
-                  "node": "Group",
-                  "uid": 1070,
-                  "match": "materialOptions",
-                  "name": "Material Options",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": [
-                    {
-                      "node": "Prop",
-                      "uid": 1071,
-                      "match": "castsShadows",
-                      "name": "Casts Shadows",
-                      "value": {
-                        "t": "Enum",
-                        "v": 0
-                      },
-                      "ui": {
-                        "kind": "Popup",
-                        "options": [
-                          "Off",
-                          "On",
-                          "Only"
-                        ]
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1072,
-                      "match": "lightTransmission",
-                      "name": "Light Transmission",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1073,
-                      "match": "acceptsShadows",
-                      "name": "Accepts Shadows",
-                      "value": {
-                        "t": "Enum",
-                        "v": 1
-                      },
-                      "ui": {
-                        "kind": "Popup",
-                        "options": [
-                          "Off",
-                          "On",
-                          "Only"
-                        ]
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1074,
-                      "match": "acceptsLights",
-                      "name": "Accepts Lights",
-                      "value": {
-                        "t": "Bool",
-                        "v": true
-                      },
-                      "ui": {
-                        "kind": "Checkbox"
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1075,
-                      "match": "ambient",
-                      "name": "Ambient",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 100.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1076,
-                      "match": "diffuse",
-                      "name": "Diffuse",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 50.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1077,
-                      "match": "specularIntensity",
-                      "name": "Specular Intensity",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 50.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1078,
-                      "match": "specularShininess",
-                      "name": "Specular Shininess",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 5.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1079,
                       "match": "metal",
                       "name": "Metal",
                       "value": {
@@ -9180,7 +9180,7 @@
             "comment": "",
             "start_time": 1676505600000,
             "in_point": 1676505600000,
-            "out_point": 3708633600000,
+            "out_point": 4013452800000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -9305,7 +9305,7 @@
                         ]
                       },
                       "expr": {
-                        "text": "var t=time-inPoint; var s=100+2.5*t/8.0+(t<0.25?3*(1-t/0.25):0); [s,s]",
+                        "text": "var t=time-inPoint; var s=100+2.5*t/9.200000000000001+(t<0.25?3*(1-t/0.25):0); [s,s]",
                         "enabled": true
                       },
                       "ui": {
@@ -9663,9 +9663,9 @@
             },
             "label": "Sandstone",
             "comment": "",
-            "start_time": 3708633600000,
-            "in_point": 3708633600000,
-            "out_point": 5943974400000,
+            "start_time": 4013452800000,
+            "in_point": 4013452800000,
+            "out_point": 6248793600000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -9790,7 +9790,7 @@
                         ]
                       },
                       "expr": {
-                        "text": "var t=time-inPoint; var s=100+2.5*t/8.799999999999999+(t<0.25?3*(1-t/0.25):0); [s,s]",
+                        "text": "var t=time-inPoint; var s=100+2.5*t/8.8+(t<0.25?3*(1-t/0.25):0); [s,s]",
                         "enabled": true
                       },
                       "ui": {
@@ -10148,9 +10148,9 @@
             },
             "label": "Sandstone",
             "comment": "",
-            "start_time": 5943974400000,
-            "in_point": 5943974400000,
-            "out_point": 7772889600000,
+            "start_time": 6248793600000,
+            "in_point": 6248793600000,
+            "out_point": 8077708800000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -10275,7 +10275,7 @@
                         ]
                       },
                       "expr": {
-                        "text": "var t=time-inPoint; var s=100+2.5*t/7.200000000000003+(t<0.25?3*(1-t/0.25):0); [s,s]",
+                        "text": "var t=time-inPoint; var s=100+2.5*t/7.199999999999999+(t<0.25?3*(1-t/0.25):0); [s,s]",
                         "enabled": true
                       },
                       "ui": {
@@ -10633,9 +10633,9 @@
             },
             "label": "Sandstone",
             "comment": "",
-            "start_time": 7772889600000,
-            "in_point": 7772889600000,
-            "out_point": 8687347200000,
+            "start_time": 8077708800000,
+            "in_point": 8077708800000,
+            "out_point": 8992166400000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -10760,7 +10760,7 @@
                         ]
                       },
                       "expr": {
-                        "text": "var t=time-inPoint; var s=100+2.5*t/3.6000000000000014+(t<0.25?3*(1-t/0.25):0); [s,s]",
+                        "text": "var t=time-inPoint; var s=100+2.5*t/3.599999999999998+(t<0.25?3*(1-t/0.25):0); [s,s]",
                         "enabled": true
                       },
                       "ui": {
@@ -11118,9 +11118,9 @@
             },
             "label": "Sandstone",
             "comment": "",
-            "start_time": 8687347200000,
-            "in_point": 8687347200000,
-            "out_point": 11125900800000,
+            "start_time": 8992166400000,
+            "in_point": 8992166400000,
+            "out_point": 11430720000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -11245,7 +11245,7 @@
                         ]
                       },
                       "expr": {
-                        "text": "var t=time-inPoint; var s=100+2.5*t/9.599999999999994+(t<0.25?3*(1-t/0.25):0); [s,s]",
+                        "text": "var t=time-inPoint; var s=100+2.5*t/9.600000000000001+(t<0.25?3*(1-t/0.25):0); [s,s]",
                         "enabled": true
                       },
                       "ui": {
@@ -11595,7 +11595,7 @@
             }
           },
           {
-            "id": 1031,
+            "id": 1055,
             "name": "S07",
             "source": {
               "type": "Comp",
@@ -11603,9 +11603,9 @@
             },
             "label": "Sandstone",
             "comment": "",
-            "start_time": 11125900800000,
-            "in_point": 11125900800000,
-            "out_point": 13462848000000,
+            "start_time": 11430720000000,
+            "in_point": 11430720000000,
+            "out_point": 13716864000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -11630,7 +11630,7 @@
             "markers": [],
             "auto_orient": "Off",
             "props": {
-              "uid": 1032,
+              "uid": 1056,
               "match": "layer",
               "name": "S07",
               "kind": {
@@ -11640,7 +11640,7 @@
               "children": [
                 {
                   "node": "Group",
-                  "uid": 1033,
+                  "uid": 1057,
                   "match": "masks",
                   "name": "Masks",
                   "kind": {
@@ -11651,7 +11651,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1034,
+                  "uid": 1058,
                   "match": "effects",
                   "name": "Effects",
                   "kind": {
@@ -11662,7 +11662,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1043,
+                  "uid": 1067,
                   "match": "transform",
                   "name": "Transform",
                   "kind": {
@@ -11672,7 +11672,7 @@
                   "children": [
                     {
                       "node": "Prop",
-                      "uid": 1035,
+                      "uid": 1059,
                       "match": "anchor",
                       "name": "Anchor Point",
                       "value": {
@@ -11695,7 +11695,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1036,
+                      "uid": 1060,
                       "match": "position",
                       "name": "Position",
                       "value": {
@@ -11718,7 +11718,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1037,
+                      "uid": 1061,
                       "match": "scale",
                       "name": "Scale",
                       "value": {
@@ -11730,7 +11730,7 @@
                         ]
                       },
                       "expr": {
-                        "text": "var t=time-inPoint; var s=100+2.5*t/9.200000000000003+(t<0.25?3*(1-t/0.25):0); [s,s]",
+                        "text": "var t=time-inPoint; var s=100+2.5*t/9.0+(t<0.25?3*(1-t/0.25):0); [s,s]",
                         "enabled": true
                       },
                       "ui": {
@@ -11745,7 +11745,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1038,
+                      "uid": 1062,
                       "match": "orientation",
                       "name": "Orientation",
                       "value": {
@@ -11768,7 +11768,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1039,
+                      "uid": 1063,
                       "match": "rotationX",
                       "name": "X Rotation",
                       "value": {
@@ -11787,7 +11787,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1040,
+                      "uid": 1064,
                       "match": "rotationY",
                       "name": "Y Rotation",
                       "value": {
@@ -11806,7 +11806,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1041,
+                      "uid": 1065,
                       "match": "rotation",
                       "name": "Rotation",
                       "value": {
@@ -11825,7 +11825,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1042,
+                      "uid": 1066,
                       "match": "opacity",
                       "name": "Opacity",
                       "value": {
@@ -11851,7 +11851,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1044,
+                  "uid": 1068,
                   "match": "materialOptions",
                   "name": "Material Options",
                   "kind": {
@@ -11861,7 +11861,7 @@
                   "children": [
                     {
                       "node": "Prop",
-                      "uid": 1045,
+                      "uid": 1069,
                       "match": "castsShadows",
                       "name": "Casts Shadows",
                       "value": {
@@ -11885,7 +11885,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1046,
+                      "uid": 1070,
                       "match": "lightTransmission",
                       "name": "Light Transmission",
                       "value": {
@@ -11904,7 +11904,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1047,
+                      "uid": 1071,
                       "match": "acceptsShadows",
                       "name": "Accepts Shadows",
                       "value": {
@@ -11928,7 +11928,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1048,
+                      "uid": 1072,
                       "match": "acceptsLights",
                       "name": "Accepts Lights",
                       "value": {
@@ -11947,7 +11947,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1049,
+                      "uid": 1073,
                       "match": "ambient",
                       "name": "Ambient",
                       "value": {
@@ -11966,7 +11966,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1050,
+                      "uid": 1074,
                       "match": "diffuse",
                       "name": "Diffuse",
                       "value": {
@@ -11985,7 +11985,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1051,
+                      "uid": 1075,
                       "match": "specularIntensity",
                       "name": "Specular Intensity",
                       "value": {
@@ -12004,7 +12004,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1052,
+                      "uid": 1076,
                       "match": "specularShininess",
                       "name": "Specular Shininess",
                       "value": {
@@ -12023,7 +12023,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1053,
+                      "uid": 1077,
                       "match": "metal",
                       "name": "Metal",
                       "value": {
@@ -12044,7 +12044,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1054,
+                  "uid": 1078,
                   "match": "audio",
                   "name": "Audio",
                   "kind": {
@@ -12054,7 +12054,7 @@
                   "children": [
                     {
                       "node": "Prop",
-                      "uid": 1055,
+                      "uid": 1079,
                       "match": "levels",
                       "name": "Audio Levels",
                       "value": {
@@ -12080,17 +12080,17 @@
             }
           },
           {
-            "id": 1514,
+            "id": 1538,
             "name": "music+sfx",
             "source": {
               "type": "Footage",
-              "item": 1513
+              "item": 1537
             },
             "label": "SeaFoam",
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 13462848000000,
+            "out_point": 13716864000000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -12115,7 +12115,7 @@
             "markers": [],
             "auto_orient": "Off",
             "props": {
-              "uid": 1515,
+              "uid": 1539,
               "match": "layer",
               "name": "audio.wav",
               "kind": {
@@ -12125,7 +12125,7 @@
               "children": [
                 {
                   "node": "Group",
-                  "uid": 1516,
+                  "uid": 1540,
                   "match": "masks",
                   "name": "Masks",
                   "kind": {
@@ -12136,7 +12136,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1517,
+                  "uid": 1541,
                   "match": "effects",
                   "name": "Effects",
                   "kind": {
@@ -12147,7 +12147,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1526,
+                  "uid": 1550,
                   "match": "transform",
                   "name": "Transform",
                   "kind": {
@@ -12157,7 +12157,7 @@
                   "children": [
                     {
                       "node": "Prop",
-                      "uid": 1518,
+                      "uid": 1542,
                       "match": "anchor",
                       "name": "Anchor Point",
                       "value": {
@@ -12180,7 +12180,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1519,
+                      "uid": 1543,
                       "match": "position",
                       "name": "Position",
                       "value": {
@@ -12203,7 +12203,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1520,
+                      "uid": 1544,
                       "match": "scale",
                       "name": "Scale",
                       "value": {
@@ -12226,7 +12226,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1521,
+                      "uid": 1545,
                       "match": "orientation",
                       "name": "Orientation",
                       "value": {
@@ -12249,7 +12249,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1522,
+                      "uid": 1546,
                       "match": "rotationX",
                       "name": "X Rotation",
                       "value": {
@@ -12268,455 +12268,12 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1523,
+                      "uid": 1547,
                       "match": "rotationY",
                       "name": "Y Rotation",
                       "value": {
                         "t": "Scalar",
                         "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": true,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1524,
-                      "match": "rotation",
-                      "name": "Rotation",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1525,
-                      "match": "opacity",
-                      "name": "Opacity",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 100.0
-                      },
-                      "ui": {
-                        "kind": "Slider",
-                        "min": 0.0,
-                        "max": 100.0,
-                        "slider_min": 0.0,
-                        "slider_max": 100.0,
-                        "decimals": 0
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    }
-                  ]
-                },
-                {
-                  "node": "Group",
-                  "uid": 1527,
-                  "match": "materialOptions",
-                  "name": "Material Options",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": [
-                    {
-                      "node": "Prop",
-                      "uid": 1528,
-                      "match": "castsShadows",
-                      "name": "Casts Shadows",
-                      "value": {
-                        "t": "Enum",
-                        "v": 0
-                      },
-                      "ui": {
-                        "kind": "Popup",
-                        "options": [
-                          "Off",
-                          "On",
-                          "Only"
-                        ]
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1529,
-                      "match": "lightTransmission",
-                      "name": "Light Transmission",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1530,
-                      "match": "acceptsShadows",
-                      "name": "Accepts Shadows",
-                      "value": {
-                        "t": "Enum",
-                        "v": 1
-                      },
-                      "ui": {
-                        "kind": "Popup",
-                        "options": [
-                          "Off",
-                          "On",
-                          "Only"
-                        ]
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1531,
-                      "match": "acceptsLights",
-                      "name": "Accepts Lights",
-                      "value": {
-                        "t": "Bool",
-                        "v": true
-                      },
-                      "ui": {
-                        "kind": "Checkbox"
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1532,
-                      "match": "ambient",
-                      "name": "Ambient",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 100.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1533,
-                      "match": "diffuse",
-                      "name": "Diffuse",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 50.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1534,
-                      "match": "specularIntensity",
-                      "name": "Specular Intensity",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 50.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1535,
-                      "match": "specularShininess",
-                      "name": "Specular Shininess",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 5.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1536,
-                      "match": "metal",
-                      "name": "Metal",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 100.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    }
-                  ]
-                },
-                {
-                  "node": "Group",
-                  "uid": 1537,
-                  "match": "audio",
-                  "name": "Audio",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": [
-                    {
-                      "node": "Prop",
-                      "uid": 1538,
-                      "match": "levels",
-                      "name": "Audio Levels",
-                      "value": {
-                        "t": "Vec2",
-                        "v": [
-                          0.0,
-                          0.0
-                        ]
-                      },
-                      "ui": {
-                        "kind": "Number"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "id": 1540,
-            "name": "narration",
-            "source": {
-              "type": "Footage",
-              "item": 1539
-            },
-            "label": "SeaFoam",
-            "comment": "",
-            "start_time": 0,
-            "in_point": 0,
-            "out_point": 13462848000000,
-            "stretch": 100.0,
-            "switches": {
-              "video": true,
-              "audio": true,
-              "solo": false,
-              "locked": false,
-              "shy": false,
-              "collapse": false,
-              "quality": "Best",
-              "sampling": "Bilinear",
-              "effects": true,
-              "frame_blend": "Off",
-              "motion_blur": false,
-              "adjustment": false,
-              "three_d": false,
-              "guide": false
-            },
-            "blend_mode": "Normal",
-            "preserve_transparency": false,
-            "track_matte": null,
-            "parent": null,
-            "markers": [],
-            "auto_orient": "Off",
-            "props": {
-              "uid": 1541,
-              "match": "layer",
-              "name": "narration.wav",
-              "kind": {
-                "kind": "Plain"
-              },
-              "enabled": true,
-              "children": [
-                {
-                  "node": "Group",
-                  "uid": 1542,
-                  "match": "masks",
-                  "name": "Masks",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": []
-                },
-                {
-                  "node": "Group",
-                  "uid": 1543,
-                  "match": "effects",
-                  "name": "Effects",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": []
-                },
-                {
-                  "node": "Group",
-                  "uid": 1552,
-                  "match": "transform",
-                  "name": "Transform",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": [
-                    {
-                      "node": "Prop",
-                      "uid": 1544,
-                      "match": "anchor",
-                      "name": "Anchor Point",
-                      "value": {
-                        "t": "Vec3",
-                        "v": [
-                          0.0,
-                          0.0,
-                          0.0
-                        ]
-                      },
-                      "ui": {
-                        "kind": "Point"
-                      },
-                      "spatial": true,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 2,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1545,
-                      "match": "position",
-                      "name": "Position",
-                      "value": {
-                        "t": "Vec3",
-                        "v": [
-                          540.0,
-                          960.0,
-                          0.0
-                        ]
-                      },
-                      "ui": {
-                        "kind": "Point"
-                      },
-                      "spatial": true,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 2,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1546,
-                      "match": "scale",
-                      "name": "Scale",
-                      "value": {
-                        "t": "Vec3",
-                        "v": [
-                          100.0,
-                          100.0,
-                          100.0
-                        ]
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 2,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1547,
-                      "match": "orientation",
-                      "name": "Orientation",
-                      "value": {
-                        "t": "Vec3",
-                        "v": [
-                          0.0,
-                          0.0,
-                          0.0
-                        ]
                       },
                       "ui": {
                         "kind": "Angle"
@@ -12731,44 +12288,6 @@
                     {
                       "node": "Prop",
                       "uid": 1548,
-                      "match": "rotationX",
-                      "name": "X Rotation",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": true,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1549,
-                      "match": "rotationY",
-                      "name": "Y Rotation",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": true,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1550,
                       "match": "rotation",
                       "name": "Rotation",
                       "value": {
@@ -12787,7 +12306,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1551,
+                      "uid": 1549,
                       "match": "opacity",
                       "name": "Opacity",
                       "value": {
@@ -12813,7 +12332,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1553,
+                  "uid": 1551,
                   "match": "materialOptions",
                   "name": "Material Options",
                   "kind": {
@@ -12823,12 +12342,55 @@
                   "children": [
                     {
                       "node": "Prop",
-                      "uid": 1554,
+                      "uid": 1552,
                       "match": "castsShadows",
                       "name": "Casts Shadows",
                       "value": {
                         "t": "Enum",
                         "v": 0
+                      },
+                      "ui": {
+                        "kind": "Popup",
+                        "options": [
+                          "Off",
+                          "On",
+                          "Only"
+                        ]
+                      },
+                      "spatial": false,
+                      "hold_only": true,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1553,
+                      "match": "lightTransmission",
+                      "name": "Light Transmission",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 0.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1554,
+                      "match": "acceptsShadows",
+                      "name": "Accepts Shadows",
+                      "value": {
+                        "t": "Enum",
+                        "v": 1
                       },
                       "ui": {
                         "kind": "Popup",
@@ -12848,6 +12410,444 @@
                     {
                       "node": "Prop",
                       "uid": 1555,
+                      "match": "acceptsLights",
+                      "name": "Accepts Lights",
+                      "value": {
+                        "t": "Bool",
+                        "v": true
+                      },
+                      "ui": {
+                        "kind": "Checkbox"
+                      },
+                      "spatial": false,
+                      "hold_only": true,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1556,
+                      "match": "ambient",
+                      "name": "Ambient",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 100.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1557,
+                      "match": "diffuse",
+                      "name": "Diffuse",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 50.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1558,
+                      "match": "specularIntensity",
+                      "name": "Specular Intensity",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 50.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1559,
+                      "match": "specularShininess",
+                      "name": "Specular Shininess",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 5.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1560,
+                      "match": "metal",
+                      "name": "Metal",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 100.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    }
+                  ]
+                },
+                {
+                  "node": "Group",
+                  "uid": 1561,
+                  "match": "audio",
+                  "name": "Audio",
+                  "kind": {
+                    "kind": "Plain"
+                  },
+                  "enabled": true,
+                  "children": [
+                    {
+                      "node": "Prop",
+                      "uid": 1562,
+                      "match": "levels",
+                      "name": "Audio Levels",
+                      "value": {
+                        "t": "Vec2",
+                        "v": [
+                          0.0,
+                          0.0
+                        ]
+                      },
+                      "ui": {
+                        "kind": "Number"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": 1564,
+            "name": "narration",
+            "source": {
+              "type": "Footage",
+              "item": 1563
+            },
+            "label": "SeaFoam",
+            "comment": "",
+            "start_time": 0,
+            "in_point": 0,
+            "out_point": 13716864000000,
+            "stretch": 100.0,
+            "switches": {
+              "video": true,
+              "audio": true,
+              "solo": false,
+              "locked": false,
+              "shy": false,
+              "collapse": false,
+              "quality": "Best",
+              "sampling": "Bilinear",
+              "effects": true,
+              "frame_blend": "Off",
+              "motion_blur": false,
+              "adjustment": false,
+              "three_d": false,
+              "guide": false
+            },
+            "blend_mode": "Normal",
+            "preserve_transparency": false,
+            "track_matte": null,
+            "parent": null,
+            "markers": [],
+            "auto_orient": "Off",
+            "props": {
+              "uid": 1565,
+              "match": "layer",
+              "name": "narration.wav",
+              "kind": {
+                "kind": "Plain"
+              },
+              "enabled": true,
+              "children": [
+                {
+                  "node": "Group",
+                  "uid": 1566,
+                  "match": "masks",
+                  "name": "Masks",
+                  "kind": {
+                    "kind": "Plain"
+                  },
+                  "enabled": true,
+                  "children": []
+                },
+                {
+                  "node": "Group",
+                  "uid": 1567,
+                  "match": "effects",
+                  "name": "Effects",
+                  "kind": {
+                    "kind": "Plain"
+                  },
+                  "enabled": true,
+                  "children": []
+                },
+                {
+                  "node": "Group",
+                  "uid": 1576,
+                  "match": "transform",
+                  "name": "Transform",
+                  "kind": {
+                    "kind": "Plain"
+                  },
+                  "enabled": true,
+                  "children": [
+                    {
+                      "node": "Prop",
+                      "uid": 1568,
+                      "match": "anchor",
+                      "name": "Anchor Point",
+                      "value": {
+                        "t": "Vec3",
+                        "v": [
+                          0.0,
+                          0.0,
+                          0.0
+                        ]
+                      },
+                      "ui": {
+                        "kind": "Point"
+                      },
+                      "spatial": true,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 2,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1569,
+                      "match": "position",
+                      "name": "Position",
+                      "value": {
+                        "t": "Vec3",
+                        "v": [
+                          540.0,
+                          960.0,
+                          0.0
+                        ]
+                      },
+                      "ui": {
+                        "kind": "Point"
+                      },
+                      "spatial": true,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 2,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1570,
+                      "match": "scale",
+                      "name": "Scale",
+                      "value": {
+                        "t": "Vec3",
+                        "v": [
+                          100.0,
+                          100.0,
+                          100.0
+                        ]
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 2,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1571,
+                      "match": "orientation",
+                      "name": "Orientation",
+                      "value": {
+                        "t": "Vec3",
+                        "v": [
+                          0.0,
+                          0.0,
+                          0.0
+                        ]
+                      },
+                      "ui": {
+                        "kind": "Angle"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": true,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1572,
+                      "match": "rotationX",
+                      "name": "X Rotation",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 0.0
+                      },
+                      "ui": {
+                        "kind": "Angle"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": true,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1573,
+                      "match": "rotationY",
+                      "name": "Y Rotation",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 0.0
+                      },
+                      "ui": {
+                        "kind": "Angle"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": true,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1574,
+                      "match": "rotation",
+                      "name": "Rotation",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 0.0
+                      },
+                      "ui": {
+                        "kind": "Angle"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1575,
+                      "match": "opacity",
+                      "name": "Opacity",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 100.0
+                      },
+                      "ui": {
+                        "kind": "Slider",
+                        "min": 0.0,
+                        "max": 100.0,
+                        "slider_min": 0.0,
+                        "slider_max": 100.0,
+                        "decimals": 0
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    }
+                  ]
+                },
+                {
+                  "node": "Group",
+                  "uid": 1577,
+                  "match": "materialOptions",
+                  "name": "Material Options",
+                  "kind": {
+                    "kind": "Plain"
+                  },
+                  "enabled": true,
+                  "children": [
+                    {
+                      "node": "Prop",
+                      "uid": 1578,
+                      "match": "castsShadows",
+                      "name": "Casts Shadows",
+                      "value": {
+                        "t": "Enum",
+                        "v": 0
+                      },
+                      "ui": {
+                        "kind": "Popup",
+                        "options": [
+                          "Off",
+                          "On",
+                          "Only"
+                        ]
+                      },
+                      "spatial": false,
+                      "hold_only": true,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1579,
                       "match": "lightTransmission",
                       "name": "Light Transmission",
                       "value": {
@@ -12866,7 +12866,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1556,
+                      "uid": 1580,
                       "match": "acceptsShadows",
                       "name": "Accepts Shadows",
                       "value": {
@@ -12890,7 +12890,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1557,
+                      "uid": 1581,
                       "match": "acceptsLights",
                       "name": "Accepts Lights",
                       "value": {
@@ -12909,7 +12909,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1558,
+                      "uid": 1582,
                       "match": "ambient",
                       "name": "Ambient",
                       "value": {
@@ -12928,7 +12928,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1559,
+                      "uid": 1583,
                       "match": "diffuse",
                       "name": "Diffuse",
                       "value": {
@@ -12947,7 +12947,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1560,
+                      "uid": 1584,
                       "match": "specularIntensity",
                       "name": "Specular Intensity",
                       "value": {
@@ -12966,7 +12966,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1561,
+                      "uid": 1585,
                       "match": "specularShininess",
                       "name": "Specular Shininess",
                       "value": {
@@ -12985,7 +12985,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1562,
+                      "uid": 1586,
                       "match": "metal",
                       "name": "Metal",
                       "value": {
@@ -13006,7 +13006,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1563,
+                  "uid": 1587,
                   "match": "audio",
                   "name": "Audio",
                   "kind": {
@@ -13016,7 +13016,7 @@
                   "children": [
                     {
                       "node": "Prop",
-                      "uid": 1564,
+                      "uid": 1588,
                       "match": "levels",
                       "name": "Audio Levels",
                       "value": {
@@ -15618,7 +15618,7 @@
           "num": 30,
           "den": 1
         },
-        "duration": 2082931200000,
+        "duration": 2387750400000,
         "display_start": 0,
         "background": [
           0.0,
@@ -15627,7 +15627,7 @@
         ],
         "work_area": [
           0,
-          2082931200000
+          2387750400000
         ],
         "layers": [
           {
@@ -15641,7 +15641,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 2082931200000,
+            "out_point": 2387750400000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -15766,7 +15766,7 @@
                         ]
                       },
                       "expr": {
-                        "text": "var t=time-5.6; var s=t<0?0:100*(1-Math.exp(-7*t)*Math.cos(11*t)); [s,s]",
+                        "text": "var t=time-6.8; var s=t<0?0:100*(1-Math.exp(-7*t)*Math.cos(11*t)); [s,s]",
                         "enabled": true
                       },
                       "ui": {
@@ -15869,7 +15869,7 @@
                         "v": 100.0
                       },
                       "expr": {
-                        "text": "time<5.6?0:100",
+                        "text": "time<6.8?0:100",
                         "enabled": true
                       },
                       "ui": {
@@ -16096,7 +16096,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 2082931200000,
+            "out_point": 2387750400000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -16171,7 +16171,7 @@
                             "v": 0.0
                           },
                           "expr": {
-                            "text": "var p=Math.min(1,Math.max(0,(time-2.8)/1.6)); p=(p<0.5?2*p*p:1-Math.pow(-2*p+2,2)/2); 100*(1-(0.2167+p*0.1396))",
+                            "text": "var p=Math.min(1,Math.max(0,(time-3.9)/1.6)); p=(p<0.5?2*p*p:1-Math.pow(-2*p+2,2)/2); 100*(1-(0.2167+p*0.1396))",
                             "enabled": true
                           },
                           "ui": {
@@ -16405,7 +16405,7 @@
                         "v": 100.0
                       },
                       "expr": {
-                        "text": "time<2.8?0:100",
+                        "text": "time<3.9?0:100",
                         "enabled": true
                       },
                       "ui": {
@@ -16632,7 +16632,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 2082931200000,
+            "out_point": 2387750400000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -17087,7 +17087,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 2082931200000,
+            "out_point": 2387750400000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -17534,7 +17534,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 2082931200000,
+            "out_point": 2387750400000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -17636,7 +17636,7 @@
                         ]
                       },
                       "expr": {
-                        "text": "var p=Math.min(1,Math.max(0,time/8.0)); p=p*p*(3-2*p); [540+-30*p, 960+0*p]",
+                        "text": "var p=Math.min(1,Math.max(0,time/9.2)); p=p*p*(3-2*p); [540+-30*p, 960+0*p]",
                         "enabled": true
                       },
                       "ui": {
@@ -17663,7 +17663,7 @@
                         ]
                       },
                       "expr": {
-                        "text": "var p=Math.min(1,Math.max(0,time/8.0)); p=p*p*(3-2*p); var s=112+(-8)*p; [s,s]",
+                        "text": "var p=Math.min(1,Math.max(0,time/9.2)); p=p*p*(3-2*p); var s=112+(-8)*p; [s,s]",
                         "enabled": true
                       },
                       "ui": {
@@ -25572,7 +25572,7 @@
                         "v": 100.0
                       },
                       "expr": {
-                        "text": "var p=(time-7.5)/0.45; p<0?0:(p>1?100:100*p)",
+                        "text": "var p=(time-7.4)/0.45; p<0?0:(p>1?100:100*p)",
                         "enabled": true
                       },
                       "ui": {
@@ -28803,7 +28803,7 @@
           "num": 30,
           "den": 1
         },
-        "duration": 2387750400000,
+        "duration": 2336947200000,
         "display_start": 0,
         "background": [
           0.0,
@@ -28812,12 +28812,463 @@
         ],
         "work_area": [
           0,
-          2387750400000
+          2336947200000
         ],
         "layers": [
           {
-            "id": 1008,
+            "id": 1032,
             "name": "finger",
+            "source": {
+              "type": "Footage",
+              "item": 1031
+            },
+            "label": "Lavender",
+            "comment": "",
+            "start_time": 0,
+            "in_point": 0,
+            "out_point": 2336947200000,
+            "stretch": 100.0,
+            "switches": {
+              "video": true,
+              "audio": true,
+              "solo": false,
+              "locked": false,
+              "shy": false,
+              "collapse": false,
+              "quality": "Best",
+              "sampling": "Bilinear",
+              "effects": true,
+              "frame_blend": "Off",
+              "motion_blur": false,
+              "adjustment": false,
+              "three_d": false,
+              "guide": false
+            },
+            "blend_mode": "Normal",
+            "preserve_transparency": false,
+            "track_matte": null,
+            "parent": null,
+            "markers": [],
+            "auto_orient": "Off",
+            "props": {
+              "uid": 1033,
+              "match": "layer",
+              "name": "finger.png",
+              "kind": {
+                "kind": "Plain"
+              },
+              "enabled": true,
+              "children": [
+                {
+                  "node": "Group",
+                  "uid": 1034,
+                  "match": "masks",
+                  "name": "Masks",
+                  "kind": {
+                    "kind": "Plain"
+                  },
+                  "enabled": true,
+                  "children": []
+                },
+                {
+                  "node": "Group",
+                  "uid": 1035,
+                  "match": "effects",
+                  "name": "Effects",
+                  "kind": {
+                    "kind": "Plain"
+                  },
+                  "enabled": true,
+                  "children": []
+                },
+                {
+                  "node": "Group",
+                  "uid": 1044,
+                  "match": "transform",
+                  "name": "Transform",
+                  "kind": {
+                    "kind": "Plain"
+                  },
+                  "enabled": true,
+                  "children": [
+                    {
+                      "node": "Prop",
+                      "uid": 1036,
+                      "match": "anchor",
+                      "name": "Anchor Point",
+                      "value": {
+                        "t": "Vec3",
+                        "v": [
+                          785.0,
+                          1390.0,
+                          0.0
+                        ]
+                      },
+                      "ui": {
+                        "kind": "Point"
+                      },
+                      "spatial": true,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 2,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1037,
+                      "match": "position",
+                      "name": "Position",
+                      "value": {
+                        "t": "Vec3",
+                        "v": [
+                          785.0,
+                          1390.0,
+                          0.0
+                        ]
+                      },
+                      "ui": {
+                        "kind": "Point"
+                      },
+                      "spatial": true,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 2,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1038,
+                      "match": "scale",
+                      "name": "Scale",
+                      "value": {
+                        "t": "Vec3",
+                        "v": [
+                          100.0,
+                          100.0,
+                          100.0
+                        ]
+                      },
+                      "expr": {
+                        "text": "var t=time-3.9; var k=t<0?0:Math.abs(Math.sin(t*5)); var s=t<0?0:100-10*k; [s,s]",
+                        "enabled": true
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 2,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1039,
+                      "match": "orientation",
+                      "name": "Orientation",
+                      "value": {
+                        "t": "Vec3",
+                        "v": [
+                          0.0,
+                          0.0,
+                          0.0
+                        ]
+                      },
+                      "ui": {
+                        "kind": "Angle"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": true,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1040,
+                      "match": "rotationX",
+                      "name": "X Rotation",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 0.0
+                      },
+                      "ui": {
+                        "kind": "Angle"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": true,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1041,
+                      "match": "rotationY",
+                      "name": "Y Rotation",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 0.0
+                      },
+                      "ui": {
+                        "kind": "Angle"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": true,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1042,
+                      "match": "rotation",
+                      "name": "Rotation",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 0.0
+                      },
+                      "ui": {
+                        "kind": "Angle"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1043,
+                      "match": "opacity",
+                      "name": "Opacity",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 100.0
+                      },
+                      "ui": {
+                        "kind": "Slider",
+                        "min": 0.0,
+                        "max": 100.0,
+                        "slider_min": 0.0,
+                        "slider_max": 100.0,
+                        "decimals": 0
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    }
+                  ]
+                },
+                {
+                  "node": "Group",
+                  "uid": 1045,
+                  "match": "materialOptions",
+                  "name": "Material Options",
+                  "kind": {
+                    "kind": "Plain"
+                  },
+                  "enabled": true,
+                  "children": [
+                    {
+                      "node": "Prop",
+                      "uid": 1046,
+                      "match": "castsShadows",
+                      "name": "Casts Shadows",
+                      "value": {
+                        "t": "Enum",
+                        "v": 0
+                      },
+                      "ui": {
+                        "kind": "Popup",
+                        "options": [
+                          "Off",
+                          "On",
+                          "Only"
+                        ]
+                      },
+                      "spatial": false,
+                      "hold_only": true,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1047,
+                      "match": "lightTransmission",
+                      "name": "Light Transmission",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 0.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1048,
+                      "match": "acceptsShadows",
+                      "name": "Accepts Shadows",
+                      "value": {
+                        "t": "Enum",
+                        "v": 1
+                      },
+                      "ui": {
+                        "kind": "Popup",
+                        "options": [
+                          "Off",
+                          "On",
+                          "Only"
+                        ]
+                      },
+                      "spatial": false,
+                      "hold_only": true,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1049,
+                      "match": "acceptsLights",
+                      "name": "Accepts Lights",
+                      "value": {
+                        "t": "Bool",
+                        "v": true
+                      },
+                      "ui": {
+                        "kind": "Checkbox"
+                      },
+                      "spatial": false,
+                      "hold_only": true,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1050,
+                      "match": "ambient",
+                      "name": "Ambient",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 100.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1051,
+                      "match": "diffuse",
+                      "name": "Diffuse",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 50.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1052,
+                      "match": "specularIntensity",
+                      "name": "Specular Intensity",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 50.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1053,
+                      "match": "specularShininess",
+                      "name": "Specular Shininess",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 5.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1054,
+                      "match": "metal",
+                      "name": "Metal",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 100.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": 1008,
+            "name": "button",
             "source": {
               "type": "Footage",
               "item": 1007
@@ -28826,7 +29277,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 2387750400000,
+            "out_point": 2336947200000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -28853,7 +29304,7 @@
             "props": {
               "uid": 1009,
               "match": "layer",
-              "name": "finger.png",
+              "name": "button.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -28899,8 +29350,8 @@
                       "value": {
                         "t": "Vec3",
                         "v": [
-                          785.0,
-                          1390.0,
+                          540.0,
+                          1250.0,
                           0.0
                         ]
                       },
@@ -28922,8 +29373,8 @@
                       "value": {
                         "t": "Vec3",
                         "v": [
-                          785.0,
-                          1390.0,
+                          540.0,
+                          1250.0,
                           0.0
                         ]
                       },
@@ -28951,7 +29402,7 @@
                         ]
                       },
                       "expr": {
-                        "text": "var t=time-3.9; var k=t<0?0:Math.abs(Math.sin(t*5)); var s=t<0?0:100-10*k; [s,s]",
+                        "text": "var t=time-3.3; var s=t<0?0:100*(1-Math.exp(-7*t)*Math.cos(11*t)); [s,s]",
                         "enabled": true
                       },
                       "ui": {
@@ -29052,6 +29503,10 @@
                       "value": {
                         "t": "Scalar",
                         "v": 100.0
+                      },
+                      "expr": {
+                        "text": "time<3.3?0:100",
+                        "enabled": true
                       },
                       "ui": {
                         "kind": "Slider",
@@ -29268,7 +29723,7 @@
           },
           {
             "id": 984,
-            "name": "button",
+            "name": "dates",
             "source": {
               "type": "Footage",
               "item": 983
@@ -29277,7 +29732,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 2387750400000,
+            "out_point": 2336947200000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -29304,7 +29759,7 @@
             "props": {
               "uid": 985,
               "match": "layer",
-              "name": "button.png",
+              "name": "dates.png",
               "kind": {
                 "kind": "Plain"
               },
@@ -29351,7 +29806,7 @@
                         "t": "Vec3",
                         "v": [
                           540.0,
-                          1250.0,
+                          585.0,
                           0.0
                         ]
                       },
@@ -29374,7 +29829,7 @@
                         "t": "Vec3",
                         "v": [
                           540.0,
-                          1250.0,
+                          585.0,
                           0.0
                         ]
                       },
@@ -29402,7 +29857,7 @@
                         ]
                       },
                       "expr": {
-                        "text": "var t=time-3.3; var s=t<0?0:100*(1-Math.exp(-7*t)*Math.cos(11*t)); [s,s]",
+                        "text": "var t=time-0.6; var s=t<0?0:100*(1-Math.exp(-7*t)*Math.cos(11*t)); [s,s]",
                         "enabled": true
                       },
                       "ui": {
@@ -29505,7 +29960,7 @@
                         "v": 100.0
                       },
                       "expr": {
-                        "text": "time<3.3?0:100",
+                        "text": "time<0.6?0:100",
                         "enabled": true
                       },
                       "ui": {
@@ -29732,7 +30187,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 2387750400000,
+            "out_point": 2336947200000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -30187,7 +30642,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 2387750400000,
+            "out_point": 2336947200000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -30634,7 +31089,7 @@
             "comment": "",
             "start_time": 0,
             "in_point": 0,
-            "out_point": 2387750400000,
+            "out_point": 2336947200000,
             "stretch": 100.0,
             "switches": {
               "video": true,
@@ -30736,7 +31191,7 @@
                         ]
                       },
                       "expr": {
-                        "text": "var p=Math.min(1,Math.max(0,time/9.2)); p=p*p*(3-2*p); [540+0*p, 960+0*p]",
+                        "text": "var p=Math.min(1,Math.max(0,time/9.0)); p=p*p*(3-2*p); [540+0*p, 960+0*p]",
                         "enabled": true
                       },
                       "ui": {
@@ -30763,7 +31218,7 @@
                         ]
                       },
                       "expr": {
-                        "text": "var p=Math.min(1,Math.max(0,time/9.2)); p=p*p*(3-2*p); var s=110+(-8)*p; [s,s]",
+                        "text": "var p=Math.min(1,Math.max(0,time/9.0)); p=p*p*(3-2*p); var s=110+(-8)*p; [s,s]",
                         "enabled": true
                       },
                       "ui": {
@@ -31230,6 +31685,38 @@
     },
     "983": {
       "id": 983,
+      "name": "dates.png",
+      "label": "Lavender",
+      "comment": "",
+      "parent": null,
+      "kind": {
+        "type": "Footage",
+        "path": "/home/user/ai-idea/shorts/year-end-tax/build/parts/S07/dates.png",
+        "kind": "Still",
+        "width": 1080,
+        "height": 1920,
+        "pixel_aspect": 1.0,
+        "frame_rate": {
+          "num": 30,
+          "den": 1
+        },
+        "native_rate": null,
+        "duration": 0,
+        "has_video": true,
+        "has_audio": false,
+        "alpha": "Straight",
+        "premul_color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "loop_count": 1,
+        "codec": "PNG",
+        "missing": false
+      }
+    },
+    "1007": {
+      "id": 1007,
       "name": "button.png",
       "label": "Lavender",
       "comment": "",
@@ -31260,8 +31747,8 @@
         "missing": false
       }
     },
-    "1007": {
-      "id": 1007,
+    "1031": {
+      "id": 1031,
       "name": "finger.png",
       "label": "Lavender",
       "comment": "",
@@ -31292,8 +31779,8 @@
         "missing": false
       }
     },
-    "1056": {
-      "id": 1056,
+    "1080": {
+      "id": 1080,
       "name": "film.png",
       "label": "Lavender",
       "comment": "",
@@ -31324,8 +31811,8 @@
         "missing": false
       }
     },
-    "1080": {
-      "id": 1080,
+    "1104": {
+      "id": 1104,
       "name": "sub00.png",
       "label": "Lavender",
       "comment": "",
@@ -31356,8 +31843,8 @@
         "missing": false
       }
     },
-    "1104": {
-      "id": 1104,
+    "1128": {
+      "id": 1128,
       "name": "sub01.png",
       "label": "Lavender",
       "comment": "",
@@ -31388,8 +31875,8 @@
         "missing": false
       }
     },
-    "1128": {
-      "id": 1128,
+    "1152": {
+      "id": 1152,
       "name": "sub02.png",
       "label": "Lavender",
       "comment": "",
@@ -31420,8 +31907,8 @@
         "missing": false
       }
     },
-    "1152": {
-      "id": 1152,
+    "1176": {
+      "id": 1176,
       "name": "sub03.png",
       "label": "Lavender",
       "comment": "",
@@ -31452,8 +31939,8 @@
         "missing": false
       }
     },
-    "1176": {
-      "id": 1176,
+    "1200": {
+      "id": 1200,
       "name": "sub04.png",
       "label": "Lavender",
       "comment": "",
@@ -31484,8 +31971,8 @@
         "missing": false
       }
     },
-    "1200": {
-      "id": 1200,
+    "1224": {
+      "id": 1224,
       "name": "sub05.png",
       "label": "Lavender",
       "comment": "",
@@ -31516,8 +32003,8 @@
         "missing": false
       }
     },
-    "1224": {
-      "id": 1224,
+    "1248": {
+      "id": 1248,
       "name": "sub06.png",
       "label": "Lavender",
       "comment": "",
@@ -31548,8 +32035,8 @@
         "missing": false
       }
     },
-    "1248": {
-      "id": 1248,
+    "1272": {
+      "id": 1272,
       "name": "sub07.png",
       "label": "Lavender",
       "comment": "",
@@ -31580,8 +32067,8 @@
         "missing": false
       }
     },
-    "1272": {
-      "id": 1272,
+    "1296": {
+      "id": 1296,
       "name": "sub08.png",
       "label": "Lavender",
       "comment": "",
@@ -31612,8 +32099,8 @@
         "missing": false
       }
     },
-    "1296": {
-      "id": 1296,
+    "1320": {
+      "id": 1320,
       "name": "sub09.png",
       "label": "Lavender",
       "comment": "",
@@ -31644,8 +32131,8 @@
         "missing": false
       }
     },
-    "1320": {
-      "id": 1320,
+    "1344": {
+      "id": 1344,
       "name": "sub10.png",
       "label": "Lavender",
       "comment": "",
@@ -31676,8 +32163,8 @@
         "missing": false
       }
     },
-    "1344": {
-      "id": 1344,
+    "1368": {
+      "id": 1368,
       "name": "sub11.png",
       "label": "Lavender",
       "comment": "",
@@ -31708,8 +32195,8 @@
         "missing": false
       }
     },
-    "1368": {
-      "id": 1368,
+    "1392": {
+      "id": 1392,
       "name": "sub12.png",
       "label": "Lavender",
       "comment": "",
@@ -31740,8 +32227,8 @@
         "missing": false
       }
     },
-    "1392": {
-      "id": 1392,
+    "1416": {
+      "id": 1416,
       "name": "sub13.png",
       "label": "Lavender",
       "comment": "",
@@ -31772,8 +32259,8 @@
         "missing": false
       }
     },
-    "1416": {
-      "id": 1416,
+    "1440": {
+      "id": 1440,
       "name": "sub14.png",
       "label": "Lavender",
       "comment": "",
@@ -31804,8 +32291,8 @@
         "missing": false
       }
     },
-    "1440": {
-      "id": 1440,
+    "1464": {
+      "id": 1464,
       "name": "sub15.png",
       "label": "Lavender",
       "comment": "",
@@ -31836,8 +32323,8 @@
         "missing": false
       }
     },
-    "1464": {
-      "id": 1464,
+    "1488": {
+      "id": 1488,
       "name": "sub16.png",
       "label": "Lavender",
       "comment": "",
@@ -31868,8 +32355,8 @@
         "missing": false
       }
     },
-    "1488": {
-      "id": 1488,
+    "1512": {
+      "id": 1512,
       "name": "Solids",
       "label": "Yellow",
       "comment": "",
@@ -31878,12 +32365,12 @@
         "type": "Folder"
       }
     },
-    "1489": {
-      "id": 1489,
+    "1513": {
+      "id": 1513,
       "name": "progress",
       "label": "Red",
       "comment": "",
-      "parent": 1488,
+      "parent": 1512,
       "kind": {
         "type": "Solid",
         "color": [
@@ -31896,8 +32383,8 @@
         "pixel_aspect": 1.0
       }
     },
-    "1513": {
-      "id": 1513,
+    "1537": {
+      "id": 1537,
       "name": "audio.wav",
       "label": "SeaFoam",
       "comment": "",
@@ -31914,7 +32401,7 @@
           "den": 1
         },
         "native_rate": null,
-        "duration": 13462848000000,
+        "duration": 13716864000000,
         "has_video": false,
         "has_audio": true,
         "alpha": "Ignore",
@@ -31928,8 +32415,8 @@
         "missing": false
       }
     },
-    "1539": {
-      "id": 1539,
+    "1563": {
+      "id": 1563,
       "name": "narration.wav",
       "label": "SeaFoam",
       "comment": "",
@@ -31946,7 +32433,7 @@
           "den": 1
         },
         "native_rate": null,
-        "duration": 13462848000000,
+        "duration": 13716864000000,
         "has_video": false,
         "has_audio": true,
         "alpha": "Ignore",
@@ -31961,5 +32448,5 @@
       }
     }
   },
-  "next_id": 1565
+  "next_id": 1589
 }

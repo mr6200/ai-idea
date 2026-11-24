@@ -1,4 +1,4 @@
-"""Synthesize the BGM and SFX track for the year-end-tax Short (53 s, 48 kHz stereo WAV) from the manifest.
+"""Synthesize the BGM and SFX track for the year-end-tax Short (54 s, 48 kHz stereo WAV) from the manifest.
 
 Everything is generated here with numpy, so there are no licensing questions.
 """
@@ -10,7 +10,7 @@ import numpy as np
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SR = 48000
-DUR = 53.0
+DUR = 54.0
 rng = np.random.default_rng(42)
 
 
@@ -226,10 +226,10 @@ def main():
                 put(t, sfx_ticks(a.get("dur", 0.6)), 0.8)
     # hand-placed cues
     put(0.05, sfx_whoosh(0.5), 0.5)                                  # opening
-    put(38.3, sfx_drumroll(0.8))                                     # quiz countdown
-    put(39.1, sfx_ding(2093))                                        # answer
+    put(39.5, sfx_drumroll(0.8))                                     # quiz countdown
+    put(40.3, sfx_ding(2093))                                        # answer
     for k in range(3):
-        put(47.7 + k * 0.4, sfx_click(), 1.0)                        # subscribe taps
+        put(48.9 + k * 0.4, sfx_click(), 1.0)                        # subscribe taps
     # duck the music (not the SFX) under the narration, when gen_narration.py has run
     nar = os.path.join(ROOT, "narration.wav")
     if os.path.exists(nar):

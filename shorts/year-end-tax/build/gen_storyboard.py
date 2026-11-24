@@ -47,7 +47,7 @@ def main():
   @media (max-width:900px) {{ .grid {{ grid-template-columns:1fr; padding:12px 16px; }} header {{ padding:20px 16px 4px; }} }}
 </style></head><body>
 <header><h1>연말정산, 12월 안에 해야 할 것 — 7컷 콘티</h1>
-<div class="meta">53초 (+ 썸네일 1초) · 1080×1920 · 30fps · 자막 카드 y=1480 · 내레이션 ko-KR-Chirp3-HD-Charon · 웹툰풍 액션 세미리얼 AI(Seedream 4.0) + 말풍선 · 효과음</div></header>
+<div class="meta">54초 (+ 썸네일 1초) · 1080×1920 · 30fps · 자막 카드 y=1480 · 내레이션 ko-KR-Chirp3-HD-Charon · 웹툰풍 액션 세미리얼 AI(Seedream 4.0) + 말풍선 · 효과음</div></header>
 <div class="grid">{''.join(cards)}</div></body></html>"""
     out = os.path.join(EP, "storyboard.html")
     with open(out, "w") as f:

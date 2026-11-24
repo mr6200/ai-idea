@@ -423,7 +423,7 @@
                       ],
                       "runs": [
                         {
-                          "text": "마감은",
+                          "text": "마감 날짜",
                           "style": {
                             "font_family": "Black Han Sans",
                             "font_style": "Regular",
@@ -500,11 +500,11 @@
                       ],
                       "runs": [
                         {
-                          "text": "12월 31일!",
+                          "text": "꼭 체크!",
                           "style": {
                             "font_family": "Black Han Sans",
                             "font_style": "Regular",
-                            "size": 130.0,
+                            "size": 120.0,
                             "tracking": 0.0,
                             "baseline_shift": 0.0,
                             "h_scale": 100.0,
@@ -545,13 +545,545 @@
               }
             },
             {
-              "id": 13,
-              "name": "button",
+              "id": 17,
+              "name": "dates",
               "kind": {
                 "type": "group",
                 "children": [
                   {
                     "id": 10,
+                    "appearance": {
+                      "items": [
+                        {
+                          "kind": "fill",
+                          "paint": {
+                            "type": "solid",
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.06666667,
+                              "g": 0.06666667,
+                              "b": 0.06666667
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "kind": {
+                      "type": "path",
+                      "path": {
+                        "subpaths": [
+                          {
+                            "anchors": [
+                              {
+                                "p": [
+                                  120.0,
+                                  474.0
+                                ],
+                                "in": [
+                                  110.05887603759766,
+                                  474.0
+                                ]
+                              },
+                              {
+                                "p": [
+                                  984.0,
+                                  474.0
+                                ],
+                                "out": [
+                                  993.9411010742188,
+                                  474.0
+                                ]
+                              },
+                              {
+                                "p": [
+                                  1002.0,
+                                  492.0
+                                ],
+                                "in": [
+                                  1002.0,
+                                  482.0588684082031
+                                ]
+                              },
+                              {
+                                "p": [
+                                  1002.0,
+                                  706.0
+                                ],
+                                "out": [
+                                  1002.0,
+                                  715.9411010742188
+                                ]
+                              },
+                              {
+                                "p": [
+                                  984.0,
+                                  724.0
+                                ],
+                                "in": [
+                                  993.9411010742188,
+                                  724.0
+                                ]
+                              },
+                              {
+                                "p": [
+                                  120.0,
+                                  724.0
+                                ],
+                                "out": [
+                                  110.05887603759766,
+                                  724.0
+                                ]
+                              },
+                              {
+                                "p": [
+                                  102.0,
+                                  706.0
+                                ],
+                                "in": [
+                                  102.0,
+                                  715.9411010742188
+                                ]
+                              },
+                              {
+                                "p": [
+                                  102.0,
+                                  492.0
+                                ],
+                                "out": [
+                                  102.0,
+                                  482.0588684082031
+                                ]
+                              }
+                            ],
+                            "closed": true
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "id": 11,
+                    "appearance": {
+                      "items": [
+                        {
+                          "kind": "fill",
+                          "paint": {
+                            "type": "solid",
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.99215686,
+                              "b": 0.9607843
+                            }
+                          }
+                        },
+                        {
+                          "kind": "stroke",
+                          "paint": {
+                            "type": "solid",
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.06666667,
+                              "g": 0.06666667,
+                              "b": 0.06666667
+                            }
+                          },
+                          "width": 8.0,
+                          "miter_limit": 4.0
+                        }
+                      ]
+                    },
+                    "kind": {
+                      "type": "path",
+                      "path": {
+                        "subpaths": [
+                          {
+                            "anchors": [
+                              {
+                                "p": [
+                                  108.0,
+                                  460.0
+                                ],
+                                "in": [
+                                  98.05887603759766,
+                                  460.0
+                                ]
+                              },
+                              {
+                                "p": [
+                                  972.0,
+                                  460.0
+                                ],
+                                "out": [
+                                  981.9411010742188,
+                                  460.0
+                                ]
+                              },
+                              {
+                                "p": [
+                                  990.0,
+                                  478.0
+                                ],
+                                "in": [
+                                  990.0,
+                                  468.0588684082031
+                                ]
+                              },
+                              {
+                                "p": [
+                                  990.0,
+                                  692.0
+                                ],
+                                "out": [
+                                  990.0,
+                                  701.9411010742188
+                                ]
+                              },
+                              {
+                                "p": [
+                                  972.0,
+                                  710.0
+                                ],
+                                "in": [
+                                  981.9411010742188,
+                                  710.0
+                                ]
+                              },
+                              {
+                                "p": [
+                                  108.0,
+                                  710.0
+                                ],
+                                "out": [
+                                  98.05887603759766,
+                                  710.0
+                                ]
+                              },
+                              {
+                                "p": [
+                                  90.0,
+                                  692.0
+                                ],
+                                "in": [
+                                  90.0,
+                                  701.9411010742188
+                                ]
+                              },
+                              {
+                                "p": [
+                                  90.0,
+                                  478.0
+                                ],
+                                "out": [
+                                  90.0,
+                                  468.0588684082031
+                                ]
+                              }
+                            ],
+                            "closed": true
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "id": 12,
+                    "kind": {
+                      "type": "text",
+                      "kind": {
+                        "kind": "point"
+                      },
+                      "xf": [
+                        1.0,
+                        0.0,
+                        0.0,
+                        1.0,
+                        150.0,
+                        560.0
+                      ],
+                      "runs": [
+                        {
+                          "text": "홈택스 미리보기",
+                          "style": {
+                            "font_family": "Black Han Sans",
+                            "font_style": "Regular",
+                            "size": 50.0,
+                            "tracking": 0.0,
+                            "baseline_shift": 0.0,
+                            "h_scale": 100.0,
+                            "v_scale": 100.0,
+                            "rotation": 0.0,
+                            "fill": {
+                              "type": "solid",
+                              "color": {
+                                "model": "rgb",
+                                "r": 0.06666667,
+                                "g": 0.06666667,
+                                "b": 0.06666667
+                              }
+                            },
+                            "stroke": {
+                              "type": "none"
+                            },
+                            "stroke_width": 0.0,
+                            "underline": false,
+                            "strikethrough": false,
+                            "all_caps": false
+                          }
+                        }
+                      ],
+                      "para": {
+                        "justify": "Left",
+                        "left_indent": 0.0,
+                        "right_indent": 0.0,
+                        "first_line_indent": 0.0,
+                        "space_before": 0.0,
+                        "space_after": 0.0,
+                        "hyphenate": false
+                      }
+                    }
+                  },
+                  {
+                    "id": 13,
+                    "kind": {
+                      "type": "text",
+                      "kind": {
+                        "kind": "point"
+                      },
+                      "xf": [
+                        1.0,
+                        0.0,
+                        0.0,
+                        1.0,
+                        930.0,
+                        560.0
+                      ],
+                      "runs": [
+                        {
+                          "text": "12월 18일까지",
+                          "style": {
+                            "font_family": "Black Han Sans",
+                            "font_style": "Regular",
+                            "size": 56.0,
+                            "tracking": 0.0,
+                            "baseline_shift": 0.0,
+                            "h_scale": 100.0,
+                            "v_scale": 100.0,
+                            "rotation": 0.0,
+                            "fill": {
+                              "type": "solid",
+                              "color": {
+                                "model": "rgb",
+                                "r": 0.29803923,
+                                "g": 0.7882353,
+                                "b": 0.9411765
+                              }
+                            },
+                            "stroke": {
+                              "type": "none"
+                            },
+                            "stroke_width": 0.0,
+                            "underline": false,
+                            "strikethrough": false,
+                            "all_caps": false
+                          }
+                        }
+                      ],
+                      "para": {
+                        "justify": "Right",
+                        "left_indent": 0.0,
+                        "right_indent": 0.0,
+                        "first_line_indent": 0.0,
+                        "space_before": 0.0,
+                        "space_after": 0.0,
+                        "hyphenate": false
+                      }
+                    }
+                  },
+                  {
+                    "id": 14,
+                    "appearance": {
+                      "items": [
+                        {
+                          "kind": "fill",
+                          "paint": {
+                            "type": "solid",
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.0,
+                              "g": 0.0,
+                              "b": 0.0
+                            }
+                          }
+                        },
+                        {
+                          "kind": "stroke",
+                          "paint": {
+                            "type": "solid",
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.06666667,
+                              "g": 0.06666667,
+                              "b": 0.06666667
+                            }
+                          },
+                          "width": 4.0,
+                          "miter_limit": 4.0,
+                          "opacity": 0.2
+                        }
+                      ]
+                    },
+                    "kind": {
+                      "type": "path",
+                      "path": {
+                        "subpaths": [
+                          {
+                            "anchors": [
+                              {
+                                "p": [
+                                  150.0,
+                                  600.0
+                                ]
+                              },
+                              {
+                                "p": [
+                                  930.0,
+                                  600.0
+                                ]
+                              }
+                            ],
+                            "closed": false
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "id": 15,
+                    "kind": {
+                      "type": "text",
+                      "kind": {
+                        "kind": "point"
+                      },
+                      "xf": [
+                        1.0,
+                        0.0,
+                        0.0,
+                        1.0,
+                        150.0,
+                        665.0
+                      ],
+                      "runs": [
+                        {
+                          "text": "연금저축 · IRP · 기부",
+                          "style": {
+                            "font_family": "Black Han Sans",
+                            "font_style": "Regular",
+                            "size": 50.0,
+                            "tracking": 0.0,
+                            "baseline_shift": 0.0,
+                            "h_scale": 100.0,
+                            "v_scale": 100.0,
+                            "rotation": 0.0,
+                            "fill": {
+                              "type": "solid",
+                              "color": {
+                                "model": "rgb",
+                                "r": 0.06666667,
+                                "g": 0.06666667,
+                                "b": 0.06666667
+                              }
+                            },
+                            "stroke": {
+                              "type": "none"
+                            },
+                            "stroke_width": 0.0,
+                            "underline": false,
+                            "strikethrough": false,
+                            "all_caps": false
+                          }
+                        }
+                      ],
+                      "para": {
+                        "justify": "Left",
+                        "left_indent": 0.0,
+                        "right_indent": 0.0,
+                        "first_line_indent": 0.0,
+                        "space_before": 0.0,
+                        "space_after": 0.0,
+                        "hyphenate": false
+                      }
+                    }
+                  },
+                  {
+                    "id": 16,
+                    "kind": {
+                      "type": "text",
+                      "kind": {
+                        "kind": "point"
+                      },
+                      "xf": [
+                        1.0,
+                        0.0,
+                        0.0,
+                        1.0,
+                        930.0,
+                        665.0
+                      ],
+                      "runs": [
+                        {
+                          "text": "12월 31일까지",
+                          "style": {
+                            "font_family": "Black Han Sans",
+                            "font_style": "Regular",
+                            "size": 56.0,
+                            "tracking": 0.0,
+                            "baseline_shift": 0.0,
+                            "h_scale": 100.0,
+                            "v_scale": 100.0,
+                            "rotation": 0.0,
+                            "fill": {
+                              "type": "solid",
+                              "color": {
+                                "model": "rgb",
+                                "r": 0.9019608,
+                                "g": 0.22352941,
+                                "b": 0.27450982
+                              }
+                            },
+                            "stroke": {
+                              "type": "none"
+                            },
+                            "stroke_width": 0.0,
+                            "underline": false,
+                            "strikethrough": false,
+                            "all_caps": false
+                          }
+                        }
+                      ],
+                      "para": {
+                        "justify": "Right",
+                        "left_indent": 0.0,
+                        "right_indent": 0.0,
+                        "first_line_indent": 0.0,
+                        "space_before": 0.0,
+                        "space_after": 0.0,
+                        "hyphenate": false
+                      }
+                    }
+                  }
+                ],
+                "clip": false
+              }
+            },
+            {
+              "id": 21,
+              "name": "button",
+              "kind": {
+                "type": "group",
+                "children": [
+                  {
+                    "id": 18,
                     "appearance": {
                       "items": [
                         {
@@ -662,7 +1194,7 @@
                     }
                   },
                   {
-                    "id": 11,
+                    "id": 19,
                     "appearance": {
                       "items": [
                         {
@@ -787,7 +1319,7 @@
                     }
                   },
                   {
-                    "id": 12,
+                    "id": 20,
                     "kind": {
                       "type": "text",
                       "kind": {
@@ -848,13 +1380,13 @@
               }
             },
             {
-              "id": 15,
+              "id": 23,
               "name": "finger",
               "kind": {
                 "type": "group",
                 "children": [
                   {
-                    "id": 14,
+                    "id": 22,
                     "appearance": {
                       "items": [
                         {
@@ -1946,7 +2478,7 @@
     },
     "raster_effects_ppi": 72.0,
     "images": {},
-    "next_id": 16
+    "next_id": 24
   },
   "images": {}
 }

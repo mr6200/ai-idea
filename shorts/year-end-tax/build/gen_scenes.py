@@ -1,4 +1,4 @@
-"""Generate SVG parts for all 7 scenes of the year-end-tax Short (53 s, 1080x1920).
+"""Generate SVG parts for all 7 scenes of the year-end-tax Short (54 s, 1080x1920).
 
 Style: the Korean webtoon frame (episode 23 on) with the semi-realistic action webtoon drawing
 (episode 26 on, user choice) and the same office-worker character. Each scene's bottom layer is an AI illustration
@@ -170,18 +170,18 @@ scene("S01", 0, 6.6, [
 ])
 
 # S02 ① 연말정산 미리보기 ------------------------------------------------------------------------------
-scene("S02", 6.6, 14.6, [
-    ai(8.0, (112, 104), (-30, 0)),
+scene("S02", 6.6, 15.8, [
+    ai(9.2, (112, 104), (-30, 0)),
     ("bg", bg(), {"type": "none"}),
     ("title", head("① 연말정산 미리보기", 540, 300, 100), {"type": "pop", "at": 0.0, "anchor": [540, 260]}),
-    ("how", card(90, 420, 900, 250) + tag("홈택스 · 무료", 540, 490, 38, INK, WHITE)
+    ("how", card(90, 420, 900, 250) + tag("홈택스 · 무료 · 12월 18일까지", 540, 490, 38, INK, WHITE)
      + text("1~9월 카드 사용액으로", 540, 580, 52, INK, font=HEAD) + text("예상 환급액 미리 계산", 540, 645, 52, RED, font=HEAD),
-     {"type": "wipeD", "at": 2.8, "dur": 1.6}),
-    ("tip", pill("토해낼 것 같으면 지금 손쓰기", 540, 760, 48, YELLOW), {"type": "pop", "at": 5.6, "anchor": [540, 760]}),
+     {"type": "wipeD", "at": 3.9, "dur": 1.6}),
+    ("tip", pill("토해낼 것 같으면 지금 손쓰기", 540, 760, 48, YELLOW), {"type": "pop", "at": 6.8, "anchor": [540, 760]}),
 ])
 
 # S03 ② 연금저축 · IRP --------------------------------------------------------------------------------
-scene("S03", 14.6, 23.4, [
+scene("S03", 15.8, 24.6, [
     ai(8.8, (106, 116), (0, -30)),
     ("bg", bg(), {"type": "none"}),
     ("title", head("② 연금저축 · IRP", 540, 270, 100), {"type": "pop", "at": 0.0, "anchor": [540, 230]}),
@@ -192,7 +192,7 @@ scene("S03", 14.6, 23.4, [
 ])
 
 # S04 ③ 고향사랑기부 ---------------------------------------------------------------------------------
-scene("S04", 23.4, 30.6, [
+scene("S04", 24.6, 31.8, [
     ai(7.2, (104, 112), (0, 20)),
     ("bg", bg(), {"type": "none"}),
     ("title", head("③ 고향사랑기부", 540, 260, 112), {"type": "pop", "at": 0.0, "anchor": [540, 220]}),
@@ -201,7 +201,7 @@ scene("S04", 23.4, 30.6, [
 ])
 
 # S05 단, 조건 ----------------------------------------------------------------------------------------
-scene("S05", 30.6, 34.2, [
+scene("S05", 31.8, 35.4, [
     ai(3.6, (104, 114), (-20, 20)),
     ("bg", bg(), {"type": "none"}),
     ("title", head("단, 조건!", 540, 300, 130), {"type": "pop", "at": 0.0, "anchor": [540, 260]}),
@@ -211,7 +211,7 @@ scene("S05", 30.6, 34.2, [
 # S06 퀴즈 -------------------------------------------------------------------------------------------
 opts = ["10만 원", "3만 원", "0원"]
 choices = "".join(card(130, 860 + i * 140, 820, 120) + text(o, 540, 938 + i * 140, 62, INK, font=HEAD) for i, o in enumerate(opts))
-scene("S06", 34.2, 43.8, [
+scene("S06", 35.4, 45.0, [
     ai(9.6, (106, 116), (0, -30)),
     ("bg", bg(), {"type": "none"}),
     ("badge", pill("퀴즈", 540, 210, 52, RED, WHITE), {"type": "pop", "at": 0.0, "anchor": [540, 210]}),
@@ -219,14 +219,17 @@ scene("S06", 34.2, 43.8, [
     ("choices", choices, {"type": "pop", "at": 0.9, "anchor": [540, 1060]}),
     ("answer", f'<rect x="114" y="1124" width="852" height="152" rx="24" fill="none" stroke="{RED}" stroke-width="14"/>' + sfx("정답!", 900, 1140, 90, RED, 12),
      {"type": "stamp", "at": 4.9, "anchor": [540, 1200]}),
-    ("why", pill("답례품 3만 원만큼 이득", 540, 1330, 42, SKY, INK), {"type": "fade", "at": 7.5}),
+    ("why", pill("답례품 3만 원만큼 이득", 540, 1330, 42, SKY, INK), {"type": "fade", "at": 7.4}),
 ])
 
 # S07 마무리 + 구독 ---------------------------------------------------------------------------------------
-scene("S07", 43.8, 53.0, [
-    ai(9.2, (110, 102), (0, 0)),
+scene("S07", 45.0, 54.0, [
+    ai(9.0, (110, 102), (0, 0)),
     ("bg", bg(), {"type": "none"}),
-    ("look", head("마감은", 540, 250, 110) + head("12월 31일!", 540, 380, 130, YELLOW), {"type": "pop", "at": 0.2, "anchor": [540, 310]}),
+    ("look", head("마감 날짜", 540, 250, 110) + head("꼭 체크!", 540, 380, 120, YELLOW), {"type": "pop", "at": 0.2, "anchor": [540, 310]}),
+    ("dates", card(90, 460, 900, 250) + text("홈택스 미리보기", 150, 560, 50, INK, "start", HEAD) + num("12월 18일까지", 930, 560, 56, SKY, "end")
+     + f'<path d="M150 600 H930" stroke="{INK}" stroke-opacity="0.2" stroke-width="4"/>' + text("연금저축 · IRP · 기부", 150, 665, 50, INK, "start", HEAD) + num("12월 31일까지", 930, 665, 56, RED, "end"),
+     {"type": "pop", "at": 0.6, "anchor": [540, 585]}),
     ("button", pill("구독하기", 540, 1250, 80, RED, WHITE), {"type": "pop", "at": 3.3, "anchor": [540, 1250]}),
     ("finger", f'<g transform="translate(0 170)">{finger}</g>', {"type": "tap", "at": 3.9, "anchor": [785, 1390]}),
 ])
