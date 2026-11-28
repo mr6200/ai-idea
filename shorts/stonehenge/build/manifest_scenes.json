@@ -1,0 +1,536 @@
+[
+ {
+  "id": "S01",
+  "start": 0.0,
+  "end": 6.75,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S01"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t1",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      310
+     ]
+    }
+   },
+   {
+    "name": "t2",
+    "anim": {
+     "type": "stamp",
+     "at": 3.3,
+     "anchor": [
+      540,
+      450
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S02",
+  "start": 6.75,
+  "end": 9.85,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/overview.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 3.3
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "q",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "start": 9.85,
+  "end": 17.35,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/sarsen.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 7.7
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "w",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   },
+   {
+    "name": "src",
+    "anim": {
+     "type": "stamp",
+     "at": 3.2,
+     "anchor": [
+      540,
+      1070
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S04",
+  "start": 17.35,
+  "end": 19.95,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/bluestone.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 2.8
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "b",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S05",
+  "start": 19.95,
+  "end": 25.25,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/carn_goedog.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 5.5
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "d",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S06",
+  "start": 25.25,
+  "end": 29.15,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S06"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "m",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S07",
+  "start": 29.15,
+  "end": 34.75,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/altar.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 5.8
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "t",
+    "anim": {
+     "type": "pop",
+     "at": 0.3,
+     "anchor": [
+      540,
+      440
+     ]
+    }
+   },
+   {
+    "name": "a",
+    "anim": {
+     "type": "slideL",
+     "at": 3.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S08",
+  "start": 34.75,
+  "end": 41.55,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S08_d",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 7.0
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "s",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   },
+   {
+    "name": "how",
+    "anim": {
+     "type": "stamp",
+     "at": 4.0,
+     "anchor": [
+      540,
+      1080
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "S09",
+  "start": 41.55,
+  "end": 47.35,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/solstice.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 6.0
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "q",
+    "anim": {
+     "type": "pop",
+     "at": 0.2,
+     "anchor": [
+      540,
+      440
+     ]
+    }
+   },
+   {
+    "name": "sun",
+    "anim": {
+     "type": "slideL",
+     "at": 2.5
+    }
+   }
+  ]
+ },
+ {
+  "id": "S10",
+  "start": 47.35,
+  "end": 51.25,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "S11_b",
+     "z": [
+      104,
+      112
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 4.1
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "u",
+    "anim": {
+     "type": "slideL",
+     "at": 0.2
+    }
+   }
+  ]
+ },
+ {
+  "id": "S11",
+  "start": 51.25,
+  "end": 54.65,
+  "parts": [
+   {
+    "name": "still",
+    "anim": {
+     "type": "kenburns",
+     "src": "photos/nightfall.jpg",
+     "z": [
+      100,
+      108
+     ],
+     "pan": [
+      0,
+      0
+     ],
+     "dur": 3.6
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "tag",
+    "anim": {
+     "type": "fade",
+     "at": 0.1
+    }
+   },
+   {
+    "name": "m",
+    "anim": {
+     "type": "slideL",
+     "at": 0.3
+    }
+   }
+  ]
+ },
+ {
+  "id": "S12",
+  "start": 54.65,
+  "end": 60.0,
+  "parts": [
+   {
+    "name": "video",
+    "anim": {
+     "type": "video",
+     "clips": [
+      "S13"
+     ]
+    }
+   },
+   {
+    "name": "shade",
+    "anim": {
+     "type": "none"
+    }
+   },
+   {
+    "name": "t",
+    "anim": {
+     "type": "pop",
+     "at": 0.15,
+     "anchor": [
+      540,
+      300
+     ]
+    }
+   },
+   {
+    "name": "sub",
+    "anim": {
+     "type": "pop",
+     "at": 0.4,
+     "anchor": [
+      540,
+      490
+     ]
+    }
+   }
+  ]
+ }
+]
